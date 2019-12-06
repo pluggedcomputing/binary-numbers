@@ -1,34 +1,37 @@
 import { StyleSheet } from 'react-native';
 import colors from '../../styles/colors';
 import metrics from '../../styles/metrics';
-import general from '../../styles/general';
-
-const metric = {
-	widhtButton: 30,
-	heightButton: 55
-};
 
 const styles = StyleSheet.create({
 	container: {
-		width: 300,
 		height: 55,
 		flexDirection: 'row',
 		backgroundColor: colors.colorBackground,
 		alignItems: 'center',
-		justifyContent: 'center',
+		justifyContent: 'space-around',
 		borderWidth: 1,
-		borderColor: colors.colorPrimary,
-		borderRadius: 27.5
+		borderColor: colors.colorBackground,
+		borderRadius: 27.5,
+		marginRight: metrics.doubleBaseMargin,
+		marginLeft: metrics.doubleBaseMargin,
+		marginTop: metrics.baseMargin
+	},
+	switcher: {
+		flexDirection: 'row',
+		position: 'absolute',
+		top: 0,
+		left: 0,
+		backgroundColor: colors.colorBackground,
+		borderRadius: 28,
+		height: 53,
+		alignItems: 'center',
+		justifyContent: 'center',
+		width: metrics.switchWidth,
+		elevation: 4,
+		shadowOpacity: 0.31,
+		shadowRadius: 10,
+		shadowColor: '#A69E9E'
 	}
-	// container22: {
-	// 	backgroundColor: colors.colorBackground,
-	// 	marginRight: metrics.doubleBaseMargin,
-	// 	marginLeft: metrics.doubleBaseMargin,
-	// 	marginTop: metrics.baseMarginTop,
-	// 	padding: metrics.basePadding,
-	// 	...general.shadowRadius,
-	// 	borderRadius: metrics.baseBorder
-	// }
 });
 
 export default styles;
