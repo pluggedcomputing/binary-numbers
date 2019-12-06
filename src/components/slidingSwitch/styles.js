@@ -12,8 +12,8 @@ const styles = StyleSheet.create({
 		borderWidth: 1,
 		borderColor: colors.colorBackground,
 		borderRadius: 27.5,
-		marginRight: metrics.doubleBaseMargin,
-		marginLeft: metrics.doubleBaseMargin,
+		marginRight: metrics.fullMargin,
+		marginLeft: metrics.fullMargin,
 		marginTop: metrics.baseMargin
 	},
 	switcher: {
