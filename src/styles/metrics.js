@@ -6,7 +6,6 @@ const metrics = {
 	smallMargin: 5,
 	baseMargin: 10,
 	doubleBaseMargin: 20,
-	baseMarginTop: '40%',
 	basePadding: 8,
 	screenWidth: width < height ? width : height,
 	screenHeight: width < height ? height : width,
@@ -14,7 +13,9 @@ const metrics = {
 	navBarHeight: Platform.OS === 'ios' ? 64 : 54,
 	statusBarHeight: Platform.OS === 'ios' ? 20 : 0,
 	baseRadius: 3,
-	baseBorder: 20
+	baseBorder: 20,
+	containerWidth: width,
+	switchWidth: width / 2.7
 };
 
 export default metrics;
