@@ -1,4 +1,5 @@
 import { StyleSheet, Dimensions } from 'react-native';
+import fonts from '../../../styles/fonts';
 
 const { width } = Dimensions.get('window');
 
@@ -13,6 +14,9 @@ const styles = StyleSheet.create({
 		height: 54,
 		justifyContent: 'center',
 		alignItems: 'center'
+	},
+	text: {
+		fontSize: fonts.title
 	}
 });
 
