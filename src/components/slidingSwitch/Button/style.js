@@ -1,26 +1,15 @@
-import colors from '../../../styles/colors';
 import { StyleSheet, Dimensions } from 'react-native';
 
+const { width } = Dimensions.get('window');
+
 const metrics = {
-	widhtButton: Dimensions.get('window') - 30,
-	heightButton: 55
+	containerWidth: width - 30
 };
 
 const styles = StyleSheet.create({
-	container: {
-		width: metrics.widhtButton / 3,
-		height: 55,
-		flexDirection: 'row',
-		backgroundColor: colors.colorBackground,
-		alignItems: 'center',
-		justifyContent: 'center',
-		borderWidth: 1,
-		borderColor: colors.colorBackground,
-		borderRadius: 27.5
-	},
 	button: {
 		flex: 1,
-		width: metrics.widhtButton,
+		width: metrics.containerWidth / 3,
 		height: 54,
 		justifyContent: 'center',
 		alignItems: 'center'
