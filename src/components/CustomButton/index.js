@@ -1,9 +1,9 @@
-/* eslint-disable react/prop-types */
 import React from 'react';
 import {Text, TouchableOpacity} from 'react-native';
+import PropTypes from 'prop-types';
 import styles from './styles';
 
-export default props => {
+const CustomButton = props => {
   const {text, onPressButton} = props;
 
   return (
@@ -12,3 +12,10 @@ export default props => {
     </TouchableOpacity>
   );
 };
+
+CustomButton.propTypes = {
+  text: PropTypes.string.isRequired,
+  onPressButton: PropTypes.func.isRequired,
+};
+
+export default CustomButton;
