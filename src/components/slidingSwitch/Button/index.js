@@ -1,14 +1,15 @@
 import React from 'react';
-import { View, TouchableOpacity, Text } from 'react-native';
 import PropTypes from 'prop-types';
-
+import { View, TouchableOpacity, Text } from 'react-native';
 import styles from './style';
 
 const Button = (props) => {
+	const { name } = props;
+
 	return (
 		<View>
 			<TouchableOpacity style={styles.button}>
-				<Text style={styles.text}>{props.name}</Text>
+				<Text style={styles.text}>{name}</Text>
 			</TouchableOpacity>
 		</View>
 	);
