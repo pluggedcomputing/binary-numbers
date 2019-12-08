@@ -7,7 +7,7 @@ import styles from './style';
 const Button = (props) => {
 	return (
 		<View>
-			<TouchableOpacity style={styles.Button}>
+			<TouchableOpacity style={styles.button}>
 				<Text style={styles.text}>{props.name}</Text>
 			</TouchableOpacity>
 		</View>
