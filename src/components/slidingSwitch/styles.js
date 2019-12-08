@@ -12,8 +12,8 @@ const styles = StyleSheet.create({
 		borderWidth: 1,
 		borderColor: colors.colorBackground,
 		borderRadius: 27.5,
-		marginRight: metrics.fullMargin,
-		marginLeft: metrics.fullMargin,
+		marginRight: metrics.basePaddingsliding,
+		marginLeft: metrics.basePaddingsliding,
 		marginTop: metrics.baseMargin
 	},
 	switcher: {
@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
 		height: 53,
 		alignItems: 'center',
 		justifyContent: 'center',
-		width: metrics.switchWidth,
+		width: metrics.baseSliding,
 		elevation: 4,
 		shadowOpacity: 0.31,
 		shadowRadius: 10,
