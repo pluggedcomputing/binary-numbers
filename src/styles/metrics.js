@@ -8,6 +8,8 @@ const metrics = {
 	doubleBaseMargin: 20,
 	fullMargin: 60,
 	basePadding: 8,
+	baseSliding: '52%',
+	basePaddingsliding: '16%',
 	screenWidth: width < height ? width : height,
 	screenHeight: width < height ? height : width,
 	tabBarHeight: 54,
