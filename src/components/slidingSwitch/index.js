@@ -13,7 +13,6 @@ export default class index extends Component {
 		this.state = {
 			position: new Animated.Value(0),
 			currentStatus: props.currentStatus,
-			isComponentReady: false,
 			posValue: 0,
 			selectedPosition: 0,
 			duration: 100,
@@ -38,7 +37,7 @@ export default class index extends Component {
 			},
 
 			onPanResponderMove: (evt, gestureState) => {
-				let finalValue = gestureState.dx + this.state.posValue;
+				const finalValue = gestureState.dx + this.state.posValue;
 				if (finalValue >= 0 && finalValue <= this.state.thresholdDistance) {
 					this.state.position.setValue(this.state.posValue + gestureState.dx);
 				}
@@ -47,7 +46,7 @@ export default class index extends Component {
 			onPanResponderTerminationRequest: () => true,
 
 			onPanResponderRelease: (evt, gestureState) => {
-				let finalValue = gestureState.dx + this.state.posValue;
+				const finalValue = gestureState.dx + this.state.posValue;
 				this.isParentScrollDisabled = false;
 				this.props.disableScroll(true);
 				if (gestureState.dx > 0) {
@@ -96,10 +95,7 @@ export default class index extends Component {
 		}).start();
 		setTimeout(() => {
 			this.setState({
-				posValue:
-					Platform.OS === 'ios'
-						? this.state.mainWidth - this.state.switcherWidth
-						: this.state.mainWidth - this.state.switcherWidth - 2,
+				posValue: Platform.OS === 'ios' ? -2 : 0,
 				selectedPosition: 0
 			});
 		}, 100);
@@ -127,19 +123,14 @@ export default class index extends Component {
 	};
 
 	getStatus = () => {
-		switch (this.state.selectedPosition) {
-			case 0:
-				return 'Login';
-			case 1:
-				return 'Criar';
-		}
+		return this.state.selectedPosition == 0 ? 'Login' : 'Criar';
 	};
 
 	render() {
 		return (
 			<View style={styles.container}>
 				<Button name="Login" onPress={this.inStartLogin} />
-				<Button name="Criar" />
+				<Button name="Criar" onPress={this.inStartCreate} />
 				<Animated.View
 					{...this._panResponder.panHandlers}
 					style={[
