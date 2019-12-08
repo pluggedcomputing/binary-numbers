@@ -39,7 +39,7 @@ export default class index extends Component {
 			onPanResponderMove: (evt, gestureState) => {
 				const finalValue = gestureState.dx + this.state.posValue;
 				if (finalValue >= 0 && finalValue <= this.state.thresholdDistance) {
-					this.state.position.setValue(this.state.posValue + gestureState.dx);
+					this.state.position.setValue(finalValue);
 				}
 			},
 
