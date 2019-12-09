@@ -7,6 +7,13 @@ const styles = StyleSheet.create({
 		backgroundColor: colors.colorPrimary,
 		width: metrics.screenWidth,
 		height: metrics.screenHeight
+	},
+	containerImage: {
+		width: 150,
+		height: 150,
+		alignSelf: 'center',
+		marginTop: '10%',
+		marginBottom: '10%'
 	}
 });
 
