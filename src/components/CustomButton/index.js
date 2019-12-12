@@ -4,10 +4,10 @@ import PropTypes from 'prop-types';
 import styles from './styles';
 
 const CustomButton = props => {
-  const {text, onPressButton} = props;
+  const {text} = props;
 
   return (
-    <TouchableOpacity style={styles.container} onPress={onPressButton}>
+    <TouchableOpacity {...props} style={styles.container}>
       <Text style={styles.textButton}>{text}</Text>
     </TouchableOpacity>
   );
@@ -15,7 +15,6 @@ const CustomButton = props => {
 
 CustomButton.propTypes = {
   text: PropTypes.string.isRequired,
-  onPressButton: PropTypes.func.isRequired,
 };
 
 export default CustomButton;

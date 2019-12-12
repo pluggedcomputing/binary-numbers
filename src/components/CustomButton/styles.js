@@ -1,6 +1,8 @@
 import {StyleSheet} from 'react-native';
 import {colors, metrics, fonts} from '../../styles';
 
+const widthPorcentage = 0.4;
+
 const styles = StyleSheet.create({
   container: {
     borderRadius: 5,
@@ -8,7 +10,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: colors.colorPrimary,
     height: 65,
-    width: metrics.screenWidth / 2,
+    width: metrics.screenWidth * widthPorcentage,
   },
   textButton: {
     fontSize: fonts.title,
