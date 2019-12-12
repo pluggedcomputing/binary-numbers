@@ -18,6 +18,13 @@
     "no-unused-expressions": ["error", {"allowTaggedTemplates": true}],
     "no-use-before-define": ["error", {"variables": false}],
     "react/jsx-closing-bracket-location": 0,
-    "react/jsx-one-expression-per-line": 0
+    "react/jsx-one-expression-per-line": 0,
+    "react/jsx-props-no-spreading": [
+      {
+        "html": "ignore",
+        "custom": "ignore",
+        "explicitSpread": "ignore"
+      }
+    ]
   }
 }
