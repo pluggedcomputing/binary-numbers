@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { View, Animated, Platform, Dimensions, PanResponder } from 'react-native';
 import styles from './styles';
-import Button from './Button/index';
+import SlidingButton from '../SlidingButton/index';
 import PropTypes from 'prop-types';
 import metrics from '../../styles/metrics';
 
@@ -129,8 +129,8 @@ export default class index extends Component {
 	render() {
 		return (
 			<View style={styles.container}>
-				<Button name="Login" onPress={this.inStartLogin} />
-				<Button name="Criar" onPress={this.inStartCreate} />
+				<SlidingButton name="Login" onPress={this.inStartLogin} />
+				<SlidingButton name="Criar" onPress={this.inStartCreate} />
 				<Animated.View
 					{...this._panResponder.panHandlers}
 					style={[
@@ -140,7 +140,7 @@ export default class index extends Component {
 						}
 					]}
 				>
-					<Button name={this.getStatus()} />
+					<SlidingButton name={this.getStatus()} />
 				</Animated.View>
 			</View>
 		);

@@ -19,7 +19,7 @@ const metrics = {
 	baseBorder: 20,
 	containerWidth: width,
 	switchWidth: width / 2.7,
-	inputWidth: '80%'
+	inputWidth: '60%'
 };
 
 export default metrics;

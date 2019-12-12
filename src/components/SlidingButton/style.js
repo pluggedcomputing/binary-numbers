@@ -1,5 +1,5 @@
 import { StyleSheet, Dimensions } from 'react-native';
-import fonts from '../../../styles/fonts';
+import fonts from '../../styles/fonts';
 
 const { width } = Dimensions.get('window');
 
