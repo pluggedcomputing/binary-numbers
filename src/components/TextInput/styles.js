@@ -1,32 +1,35 @@
 import { StyleSheet } from 'react-native';
-import { colors, metrics, fonts } from '../../styles';
+import { colors, metrics } from '../../styles';
 
 const styles = StyleSheet.create({
 	containerBase: {
 		backgroundColor: colors.colorBackground,
-		paddingTop: 15,
-		paddingBottom: 5,
+		width: 300,
+		height: 70,
+		paddingTop: 5,
+		paddingBottom: 2,
+		paddingLeft: 20,
+		paddingRight: 20,
 		alignItems: 'center',
-		justifyContent: 'center'
+		justifyContent: 'space-around'
 	},
 	container: {
-		width: '85%',
-		alignItems: 'center',
-		justifyContent: 'center',
+		width: '100%',
 		flexDirection: 'row',
-		height: 40
+		height: 35,
+		justifyContent: 'space-around'
 	},
 	containerInput: {
-		backgroundColor: colors.colorBackground,
-		width: metrics.inputWidth,
-		paddingLeft: metrics.doubleBaseMargin,
-		fontSize: fonts.input,
-		color: colors.textColorPrimary
+		width: metrics.inputWidth
 	},
 	lineBottom: {
 		borderBottomColor: '#000000',
 		borderBottomWidth: 2,
-		width: '80%'
+		width: 250
+	},
+	icon: {
+		paddingBottom: 0,
+		alignItems: 'stretch'
 	}
 });
 
