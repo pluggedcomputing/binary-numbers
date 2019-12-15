@@ -1,19 +1,15 @@
-import { StyleSheet } from 'react-native';
-import colors from '../../styles/colors';
-import metrics from '../../styles/metrics';
+import { StyleSheet, Dimensions } from 'react-native';
+import {colors, metrics} from '../../styles';
 
 const styles = StyleSheet.create({
 	container: {
-		backgroundColor: colors.colorPrimary,
-		width: metrics.screenWidth,
-		height: metrics.screenHeight
-	},
-	containerImage: {
-		width: 150,
-		height: 150,
-		alignSelf: 'center',
-		marginTop: '10%',
-		marginBottom: '10%'
+		backgroundColor: colors.colorBackground,
+		width: metrics.containerBase / 3 * 2,
+		justifyContent: 'center',
+		alignItems: 'center',
+		borderWidth: 1,
+		borderColor: colors.colorBackground,
+		borderRadius: metrics.radiusBorder,	
 	}
 });
 
