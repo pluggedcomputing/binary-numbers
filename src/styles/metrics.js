@@ -18,6 +18,7 @@ const metrics = {
 	baseRadius: 3,
 	baseBorder: 20,
 	containerWidth: width,
+	containerBase: width - 45,
 	switchWidth: width / 2.7,
 	inputWidth: '65%'
 };
