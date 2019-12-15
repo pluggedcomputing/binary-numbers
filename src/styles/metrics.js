@@ -16,6 +16,7 @@ const metrics = {
 	navBarHeight: Platform.OS === 'ios' ? 64 : 54,
 	statusBarHeight: Platform.OS === 'ios' ? 20 : 0,
 	baseRadius: 3,
+	radiusBorder: 27.5,
 	baseBorder: 20,
 	containerWidth: width,
 	containerBase: width - 45,
