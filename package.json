@@ -13,7 +13,8 @@
     "prop-types": "^15.7.2",
     "react": "16.9.0",
     "react-native": "0.61.5",
-    "react-native-vector-icons": "^6.6.0"
+    "react-native-vector-icons": "^6.6.0",
+    "react-navigation-stack": "^1.10.3"
   },
   "devDependencies": {
     "@babel/core": "^7.7.4",
