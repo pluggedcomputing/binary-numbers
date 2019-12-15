@@ -1,10 +1,10 @@
 import { StyleSheet, Dimensions } from 'react-native';
-import {fonts, metrics } from '../../styles/fonts';
+import {fonts, metrics } from '../../styles';
 
 const styles = StyleSheet.create({
 	button: {
 		flex: 1,
-		width: metrics.containerWidth / 3,
+		width: metrics.containerBase / 3,
 		height: 54,
 		justifyContent: 'center',
 		alignItems: 'center'
