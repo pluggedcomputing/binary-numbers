@@ -4,7 +4,7 @@ import fonts from '../../styles/fonts';
 const { width } = Dimensions.get('window');
 
 const metrics = {
-	containerWidth: width - 30
+	containerWidth: width - 45
 };
 
 const styles = StyleSheet.create({
