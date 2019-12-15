@@ -4,20 +4,18 @@ import { colors, metrics } from '../../styles';
 const styles = StyleSheet.create({
 	containerBase: {
 		backgroundColor: colors.colorBackground,
-		width: 300,
+		width: metrics.baseSliding,
 		height: 70,
-		paddingTop: 5,
+		paddingTop: metrics.baseMargin,
 		paddingBottom: 2,
-		paddingLeft: 20,
-		paddingRight: 20,
-		alignItems: 'center',
-		justifyContent: 'space-around'
+		paddingRight: metrics.baseMargin,
+		paddingLeft: metrics.baseMargin,
+		alignItems: 'center'
 	},
 	container: {
 		width: '100%',
 		flexDirection: 'row',
-		height: 35,
-		justifyContent: 'space-around'
+		height: 35
 	},
 	containerInput: {
 		width: metrics.inputWidth
@@ -25,11 +23,11 @@ const styles = StyleSheet.create({
 	lineBottom: {
 		borderBottomColor: '#000000',
 		borderBottomWidth: 2,
-		width: 250
+		width: '100%'
 	},
 	icon: {
 		paddingBottom: 0,
-		alignItems: 'stretch'
+		paddingLeft: metrics.smallMargin
 	}
 });
 
