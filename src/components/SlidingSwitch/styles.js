@@ -4,29 +4,24 @@ import metrics from '../../styles/metrics';
 
 const styles = StyleSheet.create({
 	container: {
-		height: 55,
+		height: 55,		
 		flexDirection: 'row',
 		backgroundColor: colors.colorBackground,
 		alignItems: 'center',
 		justifyContent: 'space-around',
 		borderWidth: 1,
 		borderColor: colors.colorBackground,
-		borderRadius: 27.5,
-		marginRight: metrics.basePaddingsliding,
-		marginLeft: metrics.basePaddingsliding,
+		borderRadius: 27.5,		
 		marginTop: metrics.baseMargin
 	},
 	switcher: {
 		flexDirection: 'row',
-		position: 'absolute',
-		top: 0,
-		left: 0,
+		position: 'absolute',		
 		backgroundColor: colors.colorPrimary,
 		borderRadius: 28,
 		height: 53,
 		alignItems: 'center',
-		justifyContent: 'center',
-		width: metrics.baseSliding,
+		justifyContent: 'center',		
 		elevation: 4,
 		shadowOpacity: 0.31,
 		shadowRadius: 10,
