@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { View, Animated, Platform, Dimensions, PanResponder } from 'react-native';
+import PropTypes from 'prop-types';
 import styles from './styles';
 import SlidingButton from '../SlidingButton/index';
-import PropTypes from 'prop-types';
 import metrics from '../../styles/metrics';
 
 const { width } = Dimensions.get('window');
@@ -17,7 +17,7 @@ export default class index extends Component {
 			selectedPosition: 0,
 			duration: 100,
 			mainWidth: width - 30,
-			switcherWidth: metrics.containerWidth / 1.7,
+			switcherWidth: metrics.containerWidth / 3,
 			thresholdDistance: metrics.containerWidth / 3
 		};
 		this.isParentScrollDisabled = false;
@@ -31,16 +31,15 @@ export default class index extends Component {
 			onPanResponderGrant: () => {
 				// disable parent scroll if slider is inside a scrollview
 				if (!this.isParentScrollDisabled) {
-					this.props.disableScroll(false);
 					this.isParentScrollDisabled = true;
 				}
 			},
 
 			onPanResponderMove: (evt, gestureState) => {
-				const finalValue = gestureState.dx + this.state.posValue;
-				if (finalValue >= 0 && finalValue <= this.state.thresholdDistance) {
+				const finalValue = gestureState.dx + this.state.posValue;				
+				if (finalValue >= 0 && finalValue <= this.state.thresholdDistance) {					
 					this.state.position.setValue(finalValue);
-				}
+				}				
 			},
 
 			onPanResponderTerminationRequest: () => true,
@@ -48,19 +47,16 @@ export default class index extends Component {
 			onPanResponderRelease: (evt, gestureState) => {
 				const finalValue = gestureState.dx + this.state.posValue;
 				this.isParentScrollDisabled = false;
-				this.props.disableScroll(true);
 				if (gestureState.dx > 0) {
 					if (finalValue >= 0 && finalValue <= this.state.thresholdDistance / 2) {
 						this.inStartLogin();
 					} else {
 						this.inStartCreate();
 					}
+				} else if (finalValue >= -100 && finalValue <= this.state.thresholdDistance / 2) {
+					this.inStartLogin();
 				} else {
-					if (finalValue >= -100 && finalValue <= this.state.thresholdDistance / 2) {
-						this.inStartLogin();
-					} else {
-						this.inStartCreate();
-					}
+					this.inStartCreate();
 				}
 			},
 
@@ -104,18 +100,12 @@ export default class index extends Component {
 
 	inStartCreate = () => {
 		Animated.timing(this.state.position, {
-			toValue:
-				Platform.OS === 'ios'
-					? this.state.mainWidth - this.state.switcherWidth
-					: this.state.mainWidth - this.state.switcherWidth - 2,
+			toValue: this.state.mainWidth / 2 - this.state.switcherWidth / 2,
 			duration: this.state.duration
 		}).start();
 		setTimeout(() => {
 			this.setState({
-				posValue:
-					Platform.OS === 'ios'
-						? this.state.mainWidth - this.state.switcherWidth
-						: this.state.mainWidth - this.state.switcherWidth - 2,
+				posValue: this.state.mainWidth / 2 - this.state.switcherWidth / 2,
 				selectedPosition: 1
 			});
 		}, 100);
@@ -148,7 +138,6 @@ export default class index extends Component {
 }
 
 index.propTypes = {
-	disableScroll: PropTypes.func,
 	onStatusChanged: PropTypes.func
 };
 
