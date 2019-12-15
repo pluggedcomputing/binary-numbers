@@ -1,5 +1,5 @@
-import { StyleSheet, Dimensions } from 'react-native';
-import {colors, metrics} from '../../styles';
+import { StyleSheet } from 'react-native';
+import { colors, metrics } from '../../styles';
 
 const styles = StyleSheet.create({
 	container: {
@@ -9,7 +9,7 @@ const styles = StyleSheet.create({
 		alignItems: 'center',
 		borderWidth: 1,
 		borderColor: colors.colorBackground,
-		borderRadius: metrics.radiusBorder,	
+		borderRadius: metrics.baseRadius
 	}
 });
 
