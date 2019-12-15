@@ -11,7 +11,7 @@ const styles = StyleSheet.create({
 		justifyContent: 'space-around',
 		borderWidth: 1,
 		borderColor: colors.colorBackground,
-		borderRadius: 27.5,		
+		borderRadius: metrics.radiusBorder,		
 		marginTop: metrics.baseMargin,
 		marginBottom: metrics.fullMargin
 	},
