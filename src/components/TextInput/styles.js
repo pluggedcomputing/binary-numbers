@@ -1,5 +1,5 @@
 import { StyleSheet } from 'react-native';
-import { colors, metrics } from '../../styles';
+import { colors, metrics, fonts } from '../../styles';
 
 const styles = StyleSheet.create({
 	containerBase: {
@@ -15,10 +15,12 @@ const styles = StyleSheet.create({
 	container: {
 		width: '100%',
 		flexDirection: 'row',
-		height: 35
+		height: 40
 	},
 	containerInput: {
-		width: metrics.inputWidth
+		width: metrics.inputWidth,
+		color: colors.colorText,
+		fontSize: fonts.input
 	},
 	lineBottom: {
 		borderBottomColor: '#000000',
