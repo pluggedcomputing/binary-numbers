@@ -6,7 +6,8 @@ const styles = StyleSheet.create({
 	container: {
 		backgroundColor: colors.colorPrimary,
 		width: metrics.screenWidth,
-		height: metrics.screenHeight
+		height: metrics.screenHeight,
+		alignItems: 'center'
 	},
 	containerImage: {
 		width: 150,
