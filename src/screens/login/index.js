@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { View, Image } from 'react-native';
 import SlidingSwitch from '../../components/SlidingSwitch/index';
-import TextInput from '../../components/TextInput/index';
 import style from './styles';
 
 export default class index extends Component {
@@ -19,8 +18,6 @@ export default class index extends Component {
 					}}
 					isParentScrollEnabled={false}
 				/>
-				<TextInput type="email" placeholder="chico" sizeIcon={32} />
-				<TextInput type="password" placeholder="chico" sizeIcon={32} />
 			</View>
 		);
 	}
