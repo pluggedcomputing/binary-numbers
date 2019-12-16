@@ -69,7 +69,6 @@ export default class index extends Component {
 					/>
 					{this.getViewIconPassword(type)}
 				</View>
-				<Text style={styles.lineBottom} />
 			</View>
 		);
 	}
