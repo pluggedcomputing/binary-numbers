@@ -7,12 +7,17 @@ import style from './styles';
 export default function Login() {
 	return (
 		<View style={style.containerBase}>
-			<View style={style.container}>
+			<View style={style.containerBody}>
 				<TextInput type="email" placeholder="Email" />
 				<Text style={style.lineBottom} />
 				<TextInput type="password" placeholder="Senha" />
 			</View>
 			<CustomButton text="ENTRAR" />
+			<View style={style.containeFooter}>
+				<Text style={style.linerWriteSmall} />
+				<Text style={style.Text}>OU</Text>
+				<Text style={style.linerWriteSmall} />
+			</View>
 		</View>
 	);
 }
