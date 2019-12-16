@@ -1,5 +1,5 @@
 import { StyleSheet } from 'react-native';
-import { colors, metrics } from '../../styles';
+import { colors, metrics, general } from '../../styles';
 
 const styles = StyleSheet.create({
 	containerBase: {
@@ -7,7 +7,7 @@ const styles = StyleSheet.create({
 		position: 'relative',
 		padding: 140
 	},
-	container: {
+	containerBody: {
 		position: 'absolute',
 		backgroundColor: colors.colorBackground,
 		width: metrics.containerBase / 1.2,
@@ -24,6 +24,24 @@ const styles = StyleSheet.create({
 		borderBottomColor: '#000000',
 		borderBottomWidth: 2,
 		width: '90%'
+	},
+	linerWriteSmall: {
+		marginBottom: 20,
+		borderBottomColor: '#FFFFFF',
+		borderBottomWidth: 2,
+		width: 120
+	},
+	Text: {
+		...general.sectionTitle,
+		color: colors.colorBackground,
+		marginTop: metrics.baseMargin
+	},
+	containeFooter: {
+		marginTop: metrics.baseMargin,
+		width: 400,
+		flexDirection: 'row',
+		justifyContent: 'space-around',
+		alignItems: 'center'
 	}
 });
 
