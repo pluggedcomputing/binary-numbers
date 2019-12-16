@@ -1,5 +1,5 @@
 import { StyleSheet } from 'react-native';
-import { colors, metrics, general } from '../../styles';
+import { colors, metrics, general, fonts } from '../../styles';
 
 const styles = StyleSheet.create({
 	containerBase: {
@@ -29,19 +29,30 @@ const styles = StyleSheet.create({
 		marginBottom: 20,
 		borderBottomColor: '#FFFFFF',
 		borderBottomWidth: 2,
-		width: 120
+		width: 110
 	},
-	Text: {
+	text: {
 		...general.sectionTitle,
 		color: colors.colorBackground,
 		marginTop: metrics.baseMargin
 	},
 	containeFooter: {
 		marginTop: metrics.baseMargin,
-		width: 400,
+		width: 340,
 		flexDirection: 'row',
 		justifyContent: 'space-around',
 		alignItems: 'center'
+	},
+	textButton: {
+		color: colors.colorBackground,
+		textDecorationLine: 'underline',
+		fontSize: fonts.title,
+		fontWeight: 'bold'
+	},
+	buttonAltenative: {
+		alignItems: 'center',
+		width: 200,
+		marginTop: 20
 	}
 });
 
