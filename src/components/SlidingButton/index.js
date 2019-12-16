@@ -8,7 +8,7 @@ const Button = (props) => {
 
 	return (
 		<View>
-			<TouchableOpacity style={styles.button}>
+			<TouchableOpacity {...props} style={styles.button}>
 				<Text style={styles.text}>{name}</Text>
 			</TouchableOpacity>
 		</View>
@@ -16,8 +16,7 @@ const Button = (props) => {
 };
 
 Button.propTypes = {
-	name: PropTypes.string,
-	onPress: PropTypes.func
+	name: PropTypes.string
 };
 
 export default Button;
