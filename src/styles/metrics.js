@@ -6,6 +6,7 @@ const metrics = {
 	smallMargin: 5,
 	baseMargin: 10,
 	doubleBaseMargin: 20,
+	halfMargin: 30,
 	fullMargin: 60,
 	basePadding: 8,
 	baseSliding: '90%',
