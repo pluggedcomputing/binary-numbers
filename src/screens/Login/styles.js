@@ -4,9 +4,11 @@ import { colors, metrics } from '../../styles';
 const styles = StyleSheet.create({
 	containerBase: {
 		alignItems: 'center',
-		justifyContent: 'flex-end'
+		position: 'relative',
+		padding: 140
 	},
 	container: {
+		position: 'absolute',
 		backgroundColor: colors.colorBackground,
 		width: metrics.containerBase / 1.2,
 		justifyContent: 'center',
@@ -15,9 +17,7 @@ const styles = StyleSheet.create({
 		borderColor: colors.colorBackground,
 		borderRadius: metrics.baseRadius,
 		paddingTop: metrics.doubleBaseMargin,
-		paddingBottom: metrics.doubleBaseMargin,
-		position: 'relative',
-		marginBottom: 45
+		paddingBottom: metrics.doubleBaseMargin
 	},
 	lineBottom: {
 		marginBottom: 20,
