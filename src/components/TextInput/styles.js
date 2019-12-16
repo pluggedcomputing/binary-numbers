@@ -5,9 +5,6 @@ const styles = StyleSheet.create({
 	containerBase: {
 		backgroundColor: colors.colorBackground,
 		width: metrics.baseSliding,
-		height: 70,
-		paddingTop: metrics.baseMargin,
-		paddingBottom: 2,
 		paddingRight: metrics.baseMargin,
 		paddingLeft: metrics.baseMargin,
 		alignItems: 'center'
@@ -25,7 +22,7 @@ const styles = StyleSheet.create({
 	lineBottom: {
 		borderBottomColor: '#000000',
 		borderBottomWidth: 2,
-		width: '100%'
+		width: '80%'
 	},
 	icon: {
 		paddingBottom: 0,
