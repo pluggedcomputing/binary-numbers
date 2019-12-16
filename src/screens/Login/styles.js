@@ -8,7 +8,7 @@ const styles = StyleSheet.create({
 	},
 	container: {
 		backgroundColor: colors.colorBackground,
-		width: metrics.containerBase / 3 * 2,
+		width: metrics.containerBase / 1.2,
 		justifyContent: 'center',
 		alignItems: 'center',
 		borderWidth: 1,
@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
 		marginBottom: 20,
 		borderBottomColor: '#000000',
 		borderBottomWidth: 2,
-		width: '80%'
+		width: '90%'
 	}
 });
 
