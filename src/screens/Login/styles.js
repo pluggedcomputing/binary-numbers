@@ -9,7 +9,9 @@ const styles = StyleSheet.create({
 		alignItems: 'center',
 		borderWidth: 1,
 		borderColor: colors.colorBackground,
-		borderRadius: metrics.baseRadius
+		borderRadius: metrics.baseRadius,
+		paddingTop: metrics.doubleBaseMargin,
+		paddingBottom: metrics.doubleBaseMargin
 	}
 });
 
