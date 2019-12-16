@@ -19,12 +19,6 @@ const styles = StyleSheet.create({
 		color: colors.colorText,
 		fontSize: fonts.input
 	},
-	lineBottom: {
-		marginBottom: 20,
-		borderBottomColor: '#000000',
-		borderBottomWidth: 2,
-		width: '80%'
-	},
 	icon: {
 		paddingBottom: 0,
 		paddingLeft: metrics.smallMargin
