@@ -36,10 +36,10 @@ export default class index extends Component {
 			},
 
 			onPanResponderMove: (evt, gestureState) => {
-				const finalValue = gestureState.dx + this.state.posValue;				
-				if (finalValue >= 0 && finalValue <= this.state.thresholdDistance) {					
+				const finalValue = gestureState.dx + this.state.posValue;
+				if (finalValue >= 0 && finalValue <= this.state.thresholdDistance) {
 					this.state.position.setValue(finalValue);
-				}				
+				}
 			},
 
 			onPanResponderTerminationRequest: () => true,
@@ -100,12 +100,12 @@ export default class index extends Component {
 
 	inStartCreate = () => {
 		Animated.timing(this.state.position, {
-			toValue: this.state.mainWidth / 2 - this.state.switcherWidth / 2,
+			toValue: this.state.mainWidth / 1.6 - this.state.switcherWidth / 1.58,
 			duration: this.state.duration
 		}).start();
 		setTimeout(() => {
 			this.setState({
-				posValue: this.state.mainWidth / 2 - this.state.switcherWidth / 2,
+				posValue: this.state.mainWidth / 1.6 - this.state.switcherWidth / 1.58,
 				selectedPosition: 1
 			});
 		}, 100);
