@@ -5,7 +5,7 @@ const styles = StyleSheet.create({
 	containerBase: {
 		alignItems: 'center',
 		position: 'relative',
-		padding: 140
+		padding: 160
 	},
 	containerBody: {
 		position: 'absolute',
@@ -16,8 +16,8 @@ const styles = StyleSheet.create({
 		borderWidth: 1,
 		borderColor: colors.colorBackground,
 		borderRadius: metrics.baseRadius,
-		paddingTop: metrics.doubleBaseMargin,
-		paddingBottom: metrics.doubleBaseMargin
+		paddingTop: metrics.halfMargin,
+		paddingBottom: metrics.halfMargin
 	},
 	lineBottom: {
 		marginBottom: 20,
