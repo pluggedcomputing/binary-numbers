@@ -12,6 +12,12 @@ const styles = StyleSheet.create({
 		borderRadius: metrics.baseRadius,
 		paddingTop: metrics.doubleBaseMargin,
 		paddingBottom: metrics.doubleBaseMargin
+	},
+	lineBottom: {
+		marginBottom: 20,
+		borderBottomColor: '#000000',
+		borderBottomWidth: 2,
+		width: '80%'
 	}
 });
 
