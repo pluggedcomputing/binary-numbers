@@ -2,6 +2,10 @@ import { StyleSheet } from 'react-native';
 import { colors, metrics } from '../../styles';
 
 const styles = StyleSheet.create({
+	containerBase: {
+		alignItems: 'center',
+		justifyContent: 'flex-end'
+	},
 	container: {
 		backgroundColor: colors.colorBackground,
 		width: metrics.containerBase / 3 * 2,
@@ -11,7 +15,9 @@ const styles = StyleSheet.create({
 		borderColor: colors.colorBackground,
 		borderRadius: metrics.baseRadius,
 		paddingTop: metrics.doubleBaseMargin,
-		paddingBottom: metrics.doubleBaseMargin
+		paddingBottom: metrics.doubleBaseMargin,
+		position: 'relative',
+		marginBottom: 45
 	},
 	lineBottom: {
 		marginBottom: 20,
