@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
 		marginBottom: 20,
 		borderBottomColor: '#000000',
 		borderBottomWidth: 2,
-		width: '90%'
+		width: '80%'
 	},
 	linerWriteSmall: {
 		marginBottom: 20,
