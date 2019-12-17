@@ -9,11 +9,11 @@ const styles = StyleSheet.create({
 		alignItems: 'center'
 	},
 	containerImage: {
-		width: 150,
-		height: 150,
+		width: '38%',
+		height: '20%',
 		alignSelf: 'center',
 		marginTop: '10%',
-		marginBottom: '10%'
+		marginBottom: '5%'
 	}
 });
 
