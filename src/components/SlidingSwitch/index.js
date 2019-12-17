@@ -15,7 +15,7 @@ export default class index extends Component {
 			currentStatus: props.currentStatus,
 			posValue: 0,
 			selectedPosition: 0,
-			duration: 100,
+			duration: 30,
 			mainWidth: width - 30,
 			switcherWidth: metrics.containerWidth / 3,
 			thresholdDistance: metrics.containerWidth / 3
