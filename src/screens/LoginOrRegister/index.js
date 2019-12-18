@@ -20,6 +20,8 @@ export default class index extends Component {
 	};
 
 	render() {
+		const { status } = this.state;
+
 		return (
 			<LinearGradient colors={[ '#757de8', colors.colorPrimary, '#002984' ]} style={style.container}>
 				<ScrollView
@@ -31,11 +33,11 @@ export default class index extends Component {
 					<SlidingSwitch
 						onStatusChanged={(text) => {
 							this.setState({ status: text });
-							console.log('Change Status ', this.state.status, 'text ', text);
+							console.log('Change Status ', status, 'text ', text);
 						}}
 						isParentScrollEnabled={false}
 					/>
-					{this.getContainerLoginOrRegister(this.state.status)}
+					{this.getContainerLoginOrRegister(status)}
 				</ScrollView>
 			</LinearGradient>
 		);
