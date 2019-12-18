@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, TextInput, Text } from 'react-native';
+import { View, TextInput } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import PropTypes from 'prop-types';
 import styles from './styles';
@@ -20,11 +20,7 @@ export default class index extends Component {
 		if (type === 'password') {
 			return 'lock';
 		}
-
-		if (type === 'email') {
-			return 'email';
-		}
-		return 'glass';
+		return type;
 	};
 
 	setPassword = (type) => {
