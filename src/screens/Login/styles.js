@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
 		marginBottom: 20,
 		borderBottomColor: '#FFFFFF',
 		borderBottomWidth: 2,
-		width: 110
+		width: 90
 	},
 	text: {
 		...general.sectionTitle,
@@ -38,7 +38,7 @@ const styles = StyleSheet.create({
 	},
 	containeFooter: {
 		marginTop: metrics.baseMargin,
-		width: 340,
+		width: metrics.containerBase / 1.2,
 		flexDirection: 'row',
 		justifyContent: 'space-around',
 		alignItems: 'center'
@@ -52,14 +52,14 @@ const styles = StyleSheet.create({
 	buttonAltenative: {
 		alignItems: 'center',
 		width: 200,
-		marginTop: 20
+		marginTop: 30
 	},
 	containerButtonsOptions: {
 		width: 120,
 		flexDirection: 'row',
 		alignItems: 'center',
 		justifyContent: 'space-around',
-		marginTop: metrics.smallMargin
+		marginTop: metrics.baseMargin
 	}
 });
 
