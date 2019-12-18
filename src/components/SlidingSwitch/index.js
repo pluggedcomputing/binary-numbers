@@ -10,9 +10,10 @@ const { width } = Dimensions.get('window');
 export default class index extends Component {
 	constructor(props) {
 		super(props);
+
 		this.state = {
 			position: new Animated.Value(0),
-			currentStatus: props.currentStatus,
+			currentStatus: 'login',
 			posValue: 0,
 			selectedPosition: 0,
 			duration: 30,
@@ -22,7 +23,8 @@ export default class index extends Component {
 		};
 		this.isParentScrollDisabled = false;
 
-		this._panResponder = PanResponder.create({
+		// method responsible for moving the button
+		this.panResponder = PanResponder.create({
 			onStartShouldSetPanResponder: () => true,
 			onStartShouldSetPanResponderCapture: () => true,
 			onMoveShouldSetPanResponder: () => true,
@@ -34,26 +36,28 @@ export default class index extends Component {
 					this.isParentScrollDisabled = true;
 				}
 			},
-
+			// check dimensions max and min of slider button
 			onPanResponderMove: (evt, gestureState) => {
-				const finalValue = gestureState.dx + this.state.posValue;
-				if (finalValue >= 0 && finalValue <= this.state.thresholdDistance) {
-					this.state.position.setValue(finalValue);
+				const { posValue, thresholdDistance, position } = this.state;
+				const finalValue = gestureState.dx + posValue;
+				if (finalValue >= 0 && finalValue <= thresholdDistance) {
+					position.setValue(finalValue);
 				}
 			},
 
 			onPanResponderTerminationRequest: () => true,
-
+			// responsible for returning the animation to its original position
 			onPanResponderRelease: (evt, gestureState) => {
-				const finalValue = gestureState.dx + this.state.posValue;
+				const { posValue, thresholdDistance } = this.state;
+				const finalValue = gestureState.dx + posValue;
 				this.isParentScrollDisabled = false;
 				if (gestureState.dx > 0) {
-					if (finalValue >= 0 && finalValue <= this.state.thresholdDistance / 2) {
+					if (finalValue >= 0 && finalValue <= thresholdDistance / 2) {
 						this.inStartLogin();
 					} else {
 						this.inStartCreate();
 					}
-				} else if (finalValue >= -100 && finalValue <= this.state.thresholdDistance / 2) {
+				} else if (finalValue >= -100 && finalValue <= thresholdDistance / 2) {
 					this.inStartLogin();
 				} else {
 					this.inStartCreate();
@@ -73,21 +77,17 @@ export default class index extends Component {
 		this.moveInitialState();
 	}
 
+	// start position of button slider
 	moveInitialState = () => {
-		switch (this.state.currentStatus) {
-			case 'login':
-				this.inStartLogin();
-				break;
-			case 'criar':
-				this.inStartCreate();
-				break;
-		}
+		const { currentStatus } = this.state;
+		return currentStatus === 'login' ? this.inStartLogin() : this.inStartCreate();
 	};
 
 	inStartLogin = () => {
-		Animated.timing(this.state.position, {
+		const { position, duration } = this.state;
+		Animated.timing(position, {
 			toValue: Platform.OS === 'ios' ? -2 : 0,
-			duration: this.state.duration
+			duration
 		}).start();
 		setTimeout(() => {
 			this.setState({
@@ -99,13 +99,14 @@ export default class index extends Component {
 	};
 
 	inStartCreate = () => {
-		Animated.timing(this.state.position, {
-			toValue: this.state.mainWidth / 1.7 - this.state.switcherWidth / 2.3,
-			duration: this.state.duration
+		const { position, duration, mainWidth, switcherWidth } = this.state;
+		Animated.timing(position, {
+			toValue: mainWidth / 1.7 - switcherWidth / 2.3,
+			duration
 		}).start();
 		setTimeout(() => {
 			this.setState({
-				posValue: this.state.mainWidth / 1.7 - this.state.switcherWidth / 2.3,
+				posValue: mainWidth / 1.7 - switcherWidth / 2.3,
 				selectedPosition: 1
 			});
 		}, 100);
@@ -113,20 +114,23 @@ export default class index extends Component {
 	};
 
 	getStatus = () => {
-		return this.state.selectedPosition == 0 ? 'Login' : 'Criar';
+		const { selectedPosition } = this.state;
+		return selectedPosition === 0 ? 'Login' : 'Criar';
 	};
 
 	render() {
+		const { position } = this.state;
+
 		return (
 			<View style={styles.container}>
 				<SlidingButton name="Login" onPress={this.inStartLogin} />
 				<SlidingButton name="Criar" onPress={this.inStartCreate} />
 				<Animated.View
-					{...this._panResponder.panHandlers}
+					{...this.panResponder.panHandlers}
 					style={[
 						styles.switcher,
 						{
-							transform: [ { translateX: this.state.position } ]
+							transform: [ { translateX: position } ]
 						}
 					]}
 				>
@@ -138,9 +142,5 @@ export default class index extends Component {
 }
 
 index.propTypes = {
-	onStatusChanged: PropTypes.func
-};
-
-index.defaultProps = {
-	disableSwitch: true
+	onStatusChanged: PropTypes.func.isRequired
 };
