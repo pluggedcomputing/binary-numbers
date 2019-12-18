@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
 		width: 140,
 		height: 140,
 		alignSelf: 'center',
-		marginTop: 45
+		marginTop: 60
 	}
 });
 
