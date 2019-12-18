@@ -100,12 +100,12 @@ export default class index extends Component {
 
 	inStartCreate = () => {
 		Animated.timing(this.state.position, {
-			toValue: this.state.mainWidth / 1.6 - this.state.switcherWidth / 1.58,
+			toValue: this.state.mainWidth / 1.7 - this.state.switcherWidth / 2.3,
 			duration: this.state.duration
 		}).start();
 		setTimeout(() => {
 			this.setState({
-				posValue: this.state.mainWidth / 1.6 - this.state.switcherWidth / 1.58,
+				posValue: this.state.mainWidth / 1.7 - this.state.switcherWidth / 2.3,
 				selectedPosition: 1
 			});
 		}, 100);
