@@ -12,8 +12,8 @@ const styles = StyleSheet.create({
 		borderWidth: 1,
 		borderColor: colors.colorBackground,
 		borderRadius: metrics.radiusBorder,
-		marginTop: metrics.baseMargin,
-		marginBottom: metrics.halfMargin
+		marginTop: metrics.halfMargin,
+		marginBottom: metrics.doubleBaseMargin
 	},
 	switcher: {
 		flexDirection: 'row',
