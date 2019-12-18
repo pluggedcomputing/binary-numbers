@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
 	containerBody: {
 		position: 'absolute',
 		backgroundColor: colors.colorBackground,
-		width: metrics.containerBase / 1.2,
+		width: metrics.containerBase / 1.1,
 		justifyContent: 'center',
 		alignItems: 'center',
 		borderWidth: 1,
@@ -38,7 +38,7 @@ const styles = StyleSheet.create({
 	},
 	containeFooter: {
 		marginTop: metrics.baseMargin,
-		width: metrics.containerBase / 1.2,
+		width: metrics.containerBase / 1.1,
 		flexDirection: 'row',
 		justifyContent: 'space-around',
 		alignItems: 'center'

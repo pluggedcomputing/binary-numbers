@@ -4,7 +4,7 @@ import { colors, metrics } from '../../styles';
 const styles = StyleSheet.create({
 	container: {
 		height: 55,
-		width: metrics.containerBase / 1.2,
+		width: metrics.containerBase / 1.1,
 		flexDirection: 'row',
 		backgroundColor: colors.colorBackground,
 		alignItems: 'center',

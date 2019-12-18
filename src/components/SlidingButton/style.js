@@ -4,7 +4,7 @@ import { fonts, metrics } from '../../styles';
 const styles = StyleSheet.create({
 	button: {
 		flex: 1,
-		width: metrics.containerBase / 2.4,
+		width: metrics.containerBase / 2.2,
 		height: 54,
 		justifyContent: 'center',
 		alignItems: 'center'
