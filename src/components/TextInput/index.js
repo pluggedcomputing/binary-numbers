@@ -7,11 +7,11 @@ import styles from './styles';
 export default class index extends Component {
 	constructor(props) {
 		super(props);
-		const { type } = props;
+		const { type } = this.props;
 		const password = type === 'password';
 		this.state = {
 			secondIcon: 'eye',
-			sizeIconPassword: 32,
+			sizeIcon: 32,
 			secureInput: password
 		};
 	}
@@ -29,15 +29,15 @@ export default class index extends Component {
 	};
 
 	getViewIconPassword = (type) => {
-		const { secondIcon, sizeIconPassword } = this.state;
+		const { secondIcon, sizeIcon } = this.state;
 		let view = <Icon />;
 		if (type === 'password') {
 			view = (
 				<Icon
 					name={secondIcon}
-					size={sizeIconPassword}
+					size={sizeIcon}
 					style={styles.icon}
-					onPress={(type) => console.log('trocar icone')}
+					onPress={(type) => console.log('trocar icone', type)}
 				/>
 			);
 		}
@@ -45,11 +45,8 @@ export default class index extends Component {
 	};
 
 	render() {
-		let { type, placeholder, sizeIcon } = this.props;
-
-		if (!sizeIcon) {
-			sizeIcon = 32;
-		}
+		const { type, placeholder } = this.props;
+		const { sizeIcon } = this.state;
 
 		return (
 			<View style={styles.containerBase}>
@@ -70,8 +67,7 @@ export default class index extends Component {
 	}
 }
 
-index.propstype = {
+index.propTypes = {
 	type: PropTypes.string.isRequired,
-	sizeIcon: PropTypes.number,
-	secureInput: PropTypes.bool
+	placeholder: PropTypes.string.isRequired
 };
