@@ -29,10 +29,6 @@ export default class index extends Component {
 				>
 					<Image style={style.containerImage} source={require('../../assets/logo/icon.png')} />
 					<SlidingSwitch
-						currentStatus="login"
-						disableScroll={(value) => {
-							console.log('scrollEnabled', value);
-						}}
 						onStatusChanged={(text) => {
 							this.setState({ status: text });
 							console.log('Change Status ', this.state.status, 'text ', text);
