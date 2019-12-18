@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Image, Text } from 'react-native';
+import { Image, Text } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 import SlidingSwitch from '../../components/SlidingSwitch/index';
 import Login from '../Login';
@@ -20,23 +20,21 @@ export default class index extends Component {
 
 	render() {
 		return (
-			<View>
-				<LinearGradient colors={[ '#757de8', colors.colorPrimary, '#002984' ]} style={style.container}>
-					<Image style={style.containerImage} source={require('../../assets/logo/icon.png')} />
-					<SlidingSwitch
-						currentStatus="login"
-						disableScroll={(value) => {
-							console.log('scrollEnabled', value);
-						}}
-						onStatusChanged={(text) => {
-							this.setState({ status: text });
-							console.log('Change Status ', this.state.status, 'text ', text);
-						}}
-						isParentScrollEnabled={false}
-					/>
-					{this.get(this.state.status)}
-				</LinearGradient>
-			</View>
+			<LinearGradient colors={[ '#757de8', colors.colorPrimary, '#002984' ]} style={style.container}>
+				<Image style={style.containerImage} source={require('../../assets/logo/icon.png')} />
+				<SlidingSwitch
+					currentStatus="login"
+					disableScroll={(value) => {
+						console.log('scrollEnabled', value);
+					}}
+					onStatusChanged={(text) => {
+						this.setState({ status: text });
+						console.log('Change Status ', this.state.status, 'text ', text);
+					}}
+					isParentScrollEnabled={false}
+				/>
+				{this.get(this.state.status)}
+			</LinearGradient>
 		);
 	}
 }
