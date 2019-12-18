@@ -8,7 +8,7 @@ export default function Register() {
 	return (
 		<View style={style.containerBase}>
 			<View style={style.containerBody}>
-				<TextInput type="account" placeholder="Nome" sizeIcon={32} />
+				<TextInput type="account" placeholder="Nome" />
 				<Text style={style.lineBottom} />
 				<TextInput type="email" placeholder="Email" />
 				<Text style={style.lineBottom} />
