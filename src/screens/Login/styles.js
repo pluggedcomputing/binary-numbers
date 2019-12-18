@@ -5,7 +5,7 @@ const styles = StyleSheet.create({
 	containerBase: {
 		alignItems: 'center',
 		position: 'relative',
-		padding: 160
+		paddingTop: 160
 	},
 	containerBody: {
 		position: 'absolute',
@@ -53,6 +53,13 @@ const styles = StyleSheet.create({
 		alignItems: 'center',
 		width: 200,
 		marginTop: 20
+	},
+	containerButtonsOptions: {
+		width: 120,
+		flexDirection: 'row',
+		alignItems: 'center',
+		justifyContent: 'space-around',
+		marginTop: metrics.smallMargin
 	}
 });
 
