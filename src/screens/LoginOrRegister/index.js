@@ -21,7 +21,11 @@ export default class index extends Component {
 	render() {
 		return (
 			<LinearGradient colors={[ '#757de8', colors.colorPrimary, '#002984' ]} style={style.container}>
-				<ScrollView showsVerticalScrollIndicator={false} style={{ width: '100%' }}>
+				<ScrollView
+					contentContainerStyle={{ justifyContent: 'center', alignItems: 'center' }}
+					style={{ width: '100%', marginBottom: 30 }}
+					showsVerticalScrollIndicator={false}
+				>
 					<Image style={style.containerImage} source={require('../../assets/logo/icon.png')} />
 					<SlidingSwitch
 						currentStatus="login"
