@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import { ScrollView, Image, Text } from 'react-native';
+import { ScrollView, Image } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 import SlidingSwitch from '../../components/SlidingSwitch/index';
 import Login from '../Login';
+import Register from '../Register';
 import style from './styles';
 import { colors } from '../../styles';
 
@@ -15,7 +16,7 @@ export default class index extends Component {
 	}
 
 	getContainerLoginOrRegister = (status) => {
-		return status === 'login' ? <Login /> : <Text>Criar</Text>;
+		return status === 'login' ? <Login /> : <Register />;
 	};
 
 	render() {
