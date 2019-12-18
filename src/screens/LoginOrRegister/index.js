@@ -14,7 +14,7 @@ export default class index extends Component {
 		};
 	}
 
-	get = (status) => {
+	getContainerLoginOrRegister = (status) => {
 		return status === 'login' ? <Login /> : <Text>Criar</Text>;
 	};
 
@@ -38,7 +38,7 @@ export default class index extends Component {
 						}}
 						isParentScrollEnabled={false}
 					/>
-					{this.get(this.state.status)}
+					{this.getContainerLoginOrRegister(this.state.status)}
 				</ScrollView>
 			</LinearGradient>
 		);
