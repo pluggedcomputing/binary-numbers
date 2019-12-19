@@ -1,5 +1,6 @@
+/* eslint-disable no-console */
 import React, {useState} from 'react';
-import {Image,View,TouchableOpacity } from 'react-native';
+import {Image,View,TouchableOpacity} from 'react-native';
 import PropTypes from 'prop-types';
 import styles from './styles';
 
@@ -9,22 +10,25 @@ import arrowPrevious from './assets/previous.png'
 const CustomBackground = props => {
   const { content } = props;
   const [page, setPage] = useState(0)
+  const sizeContent = content.lenght - 1
 
-  function nextPage () {
-    setPage(page + 1)
+  function nextPage() {
+    if (page < sizeContent) {
+      setPage(page + 1)
+    }
   }
-  function previousPage () {
-    setPage(page - 1)
+  function previousPage() {
+    if(page > sizeContent){
+      setPage(page - 1)
+    }
   }
 
   return (
 
     <View style={styles.container}>
-      <View style={[styles.container, {transform: [{ rotate: '-5deg'}]}]}>
-
-        {content[page]}
-
-        <View style={[styles.loadButton, {transform: [{ rotate: '5deg'}]}]}>
+      <View style={[styles.container, { transform: [{ rotate: '-5deg' }] }]}>
+        <View style={[styles.contain,{ transform: [{ rotate: '5deg' }] }]}>{content[page]}</View>
+        <View style={[styles.loadButton, { transform: [{ rotate: '5deg' }] }]}>
           <TouchableOpacity
             onPress={previousPage}
             style={styles.button}
@@ -45,7 +49,7 @@ const CustomBackground = props => {
 };
 
 CustomBackground.propTypes = {
-  content: PropTypes.func.isRequired,
+  content: PropTypes.arrayOf(PropTypes.element).isRequired,
 };
 
 export default CustomBackground;

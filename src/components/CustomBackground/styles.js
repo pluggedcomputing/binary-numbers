@@ -21,6 +21,7 @@ const styles = StyleSheet.create({
   },
   loadButton: {
     flexDirection: 'row',
+    position: 'absolute'
   },
   nextIcon: {
     width: 20,
@@ -35,7 +36,11 @@ const styles = StyleSheet.create({
   button: {
     alignItems: 'center',
     marginHorizontal: 4,
+    marginTop: 160
   },
+  contain: {
+    resizeMode: 'contain'
+  }
 });
 
 export default styles;

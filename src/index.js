@@ -1,12 +1,10 @@
 import React from 'react';
-import { View, Text, Image} from 'react-native';
+import { View, Text} from 'react-native';
 
 import CustomBackground from "./components/CustomBackground"
 
-import image from './components/CustomBackground/assets/next.png'
-
 const App = () => {
-  const jsx = [<Text>Muito</Text>,<Text>Crazy</Text>, <Image source={image} />]
+  const jsx = [<Text>Muito</Text>,<Text>olaaa</Text>,<Text>Crazy</Text>]
   return (
     <View>
       <CustomBackground content={jsx} />
