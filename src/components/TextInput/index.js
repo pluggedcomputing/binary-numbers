@@ -12,7 +12,9 @@ export default class index extends Component {
 		this.state = {
 			secondIcon: 'eye',
 			sizeIcon: 32,
-			secureInput: password
+			secureInput: password,
+			eye: 'eye',
+			eyeOff: 'eye-off'
 		};
 	}
 
@@ -23,9 +25,13 @@ export default class index extends Component {
 		return type;
 	};
 
-	setPassword = (type) => {
-		const secureInput = type === 'password';
-		this.setState({ secureInput });
+	changeStatusSecureText = () => {
+		const { secureInput, eye, eyeOff } = this.state;
+		if (secureInput) {
+			this.setState({ secureInput: false, secondIcon: eyeOff });
+		} else {
+			this.setState({ secureInput: true, secondIcon: eye });
+		}
 	};
 
 	getViewIconPassword = (type) => {
@@ -37,7 +43,7 @@ export default class index extends Component {
 					name={secondIcon}
 					size={sizeIcon}
 					style={styles.icon}
-					onPress={(type) => console.log('trocar icone', type)}
+					onPress={(secureInput) => this.changeStatusSecureText(secureInput)}
 				/>
 			);
 		}
@@ -46,7 +52,7 @@ export default class index extends Component {
 
 	render() {
 		const { type, placeholder } = this.props;
-		const { sizeIcon } = this.state;
+		const { sizeIcon, secureInput } = this.state;
 
 		return (
 			<View style={styles.containerBase}>
@@ -54,7 +60,7 @@ export default class index extends Component {
 					<Icon name={this.getIconByType(type)} size={sizeIcon} style={styles.icon} />
 					<TextInput
 						{...this.props}
-						secureTextEntry={this.state.secureInput}
+						secureTextEntry={secureInput}
 						style={styles.containerInput}
 						placeholder={placeholder}
 						onChangeText={(text) => console.log('pegar input ', text)}
