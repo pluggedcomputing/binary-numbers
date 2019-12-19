@@ -19,7 +19,7 @@ export default class index extends Component {
 			duration: 30,
 			mainWidth: width - 30,
 			switcherWidth: metrics.containerWidth / 3,
-			thresholdDistance: metrics.containerWidth / 3
+			thresholdDistance: metrics.containerBase / 2.2
 		};
 		this.isParentScrollDisabled = false;
 
