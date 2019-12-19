@@ -74,12 +74,12 @@ export default class index extends Component {
 	}
 
 	componentDidMount() {
-		this.moveInitialState();
+		const { currentStatus } = this.state;
+		this.moveInitialState(currentStatus);
 	}
 
 	// start position of button slider
-	moveInitialState = () => {
-		const { currentStatus } = this.state;
+	moveInitialState = (currentStatus) => {
 		return currentStatus === 'login' ? this.inStartLogin() : this.inStartCreate();
 	};
 
@@ -113,13 +113,12 @@ export default class index extends Component {
 		this.props.onStatusChanged('criar');
 	};
 
-	getStatus = () => {
-		const { selectedPosition } = this.state;
+	getStatus = (selectedPosition) => {
 		return selectedPosition === 0 ? 'Login' : 'Criar';
 	};
 
 	render() {
-		const { position } = this.state;
+		const { position, selectedPosition } = this.state;
 
 		return (
 			<View style={styles.container}>
@@ -134,7 +133,7 @@ export default class index extends Component {
 						}
 					]}
 				>
-					<SlidingButton name={this.getStatus()} />
+					<SlidingButton name={this.getStatus(selectedPosition)} />
 				</Animated.View>
 			</View>
 		);
