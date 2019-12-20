@@ -8,7 +8,7 @@ import logo from './assets/logo.png';
 import { colors } from '../../styles';
 
 export default function ScreenOn() {
-  const jsx = [<Text>ola</Text>]
+  const jsx = [<Text>eu to doido</Text>,<Text>ola</Text>,<Text>turn down for whatch</Text>, <Text>oiiii</Text>]
   return (
     <SafeAreaView style={styles.container}>
       <LinearGradient colors={['#757de8', colors.colorPrimary, '#002984']} style={styles.container}>
@@ -21,7 +21,7 @@ export default function ScreenOn() {
         <View style={styles.loadText}>
           <Text style={styles.text}>
             Desenvolvido e mantido pela equipe do
-              projeto Computação Desplugada da UFPB
+            projeto Computação Desplugada da UFPB
                         campus iV
               Todos os Direitos Reservados
                          ©2019

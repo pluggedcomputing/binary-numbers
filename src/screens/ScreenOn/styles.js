@@ -19,6 +19,7 @@ const styles = StyleSheet.create({
   loadText:{
     flexDirection: 'row',
     position: 'absolute',
+    paddingHorizontal: 20,
     left: 0,
     right: 0,
     bottom: 0
@@ -26,7 +27,6 @@ const styles = StyleSheet.create({
   text: {
     fontSize: fonts.regular,
     fontWeight: 'bold',
-    textTransform: 'uppercase',
     color: colors.colorBackground,
     margin: metrics.doubleBaseMargin,
     textAlign: 'center'

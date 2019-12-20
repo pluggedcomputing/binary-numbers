@@ -1,3 +1,4 @@
+/* eslint-disable no-restricted-syntax */
 /* eslint-disable no-console */
 import React, {useState} from 'react';
 import {Image,View,TouchableOpacity} from 'react-native';
@@ -10,15 +11,16 @@ import arrowPrevious from './assets/previous.png'
 const CustomBackground = props => {
   const { content } = props;
   const [page, setPage] = useState(0)
-  const sizeContent = content.lenght - 1
 
   function nextPage() {
-    if (page < sizeContent) {
-      setPage(page + 1)
+    for (const object in content) {
+      if(page < object){
+        setPage(page + 1)
+      }
     }
   }
   function previousPage() {
-    if(page > sizeContent){
+    if(page !== 0){
       setPage(page - 1)
     }
   }
@@ -26,9 +28,9 @@ const CustomBackground = props => {
   return (
 
     <View style={styles.container}>
-      <View style={[styles.container, { transform: [{ rotate: '-5deg' }] }]}>
-        <View style={[styles.contain,{ transform: [{ rotate: '5deg' }] }]}>{content[page]}</View>
-        <View style={[styles.loadButton, { transform: [{ rotate: '5deg' }] }]}>
+      <View style={[styles.container, { transform: [{ rotate: '-3deg' }] }]}>
+        <View style={[styles.contain,{ transform: [{ rotate: '3deg' }] }]}>{content[page]}</View>
+        <View style={[styles.loadButton, { transform: [{ rotate: '3deg' }] }]}>
           <TouchableOpacity
             onPress={previousPage}
             style={styles.button}
