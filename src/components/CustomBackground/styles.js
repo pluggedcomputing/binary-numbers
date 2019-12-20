@@ -3,6 +3,8 @@ import {colors, metrics} from '../../styles';
 
 const WIDHT_PORCENTAGE = 0.9
 const CENTER_PORCENTAGE = 0.6
+const MARGINLEFT_TEXT = 260
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -34,12 +36,16 @@ const styles = StyleSheet.create({
     resizeMode: 'contain',
   },
   button: {
-    alignItems: 'center',
     marginHorizontal: 4,
     marginTop: 160
   },
   contain: {
-    resizeMode: 'contain'
+    resizeMode: 'contain',
+  },
+  textCont: {
+    marginLeft: MARGINLEFT_TEXT,
+    alignContent: 'flex-end',
+    marginTop: 160
   }
 });
 

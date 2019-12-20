@@ -8,7 +8,7 @@ import logo from './assets/logo.png';
 import { colors } from '../../styles';
 
 export default function ScreenOn() {
-  const jsx = [<Text>eu to doido</Text>,<Text>ola</Text>,<Text>turn down for whatch</Text>, <Text>oiiii</Text>]
+  const jsx = [<Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. </Text>,<Text>ola</Text>,<Text>turn down for whatch</Text>, <Text>oiiii</Text>]
   return (
     <SafeAreaView style={styles.container}>
       <LinearGradient colors={['#757de8', colors.colorPrimary, '#002984']} style={styles.container}>
