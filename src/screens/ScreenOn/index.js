@@ -1,5 +1,5 @@
 import React from 'react';
-import { Image, Text } from 'react-native';
+import { Image, Text, SafeAreaView, StatusBar, View} from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 import styles from './styles';
 import CustomBackground from "../../components/CustomBackground";
@@ -10,9 +10,24 @@ import { colors } from '../../styles';
 export default function ScreenOn() {
   const jsx = [<Text>ola</Text>]
   return (
-    <LinearGradient colors={['#757de8', colors.colorPrimary, '#002984']} styles={styles.container}>
-      <Image style={styles.logo} source={logo} />
-      <CustomBackground content={jsx} />
-    </LinearGradient>
+    <SafeAreaView style={styles.container}>
+      <LinearGradient colors={['#757de8', colors.colorPrimary, '#002984']} style={styles.container}>
+        <StatusBar
+          barStyle="light-content"
+          backgroundColor={styles.container.backgroundColor}
+        />
+        <Image source={logo} style={styles.logo} />
+        <CustomBackground content={jsx} />
+        <View style={styles.loadText}>
+          <Text style={styles.text}>
+            Desenvolvido e mantido pela equipe do
+              projeto Computação Desplugada da UFPB
+                        campus iV
+              Todos os Direitos Reservados
+                         ©2019
+          </Text>
+        </View>
+      </LinearGradient>
+    </SafeAreaView>
   );
 }
