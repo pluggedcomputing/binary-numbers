@@ -1,22 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { View, TouchableOpacity, Text } from 'react-native';
+import {View, TouchableOpacity, Text} from 'react-native';
 import styles from './style';
 
-const Button = (props) => {
-	const { name } = props;
+const Button = props => {
+  const {name} = props;
 
-	return (
-		<View>
-			<TouchableOpacity {...props} style={styles.button}>
-				<Text style={styles.text}>{name}</Text>
-			</TouchableOpacity>
-		</View>
-	);
+  return (
+    <View>
+      <TouchableOpacity {...props} style={styles.button}>
+        <Text style={styles.text}>{name}</Text>
+      </TouchableOpacity>
+    </View>
+  );
 };
 
 Button.propTypes = {
-	name: PropTypes.string
+  name: PropTypes.string,
 };
 
 export default Button;
