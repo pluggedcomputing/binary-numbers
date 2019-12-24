@@ -44,9 +44,10 @@ const styles = StyleSheet.create({
     resizeMode: 'contain',
   },
   textCont: {
-    marginLeft: MARGINLEFT_TEXT,
     alignContent: 'flex-end',
-    marginTop: 160
+    fontWeight: 'bold',
+    marginTop: 160,
+    marginLeft: MARGINLEFT_TEXT,
   }
 });
 
