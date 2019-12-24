@@ -3,13 +3,14 @@ import {colors, metrics} from '../../styles';
 
 const WIDHT_PORCENTAGE = 0.9
 const CENTER_PORCENTAGE = 0.6
-const MARGINLEFT_TEXT = 260
 const HEIGHT_PORCENTAGE = 0.333
+const MARGINLEFT_TEXT = 260
+
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    borderWidth: 0.5,
+    borderWidth: 1.5,
     borderRadius: 5,
     borderColor: colors.textcolorPrimary,
     justifyContent: 'center',
