@@ -4,6 +4,7 @@ import {colors, metrics} from '../../styles';
 const WIDHT_PORCENTAGE = 0.9
 const CENTER_PORCENTAGE = 0.6
 const MARGINLEFT_TEXT = 260
+const HEIGHT_PORCENTAGE = 0.333
 
 const styles = StyleSheet.create({
   container: {
@@ -14,7 +15,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: colors.textColorSecondary,
-    height: metrics.screenHeight/3,
+    height: metrics.screenHeight * HEIGHT_PORCENTAGE,
     width: metrics.screenWidth * WIDHT_PORCENTAGE,
     marginLeft: 20,
     marginRight: 20,
