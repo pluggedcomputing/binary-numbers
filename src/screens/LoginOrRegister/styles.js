@@ -14,6 +14,10 @@ const styles = StyleSheet.create({
     alignSelf: 'center',
     marginTop: 60,
   },
+  containerScrollView: {
+    width: '100%',
+    marginBottom: 30,
+  },
 });
 
 export default styles;
