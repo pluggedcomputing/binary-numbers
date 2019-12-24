@@ -17,8 +17,6 @@ const styles = StyleSheet.create({
     backgroundColor: colors.textColorSecondary,
     height: metrics.screenHeight * HEIGHT_PORCENTAGE,
     width: metrics.screenWidth * WIDHT_PORCENTAGE,
-    marginLeft: 20,
-    marginRight: 20,
     marginTop: metrics.screenWidth * CENTER_PORCENTAGE,
     position: "absolute"
   },
