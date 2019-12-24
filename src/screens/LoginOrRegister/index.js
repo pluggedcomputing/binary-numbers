@@ -31,7 +31,7 @@ export default class index extends Component {
             justifyContent: 'center',
             alignItems: 'center',
           }}
-          style={{width: '100%', marginBottom: 30}}
+          style={style.containerScrollView}
           showsVerticalScrollIndicator={false}>
           <Image
             style={style.containerImage}
