@@ -13,16 +13,15 @@ import arrowPrevious from './assets/previous.png'
 const CustomBackground = props => {
   const { content } = props;
   const [page, setPage] = useState(0)
+  const contentSize = content.length - 1
 
   function nextPage() {
-    for (const object in content) {
-      if (page < object) {
-        setPage(page + 1)
-      }
+    if(page < contentSize) {
+      setPage(page+1)
     }
   }
   function previousPage() {
-    if (page !== 0) {
+    if (page > 0) {
       setPage(page - 1)
     }
   }
