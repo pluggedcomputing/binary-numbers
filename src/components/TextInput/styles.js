@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
   },
   containerInput: {
     width: metrics.inputWidth,
-    color: colors.colorText,
+    color: colors.textColorPrimary,
     fontSize: fonts.input,
   },
   icon: {

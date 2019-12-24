@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
   },
   lineBottom: {
     marginBottom: 20,
-    borderBottomColor: '#000000',
+    borderBottomColor: colors.textColorPrimary,
     borderBottomWidth: 2,
     width: '80%',
   },
