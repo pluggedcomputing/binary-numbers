@@ -39,6 +39,7 @@ const styles = StyleSheet.create({
     marginTop: 160
   },
   contain: {
+    padding: 10,
     resizeMode: 'contain',
   },
   textCont: {
