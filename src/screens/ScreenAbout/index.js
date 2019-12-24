@@ -14,7 +14,7 @@ export default function ScreenOn() {
       <LinearGradient colors={[colors.colorPrimary, '#242F68']} style={styles.container}>
         <StatusBar
           barStyle="light-content"
-          backgroundColor={styles.container.backgroundColor}
+          backgroundColor={colors.colorPrimary}
         />
         <Image source={logo} style={styles.logo} />
         <CustomBackground content={jsx} />
