@@ -11,7 +11,7 @@ export default function ScreenOn() {
   const jsx = [<Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. </Text>,<Text>ola</Text>,<Text>turn down for whatch</Text>, <Text>oiiii</Text>]
   return (
     <SafeAreaView style={styles.container}>
-      <LinearGradient colors={['#757de8', colors.colorPrimary, '#002984']} style={styles.container}>
+      <LinearGradient colors={[colors.colorPrimary, '#242F68']} style={styles.container}>
         <StatusBar
           barStyle="light-content"
           backgroundColor={styles.container.backgroundColor}
