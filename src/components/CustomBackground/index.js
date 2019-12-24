@@ -47,7 +47,7 @@ const CustomBackground = props => {
           </TouchableOpacity>
         </View>
       </View>
-      <View><Text style={styles.textCont}>{page + 1}/{content.lenght}</Text></View>
+      <View><Text style={styles.textCont}>{page + 1}/{content. length}</Text></View>
     </View>
 
   );
