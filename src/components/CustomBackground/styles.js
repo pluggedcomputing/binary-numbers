@@ -25,12 +25,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     position: 'absolute'
   },
-  nextIcon: {
-    width: 20,
-    height:20,
-    resizeMode: 'contain'
-  },
-  previousIcon: {
+  Icon: {
     width: 20,
     height:20,
     resizeMode: 'contain',

@@ -36,13 +36,13 @@ const CustomBackground = props => {
             onPress={previousPage}
             style={styles.button}
           >
-            <Image style={styles.previousIcon} source={arrowPrevious} />
+            <Image style={styles.Icon} source={arrowPrevious} />
           </TouchableOpacity>
           <TouchableOpacity
             onPress={nextPage}
             style={styles.button}
           >
-            <Image style={styles.nextIcon} source={arrowNext} />
+            <Image style={styles.Icon} source={arrowNext} />
           </TouchableOpacity>
         </View>
       </View>
