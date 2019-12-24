@@ -124,8 +124,8 @@ export default class index extends Component {
 
     return (
       <View style={styles.container}>
-        <SlidingButton name="Login" onPress={this.inStartLogin} />
-        <SlidingButton name="Criar" onPress={this.inStartCreate} />
+        <SlidingButton text="Login" onPress={this.inStartLogin} />
+        <SlidingButton text="Criar" onPress={this.inStartCreate} />
         <Animated.View
           {...this.panResponder.panHandlers}
           style={[
@@ -134,7 +134,7 @@ export default class index extends Component {
               transform: [{translateX: position}],
             },
           ]}>
-          <SlidingButton name={this.getStatus(selectedPosition)} />
+          <SlidingButton text={this.getStatus(selectedPosition)} />
         </Animated.View>
       </View>
     );

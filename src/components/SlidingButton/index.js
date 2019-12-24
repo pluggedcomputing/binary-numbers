@@ -4,19 +4,19 @@ import {View, TouchableOpacity, Text} from 'react-native';
 import styles from './style';
 
 const SlidingButton = props => {
-  const {name} = props;
+  const {text} = props;
 
   return (
     <View>
       <TouchableOpacity {...props} style={styles.button}>
-        <Text style={styles.text}>{name}</Text>
+        <Text style={styles.text}>{text}</Text>
       </TouchableOpacity>
     </View>
   );
 };
 
 SlidingButton.propTypes = {
-  name: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
 };
 
 export default SlidingButton;
