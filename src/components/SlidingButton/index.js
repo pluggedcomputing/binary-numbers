@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import {View, TouchableOpacity, Text} from 'react-native';
 import styles from './style';
 
-const Button = props => {
+const SlidingButton = props => {
   const {name} = props;
 
   return (
@@ -15,8 +15,8 @@ const Button = props => {
   );
 };
 
-Button.propTypes = {
-  name: PropTypes.string,
+SlidingButton.propTypes = {
+  name: PropTypes.string.isRequired,
 };
 
-export default Button;
+export default SlidingButton;
