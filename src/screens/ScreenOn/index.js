@@ -4,7 +4,7 @@ import LinearGradient from 'react-native-linear-gradient';
 import styles from './styles';
 import CustomBackground from "../../components/CustomBackground";
 
-import logo from './assets/logo.png';
+import logo from '../../assets/logo.png';
 import { colors } from '../../styles';
 
 export default function ScreenOn() {
