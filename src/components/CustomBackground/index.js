@@ -6,8 +6,8 @@ import PropTypes from 'prop-types';
 
 import styles from './styles';
 
-import arrowNext from './assets/next.png'
-import arrowPrevious from './assets/previous.png'
+import arrowNext from '../../assets/next.png'
+import arrowPrevious from '../../assets/previous.png'
 
 
 const CustomBackground = props => {
