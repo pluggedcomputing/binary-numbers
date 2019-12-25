@@ -1,6 +1,6 @@
 import React from 'react';
 import {View, Text} from 'react-native';
-import TextInput from '../../components/TextInput';
+import CustomTextInput from '../../components/CustomTextInput/index';
 import CustomButton from '../../components/CustomButton';
 import style from './styles';
 
@@ -8,13 +8,13 @@ export default function Register() {
   return (
     <View style={style.containerBase}>
       <View style={style.containerBody}>
-        <TextInput type="account" placeholder="Nome" />
+        <CustomTextInput icon="account" placeholder="Nome" />
         <Text style={style.lineBottom} />
-        <TextInput type="email" placeholder="Email" />
+        <CustomTextInput icon="email" placeholder="Email" />
         <Text style={style.lineBottom} />
-        <TextInput type="password" placeholder="Senha" />
+        <CustomTextInput icon="lock" placeholder="Senha" secure />
         <Text style={style.lineBottom} />
-        <TextInput type="password" placeholder="Confirmação" />
+        <CustomTextInput icon="lock" placeholder="Confirmação" secure />
       </View>
       <CustomButton text="CADASTRAR" />
     </View>
