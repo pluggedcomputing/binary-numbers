@@ -1,7 +1,7 @@
 import React from 'react';
 import {View, Text, TouchableOpacity} from 'react-native';
 import {Icon} from 'react-native-elements';
-import TextInput from '../../components/TextInput/index';
+import CustomTextInput from '../../components/CustomTextInput/index';
 import CustomButton from '../../components/CustomButton/index';
 import style from './styles';
 
@@ -9,9 +9,9 @@ export default function Login() {
   return (
     <View style={style.containerBase}>
       <View style={style.containerBody}>
-        <TextInput type="email" placeholder="Email" />
+        <CustomTextInput icon="email" placeholder="Email" />
         <Text style={style.lineBottom} />
-        <TextInput type="password" placeholder="Senha" />
+        <CustomTextInput icon="lock" placeholder="Senha" secure />
       </View>
       <CustomButton text="ENTRAR" />
       <TouchableOpacity style={style.buttonAltenative}>
