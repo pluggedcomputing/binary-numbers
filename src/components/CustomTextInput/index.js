@@ -1,8 +1,9 @@
 import React, {useState} from 'react';
-import {View} from 'react-native';
+import {View, ViewPropTypes} from 'react-native';
 import {TextInput} from 'react-native-paper';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import PropTypes from 'prop-types';
+
 import styles from './styles';
 
 const CustomTextInput = props => {
@@ -24,7 +25,7 @@ const CustomTextInput = props => {
     setIconPassword(valueIcon);
   };
 
-  const getViewPassword = secureEnty => {
+  const getViewIconPassword = secureEnty => {
     let view = <Icon />;
     if (secureEnty) {
       view = (
@@ -42,14 +43,14 @@ const CustomTextInput = props => {
     <View style={[styles.container, style]}>
       <Icon name={icon} size={20} />
       <TextInput {...props} style={styles.input} secureTextEntry={secureText} />
-      {getViewPassword(secure)}
+      {getViewIconPassword(secure)}
     </View>
   );
 };
 
 CustomTextInput.propTypes = {
   icon: PropTypes.string.isRequired,
-  style: PropTypes.shape,
+  style: ViewPropTypes.style,
   secure: PropTypes.bool,
 };
 
