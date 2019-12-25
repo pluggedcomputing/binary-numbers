@@ -20,14 +20,14 @@ const styles = StyleSheet.create({
     paddingBottom: metrics.halfMargin,
   },
   lineBottom: {
-    marginBottom: 20,
-    borderBottomColor: '#000000',
+    marginBottom: 15,
+    borderBottomColor: colors.textColorPrimary,
     borderBottomWidth: 2,
     width: '80%',
   },
   linerWriteSmall: {
     marginBottom: 20,
-    borderBottomColor: '#FFFFFF',
+    borderBottomColor: colors.colorBackground,
     borderBottomWidth: 2,
     width: 90,
   },
