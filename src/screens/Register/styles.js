@@ -5,7 +5,7 @@ const styles = StyleSheet.create({
   containerBase: {
     alignItems: 'center',
     position: 'relative',
-    paddingTop: 320,
+    paddingTop: 325,
   },
   containerBody: {
     position: 'absolute',
