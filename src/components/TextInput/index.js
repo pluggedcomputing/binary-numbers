@@ -1,83 +1,55 @@
-import React, {Component} from 'react';
-import {View, TextInput} from 'react-native';
+import React, {useState} from 'react';
+import {View} from 'react-native';
+import {TextInput} from 'react-native-paper';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import PropTypes from 'prop-types';
 import styles from './styles';
 
-export default class index extends Component {
-  constructor(props) {
-    super(props);
-    const {type} = this.props;
-    const password = type === 'password';
-    this.state = {
-      secondIcon: 'eye',
-      sizeIcon: 32,
-      secureInput: password,
-      eye: 'eye',
-      eyeOff: 'eye-off',
-    };
-  }
+const CusttomTextInput = props => {
+  const {style, icon, secure} = props;
+  const [secureText, setSecureText] = useState(false);
+  const [iconPassword, setIconPassword] = useState('eye');
 
-  getIconByType = type => {
-    if (type === 'password') {
-      return 'lock';
-    }
-    return type;
-  };
-
-  changeStatusSecureText = () => {
-    const {secureInput, eye, eyeOff} = this.state;
-    if (secureInput) {
-      this.setState({secureInput: false, secondIcon: eyeOff});
+  const setSecureTextEnty = () => {
+    const [iconEye, iconEyeOff] = ['eye', 'eye-off'];
+    let [valueSecure, valueIcon] = ['', ''];
+    if (secureText) {
+      valueIcon = iconEye;
+      valueSecure = false;
     } else {
-      this.setState({secureInput: true, secondIcon: eye});
+      valueIcon = iconEyeOff;
+      valueSecure = true;
     }
+    setSecureText(valueSecure);
+    setIconPassword(valueIcon);
   };
 
-  getViewIconPassword = type => {
-    const {secondIcon, sizeIcon} = this.state;
-    let view = <Icon />;
-    if (type === 'password') {
-      view = (
-        <Icon
-          name={secondIcon}
-          size={sizeIcon}
-          style={styles.icon}
-          onPress={secureInput => this.changeStatusSecureText(secureInput)}
-        />
-      );
-    }
-    return view;
+  const getIconPassword = secureEnty => {
+    return secureEnty ? iconPassword : '';
   };
 
-  render() {
-    const {type, placeholder} = this.props;
-    const {sizeIcon, secureInput} = this.state;
-
-    return (
-      <View style={styles.containerBase}>
-        <View style={styles.container}>
-          <Icon
-            name={this.getIconByType(type)}
-            size={sizeIcon}
-            style={styles.icon}
-          />
-          <TextInput
-            {...this.props}
-            secureTextEntry={secureInput}
-            style={styles.containerInput}
-            placeholder={placeholder}
-            onChangeText={text => console.log('pegar input ', text)}
-            value={null}
-          />
-          {this.getViewIconPassword(type)}
-        </View>
-      </View>
-    );
-  }
-}
-
-index.propTypes = {
-  type: PropTypes.string.isRequired,
-  placeholder: PropTypes.string.isRequired,
+  return (
+    <View style={[styles.container, style]}>
+      <Icon name={icon} size={20} />
+      <TextInput {...props} style={styles.input} secureTextEntry={secureText} />
+      <Icon
+        name={getIconPassword(secure)}
+        size={20}
+        onPress={() => setSecureTextEnty()}
+      />
+    </View>
+  );
 };
+
+CusttomTextInput.propTypes = {
+  icon: PropTypes.string.isRequired,
+  style: PropTypes.shape,
+  secure: PropTypes.bool,
+};
+
+CusttomTextInput.defaultProps = {
+  secure: false,
+  style: null,
+};
+
+export default CusttomTextInput;
