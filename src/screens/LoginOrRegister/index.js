@@ -21,10 +21,11 @@ export default class index extends Component {
 
   render() {
     const {status} = this.state;
+    const image = require('../../assets/logo/icon.png');
 
     return (
       <LinearGradient
-        colors={['#757de8', colors.colorPrimary, '#002984']}
+        colors={[colors.colorPrimary, '#242F68']}
         style={style.container}>
         <ScrollView
           contentContainerStyle={{
@@ -33,14 +34,10 @@ export default class index extends Component {
           }}
           style={style.containerScrollView}
           showsVerticalScrollIndicator={false}>
-          <Image
-            style={style.containerImage}
-            source={require('../../assets/logo/icon.png')}
-          />
+          <Image style={style.containerImage} source={image} />
           <SlidingSwitch
             onStatusChanged={text => {
               this.setState({status: text});
-              console.log('Change Status ', status, 'text ', text);
             }}
             isParentScrollEnabled={false}
           />
