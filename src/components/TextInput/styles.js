@@ -2,26 +2,19 @@ import {StyleSheet} from 'react-native';
 import {colors, metrics, fonts} from '../../styles';
 
 const styles = StyleSheet.create({
-  containerBase: {
-    backgroundColor: colors.colorBackground,
-    width: metrics.baseSliding,
-    paddingRight: metrics.baseMargin,
-    paddingLeft: metrics.baseMargin,
-    alignItems: 'center',
-  },
   container: {
-    width: '100%',
     flexDirection: 'row',
     height: 40,
+    width: metrics.baseSliding,
+    alignItems: 'center',
   },
-  containerInput: {
+  input: {
+    height: 45,
     width: metrics.inputWidth,
     color: colors.textColorPrimary,
     fontSize: fonts.input,
-  },
-  icon: {
-    paddingBottom: 0,
-    paddingLeft: metrics.smallMargin,
+    marginLeft: metrics.baseMargin,
+    marginRight: metrics.baseMargin,
   },
 });
 
