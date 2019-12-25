@@ -1,0 +1,61 @@
+import React, {useState} from 'react';
+import {View} from 'react-native';
+import {TextInput} from 'react-native-paper';
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+import PropTypes from 'prop-types';
+import styles from './styles';
+
+const CustomTextInput = props => {
+  const {style, icon, secure} = props;
+  const [secureText, setSecureText] = useState(false);
+  const [iconPassword, setIconPassword] = useState('eye');
+
+  const setSecureTextEnty = () => {
+    const [iconEye, iconEyeOff] = ['eye', 'eye-off'];
+    let [valueSecure, valueIcon] = ['', ''];
+    if (secureText) {
+      valueIcon = iconEye;
+      valueSecure = false;
+    } else {
+      valueIcon = iconEyeOff;
+      valueSecure = true;
+    }
+    setSecureText(valueSecure);
+    setIconPassword(valueIcon);
+  };
+
+  const getViewPassword = secureEnty => {
+    let view = <Icon />;
+    if (secureEnty) {
+      view = (
+        <Icon
+          name={iconPassword}
+          size={20}
+          onPress={() => setSecureTextEnty()}
+        />
+      );
+    }
+    return view;
+  };
+
+  return (
+    <View style={[styles.container, style]}>
+      <Icon name={icon} size={20} />
+      <TextInput {...props} style={styles.input} secureTextEntry={secureText} />
+      {getViewPassword(secure)}
+    </View>
+  );
+};
+
+CustomTextInput.propTypes = {
+  icon: PropTypes.string.isRequired,
+  style: PropTypes.shape,
+  secure: PropTypes.bool,
+};
+
+CustomTextInput.defaultProps = {
+  secure: false,
+  style: null,
+};
+
+export default CustomTextInput;
