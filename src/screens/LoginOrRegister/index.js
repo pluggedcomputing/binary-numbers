@@ -21,7 +21,7 @@ export default class index extends Component {
 
   render() {
     const {status} = this.state;
-    const image = require('../../assets/logo/icon.png');
+    const image = require('../../assets/logo/logo_cinza.png');
 
     return (
       <LinearGradient
