@@ -9,8 +9,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   containerImage: {
-    width: metrics.screenWidth / 3,
-    height: metrics.screenHeight / 6,
+    width: metrics.screenWidth / 2.1,
+    height: metrics.screenHeight / 5,
     alignSelf: 'center',
     marginTop: 60,
   },
