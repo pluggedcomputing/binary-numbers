@@ -24,7 +24,7 @@ export default function Login() {
       </View>
       <View style={style.containerButtonsOptions}>
         <Icon name="facebook" type="font-awesome" color="#FFFFFF" size={32} />
-        <Icon name="google" type="font-awesome" size={44} color="#FFFFFF" />
+        <Icon name="google" type="font-awesome" size={36} color="#FFFFFF" />
       </View>
     </View>
   );
