@@ -8,7 +8,7 @@ import styles from './styles';
 
 const CustomTextInput = props => {
   const {style, icon, secure} = props;
-  const [secureText, setSecureText] = useState(true);
+  const [secureText, setSecureText] = useState(secure);
   const [iconPassword, setIconPassword] = useState('eye');
 
   const setSecureTextEnty = () => {
