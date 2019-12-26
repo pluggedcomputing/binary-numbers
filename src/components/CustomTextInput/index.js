@@ -32,6 +32,7 @@ const CustomTextInput = props => {
         <Icon
           name={iconPassword}
           size={20}
+          style={styles.icon}
           onPress={() => setSecureTextEnty()}
         />
       );
@@ -41,7 +42,7 @@ const CustomTextInput = props => {
 
   return (
     <View style={[styles.container, style]}>
-      <Icon name={icon} size={20} />
+      <Icon name={icon} size={20} style={styles.icon} />
       <TextInput {...props} style={styles.input} secureTextEntry={secureText} />
       {getViewIconPassword(secure)}
     </View>
