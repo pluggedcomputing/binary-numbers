@@ -30,6 +30,11 @@ const styles = StyleSheet.create({
     color: colors.colorBackground,
     margin: metrics.doubleBaseMargin,
     textAlign: 'center'
+  },
+  textContent:{
+    fontSize: fonts.regular,
+    fontWeight: 'bold',
+    textAlign: 'center'
   }
 });
 

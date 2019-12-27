@@ -40,7 +40,6 @@ const styles = StyleSheet.create({
   },
   textCont: {
     alignContent: 'flex-end',
-    fontWeight: 'bold',
     marginTop: 160,
     marginLeft: MARGINLEFT_TEXT,
   }

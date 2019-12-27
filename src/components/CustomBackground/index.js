@@ -30,7 +30,7 @@ const CustomBackground = props => {
 
     <View style={styles.container}>
       <View style={[styles.container, { transform: [{ rotate: '-3deg' }] }]}>
-        <View style={[styles.contain, { transform: [{ rotate: '3deg' }] }]}>{content[page]}</View>
+        <View style={[styles.contain, { transform: [{ rotate: '2deg' }] }]}>{content[page]}</View>
         <View style={[styles.loadButton, { transform: [{ rotate: '3deg' }] }]}>
           <TouchableOpacity
             onPress={previousPage}
