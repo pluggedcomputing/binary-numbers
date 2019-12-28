@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
   text: {
     fontSize: fonts.regular,
     fontWeight: 'bold',
-    color: colors.colorBackground,
+    color: colors.textColorSecondary,
     margin: metrics.doubleBaseMargin,
     textAlign: 'center'
   },
