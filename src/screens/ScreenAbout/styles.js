@@ -19,7 +19,6 @@ const styles = StyleSheet.create({
   loadText:{
     flexDirection: 'row',
     position: 'absolute',
-    paddingHorizontal: 20,
     left: 0,
     right: 0,
     bottom: 0
