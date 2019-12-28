@@ -4,7 +4,7 @@ import {colors, metrics,fonts } from '../../styles';
 const styles = StyleSheet.create({
 	container: {
     flex: 1,
-		backgroundColor: colors.colorPrimary,
+		backgroundColor: colors.colorBackground,
 		width: metrics.screenWidth,
 		height: metrics.screenHeight,
     alignItems: 'center',
