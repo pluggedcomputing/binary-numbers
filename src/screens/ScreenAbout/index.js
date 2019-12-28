@@ -1,5 +1,5 @@
 import React from 'react';
-import { Image, Text, SafeAreaView, StatusBar, View } from 'react-native';
+import { Alert,Image, Text, SafeAreaView, StatusBar, View, Linking } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 import styles from './styles';
 import CustomBackground from "../../components/CustomBackground";
@@ -8,13 +8,14 @@ import logo from '../../assets/logo.png';
 import { colors } from '../../styles';
 
 export default function ScreenOn() {
+  const url = 'https://classic.csunplugged.org/wp-content/uploads/2014/12/CSUnpluggedTeachers-portuguese-brazil-feb-2011.pdf'
   const jsx = [
     <Text style={styles.textContent}>
       O aplicativo Computação Plugada foi inspirado no livro de Bell, T.; Witten, I. e Fellows,
       M. (2011). “Computer Science Unplugged – Ensinando Ciência da Computação sem o uso do Computador”.
       Tradução de Luciano Porto Barreto, 2011.
     </Text>,
-    <Text style={styles.textContent}>
+    <Text style={styles.textContent} onPress={() => Linking.openURL(url).catch((err) => Alert.error('Ocorreu um erro', err))}>
       Disponivel em: https://classic.csunplugged.org/wp-content/uploads/2014/12/CSUnpluggedTeachers-portuguese-brazil-feb-2011.pdf.
     </Text>,
     <Text style={styles.textContent}>
