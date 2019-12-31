@@ -11,7 +11,7 @@ export default function Login() {
       <View style={style.containerBody}>
         <CustomTextInput icon="email" placeholder="Email" />
         <Text style={style.lineBottom} />
-        <CustomTextInput icon="lock" placeholder="Senha" secure />
+        <CustomTextInput icon="lock" placeholder="Senha" secureTextEntry />
       </View>
       <CustomButton text="ENTRAR" />
       <TouchableOpacity style={style.buttonAltenative}>

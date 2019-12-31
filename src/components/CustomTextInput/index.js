@@ -7,10 +7,10 @@ import PropTypes from 'prop-types';
 import styles from './styles';
 
 const CustomTextInput = props => {
-  const {style, icon, secure} = props;
+  const {style, icon, secureTextEntry} = props;
   const [state, setState] = useState({
     iconPassword: 'eye',
-    secure,
+    secure: secureTextEntry,
   });
 
   const setSecureIconPassword = () => {
@@ -50,7 +50,7 @@ const CustomTextInput = props => {
         style={styles.input}
         secureTextEntry={state.secure}
       />
-      {getViewIconPassword(secure)}
+      {getViewIconPassword(secureTextEntry)}
     </View>
   );
 };
@@ -58,11 +58,11 @@ const CustomTextInput = props => {
 CustomTextInput.propTypes = {
   icon: PropTypes.string.isRequired,
   style: ViewPropTypes.style,
-  secure: PropTypes.bool,
+  secureTextEntry: PropTypes.bool,
 };
 
 CustomTextInput.defaultProps = {
-  secure: false,
+  secureTextEntry: false,
   style: null,
 };
 

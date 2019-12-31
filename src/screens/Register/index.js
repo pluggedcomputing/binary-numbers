@@ -12,9 +12,13 @@ export default function Register() {
         <Text style={style.lineBottom} />
         <CustomTextInput icon="email" placeholder="Email" />
         <Text style={style.lineBottom} />
-        <CustomTextInput icon="lock" placeholder="Senha" secure />
+        <CustomTextInput icon="lock" placeholder="Senha" secureTextEntry />
         <Text style={style.lineBottom} />
-        <CustomTextInput icon="lock" placeholder="Confirmação" secure />
+        <CustomTextInput
+          icon="lock"
+          placeholder="Confirmação"
+          secureTextEntry
+        />
       </View>
       <CustomButton text="CADASTRAR" />
     </View>
