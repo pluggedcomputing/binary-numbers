@@ -8,21 +8,23 @@ import styles from './styles';
 
 const CustomTextInput = props => {
   const {style, icon, secure} = props;
-  const [secureText, setSecureText] = useState(secure);
-  const [iconPassword, setIconPassword] = useState('eye');
+  const [state, setState] = useState({
+    iconPassword: 'eye',
+    secure,
+  });
 
-  const setSecureTextEnty = () => {
-    const [iconEye, iconEyeOff] = ['eye', 'eye-off'];
-    let [valueSecure, valueIcon] = ['', ''];
-    if (secureText) {
-      valueIcon = iconEyeOff;
-      valueSecure = false;
+  const setSecureIconPassword = () => {
+    if (state.secure) {
+      setState({
+        iconPassword: 'eye-off',
+        secure: false,
+      });
     } else {
-      valueIcon = iconEye;
-      valueSecure = true;
+      setState({
+        iconPassword: 'eye',
+        secure: true,
+      });
     }
-    setSecureText(valueSecure);
-    setIconPassword(valueIcon);
   };
 
   const getViewIconPassword = secureEnty => {
@@ -30,10 +32,10 @@ const CustomTextInput = props => {
     if (secureEnty) {
       view = (
         <Icon
-          name={iconPassword}
+          name={state.iconPassword}
           size={20}
           style={styles.icon}
-          onPress={() => setSecureTextEnty()}
+          onPress={setSecureIconPassword}
         />
       );
     }
@@ -42,8 +44,12 @@ const CustomTextInput = props => {
 
   return (
     <View style={[styles.container, style]}>
-      <Icon name={icon} size={20} style={styles.icon} />
-      <TextInput {...props} style={styles.input} secureTextEntry={secureText} />
+      <Icon name={icon} size={20} />
+      <TextInput
+        {...props}
+        style={styles.input}
+        secureTextEntry={state.secure}
+      />
       {getViewIconPassword(secure)}
     </View>
   );
