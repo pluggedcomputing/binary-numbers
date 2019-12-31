@@ -5,20 +5,14 @@ const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
     height: 40,
-    width: metrics.baseSliding,
+    width: metrics.inputWidth,
     alignItems: 'center',
   },
   input: {
-    height: 45,
     width: metrics.inputWidth,
     color: colors.textColorPrimary,
     fontSize: fonts.input,
-    marginLeft: metrics.baseMargin,
-    marginRight: metrics.baseMargin,
-  },
-  icon: {
-    marginLeft: 2,
-    marginRight: 2,
+    backgroundColor: colors.colorBackground,
   },
 });
 
