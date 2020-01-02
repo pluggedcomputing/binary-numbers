@@ -1,5 +1,3 @@
-/* eslint-disable no-restricted-syntax */
-/* eslint-disable no-console */
 import React, { useState } from 'react';
 import { Image, View, TouchableOpacity, Text } from 'react-native';
 import PropTypes from 'prop-types';
