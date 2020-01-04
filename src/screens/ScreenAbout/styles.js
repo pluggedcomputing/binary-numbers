@@ -1,41 +1,32 @@
 import {StyleSheet} from 'react-native';
-import {colors, metrics,fonts } from '../../styles';
+import {colors, metrics, fonts} from '../../styles';
+
+const HEIGHT_PORCENTAGE = 0.2;
+const WIDTH_PORCENTAGE = 0.3;
 
 const styles = StyleSheet.create({
-	container: {
+  container: {
     flex: 1,
-		backgroundColor: colors.colorBackground,
-		width: metrics.screenWidth,
-		height: metrics.screenHeight,
+    width: metrics.screenWidth,
     alignItems: 'center',
-	},
-	logo: {
-		alignSelf: 'center',
-    marginTop: 40,
+    justifyContent: 'space-around',
+  },
+  logo: {
     resizeMode: 'contain',
-    width: 150,
-    height: 150
+    width: metrics.screenWidth * WIDTH_PORCENTAGE,
+    height: metrics.screenHeight * HEIGHT_PORCENTAGE,
   },
-  loadText:{
-    flexDirection: 'row',
-    position: 'absolute',
-    left: 0,
-    right: 0,
-    bottom: 0
-  },
-  text: {
+  credits: {
     fontSize: fonts.regular,
     fontWeight: 'bold',
     color: colors.textColorSecondary,
-    margin: metrics.doubleBaseMargin,
-    textAlign: 'center'
+    textAlign: 'center',
   },
-  textContent:{
+  textContent: {
     fontSize: fonts.regular,
     fontWeight: 'bold',
-    textAlign: 'center'
-  }
+    textAlign: 'center',
+  },
 });
-
 
 export default styles;
