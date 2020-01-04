@@ -15,7 +15,6 @@ const styles = StyleSheet.create({
   },
   textButton: {
     fontSize: fonts.title,
-    fontWeight: 'bold',
     textTransform: 'uppercase',
     color: colors.textColorSecondary,
   },
