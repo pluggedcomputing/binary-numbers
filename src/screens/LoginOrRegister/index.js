@@ -7,6 +7,7 @@ import Register from '../Register';
 import style from './styles';
 import {colors} from '../../styles';
 
+const textLogin = 'Entrar';
 export default class index extends Component {
   constructor(props) {
     super(props);
@@ -16,7 +17,7 @@ export default class index extends Component {
   }
 
   getContainerLoginOrRegister = status => {
-    return status === 'login' ? <Login /> : <Register />;
+    return status === textLogin ? <Login /> : <Register />;
   };
 
   render() {

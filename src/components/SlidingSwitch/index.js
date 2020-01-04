@@ -6,14 +6,14 @@ import SlidingButton from '../SlidingButton/index';
 import metrics from '../../styles/metrics';
 
 const {width} = Dimensions.get('window');
-
+const textLogin = 'Entrar';
+const textRegister = 'Cadastrar';
 export default class index extends Component {
   constructor(props) {
     super(props);
-
     this.state = {
       position: new Animated.Value(0),
-      currentStatus: 'login',
+      currentStatus: textLogin,
       posValue: 0,
       selectedPosition: 0,
       duration: 30,
@@ -80,7 +80,7 @@ export default class index extends Component {
 
   // start position of button slider
   moveInitialState = currentStatus => {
-    return currentStatus === 'login'
+    return currentStatus === textLogin
       ? this.inStartLogin()
       : this.inStartCreate();
   };
@@ -97,7 +97,7 @@ export default class index extends Component {
         selectedPosition: 0,
       });
     }, 100);
-    this.props.onStatusChanged('login');
+    this.props.onStatusChanged(textLogin);
   };
 
   inStartCreate = () => {
@@ -112,11 +112,11 @@ export default class index extends Component {
         selectedPosition: 1,
       });
     }, 100);
-    this.props.onStatusChanged('criar');
+    this.props.onStatusChanged(textRegister);
   };
 
   getStatus = selectedPosition => {
-    return selectedPosition === 0 ? 'Login' : 'Criar';
+    return selectedPosition === 0 ? textLogin : textRegister;
   };
 
   render() {
@@ -124,8 +124,8 @@ export default class index extends Component {
 
     return (
       <View style={styles.container}>
-        <SlidingButton text="Login" onPress={this.inStartLogin} />
-        <SlidingButton text="Criar" onPress={this.inStartCreate} />
+        <SlidingButton text={textLogin} onPress={this.inStartLogin} />
+        <SlidingButton text={textRegister} onPress={this.inStartCreate} />
         <Animated.View
           {...this.panResponder.panHandlers}
           style={[
