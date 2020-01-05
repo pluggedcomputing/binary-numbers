@@ -1,5 +1,5 @@
 import {StyleSheet} from 'react-native';
-import {fonts, metrics} from '../../styles';
+import {fonts, metrics, colors} from '../../styles';
 
 const styles = StyleSheet.create({
   button: {
@@ -11,6 +11,7 @@ const styles = StyleSheet.create({
   },
   text: {
     fontSize: fonts.title,
+    color: colors.textColorPrimary,
   },
 });
 
