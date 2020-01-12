@@ -5,7 +5,7 @@ import CustomTextInput from '../../components/CustomTextInput/index';
 import CustomButton from '../../components/CustomButton/index';
 import style from './styles';
 
-export default function Login() {
+export default function Login({navigation}) {
   return (
     <View style={style.containerBase}>
       <View style={style.containerBody}>
@@ -13,7 +13,7 @@ export default function Login() {
         <Text style={style.lineBottom} />
         <CustomTextInput icon="lock" placeholder="Senha" secureTextEntry />
       </View>
-      <CustomButton text="ENTRAR" />
+      <CustomButton text="ENTRAR" onPress={() => navigation.navigate('Main')} />
       <TouchableOpacity style={style.buttonAltenative}>
         <Text style={style.textButton}>Esqueceu sua senha?</Text>
       </TouchableOpacity>

@@ -17,7 +17,11 @@ export default class index extends Component {
   }
 
   getContainerLoginOrRegister = status => {
-    return status === textLogin ? <Login /> : <Register />;
+    return status === textLogin ? (
+      <Login navigation={this.props.navigation} />
+    ) : (
+      <Register />
+    );
   };
 
   render() {
