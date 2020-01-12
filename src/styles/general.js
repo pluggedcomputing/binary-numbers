@@ -14,6 +14,17 @@ const general = {
     alignSelf: 'center',
     marginBottom: metrics.doubleBaseMargin,
   },
+  shadowRadius: {
+    shadowColor: colors.colorBackground,
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 3.84,
+
+    elevation: 5,
+  },
 };
 
 export default general;

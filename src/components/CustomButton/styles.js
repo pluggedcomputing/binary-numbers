@@ -12,6 +12,7 @@ const styles = StyleSheet.create({
     backgroundColor: colors.colorPrimary,
     height: metrics.screenHeight * HEIGHT_PORCENTAGE,
     width: metrics.screenWidth * WIDTH_PORCENTAGE,
+    elevation: 4,
   },
   textButton: {
     fontSize: fonts.title,
