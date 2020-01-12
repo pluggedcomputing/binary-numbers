@@ -4,6 +4,7 @@ import {
   Alert,
   Image,
   Text,
+  TouchableOpacity,
   View,
   SafeAreaView,
   StatusBar,
@@ -12,11 +13,12 @@ import {
 import LinearGradient from 'react-native-linear-gradient';
 import styles from './styles';
 import CustomBackground from '../../components/CustomBackground';
+import CustomButton from '../../components/CustomButton';
 
 import logo from '../../assets/images/logo_grey.png';
 import {colors} from '../../styles';
 
-export default function ScreenAbout() {
+export default function ScreenAbout({navigation}) {
   const url =
     'https://classic.csunplugged.org/wp-content/uploads/2014/12/CSUnpluggedTeachers-portuguese-brazil-feb-2011.pdf';
 
@@ -69,6 +71,9 @@ export default function ScreenAbout() {
           <Text style={styles.credits}>
             Todos os Direitos Reservados ©2019.
           </Text>
+          <TouchableOpacity onPress={() => navigation.navigate('Main')}>
+            <Text style={styles.textButton}>VOLTAR</Text>
+          </TouchableOpacity>
         </View>
       </LinearGradient>
     </SafeAreaView>

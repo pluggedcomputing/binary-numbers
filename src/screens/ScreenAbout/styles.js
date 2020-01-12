@@ -27,6 +27,12 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     textAlign: 'center',
   },
+  textButton: {
+    margin: 10,
+    alignSelf: 'center',
+    color: colors.colorBackground,
+    textDecorationLine: 'underline',
+  },
 });
 
 export default styles;
