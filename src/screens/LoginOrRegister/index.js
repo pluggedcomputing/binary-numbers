@@ -36,14 +36,14 @@ export default class index extends Component {
           barStyle="light-content"
           backgroundColor={colors.colorPrimary}
         />
-        <KeyboardAvoidingView behavior="padding" enabled>
-          <ScrollView
-            contentContainerStyle={{
-              justifyContent: 'center',
-              alignItems: 'center',
-            }}
-            showsVerticalScrollIndicator={false}>
-            <Image style={style.containerImage} source={image} />
+        <ScrollView
+          contentContainerStyle={{
+            justifyContent: 'center',
+            alignItems: 'center',
+          }}
+          showsVerticalScrollIndicator={false}>
+          <Image style={style.containerImage} source={image} />
+          <KeyboardAvoidingView behavior="padding" enabled>
             <SlidingSwitch
               onStatusChanged={text => {
                 this.setState({status: text});
@@ -51,8 +51,8 @@ export default class index extends Component {
               isParentScrollEnabled={false}
             />
             {this.getContainerLoginOrRegister(status)}
-          </ScrollView>
-        </KeyboardAvoidingView>
+          </KeyboardAvoidingView>
+        </ScrollView>
       </LinearGradient>
     );
   }
