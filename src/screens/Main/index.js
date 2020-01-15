@@ -2,7 +2,7 @@ import React from 'react';
 import {SafeAreaView, Image, Text} from 'react-native';
 
 import CustomButton from '../../components/CustomButton';
-import logo from '../../assets/logo_blue.png';
+import logo from '../../assets/images/logo_blue.png';
 import styles from './styles';
 
 export default function Main({navigation}) {
