@@ -15,6 +15,7 @@ const styles = StyleSheet.create({
     width: metrics.screenWidth * WIDTH_PORCENTAGE,
     height: metrics.screenHeight * HEIGHT_PORCENTAGE,
     margin: 10,
+    resizeMode: 'contain',
   },
 });
 

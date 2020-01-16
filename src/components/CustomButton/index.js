@@ -1,13 +1,13 @@
 import React from 'react';
 import {Text, TouchableOpacity} from 'react-native';
-import PropTypes from 'prop-types';
+import {PropTypes, ViewPropTypes} from 'prop-types';
 import styles from './styles';
 
 const CustomButton = props => {
-  const {text} = props;
+  const {text, style} = props;
 
   return (
-    <TouchableOpacity {...props} style={[styles.container, props.style]}>
+    <TouchableOpacity {...props} style={[styles.container, style]}>
       <Text style={styles.textButton}>{text}</Text>
     </TouchableOpacity>
   );
@@ -15,6 +15,10 @@ const CustomButton = props => {
 
 CustomButton.propTypes = {
   text: PropTypes.string.isRequired,
+  style: ViewPropTypes.style,
 };
 
+CustomButton.defaultProps = {
+  style: null,
+};
 export default CustomButton;

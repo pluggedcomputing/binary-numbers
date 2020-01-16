@@ -1,9 +1,12 @@
 import React, {Component} from 'react';
 import {ScrollView, Image, StatusBar, KeyboardAvoidingView} from 'react-native';
+
 import LinearGradient from 'react-native-linear-gradient';
+
 import SlidingSwitch from '../../components/SlidingSwitch/index';
-import Login from '../Login';
-import Register from '../Register';
+import Login from './Login';
+import Register from './Register';
+
 import style from './styles';
 import {colors} from '../../styles';
 
@@ -17,8 +20,10 @@ export default class index extends Component {
   }
 
   getContainerLoginOrRegister = status => {
+    // eslint-disable-next-line react/prop-types
+    const {navigation} = this.props;
     return status === textLogin ? (
-      <Login navigation={this.props.navigation} />
+      <Login navigation={navigation} />
     ) : (
       <Register />
     );

@@ -10,15 +10,17 @@ import {
   StatusBar,
   Linking,
 } from 'react-native';
+import {PropTypes} from 'prop-types';
 import LinearGradient from 'react-native-linear-gradient';
-import styles from './styles';
+
 import CustomBackground from '../../components/CustomBackground';
-import CustomButton from '../../components/CustomButton';
 
 import logo from '../../assets/images/logo_grey.png';
+import styles from './styles';
+
 import {colors} from '../../styles';
 
-export default function ScreenAbout({navigation}) {
+function ScreenAbout({navigation}) {
   const url =
     'https://classic.csunplugged.org/wp-content/uploads/2014/12/CSUnpluggedTeachers-portuguese-brazil-feb-2011.pdf';
 
@@ -79,3 +81,9 @@ export default function ScreenAbout({navigation}) {
     </SafeAreaView>
   );
 }
+
+ScreenAbout.propTypes = {
+  navigation: PropTypes.string.isRequired,
+};
+
+export default ScreenAbout;

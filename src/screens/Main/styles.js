@@ -14,6 +14,7 @@ const styles = StyleSheet.create({
     backgroundColor: colors.colorBackground,
   },
   logo: {
+    resizeMode: 'contain',
     width: metrics.screenWidth * WIDTH_PORCENTAGE,
     height: metrics.screenHeight * HEIGHT_PORCENTAGE,
   },
