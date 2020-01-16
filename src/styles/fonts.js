@@ -1,10 +1,12 @@
+import metrics from './metrics';
+
 const fonts = {
-  title: 18,
-  input: 16,
-  regular: 14,
-  medium: 12,
-  small: 11,
-  tiny: 10,
+  title: metrics.screenWidth * 0.045,
+  input: metrics.screenWidth * 0.04,
+  regular: metrics.screenWidth * 0.035,
+  medium: metrics.screenWidth * 0.03,
+  small: metrics.screenWidth * 0.025,
+  tiny: metrics.screenWidth * 0.02,
 };
 
 export default fonts;

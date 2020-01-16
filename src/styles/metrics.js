@@ -20,10 +20,7 @@ const metrics = {
   baseRadius: 10,
   radiusBorder: 27.5,
   baseBorder: 20,
-  containerWidth: width,
   containerBase: width - 45,
-  switchWidth: width / 2.7,
-  inputWidth: '80%',
 };
 
 export default metrics;
