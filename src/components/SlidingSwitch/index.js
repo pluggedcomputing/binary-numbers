@@ -1,13 +1,11 @@
 import React, {Component} from 'react';
-import {View, Animated, Platform, Dimensions, PanResponder} from 'react-native';
+import {View, Animated, Platform, PanResponder} from 'react-native';
 import PropTypes from 'prop-types';
 
 import styles from './styles';
 import {metrics} from '../../styles';
 
 import SlidingButton from '../SlidingButton/index';
-
-const {width} = Dimensions.get('window');
 
 const textLogin = 'Entrar';
 const textRegister = 'Cadastrar';
@@ -21,8 +19,8 @@ export default class index extends Component {
       posValue: 0,
       selectedPosition: 0,
       duration: 30,
-      mainWidth: width - 30,
-      switcherWidth: metrics.containerWidth / 3,
+      mainWidth: metrics.screenWidth - 30,
+      switcherWidth: metrics.screenWidth / 3,
       thresholdDistance: metrics.containerBase / 2.2,
     };
     this.isParentScrollDisabled = false;

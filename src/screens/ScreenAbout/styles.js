@@ -28,6 +28,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   textButton: {
+    fontSize: fonts.regular,
     margin: metrics.baseMargin,
     alignSelf: 'center',
     color: colors.colorBackground,

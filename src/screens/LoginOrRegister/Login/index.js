@@ -3,8 +3,8 @@ import {View, Text, TouchableOpacity} from 'react-native';
 
 import {Icon} from 'react-native-elements';
 
-import CustomTextInput from '../../../components/CustomTextInput/index';
-import CustomButton from '../../../components/CustomButton/index';
+import CustomTextInput from '../../../components/CustomTextInput';
+import CustomButton from '../../../components/CustomButton';
 
 import style from './styles';
 import {general} from '../../../styles';
