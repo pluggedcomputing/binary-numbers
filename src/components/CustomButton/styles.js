@@ -6,13 +6,13 @@ const WIDTH_PORCENTAGE = 0.4;
 
 const styles = StyleSheet.create({
   container: {
-    borderRadius: 5,
+    borderRadius: metrics.smallRadius,
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: colors.colorPrimary,
     height: metrics.screenHeight * HEIGHT_PORCENTAGE,
     width: metrics.screenWidth * WIDTH_PORCENTAGE,
-    elevation: 4,
+    elevation: metrics.baseElevation,
   },
   textButton: {
     fontSize: fonts.title,

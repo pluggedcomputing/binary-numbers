@@ -18,8 +18,10 @@ const metrics = {
   statusBarHeight: Platform.OS === 'ios' ? 20 : 0,
   smallRadius: 5,
   baseRadius: 10,
-  radiusBorder: 27.5,
-  baseBorder: 20,
+  tripleRadius: 30,
+  smallBorder: 1,
+  baseBorder: 5,
+  baseElevation: 5,
   containerBase: width - 45,
 };
 

@@ -6,8 +6,8 @@ const HEIGHT_PORCENTAGE = 0.3;
 
 const styles = StyleSheet.create({
   container: {
-    borderWidth: 1.5,
-    borderRadius: 5,
+    borderWidth: metrics.smallBorder,
+    borderRadius: metrics.smallRadius,
     borderColor: colors.textcolorPrimary,
     justifyContent: 'center',
     alignItems: 'center',
@@ -19,12 +19,12 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     flex: 3,
-    padding: 10,
+    padding: metrics.basePadding,
     transform: [{rotate: '2deg'}],
   },
   buttonsContainer: {
     flex: 0.5,
-    marginTop: 5,
+    marginTop: metrics.smallMargin,
     flexDirection: 'row',
     justifyContent: 'flex-end',
   },
@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
     color: colors.textColorPrimary,
     fontWeight: 'bold',
     alignSelf: 'flex-end',
-    padding: 5,
+    padding: metrics.basePadding,
   },
 });
 

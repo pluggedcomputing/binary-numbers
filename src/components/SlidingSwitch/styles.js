@@ -9,9 +9,9 @@ const styles = StyleSheet.create({
     backgroundColor: colors.colorBackground,
     alignItems: 'center',
     justifyContent: 'space-around',
-    borderWidth: 1,
+    borderWidth: metrics.smallBorder,
     borderColor: colors.colorBackground,
-    borderRadius: metrics.radiusBorder,
+    borderRadius: metrics.tripleRadius,
     marginTop: metrics.halfMargin,
     marginBottom: metrics.halfMargin,
   },
@@ -19,18 +19,18 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     position: 'absolute',
     backgroundColor: colors.colorPrimary,
-    borderRadius: 28,
+    borderRadius: metrics.tripleRadius,
     height: 53,
     alignItems: 'center',
     justifyContent: 'center',
-    elevation: 4,
-    shadowOpacity: 0.31,
-    shadowRadius: 10,
+    elevation: metrics.baseElevation,
+    shadowOpacity: 0.3,
+    shadowRadius: metrics.baseRadius,
     shadowColor: '#A69E9E',
   },
   textColor: {
-    color: colors.textColorPrimary
-  }
+    color: colors.textColorPrimary,
+  },
 });
 
 export default styles;

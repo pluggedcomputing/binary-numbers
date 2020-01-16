@@ -13,22 +13,22 @@ const styles = StyleSheet.create({
     width: (metrics.screenWidth - 45) / 1.1,
     justifyContent: 'center',
     alignItems: 'center',
-    borderWidth: 1,
+    borderWidth: metrics.smallBorder,
     borderColor: colors.colorBackground,
     borderRadius: metrics.baseRadius,
     paddingTop: metrics.halfMargin,
     paddingBottom: metrics.halfMargin,
   },
   lineBottom: {
-    marginBottom: 15,
+    marginBottom: metrics.doubleBaseMargin,
     borderBottomColor: colors.textColorPrimary,
-    borderBottomWidth: 2,
+    borderBottomWidth: metrics.smallBorder,
     width: '80%',
   },
   linerWriteSmall: {
-    marginBottom: 20,
+    marginBottom: metrics.doubleBaseMargin,
     borderBottomColor: colors.colorBackground,
-    borderBottomWidth: 2,
+    borderBottomWidth: metrics.smallBorder,
     width: 90,
   },
   text: {
@@ -54,7 +54,7 @@ const styles = StyleSheet.create({
   },
   buttonAltenative: {
     alignItems: 'center',
-    marginTop: 30,
+    marginTop: metrics.halfMargin,
   },
   containerButtonsOptions: {
     width: 120,

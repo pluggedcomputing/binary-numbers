@@ -19,20 +19,20 @@ const styles = StyleSheet.create({
     height: metrics.screenHeight * HEIGHT_PORCENTAGE,
   },
   title: {
-    margin: 5,
+    margin: metrics.smallMargin,
     textAlign: 'center',
     fontSize: 50,
     fontWeight: 'bold',
     color: colors.colorPrimary,
   },
   subTitle: {
-    margin: 5,
+    margin: metrics.smallMargin,
     textAlign: 'center',
     fontSize: fonts.title,
     color: colors.textColorPrimary,
   },
   buttons: {
-    margin: 5,
+    margin: metrics.smallMargin,
   },
 });
 
