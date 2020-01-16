@@ -7,6 +7,7 @@ import CustomTextInput from '../../../components/CustomTextInput/index';
 import CustomButton from '../../../components/CustomButton/index';
 
 import style from './styles';
+import {general} from '../../../styles';
 
 function Login({navigation}) {
   return (
@@ -26,8 +27,18 @@ function Login({navigation}) {
         <Text style={style.linerWriteSmall} />
       </View>
       <View style={style.containerButtonsOptions}>
-        <Icon name="facebook" type="font-awesome" color="#FFFFFF" size={32} />
-        <Icon name="google" type="font-awesome" size={36} color="#FFFFFF" />
+        <Icon
+          name="facebook"
+          type="font-awesome"
+          color="#FFFFFF"
+          size={general.iconSize.bigger}
+        />
+        <Icon
+          name="google"
+          type="font-awesome"
+          size={general.iconSize.bigger}
+          color="#FFFFFF"
+        />
       </View>
     </View>
   );

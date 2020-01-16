@@ -1,5 +1,5 @@
 import {StyleSheet} from 'react-native';
-import {colors, metrics} from '../../styles';
+import {colors, metrics, fonts} from '../../styles';
 
 const WIDHT_PORCENTAGE = 0.9;
 const HEIGHT_PORCENTAGE = 0.3;
@@ -16,6 +16,8 @@ const styles = StyleSheet.create({
     width: metrics.screenWidth * WIDHT_PORCENTAGE,
   },
   content: {
+    justifyContent: 'center',
+    alignItems: 'center',
     flex: 3,
     padding: 10,
     transform: [{rotate: '2deg'}],
@@ -34,6 +36,7 @@ const styles = StyleSheet.create({
   },
   textCont: {
     flex: 0.5,
+    fontSize: fonts.medium,
     color: colors.textColorPrimary,
     fontWeight: 'bold',
     alignSelf: 'flex-end',

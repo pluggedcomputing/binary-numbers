@@ -6,6 +6,8 @@ import {PropTypes} from 'prop-types';
 
 import styles from './styles';
 
+import {general} from '../../styles';
+
 const CustomTextInput = props => {
   const {style, icon, secureTextEntry} = props;
   const [state, setState] = useState({
@@ -33,8 +35,8 @@ const CustomTextInput = props => {
       view = (
         <Icon
           name={state.iconPassword}
-          size={20}
-          style={styles.icon}
+          size={general.iconSize.regular}
+          style={styles.iconSecure}
           onPress={setSecureIconPassword}
         />
       );
@@ -44,7 +46,7 @@ const CustomTextInput = props => {
 
   return (
     <View style={[styles.container, style]}>
-      <Icon name={icon} size={20} />
+      <Icon name={icon} size={general.iconSize.regular} />
       <TextInput
         {...props}
         style={styles.input}

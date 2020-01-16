@@ -1,5 +1,5 @@
 import {StyleSheet} from 'react-native';
-import {colors, metrics, general, fonts} from '../../../styles';
+import {colors, metrics, fonts} from '../../../styles';
 
 const styles = StyleSheet.create({
   containerBase: {
@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
   containerBody: {
     position: 'absolute',
     backgroundColor: colors.colorBackground,
-    width: metrics.containerBase / 1.1,
+    width: (metrics.screenWidth - 45) / 1.1,
     justifyContent: 'center',
     alignItems: 'center',
     borderWidth: 1,
@@ -32,8 +32,11 @@ const styles = StyleSheet.create({
     width: 90,
   },
   text: {
-    ...general.sectionTitle,
     color: colors.colorBackground,
+    fontWeight: 'bold',
+    fontSize: fonts.title,
+    alignSelf: 'center',
+    marginBottom: metrics.doubleBaseMargin,
     marginTop: metrics.baseMargin,
   },
   containeFooter: {
@@ -51,7 +54,6 @@ const styles = StyleSheet.create({
   },
   buttonAltenative: {
     alignItems: 'center',
-    width: 200,
     marginTop: 30,
   },
   containerButtonsOptions: {
