@@ -4,12 +4,12 @@ import {View, TouchableOpacity, Text} from 'react-native';
 import styles from './style';
 
 const SlidingButton = props => {
-  const {text} = props;
+  const {text, textColor} = props;
 
   return (
     <View>
       <TouchableOpacity {...props} style={styles.button}>
-        <Text style={styles.text}>{text}</Text>
+        <Text style={[styles.text, textColor]}>{text}</Text>
       </TouchableOpacity>
     </View>
   );

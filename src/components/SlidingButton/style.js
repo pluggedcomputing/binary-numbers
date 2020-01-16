@@ -11,8 +11,10 @@ const styles = StyleSheet.create({
   },
   text: {
     fontSize: fonts.title,
-    color: colors.textColorPrimary,
+    fontWeight: 'bold',
+    color: colors.textColorSecondary,
   },
+
 });
 
 export default styles;

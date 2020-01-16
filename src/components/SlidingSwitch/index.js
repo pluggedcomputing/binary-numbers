@@ -8,6 +8,7 @@ import metrics from '../../styles/metrics';
 const {width} = Dimensions.get('window');
 const textLogin = 'Entrar';
 const textRegister = 'Cadastrar';
+const color = styles.textColor
 export default class index extends Component {
   constructor(props) {
     super(props);
@@ -124,8 +125,8 @@ export default class index extends Component {
 
     return (
       <View style={styles.container}>
-        <SlidingButton text={textLogin} onPress={this.inStartLogin} />
-        <SlidingButton text={textRegister} onPress={this.inStartCreate} />
+        <SlidingButton textColor ={color} text={textLogin} onPress={this.inStartLogin} />
+        <SlidingButton textColor ={color} text={textRegister} onPress={this.inStartCreate} />
         <Animated.View
           {...this.panResponder.panHandlers}
           style={[
