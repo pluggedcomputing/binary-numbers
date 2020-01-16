@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import {View} from 'react-native';
 import {TextInput} from 'react-native-paper';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
-import {PropTypes, ViewPropTypes} from 'prop-types';
+import {PropTypes} from 'prop-types';
 
 import styles from './styles';
 
@@ -57,7 +57,7 @@ const CustomTextInput = props => {
 
 CustomTextInput.propTypes = {
   icon: PropTypes.string.isRequired,
-  style: ViewPropTypes.style,
+  style: PropTypes.oneOfType([PropTypes.object, PropTypes.array]),
   secureTextEntry: PropTypes.bool,
 };
 

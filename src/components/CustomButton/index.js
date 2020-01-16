@@ -1,6 +1,6 @@
 import React from 'react';
 import {Text, TouchableOpacity} from 'react-native';
-import {PropTypes, ViewPropTypes} from 'prop-types';
+import {PropTypes} from 'prop-types';
 import styles from './styles';
 
 const CustomButton = props => {
@@ -15,7 +15,7 @@ const CustomButton = props => {
 
 CustomButton.propTypes = {
   text: PropTypes.string.isRequired,
-  style: ViewPropTypes.style,
+  style: PropTypes.oneOfType([PropTypes.object, PropTypes.array]),
 };
 
 CustomButton.defaultProps = {
