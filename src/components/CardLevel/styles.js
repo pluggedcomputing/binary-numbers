@@ -26,6 +26,7 @@ const styles = StyleSheet.create({
   },
   imageLevel: {
     flex: 3,
+    margin: 2,
     width: metrics.screenWidth * 0.25,
     resizeMode: 'contain',
   },

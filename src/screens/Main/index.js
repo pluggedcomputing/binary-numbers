@@ -1,6 +1,5 @@
 import React from 'react';
 import {SafeAreaView, Image, Text} from 'react-native';
-import {PropTypes} from 'prop-types';
 
 import CustomButton from '../../components/CustomButton';
 
@@ -14,7 +13,11 @@ function Main({navigation}) {
       <Image source={logo} style={styles.logo} />
       <Text style={styles.title}>Computação Plugada</Text>
       <Text style={styles.subTitle}>Contanto os Pontos</Text>
-      <CustomButton style={styles.buttons} text="Iniciar" />
+      <CustomButton
+        style={styles.buttons}
+        text="Iniciar"
+        onPress={() => navigation.navigate('LevelSelection')}
+      />
       <CustomButton
         style={styles.buttons}
         text="Sobre"
@@ -23,9 +26,5 @@ function Main({navigation}) {
     </SafeAreaView>
   );
 }
-
-Main.propTypes = {
-  navigation: PropTypes.string.isRequired,
-};
 
 export default Main;

@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Image, Text, Alert, TouchableOpacity} from 'react-native';
+import {View, Image, Text, Alert, TouchableWithoutFeedback} from 'react-native';
 import PropTypes from 'prop-types';
 
 import styles from './styles';
@@ -27,18 +27,18 @@ const CardLevel = props => {
           : {borderColor: colors.colorPrimary},
         styles.container,
       ]}>
-      <TouchableOpacity
-        onPress={onPressCardLevel()}
-        style={styles.subContainer}>
-        <Image source={image} style={styles.imageLevel} />
-        <Text style={styles.textLevel}>Nível {level}</Text>
-      </TouchableOpacity>
+      <TouchableWithoutFeedback onPress={onPressCardLevel()}>
+        <View style={styles.subContainer}>
+          <Image source={image} style={styles.imageLevel} />
+          <Text style={styles.textLevel}>Nível {level}</Text>
+        </View>
+      </TouchableWithoutFeedback>
     </View>
   );
 };
 
 CardLevel.propTypes = {
-  image: PropTypes.string.isRequired,
+  image: PropTypes.number.isRequired,
   level: PropTypes.string.isRequired,
   onPress: PropTypes.func.isRequired,
   available: PropTypes.bool,
