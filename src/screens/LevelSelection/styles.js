@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
     backgroundColor: colors.colorBackground,
   },
   boxContainer: {
-    margin: 20,
+    margin: metrics.doubleBaseMargin,
     flexDirection: 'row',
     justifyContent: 'space-evenly',
     alignItems: 'center',

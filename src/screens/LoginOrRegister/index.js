@@ -2,11 +2,10 @@ import React, {Component} from 'react';
 import {ScrollView, Image, StatusBar, KeyboardAvoidingView} from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 
-import SlidingSwitch from '../../components/SlidingSwitch/index';
-import {colors} from '../../styles';
+import SlidingSwitch from '../../components/SlidingSwitch';
 import Login from './Login';
 import Register from './Register';
-import style from './styles';
+import styles from './styles';
 
 const textLogin = 'Entrar';
 
@@ -34,7 +33,7 @@ export default class index extends Component {
     return (
       <LinearGradient
         colors={[colors.colorPrimary, '#242F68']}
-        style={style.container}>
+        style={styles.container}>
         <StatusBar
           barStyle="light-content"
           backgroundColor={colors.colorPrimary}
@@ -45,7 +44,7 @@ export default class index extends Component {
             alignItems: 'center',
           }}
           showsVerticalScrollIndicator={false}>
-          <Image style={style.containerImage} source={image} />
+          <Image style={styles.containerImage} source={image} />
           <KeyboardAvoidingView behavior="padding" enabled>
             <SlidingSwitch
               onStatusChanged={text => {

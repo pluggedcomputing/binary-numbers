@@ -1,8 +1,10 @@
 import React from 'react';
 import {View, Text} from 'react-native';
 
+import CustomTextInput from '../../../components/CustomTextInput';
 import CustomButton from '../../../components/CustomButton';
-import CustomTextInput from '../../../components/CustomTextInput/index';
+import CustomTextInput from '../../../components/CustomTextInput';
+
 import style from './styles';
 
 function Register({navigation}) {

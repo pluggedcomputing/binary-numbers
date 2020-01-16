@@ -1,6 +1,6 @@
 import {StyleSheet} from 'react-native';
 
-import {colors, metrics, general, fonts} from '../../../styles';
+import {colors, metrics, fonts} from '../../../styles';
 
 const styles = StyleSheet.create({
   containerBase: {
@@ -11,30 +11,33 @@ const styles = StyleSheet.create({
   containerBody: {
     position: 'absolute',
     backgroundColor: colors.colorBackground,
-    width: metrics.containerBase / 1.1,
+    width: (metrics.screenWidth - 45) / 1.1,
     justifyContent: 'center',
     alignItems: 'center',
-    borderWidth: 1,
+    borderWidth: metrics.smallBorder,
     borderColor: colors.colorBackground,
     borderRadius: metrics.baseRadius,
     paddingTop: metrics.halfMargin,
     paddingBottom: metrics.halfMargin,
   },
   lineBottom: {
-    marginBottom: 15,
+    marginBottom: metrics.doubleBaseMargin,
     borderBottomColor: colors.textColorPrimary,
-    borderBottomWidth: 2,
+    borderBottomWidth: metrics.smallBorder,
     width: '80%',
   },
   linerWriteSmall: {
-    marginBottom: 20,
+    marginBottom: metrics.doubleBaseMargin,
     borderBottomColor: colors.colorBackground,
-    borderBottomWidth: 2,
+    borderBottomWidth: metrics.smallBorder,
     width: 90,
   },
   text: {
-    ...general.sectionTitle,
     color: colors.colorBackground,
+    fontWeight: 'bold',
+    fontSize: fonts.title,
+    alignSelf: 'center',
+    marginBottom: metrics.doubleBaseMargin,
     marginTop: metrics.baseMargin,
   },
   containeFooter: {
@@ -52,8 +55,7 @@ const styles = StyleSheet.create({
   },
   buttonAltenative: {
     alignItems: 'center',
-    width: 200,
-    marginTop: 30,
+    marginTop: metrics.halfMargin,
   },
   containerButtonsOptions: {
     width: 120,

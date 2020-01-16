@@ -2,8 +2,9 @@ import React from 'react';
 import {View, Text, TouchableOpacity} from 'react-native';
 import {Icon} from 'react-native-elements';
 
-import CustomButton from '../../../components/CustomButton/index';
-import CustomTextInput from '../../../components/CustomTextInput/index';
+import CustomButton from '../../../components/CustomButton';
+import CustomTextInput from '../../../components/CustomTextInput';
+import {general, colors} from '../../../styles';
 import style from './styles';
 
 function Login({navigation}) {
@@ -24,8 +25,18 @@ function Login({navigation}) {
         <Text style={style.linerWriteSmall} />
       </View>
       <View style={style.containerButtonsOptions}>
-        <Icon name="facebook" type="font-awesome" color="#FFFFFF" size={32} />
-        <Icon name="google" type="font-awesome" size={36} color="#FFFFFF" />
+        <Icon
+          name="facebook"
+          type="font-awesome"
+          color={colors.colorBackground}
+          size={general.iconSize.bigger}
+        />
+        <Icon
+          name="google"
+          type="font-awesome"
+          size={general.iconSize.bigger}
+          color={colors.colorBackground}
+        />
       </View>
     </View>
   );

@@ -2,32 +2,29 @@ import {StyleSheet} from 'react-native';
 
 import {colors, metrics, fonts} from '../../styles';
 
-const HEIGHT_PORCENTAGE = 0.25;
-const WIDTH_PORCENTAGE = 0.3;
-
 const styles = StyleSheet.create({
   container: {
-    height: metrics.screenHeight * HEIGHT_PORCENTAGE,
-    width: metrics.screenWidth * WIDTH_PORCENTAGE,
+    height: metrics.screenHeight * 0.25,
+    width: metrics.screenWidth * 0.3,
     backgroundColor: colors.colorBackground,
     justifyContent: 'center',
     alignItems: 'center',
-    borderWidth: 6,
-    borderRadius: 5,
-    elevation: 4,
+    borderWidth: metrics.baseBorder,
+    borderRadius: metrics.smallRadius,
+    elevation: metrics.baseElevation,
   },
   subContainer: {
     flex: 1,
-    margin: 3,
+    margin: metrics.smallMargin,
     width: metrics.screenWidth * 0.26,
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: colors.colorPrimary,
-    borderRadius: 5,
+    borderRadius: metrics.smallRadius,
   },
   imageLevel: {
     flex: 3,
-    margin: 2,
+    margin: metrics.smallMargin,
     width: metrics.screenWidth * 0.25,
     resizeMode: 'contain',
   },
