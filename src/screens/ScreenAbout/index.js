@@ -12,12 +12,10 @@ import {
 } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 
-import CustomBackground from '../../components/CustomBackground';
-
 import logo from '../../assets/images/logo_grey.png';
-import styles from './styles';
-
+import CustomBackground from '../../components/CustomBackground';
 import {colors} from '../../styles';
+import styles from './styles';
 
 function ScreenAbout({navigation}) {
   const url =

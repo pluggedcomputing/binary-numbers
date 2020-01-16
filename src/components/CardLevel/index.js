@@ -1,9 +1,10 @@
 import React from 'react';
 import {View, Image, Text, Alert, TouchableWithoutFeedback} from 'react-native';
+
 import PropTypes from 'prop-types';
 
-import styles from './styles';
 import {colors} from '../../styles';
+import styles from './styles';
 
 const CardLevel = props => {
   const {image, level, onPress, available} = props;

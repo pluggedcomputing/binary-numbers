@@ -1,11 +1,11 @@
 import React, {useState} from 'react';
 import {Image, View, TouchableOpacity, Text} from 'react-native';
-import PropTypes from 'prop-types';
 
-import styles from './styles';
+import PropTypes from 'prop-types';
 
 import arrowNext from '../../assets/images/next.png';
 import arrowPrevious from '../../assets/images/previous.png';
+import styles from './styles';
 
 const CustomBackground = props => {
   const {content} = props;
