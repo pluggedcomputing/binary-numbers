@@ -86,6 +86,7 @@ export default class index extends Component {
   };
 
   inStartLogin = () => {
+    const {onStatusChanged} = this.props;
     const {position, duration} = this.state;
     Animated.timing(position, {
       toValue: Platform.OS === 'ios' ? -2 : 0,
@@ -97,10 +98,11 @@ export default class index extends Component {
         selectedPosition: 0,
       });
     }, 100);
-    this.props.onStatusChanged(textLogin);
+    onStatusChanged(textLogin);
   };
 
   inStartCreate = () => {
+    const {onStatusChanged} = this.props;
     const {position, duration, mainWidth, switcherWidth} = this.state;
     Animated.timing(position, {
       toValue: mainWidth / 1.7 - switcherWidth / 2.3,
@@ -112,7 +114,7 @@ export default class index extends Component {
         selectedPosition: 1,
       });
     }, 100);
-    this.props.onStatusChanged(textRegister);
+    onStatusChanged(textRegister);
   };
 
   getStatus = selectedPosition => {

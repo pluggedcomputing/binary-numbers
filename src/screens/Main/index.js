@@ -1,11 +1,14 @@
 import React from 'react';
 import {SafeAreaView, Image, Text} from 'react-native';
+import {PropTypes} from 'prop-types';
 
 import CustomButton from '../../components/CustomButton';
+
 import logo from '../../assets/images/logo_blue.png';
+
 import styles from './styles';
 
-export default function Main({navigation}) {
+function Main({navigation}) {
   return (
     <SafeAreaView style={styles.container}>
       <Image source={logo} style={styles.logo} />
@@ -20,3 +23,9 @@ export default function Main({navigation}) {
     </SafeAreaView>
   );
 }
+
+Main.propTypes = {
+  navigation: PropTypes.string.isRequired,
+};
+
+export default Main;
