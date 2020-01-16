@@ -9,7 +9,7 @@ const styles = StyleSheet.create({
     backgroundColor: colors.colorBackground,
   },
   boxContainer: {
-    marginBottom: 20,
+    margin: 20,
     flexDirection: 'row',
     justifyContent: 'space-evenly',
     alignItems: 'center',

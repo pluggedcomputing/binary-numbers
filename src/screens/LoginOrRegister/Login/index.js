@@ -1,6 +1,5 @@
 import React from 'react';
 import {View, Text, TouchableOpacity} from 'react-native';
-import {PropTypes} from 'prop-types';
 
 import {Icon} from 'react-native-elements';
 
@@ -33,7 +32,4 @@ function Login({navigation}) {
     </View>
   );
 }
-Login.propTypes = {
-  navigation: PropTypes.string.isRequired,
-};
 export default Login;

@@ -20,12 +20,11 @@ export default class index extends Component {
   }
 
   getContainerLoginOrRegister = status => {
-    // eslint-disable-next-line react/prop-types
     const {navigation} = this.props;
     return status === textLogin ? (
       <Login navigation={navigation} />
     ) : (
-      <Register />
+      <Register navigation={navigation} />
     );
   };
 

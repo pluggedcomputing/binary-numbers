@@ -1,6 +1,5 @@
 import React from 'react';
 import {View, Text} from 'react-native';
-import {PropTypes} from 'prop-types';
 
 import CustomTextInput from '../../../components/CustomTextInput/index';
 import CustomButton from '../../../components/CustomButton';
@@ -23,13 +22,11 @@ function Register({navigation}) {
           secureTextEntry
         />
       </View>
-      <CustomButton text="CADASTRAR" />
+      <CustomButton
+        text="CADASTRAR"
+        onPress={() => navigation.navigate('Main')}
+      />
     </View>
   );
 }
-
-Register.propTypes = {
-  navigation: PropTypes.string.isRequired,
-};
-
 export default Register;
