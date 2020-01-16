@@ -10,7 +10,6 @@ import {
   StatusBar,
   Linking,
 } from 'react-native';
-import {PropTypes} from 'prop-types';
 import LinearGradient from 'react-native-linear-gradient';
 
 import CustomBackground from '../../components/CustomBackground';
@@ -81,9 +80,5 @@ function ScreenAbout({navigation}) {
     </SafeAreaView>
   );
 }
-
-ScreenAbout.propTypes = {
-  navigation: PropTypes.string.isRequired,
-};
 
 export default ScreenAbout;
