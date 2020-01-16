@@ -3,6 +3,7 @@ import {ScrollView, Image, StatusBar, KeyboardAvoidingView} from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 
 import SlidingSwitch from '../../components/SlidingSwitch';
+import {colors} from '../../styles';
 import Login from './Login';
 import Register from './Register';
 import styles from './styles';
