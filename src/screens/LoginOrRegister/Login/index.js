@@ -1,11 +1,15 @@
 import React from 'react';
 import {View, Text, TouchableOpacity} from 'react-native';
+import {PropTypes} from 'prop-types';
+
 import {Icon} from 'react-native-elements';
-import CustomTextInput from '../../components/CustomTextInput/index';
-import CustomButton from '../../components/CustomButton/index';
+
+import CustomTextInput from '../../../components/CustomTextInput/index';
+import CustomButton from '../../../components/CustomButton/index';
+
 import style from './styles';
 
-export default function Login({navigation}) {
+function Login({navigation}) {
   return (
     <View style={style.containerBase}>
       <View style={style.containerBody}>
@@ -29,3 +33,7 @@ export default function Login({navigation}) {
     </View>
   );
 }
+Login.propTypes = {
+  navigation: PropTypes.string.isRequired,
+};
+export default Login;

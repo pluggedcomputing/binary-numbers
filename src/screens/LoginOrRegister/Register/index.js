@@ -1,10 +1,13 @@
 import React from 'react';
 import {View, Text} from 'react-native';
-import CustomTextInput from '../../components/CustomTextInput/index';
-import CustomButton from '../../components/CustomButton';
+import {PropTypes} from 'prop-types';
+
+import CustomTextInput from '../../../components/CustomTextInput/index';
+import CustomButton from '../../../components/CustomButton';
+
 import style from './styles';
 
-export default function Register() {
+function Register({navigation}) {
   return (
     <View style={style.containerBase}>
       <View style={style.containerBody}>
@@ -24,3 +27,9 @@ export default function Register() {
     </View>
   );
 }
+
+Register.propTypes = {
+  navigation: PropTypes.string.isRequired,
+};
+
+export default Register;
