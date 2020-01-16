@@ -1,11 +1,9 @@
 import React from 'react';
 import {View, Text, TouchableOpacity} from 'react-native';
-
 import {Icon} from 'react-native-elements';
 
-import CustomTextInput from '../../../components/CustomTextInput/index';
 import CustomButton from '../../../components/CustomButton/index';
-
+import CustomTextInput from '../../../components/CustomTextInput/index';
 import style from './styles';
 
 function Login({navigation}) {

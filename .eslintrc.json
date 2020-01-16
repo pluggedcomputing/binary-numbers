@@ -4,9 +4,23 @@
     "browser": true,
     "jest": true
   },
-  "plugins": ["react", "jsx-a11y", "import", "prettier"],
+  "plugins": [
+    "react",
+    "jsx-a11y",
+    "import",
+    "prettier",
+    "eslint-plugin-import-helpers"
+  ],
   "extends": ["airbnb", "prettier"],
   "rules": {
+    "import-helpers/order-imports": [
+      "warn",
+      {
+        "newlinesBetween": "always", // new line between groups
+        "groups": ["/^react/", "module", ["parent", "sibling", "index"]],
+        "alphabetize": {"order": "asc", "ignoreCase": true}
+      }
+    ],
     "react/jsx-filename-extension": [
       "error",
       {

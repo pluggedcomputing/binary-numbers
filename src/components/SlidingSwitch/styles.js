@@ -1,4 +1,5 @@
 import {StyleSheet} from 'react-native';
+
 import {colors, metrics} from '../../styles';
 
 const styles = StyleSheet.create({
@@ -29,8 +30,8 @@ const styles = StyleSheet.create({
     shadowColor: '#A69E9E',
   },
   textColor: {
-    color: colors.textColorPrimary
-  }
+    color: colors.textColorPrimary,
+  },
 });
 
 export default styles;

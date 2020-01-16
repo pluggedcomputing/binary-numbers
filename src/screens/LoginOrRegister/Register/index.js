@@ -1,9 +1,8 @@
 import React from 'react';
 import {View, Text} from 'react-native';
 
-import CustomTextInput from '../../../components/CustomTextInput/index';
 import CustomButton from '../../../components/CustomButton';
-
+import CustomTextInput from '../../../components/CustomTextInput/index';
 import style from './styles';
 
 function Register({navigation}) {

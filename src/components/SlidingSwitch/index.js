@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
 import {View, Animated, Platform, Dimensions, PanResponder} from 'react-native';
+
 import PropTypes from 'prop-types';
 
-import styles from './styles';
 import {metrics} from '../../styles';
-
 import SlidingButton from '../SlidingButton/index';
+import styles from './styles';
 
 const {width} = Dimensions.get('window');
 

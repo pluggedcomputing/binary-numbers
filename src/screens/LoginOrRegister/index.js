@@ -1,16 +1,15 @@
 import React, {Component} from 'react';
 import {ScrollView, Image, StatusBar, KeyboardAvoidingView} from 'react-native';
-
 import LinearGradient from 'react-native-linear-gradient';
 
 import SlidingSwitch from '../../components/SlidingSwitch/index';
+import {colors} from '../../styles';
 import Login from './Login';
 import Register from './Register';
-
 import style from './styles';
-import {colors} from '../../styles';
 
 const textLogin = 'Entrar';
+
 export default class index extends Component {
   constructor(props) {
     super(props);

@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import {View} from 'react-native';
 import {TextInput} from 'react-native-paper';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+
 import {PropTypes} from 'prop-types';
 
 import styles from './styles';

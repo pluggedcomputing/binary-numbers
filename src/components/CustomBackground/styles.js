@@ -1,4 +1,5 @@
 import {StyleSheet} from 'react-native';
+
 import {colors, metrics} from '../../styles';
 
 const WIDHT_PORCENTAGE = 0.9;

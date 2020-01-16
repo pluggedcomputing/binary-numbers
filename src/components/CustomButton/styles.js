@@ -1,4 +1,5 @@
 import {StyleSheet} from 'react-native';
+
 import {colors, metrics, fonts} from '../../styles';
 
 const HEIGHT_PORCENTAGE = 0.1;
