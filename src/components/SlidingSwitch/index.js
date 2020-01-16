@@ -1,14 +1,17 @@
 import React, {Component} from 'react';
 import {View, Animated, Platform, Dimensions, PanResponder} from 'react-native';
 import PropTypes from 'prop-types';
+
 import styles from './styles';
+import {metrics} from '../../styles';
+
 import SlidingButton from '../SlidingButton/index';
-import metrics from '../../styles/metrics';
 
 const {width} = Dimensions.get('window');
+
 const textLogin = 'Entrar';
 const textRegister = 'Cadastrar';
-const color = styles.textColor
+
 export default class index extends Component {
   constructor(props) {
     super(props);
@@ -125,8 +128,16 @@ export default class index extends Component {
 
     return (
       <View style={styles.container}>
-        <SlidingButton textColor ={color} text={textLogin} onPress={this.inStartLogin} />
-        <SlidingButton textColor ={color} text={textRegister} onPress={this.inStartCreate} />
+        <SlidingButton
+          style={styles.textColor}
+          text={textLogin}
+          onPress={this.inStartLogin}
+        />
+        <SlidingButton
+          style={styles.textColor}
+          text={textRegister}
+          onPress={this.inStartCreate}
+        />
         <Animated.View
           {...this.panResponder.panHandlers}
           style={[
