@@ -12,6 +12,7 @@ const styles = StyleSheet.create({
     width: metrics.inputWidth,
     color: colors.textColorPrimary,
     fontSize: fonts.input,
+    fontWeight: 'bold',
     backgroundColor: colors.colorBackground,
   },
 });

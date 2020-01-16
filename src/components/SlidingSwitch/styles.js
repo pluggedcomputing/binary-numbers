@@ -28,6 +28,9 @@ const styles = StyleSheet.create({
     shadowRadius: 10,
     shadowColor: '#A69E9E',
   },
+  textColor: {
+    color: colors.textColorPrimary
+  }
 });
 
 export default styles;
