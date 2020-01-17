@@ -74,7 +74,6 @@ function ScreenAbout({navigation}) {
             <Text style={styles.textButton}>VOLTAR</Text>
           </TouchableOpacity>
         </View>
-        <ChoiceButton text={"Opção A"} correct={false} onPress={() => Alert.alert('Acertou')}/>
       </LinearGradient>
     </SafeAreaView>
   );
