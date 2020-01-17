@@ -1,4 +1,3 @@
-/* eslint-disable react/jsx-curly-newline */
 import React from 'react';
 import {
   Alert,
@@ -14,6 +13,7 @@ import LinearGradient from 'react-native-linear-gradient';
 
 import logo from '../../assets/images/logo_grey.png';
 import CustomBackground from '../../components/CustomBackground';
+import ChoiceButton from '../../components/ChoiceButton';
 import {colors} from '../../styles';
 import styles from './styles';
 
@@ -74,6 +74,7 @@ function ScreenAbout({navigation}) {
             <Text style={styles.textButton}>VOLTAR</Text>
           </TouchableOpacity>
         </View>
+        <ChoiceButton text={"Opção A"} correct={false} onPress={() => Alert.alert('Acertou')}/>
       </LinearGradient>
     </SafeAreaView>
   );
