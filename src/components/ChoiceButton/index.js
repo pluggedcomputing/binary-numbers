@@ -9,14 +9,14 @@ import styles from './styles';
 const ChoiceButton = props => {
   const { correct, onPress, text } = props;
   const [backgroundColor, setbackgroundColor] = useState(colors.colorPrimary)
+
   function onPressButton() {
-    if (correct && onPress) {
+    if (correct) {
       setbackgroundColor(colors.colorSucess)
-      onPress()
     } else {
       setbackgroundColor(colors.colorError)
-      onPress()
     }
+    onPress()
   }
   return (
     <View style={styles.container}>
@@ -27,7 +27,7 @@ const ChoiceButton = props => {
   );
 }
 
-ChoiceButton.prototype = {
+ChoiceButton.Prototype = {
   correct: PropTypes.bool,
   onPress: PropTypes.func.isRequired,
   text: PropTypes.string.isRequired,

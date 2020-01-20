@@ -13,7 +13,6 @@ import LinearGradient from 'react-native-linear-gradient';
 
 import logo from '../../assets/images/logo_grey.png';
 import CustomBackground from '../../components/CustomBackground';
-import ChoiceButton from '../../components/ChoiceButton';
 import {colors} from '../../styles';
 import styles from './styles';
 
