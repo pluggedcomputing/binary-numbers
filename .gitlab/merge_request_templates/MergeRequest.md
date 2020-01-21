@@ -1,7 +1,6 @@
 # Merge Request
 
-**Id da Issue:** [000]  
-**Link da Issue:** <htts://linkdaissue.com>
+**Id da Issue:** [000]
 
 ### Tipo
 * [ ]  ~feature
