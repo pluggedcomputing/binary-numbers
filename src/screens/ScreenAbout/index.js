@@ -11,7 +11,6 @@ import {
   Linking,
 } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
-
 import logo from '../../assets/images/logo_grey.png';
 import CustomBackground from '../../components/CustomBackground';
 import {colors} from '../../styles';
