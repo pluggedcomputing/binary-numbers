@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
-import {View} from 'react-native';
-import {TextInput} from 'react-native-paper';
+import {View, TextInput} from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
 import {PropTypes} from 'prop-types';
@@ -10,39 +9,32 @@ import styles from './styles';
 
 const CustomTextInput = props => {
   const {style, icon, secureTextEntry} = props;
+
   const [state, setState] = useState({
-    iconPassword: 'eye',
-    secure: secureTextEntry,
+    showPassword: secureTextEntry,
   });
 
-  const setSecureIconPassword = () => {
-    if (state.secure) {
-      setState({
-        iconPassword: 'eye-off',
-        secure: false,
-      });
-    } else {
-      setState({
-        iconPassword: 'eye',
-        secure: true,
-      });
-    }
+  const handleSecureIconPassword = () => {
+    setState({
+      showPassword: !state.showPassword,
+    });
   };
 
-  const getViewIconPassword = secureEnty => {
-    let view = <Icon />;
-    if (secureEnty) {
-      view = (
-        <Icon
-          name={state.iconPassword}
-          size={general.iconSize.regular}
-          style={styles.iconSecure}
-          onPress={setSecureIconPassword}
-        />
-      );
-    }
-    return view;
-  };
+  const secureIconPassword = state.showPassword ? (
+    <Icon
+      name="eye-off"
+      size={general.iconSize.regular}
+      style={styles.iconSecure}
+      onPress={handleSecureIconPassword}
+    />
+  ) : (
+    <Icon
+      name="eye"
+      size={general.iconSize.regular}
+      style={styles.iconSecure}
+      onPress={handleSecureIconPassword}
+    />
+  );
 
   return (
     <View style={[styles.container, style]}>
@@ -50,9 +42,9 @@ const CustomTextInput = props => {
       <TextInput
         {...props}
         style={styles.input}
-        secureTextEntry={state.secure}
+        secureTextEntry={state.showPassword}
       />
-      {getViewIconPassword(secureTextEntry)}
+      {secureTextEntry ? secureIconPassword : null}
     </View>
   );
 };
