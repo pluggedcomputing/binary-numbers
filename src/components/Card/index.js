@@ -1,26 +1,27 @@
 import React, {useState} from 'react';
 import {View, Text, TouchableOpacity, Image} from 'react-native';
-import styles from './styles';
+
+import PropTypes from 'prop-types';
+
 import image from '../../assets/images/logo_grey.png';
+import styles from './styles';
 
 const Card = props => {
   const {number, rotate} = props;
 
-  const numberAllowerdCard = [0, 1, 2, 4, 8, 16];
-
   const [state, setState] = useState({
-    rotate: rotate,
-    carCenter: () => getAmountCard(),
+    rotate,
+    carCenter: () => getAmountCard(rotate),
     textCard: rotate ? 0 : 1,
   });
 
   const imageCard = (
     <View style={styles.containerContent}>
-      <Image style={styles.image} source={image}></Image>
+      <Image style={styles.image} source={image} />
     </View>
   );
 
-  const Circle = () => <View style={styles.circle}></View>;
+  const Circle = () => <View style={styles.circle} />;
 
   const circleOne = (
     <View style={styles.containerContent}>
@@ -96,8 +97,8 @@ const Card = props => {
     </View>
   );
 
-  getAmountCard = () => {
-    const valueNumber = state.rotate ? 0 : number;
+  const getAmountCard = turn => {
+    const valueNumber = turn ? 0 : number;
     const amountCircle = {
       0: imageCard,
       1: circleOne,
@@ -109,38 +110,45 @@ const Card = props => {
     return amountCircle[valueNumber];
   };
 
-  checkNumberCard = number => {
-    if (numberAllowerdCard.indexOf(number) === -1) return;
-    return number == 0 ? number : 1;
+  const checkNumberCard = num => {
+    return num === 0 ? num : 1;
   };
 
-  rotateCard = () => {
+  const rotateCard = () => {
     let valueNumber;
     let valueRotate;
 
-    if (state.rotate === false) {
-      valueNumber = 0;
-      valueRotate = true;
-    } else {
+    if (state.rotate) {
       valueNumber = number;
       valueRotate = false;
+    } else {
+      valueNumber = 0;
+      valueRotate = true;
     }
-
     setState({
       rotate: valueRotate,
-      carCenter: () => getAmountCard(),
+      carCenter: () => getAmountCard(valueRotate),
       textCard: checkNumberCard(valueNumber),
     });
   };
 
   return (
-    <TouchableOpacity style={styles.card} onPress={this.rotateCard}>
+    <TouchableOpacity style={styles.card} onPress={rotateCard}>
       <View style={styles.cardWhite}>
         {state.carCenter()}
         <Text style={styles.text}>{state.textCard}</Text>
       </View>
     </TouchableOpacity>
   );
+};
+
+Card.propTypes = {
+  rotate: PropTypes.bool,
+  number: PropTypes.oneOf([1, 2, 4, 8, 16]).isRequired,
+};
+
+Card.defaultProps = {
+  rotate: false,
 };
 
 export default Card;
