@@ -1,5 +1,11 @@
 import React, {Component} from 'react';
-import {ScrollView, Image, StatusBar, KeyboardAvoidingView} from 'react-native';
+import {
+  ScrollView,
+  Image,
+  StatusBar,
+  SafeAreaView,
+  KeyboardAvoidingView,
+} from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 
 import SlidingSwitch from '../../components/SlidingSwitch';
@@ -32,31 +38,33 @@ export default class index extends Component {
     const image = require('../../assets/images/logo_grey.png');
 
     return (
-      <LinearGradient
-        colors={[colors.colorPrimary, '#242F68']}
-        style={styles.container}>
-        <StatusBar
-          barStyle="light-content"
-          backgroundColor={colors.colorPrimary}
-        />
-        <ScrollView
-          contentContainerStyle={{
-            justifyContent: 'center',
-            alignItems: 'center',
-          }}
-          showsVerticalScrollIndicator={false}>
-          <Image style={styles.containerImage} source={image} />
-          <KeyboardAvoidingView behavior="padding" enabled>
-            <SlidingSwitch
-              onStatusChanged={text => {
-                this.setState({status: text});
-              }}
-              isParentScrollEnabled={false}
+      <ScrollView
+        contentContainerStyle={{
+          justifyContent: 'center',
+          alignItems: 'center',
+        }}
+        showsVerticalScrollIndicator={false}>
+        <SafeAreaView>
+          <LinearGradient
+            style={styles.container}
+            colors={[colors.colorPrimary, '#242F68']}>
+            <StatusBar
+              barStyle="light-content"
+              backgroundColor={colors.colorPrimary}
             />
-            {this.getContainerLoginOrRegister(status)}
-          </KeyboardAvoidingView>
-        </ScrollView>
-      </LinearGradient>
+            <Image style={styles.containerImage} source={image} />
+            <KeyboardAvoidingView behavior="padding" enabled>
+              <SlidingSwitch
+                onStatusChanged={text => {
+                  this.setState({status: text});
+                }}
+                isParentScrollEnabled={false}
+              />
+              {this.getContainerLoginOrRegister(status)}
+            </KeyboardAvoidingView>
+          </LinearGradient>
+        </SafeAreaView>
+      </ScrollView>
     );
   }
 }

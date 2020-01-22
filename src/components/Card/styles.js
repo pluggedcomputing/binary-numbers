@@ -1,4 +1,5 @@
 import {StyleSheet} from 'react-native';
+
 import {colors, fonts, metrics} from '../../styles';
 
 const WIDHT_PORCENTAGE = 0.15;
@@ -10,11 +11,11 @@ const styles = StyleSheet.create({
     width: metrics.screenWidth * HEIGHT_PORCENTAGE,
     borderRadius: metrics.smallRadius,
     borderColor: colors.colorPrimary,
-    borderWidth: 5,
+    borderWidth: metrics.baseBorder,
     backgroundColor: colors.backgroundColor,
     justifyContent: 'center',
     alignItems: 'center',
-    elevation: 5,
+    elevation: metrics.baseElevation,
   },
   cardWhite: {
     alignItems: 'center',
@@ -30,7 +31,6 @@ const styles = StyleSheet.create({
     justifyContent: 'space-around',
     width: metrics.screenWidth * 0.14,
     backgroundColor: colors.colorPrimary,
-    borderRadius: metrics.smallRadius,
   },
   text: {
     flex: 1,
