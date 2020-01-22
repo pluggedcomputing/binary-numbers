@@ -11,7 +11,11 @@ function Login({navigation}) {
   return (
     <View style={style.containerBase}>
       <View style={style.containerBody}>
-        <CustomTextInput icon="email" placeholder="Email" />
+        <CustomTextInput
+          icon="email"
+          placeholder="Email"
+          keyboardType="email-address"
+        />
         <Text style={style.lineBottom} />
         <CustomTextInput icon="lock" placeholder="Senha" secureTextEntry />
       </View>

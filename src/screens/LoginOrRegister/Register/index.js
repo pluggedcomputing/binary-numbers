@@ -11,7 +11,11 @@ function Register({navigation}) {
       <View style={style.containerBody}>
         <CustomTextInput icon="account" placeholder="Nome" />
         <Text style={style.lineBottom} />
-        <CustomTextInput icon="email" placeholder="Email" />
+        <CustomTextInput
+          icon="email"
+          placeholder="Email"
+          keyboardType="email-address"
+        />
         <Text style={style.lineBottom} />
         <CustomTextInput icon="lock" placeholder="Senha" secureTextEntry />
         <Text style={style.lineBottom} />

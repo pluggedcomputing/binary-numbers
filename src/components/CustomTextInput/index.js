@@ -51,6 +51,7 @@ const CustomTextInput = props => {
         {...props}
         style={styles.input}
         secureTextEntry={state.secure}
+        autoCapitalize="none"        
       />
       {getViewIconPassword(secureTextEntry)}
     </View>
