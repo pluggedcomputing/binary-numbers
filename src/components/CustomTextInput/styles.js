@@ -14,7 +14,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   input: {
-    flex: 4,
+    flex: 7,
     color: colors.textColorPrimary,
     fontSize: fonts.input,
     fontWeight: 'bold',
