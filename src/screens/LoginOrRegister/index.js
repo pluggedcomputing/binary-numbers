@@ -3,7 +3,7 @@ import {ScrollView, Image, StatusBar, KeyboardAvoidingView} from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 
 import SlidingSwitch from '../../components/SlidingSwitch';
-import {colors} from '../../styles';
+import {colors, metrics} from '../../styles';
 import Login from './Login';
 import Register from './Register';
 import styles from './styles';
@@ -43,6 +43,7 @@ export default class index extends Component {
           contentContainerStyle={{
             justifyContent: 'center',
             alignItems: 'center',
+            width: metrics.screenWidth,
           }}
           showsVerticalScrollIndicator={false}>
           <Image style={styles.containerImage} source={image} />
