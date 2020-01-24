@@ -12,10 +12,7 @@
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged",
-      "post-checkout": [
-        "git pull origin",
-        "yarn install"
-      ]
+      "post-checkout": "git pull origin && yarn install"
     }
   },
   "lint-staged": {
