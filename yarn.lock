@@ -5549,10 +5549,10 @@ react-native-linear-gradient@^2.5.6:
   resolved "https://registry.yarnpkg.com/react-native-linear-gradient/-/react-native-linear-gradient-2.5.6.tgz#96215cbc5ec7a01247a20890888aa75b834d44a0"
   integrity sha512-HDwEaXcQIuXXCV70O+bK1rizFong3wj+5Q/jSyifKFLg0VWF95xh8XQgfzXwtq0NggL9vNjPKXa016KuFu+VFg==
 
-react-native-paper@^3.4.0:
-  version "3.4.0"
-  resolved "https://registry.yarnpkg.com/react-native-paper/-/react-native-paper-3.4.0.tgz#b8d3643b33177ff41a2505aaa801d313defaf707"
-  integrity sha512-QVd6vZ4iJbUqp1OI1DY/0HwBS4y0SVixa2IeBIVyYM4ZZeoeOOlWCXdgtQk7tlf1ju5t1MJunyRGPOXOXTLGNg==
+react-native-paper@^3.5.0:
+  version "3.5.0"
+  resolved "https://registry.yarnpkg.com/react-native-paper/-/react-native-paper-3.5.0.tgz#d74db26fa1714911ec1c9187c430726c680f4b52"
+  integrity sha512-W347plzhV/EsVzC8aT8se6s/jmIx1kSF7E4fpbptA950OHxb4gPFFruHZkffHTByLUiZEgKl3nXKqXkRDDp1UA==
   dependencies:
     "@callstack/react-theme-provider" "^3.0.5"
     color "^3.1.2"
