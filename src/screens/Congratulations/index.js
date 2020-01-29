@@ -14,13 +14,7 @@ const Congratulations = props => {
   const level = navigation.getParam('level', 'X')
   const navigateScreen = () => navigation.navigate('LevelSelection')
 
-  useEffect(() => {
-
-    setTimeout(() => {
-      navigateScreen()
-    }, 3000);
-
-  }, []);
+  useEffect(() => { setTimeout(navigateScreen, 3000); }, []);
 
   return (
     <SafeAreaView style={styles.container}>
