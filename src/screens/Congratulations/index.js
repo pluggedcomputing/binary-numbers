@@ -1,9 +1,8 @@
-import React from 'react';
-import { SafeAreaView, Text } from 'react-native';
+import React, { useEffect } from 'react';
+import { SafeAreaView, Text, StatusBar, TouchableOpacity } from 'react-native';
 import { ProgressBar } from 'react-native-paper';
 
 import Lottie from 'lottie-react-native';
-import { PropTypes } from 'prop-types';
 
 import animation from '../../assets/animations/CheckedDone.json'
 import { colors } from '../../styles';
@@ -11,20 +10,33 @@ import styles from './styles';
 
 
 const Congratulations = props => {
-  const { level } = props
+  const { navigation } = props
+  const level = navigation.getParam('level', 'X')
+  const navigateScreen = () => navigation.navigate('LevelSelection')
+
+  useEffect(() => {
+
+    setTimeout(() => {
+      navigateScreen()
+    }, 3000);
+
+  }, []);
 
   return (
     <SafeAreaView style={styles.container}>
-      <Text style={styles.text1}>Parabéns!!!</Text>
+      <StatusBar
+        barStyle='light-content'
+        backgroundColor="rgba(0, 0, 0, 0.8)"
+      />
+      <Text style={styles.textTop}>Parabéns!!!</Text>
       <Lottie source={animation} autoPlay loop />
-      <Text style={styles.text2}>Você completou o nivel {level}</Text>
+      <Text style={styles.textEnd}>Você completou o nível {level}</Text>
+      <TouchableOpacity style={styles.buttonAltenative} onPress={navigateScreen}>
+        <Text style={styles.textButton}>Continuar </Text>
+      </TouchableOpacity>
       <ProgressBar color={colors.colorSucess} progress={1} />
     </SafeAreaView>
   );
-}
-
-Congratulations.propTypes = {
-  level: PropTypes.number.isRequired,
 }
 
 export default Congratulations;

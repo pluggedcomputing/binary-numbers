@@ -1,6 +1,6 @@
 import {StyleSheet} from 'react-native';
 
-import {colors, metrics} from '../../styles';
+import {colors, fonts, metrics} from '../../styles';
 
 const styles = StyleSheet.create({
   container: {
@@ -8,25 +8,32 @@ const styles = StyleSheet.create({
     width: metrics.screenWidth,
     height: metrics.screenHeight ,
     backgroundColor: 'rgba(0, 0, 0, 0.8)',
+    justifyContent: 'space-around'
   },
-  text1: {
-    flex: 1,
+  textTop: {
+    flex: 4,
     textAlign: 'center',
     color: colors.textColorSecondary,
     fontSize: metrics.screenWidth * 0.14,
     fontWeight: 'bold',
-    justifyContent: 'flex-start',
-    margin: metrics.baseMargin,
-    paddingVertical: 150
   },
-  text2: {
+  textEnd: {
     flex: 1,
     textAlign: 'center',
     color: colors.textColorSecondary,
     fontSize: metrics.screenWidth * 0.1,
     fontWeight: 'bold',
-    justifyContent: 'flex-end',
-    margin: metrics.baseMargin,
+  },
+  textButton: {
+    color: colors.colorBackground,
+    textDecorationLine: 'underline',
+    fontSize: fonts.title,
+    fontWeight: 'bold',
+  },
+  buttonAltenative: {
+    alignItems: 'center',
+    marginTop: metrics.halfMargin,
+    marginBottom: 30
   },
 });
 
