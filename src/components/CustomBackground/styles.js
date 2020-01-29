@@ -30,8 +30,6 @@ const styles = StyleSheet.create({
     justifyContent: 'flex-end',
   },
   Icon: {
-    width: 20,
-    height: 20,
     margin: 5,
     resizeMode: 'contain',
   },
