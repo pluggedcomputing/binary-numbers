@@ -9,7 +9,7 @@ const Tip = ({ tip }) => null;
 
 const App = () => (
   <Container>
-    <Header androidStatusBarColor="#FFFAFA" style={styles.header} hasTabs>
+    <Header androidStatusBarColor="#f29e16" style={styles.header} hasTabs>
       
       <Body>
         <Title>LoremIpsum</Title>

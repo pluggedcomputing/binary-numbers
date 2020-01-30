@@ -6,10 +6,10 @@ import {colors, metrics, fonts} from '../../styles';
 
 const styles = StyleSheet.create({
   tabHeading: {
-    backgroundColor: "#7159C1",
+    backgroundColor: "#ff8c00",
   },
   header: { 
-    backgroundColor: "#7159C1",
+    backgroundColor: "#ff8c00",
   },
   container: {
     flex: 1,
