@@ -1,7 +1,7 @@
 import metrics from './metrics';
 
 const fonts = {
-  title: metrics.screenWidth * 0.045,
+  title: metrics.screenWidth * 0.05,
   input: metrics.screenWidth * 0.04,
   regular: metrics.screenWidth * 0.035,
   medium: metrics.screenWidth * 0.03,
