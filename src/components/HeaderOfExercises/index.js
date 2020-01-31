@@ -1,30 +1,44 @@
-import React, { Fragment } from 'react';
+import React from 'react';
+import {View, Text, Alert} from 'react-native';
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
-import { Container, Header, Left, Right, Body, Title, Button, Icon, View, Fab, List, ListItem, Thumbnail, Text, Badge, Content, Tab, Tabs, TabHeading, Card, CardItem } from 'native-base';
+import {PropTypes} from 'prop-types';
 
-const Refresh = ({ refresh }) => null;
-const Tip = ({ tip }) => null;
+import {general} from '../../styles';
+import styles from './styles';
 
+const HeaderOfExercises = props => {
+  const {title, tips, navigation} = props;
 
+  const handleComeBack = () => navigation.navigate('LevelSelection');
 
-const App = () => (
-  <Container>
-    <Header androidStatusBarColor="#f29e16" style={styles.header} hasTabs>
-      
-      <Body>
-        <Title>LoremIpsum</Title>
-      </Body>
-    </Header>
+  const handleTips = () => Alert.alert('Dicas', tips);
+
+  return (
     <View style={styles.container}>
-    <Tabs>
-      <Tab heading={<TabHeading style={styles.tabHeading} ><Icon type="FontAwesome" name="refresh" /></TabHeading>}>
-        <Refresh refresh={refresh}/>
-      </Tab>
-      <Tab heading={<TabHeading style={styles.tabHeading} ><Icon type="FontAwesome" name="tip" /></TabHeading>}>
-        <Tip tip={tip}/>
-      </Tab>
-    </Tabs>
+      <Text style={styles.title}>{title}</Text>
+      <Icon
+        name="arrow-left-bold-circle-outline"
+        size={general.iconSize.bigger}
+        style={styles.icon}
+        onPress={handleComeBack}
+      />
+      <Icon
+        name="help-circle-outline"
+        size={general.iconSize.bigger}
+        style={styles.icon}
+        onPress={handleTips}
+      />
     </View>
-  </Container>
-);
-export default App;
+  );
+};
+
+HeaderOfExercises.propTypes = {
+  title: PropTypes.string.isRequired,
+  tips: PropTypes.string,
+};
+
+HeaderOfExercises.defaultProps = {
+  tips: 'Não há dicas para esse nível',
+};
+export default HeaderOfExercises;
