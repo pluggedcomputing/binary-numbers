@@ -4,11 +4,26 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### 0.0.1-develop.1 (2020-01-31)
 
-
 ### Features
 
-* **#11:** ajustes no comp header of exercises ([e08a649](https://gitlab.com/pluggedcomputing/plugged-computing-binary-numbers/commit/e08a649b625e2d45a857decca8720aafb7284ebe)), closes [#11](https://gitlab.com/pluggedcomputing/plugged-computing-binary-numbers/issues/11)
-* **#24:** add commit lint e suas configurações ([2c92c53](https://gitlab.com/pluggedcomputing/plugged-computing-binary-numbers/commit/2c92c538eb2baecbbfa2b8e88f05db57fac80eed)), closes [#24](https://gitlab.com/pluggedcomputing/plugged-computing-binary-numbers/issues/24)
+- Componente de Cartões de Niveis
+- Componente de Cartas
+- Componente Botões dos exercícios
+- Componente Header dos exercícios
+- Nova Tela LevelSelection
+- Nova tela de finalização de exercício
+
+### Chore
+
+- Ordenação de imports automática com ESLint Import Helpers
+- Adicionado lint para padronizar mensagens de commit do Git
+- Correção automatica do ESlint antes do commit
+- Execução automatica do `yarn install` depois do checkout
+- Adicionado Release e Changelog automático
+
+### Fix
+
+- Correção de bugs e outras melhorias
 
 ### 0.0.1-develop.0 (2020-01-31)
 
