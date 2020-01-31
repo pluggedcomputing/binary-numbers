@@ -1,13 +1,15 @@
 {
   "name": "plugged-computing-binary-numbers",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": true,
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "release": "standard-version",
+    "pre-release": "release -- --prerelease"
   },
   "husky": {
     "hooks": {
@@ -57,7 +59,8 @@
     "lint-staged": "^10.0.2",
     "metro-react-native-babel-preset": "^0.57.0",
     "prettier": "^1.19.1",
-    "react-test-renderer": "16.9.0"
+    "react-test-renderer": "16.9.0",
+    "standard-version": "^7.1.0"
   },
   "jest": {
     "preset": "react-native"
