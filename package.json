@@ -1,6 +1,6 @@
 {
   "name": "plugged-computing-binary-numbers",
-  "version": "0.0.4",
+  "version": "0.0.5-develop.0",
   "private": true,
   "scripts": {
     "android": "react-native run-android",
@@ -9,7 +9,7 @@
     "test": "jest",
     "lint": "eslint .",
     "release": "standard-version",
-    "pre-release": "standard-version -- --prerelease develop"
+    "pre-release": "standard-version --prerelease develop"
   },
   "husky": {
     "hooks": {
