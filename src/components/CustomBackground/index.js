@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {View, TouchableOpacity, Text} from 'react-native';
-import {Icon} from 'react-native-vector-icons/MaterialCommunityIcons';
+import {Icon} from 'react-native-elements';
 
 import PropTypes from 'prop-types';
 
@@ -32,18 +32,18 @@ const CustomBackground = props => {
           <TouchableOpacity onPress={previousPage}>
             <Icon
               name="arrow-left-bold-circle-outline"
-              type="font-awesome"
+              type="material-community"
               color={colors.colorPrimary}
-              size={general.iconSize.regular}
+              size={general.iconSize.bigger}
               style={styles.Icon}
             />
           </TouchableOpacity>
           <TouchableOpacity onPress={nextPage}>
             <Icon
               name="arrow-right-bold-circle-outline"
-              type="font-awesome"
+              type="material-community"
               color={colors.colorPrimary}
-              size={general.iconSize.regular}
+              size={general.iconSize.bigger}
               style={styles.Icon}
             />
           </TouchableOpacity>
