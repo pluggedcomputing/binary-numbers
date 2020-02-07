@@ -7,12 +7,11 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: 'row',
     padding: metrics.basePadding,
-    alignItems: 'center',
   },
   title: {
     flex: 5,
     fontWeight: 'bold',
-    fontSize: fonts.title,
+    fontSize: fonts.header,
   },
   icon: {
     color: colors.colorPrimary,
