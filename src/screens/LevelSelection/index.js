@@ -52,7 +52,7 @@ function LevelSelection({navigation}) {
             level="1"
             image={level1}
             available={LevelsAvailable.level1}
-            onPress={() => Alert.alert('level="1"')}
+            onPress={() => navigation.navigate('ExerciseLevelOne')}
           />
           <CardLevel
             level="2"
