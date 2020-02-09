@@ -91,7 +91,7 @@ const AlphabetTable = () => {
       horizontal
       contentContainerStyle={{paddingLeft: 10, paddingRight: 10}}>
       {listTable.map(list => (
-        <DataTable style={styles.container}>
+        <DataTable key={list.numberFirstList} style={styles.container}>
           <DataTable.Header style={styles.containerHeader}>
             <DataTable.Title style={styles.contaninerBody}>
               <Text style={styles.textTitle}>{list.numberFirstList}</Text>
