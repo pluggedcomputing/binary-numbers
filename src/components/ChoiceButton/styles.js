@@ -1,26 +1,33 @@
 import {StyleSheet} from 'react-native';
 
-import {colors, metrics} from '../../styles';
+import {colors, metrics, fonts} from '../../styles';
 
-const HEIGHT_PORCENTAGE = 0.9;
+const WIDTH_PORCENTAGE = 0.9;
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    margin: metrics.baseMargin,
     justifyContent: 'center',
-    paddingHorizontal: metrics.basePadding,
-    width: metrics.screenWidth * HEIGHT_PORCENTAGE,
+    width: metrics.screenWidth * WIDTH_PORCENTAGE,
   },
   button: {
     alignItems: 'center',
     backgroundColor: colors.colorPrimary,
     borderRadius: metrics.baseRadius,
     padding: metrics.basePadding,
+    shadowColor: colors.textColorPrimary,
+    shadowOffset: {
+      width: 0,
+      height: -20,
+    },
+    shadowOpacity: 1,
+    shadowRadius: 3,
+    elevation: metrics.elevation,
   },
   text: {
+    fontSize: fonts.input,
     fontWeight: 'bold',
     color: colors.textColorSecondary,
-    textTransform: 'uppercase',
   },
 });
 

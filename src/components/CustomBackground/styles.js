@@ -3,18 +3,26 @@ import {StyleSheet} from 'react-native';
 import {colors, metrics, fonts} from '../../styles';
 
 const WIDHT_PORCENTAGE = 0.9;
-const HEIGHT_PORCENTAGE = 0.3;
+const HEIGHT_PORCENTAGE = 0.35;
 
 const styles = StyleSheet.create({
   container: {
+    height: metrics.screenHeight * HEIGHT_PORCENTAGE,
+    width: metrics.screenWidth * WIDHT_PORCENTAGE,
+    justifyContent: 'center',
+    alignItems: 'center',
     borderWidth: metrics.smallBorder,
     borderRadius: metrics.smallRadius,
     borderColor: colors.textcolorPrimary,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: colors.colorBackground,
-    height: metrics.screenHeight * HEIGHT_PORCENTAGE,
-    width: metrics.screenWidth * WIDHT_PORCENTAGE,
+    backgroundColor: colors.textColorSecondary,
+    shadowColor: colors.textColorPrimary,
+    shadowOffset: {
+      width: 0,
+      height: -20,
+    },
+    shadowOpacity: 1,
+    shadowRadius: 3,
+    elevation: metrics.elevation,
   },
   content: {
     justifyContent: 'center',
@@ -35,7 +43,7 @@ const styles = StyleSheet.create({
   },
   textCont: {
     flex: 0.5,
-    fontSize: fonts.medium,
+    fontSize: fonts.regular,
     color: colors.textColorPrimary,
     fontWeight: 'bold',
     alignSelf: 'flex-end',
