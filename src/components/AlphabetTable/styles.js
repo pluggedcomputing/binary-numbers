@@ -6,7 +6,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     height: metrics.screenHeight * 0.26,
-    backgroundColor: '#263238',
   },
   textTitle: {
     color: colors.colorBackground,
@@ -15,21 +14,21 @@ const styles = StyleSheet.create({
   textCell: {
     fontSize: fonts.title,
     fontWeight: 'bold',
-    color: colors.colorBackground,
+    color: colors.textColorPrimary,
   },
   containerHeader: {
     width: metrics.screenWidth * 0.2,
     height: metrics.screenHeight * 0.03,
-    backgroundColor: '#263238',
-    borderBottomColor: '#000000',
+    backgroundColor: colors.textColorPrimary,
+    borderBottomColor: colors.textColorPrimary,
     borderWidth: 2,
     alignItems: 'center',
   },
   containerRow: {
     width: metrics.screenWidth * 0.2,
     height: metrics.screenHeight * 0.1,
-    backgroundColor: '#4f5b62',
-    borderBottomColor: '#000000',
+    backgroundColor: colors.textColorSecondary,
+    borderBottomColor: colors.textColorPrimary,
     borderWidth: 2,
     borderBottomWidth: 2,
   },
