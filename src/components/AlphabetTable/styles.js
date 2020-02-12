@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
     height: metrics.screenHeight * 0.03,
     backgroundColor: colors.textColorPrimary,
     borderBottomColor: colors.textColorPrimary,
-    borderWidth: 2,
+    borderWidth: metrics.smallBorder,
     alignItems: 'center',
   },
   containerRow: {
@@ -29,8 +29,8 @@ const styles = StyleSheet.create({
     height: metrics.screenHeight * 0.1,
     backgroundColor: colors.textColorSecondary,
     borderBottomColor: colors.textColorPrimary,
-    borderWidth: 2,
-    borderBottomWidth: 2,
+    borderWidth: metrics.smallBorder,
+    borderBottomWidth: metrics.smallBorder,
   },
   contaninerBody: {
     justifyContent: 'center',
