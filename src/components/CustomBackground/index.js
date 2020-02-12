@@ -1,14 +1,15 @@
-import React, {useState} from 'react';
-import {View, TouchableOpacity, Text} from 'react-native';
-import {Icon} from 'react-native-vector-icons/MaterialCommunityIcons';
+import React, { useState } from 'react';
+import {View, TouchableOpacity, Text } from 'react-native';
+import { Icon } from 'react-native-elements';
 
 import PropTypes from 'prop-types';
 
-import {colors, general} from '../../styles';
+import { colors, general } from '../../styles';
 import styles from './styles';
 
+
 const CustomBackground = props => {
-  const {content} = props;
+  const { content } = props;
   const [page, setPage] = useState(0);
   const contentSize = content.length - 1;
 
@@ -25,7 +26,7 @@ const CustomBackground = props => {
 
   return (
     <View style={styles.container}>
-      <View style={[styles.container, {transform: [{rotate: '-3deg'}]}]}>
+      <View style={[styles.container, { transform: [{ rotate: '-3deg' }] }]}>
         <View style={styles.content}>{content[page]}</View>
 
         <View style={styles.buttonsContainer}>
