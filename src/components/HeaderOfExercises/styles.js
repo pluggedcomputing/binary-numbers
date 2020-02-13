@@ -17,6 +17,10 @@ const styles = StyleSheet.create({
     color: colors.colorPrimary,
     margin: metrics.smallPadding,
   },
+  defaultTips: {
+    fontSize: fonts.regular,
+    fontWeight: 'bold',
+  },
 });
 
 export default styles;
