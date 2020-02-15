@@ -25,8 +25,7 @@ const styles = StyleSheet.create({
     backgroundColor: colors.colorBackground,
   },
   subDescriptive: {
-    justifyContent: 'space-between',
-    height: metrics.screenHeight * 0.25,
+    height: metrics.screenHeight * 0.2,
     padding: 5,
   },
   containerGroup: {
