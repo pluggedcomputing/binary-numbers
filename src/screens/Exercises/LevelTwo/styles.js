@@ -18,15 +18,23 @@ const styles = StyleSheet.create({
     flex: 5,
     justifyContent: 'center',
   },
+  statement: {
+    textAlign: 'center',
+    fontSize: fonts.input,
+    fontWeight: 'bold',
+    color: colors.textColorPrimary,
+  },
   descriptive: {
     flex: 1,
     justifyContent: 'space-around',
     alignItems: 'center',
-    backgroundColor: colors.colorBackground,
   },
   subDescriptive: {
-    height: metrics.screenHeight * 0.2,
-    padding: 5,
+    height: metrics.screenHeight * 0.25,
+  },
+  buttonGroup: {
+    flex: 5,
+    justifyContent: 'center',
   },
   containerGroup: {
     flex: 5,
