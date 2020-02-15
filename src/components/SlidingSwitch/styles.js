@@ -1,6 +1,6 @@
 import {StyleSheet} from 'react-native';
 
-import {colors, metrics} from '../../styles';
+import {colors, metrics, general} from '../../styles';
 
 const styles = StyleSheet.create({
   container: {
@@ -24,10 +24,7 @@ const styles = StyleSheet.create({
     height: 53,
     alignItems: 'center',
     justifyContent: 'center',
-    elevation: metrics.baseElevation,
-    shadowOpacity: 0.3,
-    shadowRadius: metrics.baseRadius,
-    shadowColor: '#A69E9E',
+    ...general.defaultShadow,
   },
   textColor: {
     color: colors.textColorPrimary,

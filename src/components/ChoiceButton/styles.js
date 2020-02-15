@@ -1,6 +1,6 @@
 import {StyleSheet} from 'react-native';
 
-import {colors, metrics, fonts} from '../../styles';
+import {colors, metrics, fonts, general} from '../../styles';
 
 const WIDTH_PORCENTAGE = 0.9;
 
@@ -14,15 +14,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: colors.colorPrimary,
     borderRadius: metrics.baseRadius,
+    borderColor: colors.colorBackground,
     padding: metrics.basePadding,
-    shadowColor: colors.textColorPrimary,
-    shadowOffset: {
-      width: 0,
-      height: -20,
-    },
-    shadowOpacity: 1,
-    shadowRadius: 3,
-    elevation: metrics.elevation,
+    ...general.defaultShadow,
   },
   text: {
     fontSize: fonts.input,

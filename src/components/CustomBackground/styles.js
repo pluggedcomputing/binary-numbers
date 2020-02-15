@@ -1,9 +1,9 @@
 import {StyleSheet} from 'react-native';
 
-import {colors, metrics, fonts} from '../../styles';
+import {colors, metrics, fonts, general} from '../../styles';
 
 const WIDHT_PORCENTAGE = 0.9;
-const HEIGHT_PORCENTAGE = 0.35;
+const HEIGHT_PORCENTAGE = 0.33;
 
 const styles = StyleSheet.create({
   container: {
@@ -12,17 +12,10 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     borderWidth: metrics.smallBorder,
-    borderRadius: metrics.smallRadius,
-    borderColor: colors.textcolorPrimary,
+    borderRadius: metrics.baseRadius,
+    borderColor: colors.textColorSecondary,
     backgroundColor: colors.textColorSecondary,
-    shadowColor: colors.textColorPrimary,
-    shadowOffset: {
-      width: 0,
-      height: -20,
-    },
-    shadowOpacity: 1,
-    shadowRadius: 3,
-    elevation: metrics.elevation,
+    ...general.defaultShadow,
   },
   content: {
     justifyContent: 'center',
@@ -30,6 +23,7 @@ const styles = StyleSheet.create({
     flex: 3,
     padding: metrics.basePadding,
     transform: [{rotate: '2deg'}],
+    ...general.defaultShadow,
   },
   buttonsContainer: {
     flex: 0.5,
