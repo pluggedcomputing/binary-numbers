@@ -47,7 +47,7 @@ const styles = StyleSheet.create({
   },
   image: {
     alignSelf: 'center',
-    resizeMode: 'center',
+    resizeMode: "contain",
     width: metrics.screenWidth * 0.13,
   },
   containerContent: {
