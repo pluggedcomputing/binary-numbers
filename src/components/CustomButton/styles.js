@@ -2,7 +2,7 @@ import {StyleSheet} from 'react-native';
 
 import {colors, metrics, fonts} from '../../styles';
 
-const HEIGHT_PORCENTAGE = 0.1;
+const HEIGHT_PORCENTAGE = 0.08;
 const WIDTH_PORCENTAGE = 0.4;
 
 const styles = StyleSheet.create({
