@@ -26,22 +26,20 @@ const styles = StyleSheet.create({
   progressBar: {
     width: metrics.screenWidth,
   },
-  groupInput: {
-    flex: 3,
-    padding: metrics.basePadding,
-    margin: metrics.halfMargin,
-    alignItems: 'center',
-  },
   button: {
     width: metrics.screenWidth * 0.8,
     height: metrics.screenHeight * 0.06,
+    margin: metrics.halfMargin,
   },
   image: {
+    margin: metrics.halfMargin,
+    resizeMode: 'contain',
     width: metrics.screenWidth * 0.7,
-    height: metrics.screenHeight * 0.12,
+    height: metrics.screenHeight * 0.14,
   },
   input: {
-    width: metrics.screenWidth * 0.5,
+    width: metrics.screenWidth * 0.6,
+    borderColor: colors.textColorPrimary,
   },
 });
 
