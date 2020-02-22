@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import {View, SafeAreaView, Text, Image} from 'react-native';
+import {View, Text, Image, KeyboardAvoidingView} from 'react-native';
 import {ProgressBar} from 'react-native-paper';
 
 import question1 from '../../../assets/images/challenges/exec1.png';
@@ -123,39 +123,37 @@ export default function LevelThree({navigation}) {
   ];
 
   return (
-    <SafeAreaView style={styles.container}>
+    <KeyboardAvoidingView behavior="padding" enabled style={styles.container}>
       <HeaderOfExcercicos
         style={styles.header}
         title="Nível 3 -  Trabalhar com Números Binários "
         navigation={navigation}
       />
       <CustomBackground content={viewOfContent} />
-      <View style={styles.groupInput}>
-        <Image style={styles.image} source={arrayImage[indexImage]} />
-        <CustomTextInput
-          style={styles.input}
-          keyboardType="numeric"
-          placeholder="Digite aqui"
-          secureTextEntry={false}
-          icon="square-edit-outline"
-          onChangeText={text => setValue(text)}
-          value={value}
-        />
-        <CustomButton
-          text="enviar"
-          style={styles.button}
-          onPress={() => {
-            setSteps(step + 1);
-            setValue('');
-            setINdexImage(indexImage + 1);
-          }}
-        />
-      </View>
+      <Image style={styles.image} source={arrayImage[indexImage]} />
+      <CustomTextInput
+        style={styles.input}
+        keyboardType="numeric"
+        placeholder="Digite aqui"
+        secureTextEntry={false}
+        icon="square-edit-outline"
+        onChangeText={text => setValue(text)}
+        value={value}
+      />
+      <CustomButton
+        text="enviar"
+        style={styles.button}
+        onPress={() => {
+          setSteps(step + 1);
+          setValue('');
+          setINdexImage(indexImage + 1);
+        }}
+      />
       <ProgressBar
         style={styles.progressBar}
         color={colors.colorSucess}
         progress={progrees}
       />
-    </SafeAreaView>
+    </KeyboardAvoidingView>
   );
 }
