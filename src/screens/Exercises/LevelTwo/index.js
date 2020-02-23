@@ -15,8 +15,6 @@ export default function LevelTwo({navigation}) {
   const maxStep = 3;
   const [step, setSteps] = useState(1);
 
-  const [typeButton, setTypeButton] = useState('descriptive');
-
   const [valueBigger, setValueBigger] = useState('');
 
   const [valueSmaller, setValueSmaller] = useState('');
@@ -149,7 +147,6 @@ export default function LevelTwo({navigation}) {
           setSmallerCorrect(Number(valueSmaller) === 1);
 
           if (Number(valueBigger) === 31 && Number(valueSmaller) === 1) {
-            setTypeButton('multipleChoice');
             setSteps(step + 1);
           }
         }}
@@ -176,12 +173,11 @@ export default function LevelTwo({navigation}) {
     </View>
   );
 
-  function changeGroupButton(type) {
-    const groupButton = {
-      descriptive,
-      multipleChoice,
-    };
-    return groupButton[type];
+  function changeGroupButton() {
+    if (step === 1) {
+      return descriptive;
+    }
+    return multipleChoice;
   }
   return (
     <KeyboardAvoidingView style={styles.container}>
@@ -191,7 +187,7 @@ export default function LevelTwo({navigation}) {
         navigation={navigation}
       />
       <CustomBackgruond content={viewOfContent} style={styles.info} />
-      {changeGroupButton(typeButton)}
+      {changeGroupButton()}
       <ProgressBar
         style={styles.progressBar}
         color={colors.colorSucess}
