@@ -37,10 +37,6 @@ const styles = StyleSheet.create({
     flex: 5,
     justifyContent: 'center',
   },
-  button: {
-    width: metrics.screenWidth * 0.8,
-    height: metrics.screenHeight * 0.06,
-  },
   contentText: {
     textAlign: 'center',
     fontSize: fonts.regular,
