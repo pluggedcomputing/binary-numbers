@@ -49,11 +49,6 @@ const styles = StyleSheet.create({
   progressBar: {
     width: metrics.screenWidth,
   },
-  input: {
-    backgroundColor: colors.colorBackground,
-    margin: 2,
-    borderWidth: 2,
-  },
 });
 
 export default styles;
