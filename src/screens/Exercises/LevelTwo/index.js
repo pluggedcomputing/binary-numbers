@@ -47,6 +47,8 @@ export default function LevelTwo({navigation}) {
   useEffect(() => {
     if (finishLevel) {
       navigation.navigate('Congratulations');
+    } else if (step === 2) {
+      setState({...state, isCorrect: true});
     } else {
       setQuestion({
         statement: `${step}. O que você percebeu sobre o número de pontos nos cartões?`,
@@ -126,7 +128,6 @@ export default function LevelTwo({navigation}) {
           // trocar valores default por resposta da api
           if (state.bigger === '31' && state.smaller === '1') {
             setSteps(step + 1);
-            setState({...state, isCorrect: true});
           }
         }}
       />
