@@ -25,21 +25,17 @@ const styles = StyleSheet.create({
     color: colors.textColorPrimary,
   },
   descriptive: {
-    flex: 1,
+    margin: metrics.baseMargin,
+    height: metrics.screenWidth * 0.8,
     justifyContent: 'space-around',
     alignItems: 'center',
   },
   subDescriptive: {
-    height: metrics.screenHeight * 0.25,
+    height: metrics.screenHeight * 0.21,
   },
   buttonGroup: {
     flex: 5,
     justifyContent: 'center',
-  },
-  containerGroup: {
-    flex: 5,
-    justifyContent: 'flex-start',
-    alignItems: 'center',
   },
   button: {
     width: metrics.screenWidth * 0.8,
@@ -58,8 +54,8 @@ const styles = StyleSheet.create({
     width: metrics.screenWidth,
   },
   input: {
-    margin: 8,
-    padding: 2,
+    backgroundColor: colors.colorBackground,
+    margin: 2,
     borderWidth: 2,
   },
 });
