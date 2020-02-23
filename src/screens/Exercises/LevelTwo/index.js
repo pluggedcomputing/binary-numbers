@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import {View, SafeAreaView, Text} from 'react-native';
+import {View, Text, KeyboardAvoidingView} from 'react-native';
 import {ProgressBar} from 'react-native-paper';
 
 import Card from '../../../components/Card';
@@ -184,22 +184,19 @@ export default function LevelTwo({navigation}) {
     return groupButton[type];
   }
   return (
-    <SafeAreaView style={styles.container}>
-      <View style={styles.header}>
-        <HeaderOfExcercises
-          title="Nível 2 - Números Binários"
-          navigation={navigation}
-        />
-      </View>
-      <View style={styles.info}>
-        <CustomBackgruond content={viewOfContent} />
-      </View>
-      <View style={styles.containerGroup}>{changeGroupButton(typeButton)}</View>
+    <KeyboardAvoidingView style={styles.container}>
+      <HeaderOfExcercises
+        style={styles.header}
+        title="Nível 2 - Números Binários"
+        navigation={navigation}
+      />
+      <CustomBackgruond content={viewOfContent} style={styles.info} />
+      {changeGroupButton(typeButton)}
       <ProgressBar
         style={styles.progressBar}
         color={colors.colorSucess}
         progress={progrees}
       />
-    </SafeAreaView>
+    </KeyboardAvoidingView>
   );
 }
