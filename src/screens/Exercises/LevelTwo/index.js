@@ -126,7 +126,6 @@ export default function LevelTwo({navigation}) {
       </View>
       <CustomButtom
         text="enviar"
-        style={styles.button}
         onPress={() => {
           setSteps(step + 1);
         }}
