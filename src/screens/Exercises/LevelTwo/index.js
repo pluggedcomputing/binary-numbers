@@ -15,14 +15,6 @@ export default function LevelTwo({navigation}) {
   const maxStep = 3;
   const [step, setSteps] = useState(1);
 
-  const [valueBigger, setValueBigger] = useState('');
-
-  const [valueSmaller, setValueSmaller] = useState('');
-
-  const [biggerCorrect, setBiggerCorrect] = useState();
-
-  const [smallerCorrect, setSmallerCorrect] = useState();
-
   function colorBorder(checking) {
     const color = {
       true: colors.colorSucess,
@@ -118,37 +110,25 @@ export default function LevelTwo({navigation}) {
     <View style={styles.descriptive}>
       <View style={styles.subDescriptive}>
         <CustomTextInput
-          editable={!biggerCorrect}
-          style={[styles.input, colorBorder(biggerCorrect)]}
+          style={[styles.input, colorBorder()]}
           keyboardType="numeric"
           placeholder="Maior"
           secureTextEntry={false}
           icon="arrow-up-drop-circle-outline"
-          onChangeText={text => setValueBigger(text)}
-          value={valueBigger}
         />
         <CustomTextInput
-          editable={!smallerCorrect}
-          style={[styles.input, colorBorder(smallerCorrect)]}
+          style={[styles.input, colorBorder()]}
           keyboardType="numeric"
           placeholder="Menor"
           secureTextEntry={false}
           icon="arrow-down-drop-circle-outline"
-          onChangeText={text => setValueSmaller(text)}
-          value={valueSmaller}
-          focus={false}
         />
       </View>
       <CustomButtom
         text="enviar"
         style={styles.button}
         onPress={() => {
-          setBiggerCorrect(Number(valueBigger) === 31);
-          setSmallerCorrect(Number(valueSmaller) === 1);
-
-          if (Number(valueBigger) === 31 && Number(valueSmaller) === 1) {
-            setSteps(step + 1);
-          }
+          setSteps(step + 1);
         }}
       />
     </View>
