@@ -116,7 +116,6 @@ export default function LevelTwo({navigation}) {
           style={[styles.input, colorBorder()]}
           keyboardType="numeric"
           placeholder="Maior"
-          secureTextEntry={false}
           icon="arrow-up-drop-circle-outline"
           onChangeText={text => setState({...state, bigger: text})}
           value={state.bigger}
@@ -125,7 +124,6 @@ export default function LevelTwo({navigation}) {
           style={[styles.input, colorBorder()]}
           keyboardType="numeric"
           placeholder="Menor"
-          secureTextEntry={false}
           icon="arrow-down-drop-circle-outline"
           onChangeText={text => setState({...state, smaller: text})}
           value={state.smaller}
