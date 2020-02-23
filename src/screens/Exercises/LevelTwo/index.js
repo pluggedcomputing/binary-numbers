@@ -18,14 +18,6 @@ export default function LevelTwo({navigation}) {
     smaller: '',
     isCorrect: false,
   });
-  function colorBorder(checking) {
-    const color = {
-      true: colors.colorSucess,
-      false: colors.colorError,
-      undefined: colors.colorBackground,
-    };
-    return {borderColor: color[checking]};
-  }
 
   const [question, setQuestion] = useState({
     statement: `${step}. O que você percebeu sobre o número de pontos nos cartões?`,
@@ -113,7 +105,6 @@ export default function LevelTwo({navigation}) {
     <View style={styles.descriptive}>
       <View style={styles.subDescriptive}>
         <CustomTextInput
-          style={[styles.input, colorBorder()]}
           keyboardType="numeric"
           placeholder="Maior"
           icon="arrow-up-drop-circle-outline"
@@ -121,7 +112,6 @@ export default function LevelTwo({navigation}) {
           value={state.bigger}
         />
         <CustomTextInput
-          style={[styles.input, colorBorder()]}
           keyboardType="numeric"
           placeholder="Menor"
           icon="arrow-down-drop-circle-outline"
