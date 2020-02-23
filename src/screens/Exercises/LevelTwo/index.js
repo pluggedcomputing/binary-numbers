@@ -5,7 +5,6 @@ import {ProgressBar} from 'react-native-paper';
 import Card from '../../../components/Card';
 import ChoiceButton from '../../../components/ChoiceButton';
 import CustomBackgruond from '../../../components/CustomBackground';
-import CustomButtom from '../../../components/CustomButton';
 import CustomTextInput from '../../../components/CustomTextInput';
 import HeaderOfExcercises from '../../../components/HeaderOfExercises';
 import {colors} from '../../../styles';
@@ -14,7 +13,11 @@ import styles from './styles';
 export default function LevelTwo({navigation}) {
   const maxStep = 3;
   const [step, setSteps] = useState(1);
-
+  const [state, setState] = useState({
+    bigger: '',
+    smaller: '',
+    isCorrect: false,
+  });
   function colorBorder(checking) {
     const color = {
       true: colors.colorSucess,
@@ -115,6 +118,8 @@ export default function LevelTwo({navigation}) {
           placeholder="Maior"
           secureTextEntry={false}
           icon="arrow-up-drop-circle-outline"
+          onChangeText={text => setState({...state, bigger: text})}
+          value={state.bigger}
         />
         <CustomTextInput
           style={[styles.input, colorBorder()]}
@@ -122,12 +127,19 @@ export default function LevelTwo({navigation}) {
           placeholder="Menor"
           secureTextEntry={false}
           icon="arrow-down-drop-circle-outline"
+          onChangeText={text => setState({...state, smaller: text})}
+          value={state.smaller}
         />
       </View>
-      <CustomButtom
+      <ChoiceButton
         text="enviar"
+        correct={state.isCorrect}
         onPress={() => {
-          setSteps(step + 1);
+          // trocar valores default por resposta da api
+          if (state.bigger === '31' && state.smaller === '1') {
+            setSteps(step + 1);
+            setState({...state, isCorrect: true});
+          }
         }}
       />
     </View>
