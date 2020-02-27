@@ -13,6 +13,7 @@ const CustomBackground = props => {
   const [page, setPage] = useState(0);
   const contentSize = content.length - 1;
 
+
   function nextPage() {
     if (page < contentSize) {
       setPage(page + 1);
@@ -23,6 +24,20 @@ const CustomBackground = props => {
       setPage(page - 1);
     }
   }
+  function disableButtonNext() {
+    let validity = false
+    if (page === contentSize) {
+      validity = true
+    }
+    return validity
+  }
+  function disableButtonPrevious() {
+    let validity = false
+    if (page === 0) {
+      validity = true
+    }
+    return validity
+  }
 
   return (
     <View style={styles.container}>
@@ -30,20 +45,26 @@ const CustomBackground = props => {
         <View style={styles.content}>{content[page]}</View>
 
         <View style={styles.buttonsContainer}>
-          <TouchableOpacity onPress={previousPage}>
+          <TouchableOpacity
+            onPress={previousPage}
+            disabled={disableButtonPrevious()}
+          >
             <Icon
-              name="arrow-left-bold-circle-outline"
+              name="arrow-circle-left"
               type="font-awesome"
-              color={colors.colorPrimary}
+              color={disableButtonPrevious() ?'#CACACA' :  colors.colorPrimary}
               size={general.iconSize.regular}
               style={styles.Icon}
             />
           </TouchableOpacity>
-          <TouchableOpacity onPress={nextPage}>
+          <TouchableOpacity
+            onPress={nextPage}
+            disabled={disableButtonNext()}
+          >
             <Icon
-              name="arrow-right-bold-circle-outline"
+              name="arrow-circle-right"
               type="font-awesome"
-              color={colors.colorPrimary}
+              color={disableButtonNext() ?'#CACACA' :  colors.colorPrimary}
               size={general.iconSize.regular}
               style={styles.Icon}
             />
