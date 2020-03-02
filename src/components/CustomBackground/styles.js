@@ -23,15 +23,11 @@ const styles = StyleSheet.create({
     padding: metrics.basePadding,
     transform: [{rotate: '2deg'}],
   },
-  buttonsContainer: {
+  iconsContainer: {
     flex: 0.5,
     marginTop: metrics.smallMargin,
     flexDirection: 'row',
     justifyContent: 'flex-end',
-  },
-  Icon: {
-    margin: 5,
-    resizeMode: 'contain',
   },
   textCont: {
     flex: 0.5,
