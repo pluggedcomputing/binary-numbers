@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import {View, Text } from 'react-native';
-import { Icon } from 'react-native-elements';
+import { View, Text } from 'react-native';
+import { Icon } from 'react-native-vector-icons/MaterialCommunityIcons';
 
 import PropTypes from 'prop-types';
 
@@ -12,7 +12,6 @@ const CustomBackground = props => {
   const { content } = props;
   const [page, setPage] = useState(0);
   const contentSize = content.length - 1;
-
 
   function nextPage() {
     if (page < contentSize) {
