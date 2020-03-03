@@ -135,7 +135,6 @@ export default function LevelThree({navigation}) {
         style={styles.input}
         keyboardType="numeric"
         placeholder="Digite aqui"
-        secureTextEntry={false}
         icon="square-edit-outline"
         onChangeText={text => setValue(text)}
         value={value}
