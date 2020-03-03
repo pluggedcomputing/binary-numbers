@@ -141,7 +141,7 @@ export default function LevelThree({navigation}) {
         value={value}
       />
       <CustomButton
-        text="enviar"
+        text="Enviar"
         style={styles.button}
         onPress={() => {
           setSteps(step + 1);
