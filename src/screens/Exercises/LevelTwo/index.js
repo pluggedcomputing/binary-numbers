@@ -122,7 +122,7 @@ export default function LevelTwo({navigation}) {
         />
       </View>
       <ChoiceButton
-        text="enviar"
+        text="Enviar"
         correct={state.isCorrect}
         onPress={() => {
           // trocar valores default por resposta da api
