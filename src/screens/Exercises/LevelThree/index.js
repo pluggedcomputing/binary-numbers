@@ -13,8 +13,8 @@ import question7 from '../../../assets/images/challenges/exec7.png';
 import question8 from '../../../assets/images/challenges/exec8.png';
 import question9 from '../../../assets/images/challenges/exec9.png';
 import Card from '../../../components/Card';
+import ChoiceButton from '../../../components/ChoiceButton';
 import CustomBackground from '../../../components/CustomBackground';
-import ChoiceButtonfrom '../../../components/ChoiceButton';
 import CustomTextInput from '../../../components/CustomTextInput';
 import HeaderOfExcercicos from '../../../components/HeaderOfExercises';
 import {colors} from '../../../styles';
@@ -23,7 +23,11 @@ import styles from './styles';
 export default function LevelThree({navigation}) {
   const maxStep = 10;
   const [step, setSteps] = useState(1);
+  const [indexImage, setIndexImage] = useState(0);
+  const [value, setValue] = useState();
 
+  const progrees = (step - 1) / maxStep;
+  const finishLevel = step === 11;
   const arrayImage = [
     question1,
     question2,
@@ -37,89 +41,26 @@ export default function LevelThree({navigation}) {
     question10,
   ];
 
-  const [indexImage, setIndexImage] = useState(0);
-  const [value, setValue] = useState();
-
-  const [question, setQuestion] = useState({
-    statement: `${step}. O que você percebeu sobre o número de pontos nos cartões?`,
-    alternatives: [
-      {
-        text: 'OP1',
-        correct: false,
-      },
-      {
-        text: 'OP2',
-        correct: false,
-      },
-      {
-        text: 'OP3',
-        correct: false,
-      },
-      {
-        text: 'OP4',
-        correct: true,
-      },
-    ],
-  });
-
-  const progrees = (step - 1) / maxStep;
-  const finishLevel = step === 11;
-
   useEffect(() => {
     if (finishLevel) {
       navigation.navigate('Congratulations');
-    } else {
-      setQuestion({
-        statement: `${step}. O que você percebeu sobre o número de pontos nos cartões?`,
-        alternatives: [
-          {
-            text: 'São duas vezes maior que o próximo',
-            correct: true,
-          },
-          {
-            text: 'São valores aleatórios',
-            correct: false,
-          },
-          {
-            text: 'São a soma do próximo com o anterior',
-            correct: false,
-          },
-          {
-            text: 'Estão em ordem crescente',
-            correct: true,
-          },
-        ],
-      });
     }
   }, [step]);
 
   const viewOfContent = [
-    <Text style={styles.contentText}>
-      Então, você achava que sabia contar? Bem, aqui está uma nova forma de
-      fazer isso! Sabia que os computadores utilizam apenas zeros e uns?
-    </Text>,
-    <Text style={styles.contentText}>
-      Tudo o que você vê ou ouve no computador - palavras, imagens, números,
-      filmes e até mesmo o som - são armazenados usando apenas estes dois
-      numerais! Estas atividades ensinarão como enviar mensagens secretas aos
-      seus amigos usando exatamente o mesmo método que um computador.
-    </Text>,
+    <Text style={styles.contentText}>Decifre a imagem abaixo</Text>,
     <View>
       <Text style={[styles.contentText, {marginTop: 10}]}>
         Presione o cartão para vira-lo
       </Text>
       <View style={styles.cardGroup}>
-        <Card number={16} rotate />
+        <Card number={16} />
         <Card number={8} />
-        <Card number={4} rotate />
-        <Card number={2} rotate />
+        <Card number={4} />
+        <Card number={2} />
         <Card number={1} />
       </View>
-      <Text style={styles.contentText}>
-        As cartas acima estão representando o número 9.
-      </Text>
     </View>,
-    <Text style={styles.statement}>{question.statement}</Text>,
   ];
 
   return (
@@ -139,13 +80,13 @@ export default function LevelThree({navigation}) {
         onChangeText={text => setValue(text)}
         value={value}
       />
-      <CustomButton
+      <ChoiceButton
         text="Enviar"
         style={styles.button}
         onPress={() => {
           setSteps(step + 1);
           setValue('');
-          setINdexImage(indexImage + 1);
+          setIndexImage(indexImage + 1);
         }}
       />
       <ProgressBar
