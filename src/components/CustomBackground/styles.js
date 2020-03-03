@@ -25,15 +25,11 @@ const styles = StyleSheet.create({
     transform: [{rotate: '2deg'}],
     ...general.defaultShadow,
   },
-  buttonsContainer: {
+  iconsContainer: {
     flex: 0.5,
     marginTop: metrics.smallMargin,
     flexDirection: 'row',
     justifyContent: 'flex-end',
-  },
-  Icon: {
-    margin: 5,
-    resizeMode: 'contain',
   },
   textCont: {
     flex: 0.5,

@@ -15,7 +15,7 @@ import styles from './styles';
 function LevelSelection({navigation}) {
   const [LevelsAvailable, setLevelsAvailable] = useState({
     level1: true,
-    level2: false,
+    level2: true,
     level3: true,
     level4: false,
     level5: false,
@@ -34,7 +34,7 @@ function LevelSelection({navigation}) {
        */
 
       level1: true,
-      level2: false,
+      level2: true,
       level3: true,
       level4: false,
       level5: false,
@@ -58,7 +58,7 @@ function LevelSelection({navigation}) {
             level="2"
             image={level2}
             available={LevelsAvailable.level2}
-            onPress={() => Alert.alert('level="2"')}
+            onPress={() => navigation.navigate('ExerciseLevelTwo')}
           />
         </View>
         <View style={styles.boxContainer}>
