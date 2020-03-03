@@ -37,7 +37,7 @@ export default function LevelThree({navigation}) {
     question10,
   ];
 
-  const [indexImage, setINdexImage] = useState(0);
+  const [indexImage, setIndexImage] = useState(0);
   const [value, setValue] = useState();
 
   const [question, setQuestion] = useState({
