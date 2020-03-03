@@ -1,6 +1,6 @@
 {
   "name": "plugged-computing-binary-numbers",
-  "version": "0.0.1-develop.1",
+  "version": "0.0.1-develop.2",
   "private": true,
   "scripts": {
     "android": "react-native run-android",
