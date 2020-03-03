@@ -1,21 +1,25 @@
-import React from 'react';
-import {View, Text, Alert} from 'react-native';
+import React, {useState} from 'react';
+import {SafeAreaView, Text} from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
 import {PropTypes} from 'prop-types';
 
 import {general} from '../../styles';
 import styles from './styles';
+import Tooltip from './Tooltips';
 
 const HeaderOfExercises = props => {
+  const [state, setstate] = useState(false);
+
   const {title, tips, navigation} = props;
 
   const handleComeBack = () => navigation.navigate('LevelSelection');
 
-  const handleTips = () => Alert.alert('Dicas', tips);
+  const handleTips = () => setstate(!state);
 
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
+      <Tooltip content={tips} isVisible={state} onCancel={handleTips} />
       <Text style={styles.title}>{title}</Text>
       <Icon
         name="arrow-left-bold-circle-outline"
@@ -29,16 +33,16 @@ const HeaderOfExercises = props => {
         style={styles.icon}
         onPress={handleTips}
       />
-    </View>
+    </SafeAreaView>
   );
 };
 
 HeaderOfExercises.propTypes = {
   title: PropTypes.string.isRequired,
-  tips: PropTypes.string,
+  tips: PropTypes.element,
 };
 
 HeaderOfExercises.defaultProps = {
-  tips: 'Não há dicas para esse nível',
+  tips: <Text style={styles.defaultTips}>Não há dicas para esse nível.</Text>,
 };
 export default HeaderOfExercises;

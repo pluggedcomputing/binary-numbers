@@ -12,10 +12,15 @@ const styles = StyleSheet.create({
     height: metrics.screenHeight,
     alignItems: 'center',
   },
+  scrollView: {
+    justifyContent: 'center',
+    alignItems: 'center',
+    width: metrics.screenWidth,
+  },
   containerImage: {
     width: metrics.screenWidth * WIDTH_PORCENTAGE,
     height: metrics.screenHeight * HEIGHT_PORCENTAGE,
-    margin: metrics.baseMargin,
+    marginTop: metrics.doubleBaseMargin,
     resizeMode: 'contain',
   },
 });
