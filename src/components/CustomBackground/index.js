@@ -1,6 +1,6 @@
-import React, {useState} from 'react';
-import {View, TouchableOpacity, Text} from 'react-native';
-import {Icon} from 'react-native-elements';
+import React, { useState } from 'react';
+import { View, Text } from 'react-native';
+import { Icon } from 'react-native-vector-icons/MaterialCommunityIcons';
 
 import PropTypes from 'prop-types';
 
@@ -29,25 +29,21 @@ const CustomBackground = props => {
       <View style={[styles.container, { transform: [{ rotate: '-3deg' }] }]}>
         <View style={styles.content}>{content[page]}</View>
 
-        <View style={styles.buttonsContainer}>
-          <TouchableOpacity onPress={previousPage}>
-            <Icon
-              name="arrow-left-bold-circle-outline"
-              type="material-community"
-              color={colors.colorPrimary}
-              size={general.iconSize.bigger}
-              style={styles.Icon}
-            />
-          </TouchableOpacity>
-          <TouchableOpacity onPress={nextPage}>
-            <Icon
-              name="arrow-right-bold-circle-outline"
-              type="material-community"
-              color={colors.colorPrimary}
-              size={general.iconSize.bigger}
-              style={styles.Icon}
-            />
-          </TouchableOpacity>
+        <View style={styles.iconsContainer}>
+          <Icon
+            name="arrow-left-bold-circle-outline"
+            size={general.iconSize.regular}
+            color={page === 0 ? '#CACACA' : colors.colorPrimary}
+            onPress={previousPage}
+            disabled={page === 0}
+          />
+          <Icon
+            name="arrow-right-bold-circle-outline"
+            size={general.iconSize.regular}
+            color={page === contentSize ? '#CACACA' : colors.colorPrimary}
+            onPress={nextPage}
+            disabled={page === contentSize}
+          />
         </View>
 
         <Text style={styles.textCont}>
