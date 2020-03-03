@@ -16,7 +16,7 @@ function LevelSelection({navigation}) {
   const [LevelsAvailable, setLevelsAvailable] = useState({
     level1: true,
     level2: true,
-    level3: false,
+    level3: true,
     level4: false,
     level5: false,
     level6: false,
@@ -35,7 +35,7 @@ function LevelSelection({navigation}) {
 
       level1: true,
       level2: true,
-      level3: false,
+      level3: true,
       level4: false,
       level5: false,
       level6: false,
@@ -66,7 +66,7 @@ function LevelSelection({navigation}) {
             level="3"
             image={level3}
             available={LevelsAvailable.level3}
-            onPress={() => Alert.alert('level="3"')}
+            onPress={() => navigation.navigate('ExerciseLevelThree')}
           />
           <CardLevel
             level="4"
