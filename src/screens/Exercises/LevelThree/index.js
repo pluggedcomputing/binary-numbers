@@ -14,7 +14,7 @@ import question8 from '../../../assets/images/challenges/exec8.png';
 import question9 from '../../../assets/images/challenges/exec9.png';
 import Card from '../../../components/Card';
 import CustomBackground from '../../../components/CustomBackground';
-import CustomButton from '../../../components/CustomButton';
+import ChoiceButtonfrom '../../../components/ChoiceButton';
 import CustomTextInput from '../../../components/CustomTextInput';
 import HeaderOfExcercicos from '../../../components/HeaderOfExercises';
 import {colors} from '../../../styles';
@@ -135,13 +135,12 @@ export default function LevelThree({navigation}) {
         style={styles.input}
         keyboardType="numeric"
         placeholder="Digite aqui"
-        secureTextEntry={false}
         icon="square-edit-outline"
         onChangeText={text => setValue(text)}
         value={value}
       />
       <CustomButton
-        text="enviar"
+        text="Enviar"
         style={styles.button}
         onPress={() => {
           setSteps(step + 1);
