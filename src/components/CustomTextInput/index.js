@@ -38,11 +38,11 @@ const CustomTextInput = props => {
   );
 
   return (
-    <View style={[styles.container, style]}>
+    <View style={styles.container}>
       <Icon name={icon} size={general.iconSize.regular} />
       <TextInput
         {...props}
-        style={styles.input}
+        style={[styles.input, style]}
         secureTextEntry={state.showPassword}
         autoCapitalize="none"
       />
