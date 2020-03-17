@@ -28,6 +28,9 @@ const styles = StyleSheet.create({
   input: {
     height: 40,
   },
+  componetTree: {
+    alignItems: 'center',
+  },
 });
 
 export default styles;
