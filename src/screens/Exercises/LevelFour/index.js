@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import {View, Text, KeyboardAvoidingView, ScrollView} from 'react-native';
 import {ProgressBar} from 'react-native-paper';
 
+import AlphabetTable from '../../../components/AlphabetTable';
 import ChoiceButton from '../../../components/ChoiceButton';
 import {
   ChristmasTreeTableStepOne,
@@ -30,29 +31,26 @@ export default function LevelFour({navigation}) {
     {id: 5, value: ''},
   ];
 
+  const [inputMessage, setInputMessage] = useState('');
+
   const [numbers, setNumbers] = useState('');
 
   const [arrayRow, setArrayRow] = useState(instanceInitial);
 
-  const [componentChristmasTree, setComponentChristmasTree] = useState(
-    <ChristmasTreeTableStepOne />,
-  );
+  const [componentChristmasTree, setComponentChristmasTree] = useState();
 
   useEffect(() => {
     if (finishLevel) {
       navigation.navigate('Congratulations');
-    } else if (step === 2) {
-      setComponentChristmasTree(<ChristmasTreeTableStepTwo />);
-    } else if (step === 3) {
-      setComponentChristmasTree(<ChristmasTreeTableStepThree />);
     }
-    // else if (step === 4) {
-    //   setComponentChristmasTree(
-    //     <Text style={{flex: 1, backgroundColor: colors.colorBackground}}>
-    //       teasdfxto{numbers}
-    //     </Text>,
-    //   );
-    // }
+
+    const tree = {
+      1: <ChristmasTreeTableStepOne />,
+      2: <ChristmasTreeTableStepTwo />,
+      3: <ChristmasTreeTableStepThree />,
+    };
+
+    setComponentChristmasTree(tree[step]);
   }, [step]);
 
   function updateDataInput(index, text) {
@@ -76,7 +74,7 @@ export default function LevelFour({navigation}) {
     arrayRow.forEach(item => {
       numberSelection += `${item.value} `;
     });
-    if (step < 3) numberSelection += '-';
+    if (step < 3) numberSelection += '- ';
     setNumbers(numberSelection);
   }
 
@@ -106,15 +104,31 @@ export default function LevelFour({navigation}) {
     );
   }
 
+  function answerFinal() {
+    return (
+      <View style={styles.componentAnswer}>
+        <Text style={styles.text}>
+          Esses foram os números que você selecionou:
+        </Text>
+        <Text style={styles.textAnswer}>{numbers}</Text>
+        <Text style={styles.text}>Agora vamos traduzir a mensagem de Tom?</Text>
+        <AlphabetTable />
+        <CustomTextInput
+          style={styles.input}
+          placeholder={messagePlaceholder}
+          icon={iconName}
+          onChangeText={text => setInputMessage(text)}
+          value={inputMessage}
+        />
+      </View>
+    );
+  }
+
   function changeComponent(acutalStep) {
     if (acutalStep < 4) {
       return christmansTree();
     }
-    return (
-      <Text style={{flex: 1, backgroundColor: colors.colorBackground}}>
-        {numbers}
-      </Text>
-    );
+    return answerFinal();
   }
 
   return (
@@ -128,7 +142,7 @@ export default function LevelFour({navigation}) {
         <ChoiceButton
           text="Enviar"
           onPress={() => {
-            if (checkEmpytInputs() || step > 3) {
+            if (checkEmpytInputs()) {
               insertListNumber();
               setSteps(step + 1);
               setArrayRow(instanceInitial);
