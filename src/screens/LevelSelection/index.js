@@ -17,7 +17,7 @@ function LevelSelection({navigation}) {
     level1: true,
     level2: true,
     level3: true,
-    level4: false,
+    level4: true,
     level5: false,
     level6: false,
     level7: false,
@@ -36,7 +36,7 @@ function LevelSelection({navigation}) {
       level1: true,
       level2: true,
       level3: true,
-      level4: false,
+      level4: true,
       level5: false,
       level6: false,
       level7: false,
@@ -72,7 +72,7 @@ function LevelSelection({navigation}) {
             level="4"
             image={level4}
             available={LevelsAvailable.level4}
-            onPress={() => Alert.alert('level="4"')}
+            onPress={() => navigation.navigate('ExerciseLevelFour')}
           />
         </View>
         <View style={styles.boxContainer}>
