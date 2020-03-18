@@ -89,7 +89,14 @@ const AlphabetTable = () => {
   return (
     <ScrollView
       horizontal
-      contentContainerStyle={{paddingLeft: 10, paddingRight: 10}}>
+      contentContainerStyle={{
+        paddingLeft: 10,
+        paddingRight: 10,
+        alignItems: 'center',
+      }}
+      style={{
+        flex: 1,
+      }}>
       {listTable.map(list => (
         <DataTable key={list.numberFirstList} style={styles.container}>
           <DataTable.Header style={styles.containerHeader}>
