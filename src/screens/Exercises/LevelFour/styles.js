@@ -1,6 +1,6 @@
 import {StyleSheet} from 'react-native';
 
-import {colors, metrics} from '../../../styles';
+import {colors, metrics, fonts} from '../../../styles';
 
 const styles = StyleSheet.create({
   container: {
@@ -30,6 +30,18 @@ const styles = StyleSheet.create({
   },
   componetTree: {
     alignItems: 'center',
+  },
+  componentAnswer: {
+    flex: 7,
+    alignItems: 'center',
+  },
+  text: {
+    fontSize: fonts.input,
+    marginBottom: metrics.doubleBaseMargin,
+  },
+  textAnswer: {
+    marginBottom: metrics.doubleBaseMargin,
+    fontSize: fonts.title,
   },
 });
 
