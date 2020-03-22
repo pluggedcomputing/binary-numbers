@@ -1,5 +1,5 @@
 import React from 'react';
-import {ScrollView, Text} from 'react-native';
+import {Text, View} from 'react-native';
 import {DataTable} from 'react-native-paper';
 
 import styles from './styles';
@@ -87,41 +87,48 @@ const AlphabetTable = () => {
   ];
 
   return (
-    <ScrollView
-      horizontal
-      contentContainerStyle={{
-        paddingLeft: 10,
-        paddingRight: 10,
-        alignItems: 'center',
-      }}
-      style={{
-        flex: 1,
-      }}>
-      {listTable.map(list => (
-        <DataTable key={list.numberFirstList} style={styles.container}>
-          <DataTable.Header style={styles.containerHeader}>
-            <DataTable.Title style={styles.contaninerBody}>
-              <Text style={styles.textTitle}>{list.numberFirstList}</Text>
+    <View style={styles.containerView}>
+      <DataTable style={styles.container}>
+        <DataTable.Header style={styles.subContainer}>
+          {listTable.map(list => (
+            <DataTable.Title
+              key={list.numberFirstList}
+              style={styles.containerTableHeader}>
+              <Text style={styles.text}>{list.numberFirstList}</Text>
             </DataTable.Title>
-          </DataTable.Header>
-          <DataTable.Row style={styles.containerRow}>
-            <DataTable.Cell style={styles.contaninerBody}>
-              <Text style={styles.textCell}>{list.alphabetFirstList}</Text>
+          ))}
+        </DataTable.Header>
+        <DataTable.Row style={styles.subContainer}>
+          {listTable.map(list => (
+            <DataTable.Cell
+              key={list.alphabetFirstList}
+              style={styles.containerTableRow}>
+              <Text style={styles.textBold}>{list.alphabetFirstList}</Text>
             </DataTable.Cell>
-          </DataTable.Row>
-          <DataTable.Header style={styles.containerHeader}>
-            <DataTable.Title style={styles.contaninerBody}>
-              <Text style={styles.textTitle}>{list.numberLastList}</Text>
+          ))}
+        </DataTable.Row>
+      </DataTable>
+      <DataTable style={styles.container}>
+        <DataTable.Header style={styles.subContainer}>
+          {listTable.map(list => (
+            <DataTable.Title
+              key={list.numberLastList}
+              style={styles.containerTableHeader}>
+              <Text style={styles.text}>{list.numberLastList}</Text>
             </DataTable.Title>
-          </DataTable.Header>
-          <DataTable.Row style={styles.containerRow}>
-            <DataTable.Cell style={styles.contaninerBody}>
-              <Text style={styles.textCell}>{list.alphabetLastList}</Text>
+          ))}
+        </DataTable.Header>
+        <DataTable.Row style={styles.subContainer}>
+          {listTable.map(list => (
+            <DataTable.Cell
+              key={list.alphabetLastList}
+              style={styles.containerTableRow}>
+              <Text style={styles.textBold}>{list.alphabetLastList}</Text>
             </DataTable.Cell>
-          </DataTable.Row>
-        </DataTable>
-      ))}
-    </ScrollView>
+          ))}
+        </DataTable.Row>
+      </DataTable>
+    </View>
   );
 };
 
