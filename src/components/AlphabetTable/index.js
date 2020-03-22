@@ -5,82 +5,111 @@ import {DataTable} from 'react-native-paper';
 import styles from './styles';
 
 const AlphabetTable = () => {
-  const listTable = [
+  const listNumber = [
     {
       numberFirstList: 1,
       numberLastList: 14,
-      alphabetFirstList: 'a',
-      alphabetLastList: 'n',
     },
     {
       numberFirstList: 2,
       numberLastList: 15,
-      alphabetFirstList: 'b',
-      alphabetLastList: 'o',
     },
     {
       numberFirstList: 3,
       numberLastList: 16,
-      alphabetFirstList: 'c',
-      alphabetLastList: 'p',
     },
     {
       numberFirstList: 4,
       numberLastList: 17,
-      alphabetFirstList: 'd',
-      alphabetLastList: 'q',
     },
     {
       numberFirstList: 5,
       numberLastList: 18,
-      alphabetFirstList: 'e',
-      alphabetLastList: 'r',
     },
     {
       numberFirstList: 6,
       numberLastList: 19,
-      alphabetFirstList: 'f',
-      alphabetLastList: 's',
     },
     {
       numberFirstList: 7,
       numberLastList: 20,
-      alphabetFirstList: 'g',
-      alphabetLastList: 't',
     },
     {
       numberFirstList: 8,
       numberLastList: 21,
-      alphabetFirstList: 'h',
-      alphabetLastList: 'u',
     },
     {
       numberFirstList: 9,
       numberLastList: 22,
-      alphabetFirstList: 'i',
-      alphabetLastList: 'v',
     },
     {
       numberFirstList: 10,
       numberLastList: 23,
-      alphabetFirstList: 'j',
-      alphabetLastList: 'w',
     },
     {
       numberFirstList: 11,
       numberLastList: 24,
-      alphabetFirstList: 'k',
-      alphabetLastList: 'x',
     },
     {
       numberFirstList: 12,
       numberLastList: 25,
-      alphabetFirstList: 'l',
-      alphabetLastList: 'y',
     },
     {
       numberFirstList: 13,
       numberLastList: 26,
+    },
+  ];
+
+  const listAlphabet = [
+    {
+      alphabetFirstList: 'a',
+      alphabetLastList: 'n',
+    },
+    {
+      alphabetFirstList: 'b',
+      alphabetLastList: 'o',
+    },
+    {
+      alphabetFirstList: 'c',
+      alphabetLastList: 'p',
+    },
+    {
+      alphabetFirstList: 'd',
+      alphabetLastList: 'q',
+    },
+    {
+      alphabetFirstList: 'e',
+      alphabetLastList: 'r',
+    },
+    {
+      alphabetFirstList: 'f',
+      alphabetLastList: 's',
+    },
+    {
+      alphabetFirstList: 'g',
+      alphabetLastList: 't',
+    },
+    {
+      alphabetFirstList: 'h',
+      alphabetLastList: 'u',
+    },
+    {
+      alphabetFirstList: 'i',
+      alphabetLastList: 'v',
+    },
+    {
+      alphabetFirstList: 'j',
+      alphabetLastList: 'w',
+    },
+    {
+      alphabetFirstList: 'k',
+      alphabetLastList: 'x',
+    },
+    {
+      alphabetFirstList: 'l',
+      alphabetLastList: 'y',
+    },
+    {
       alphabetFirstList: 'm',
       alphabetLastList: 'z',
     },
@@ -90,7 +119,7 @@ const AlphabetTable = () => {
     <View style={styles.containerView}>
       <DataTable style={styles.container}>
         <DataTable.Header style={styles.subContainer}>
-          {listTable.map(list => (
+          {listNumber.map(list => (
             <DataTable.Title
               key={list.numberFirstList}
               style={styles.containerTableHeader}>
@@ -99,7 +128,7 @@ const AlphabetTable = () => {
           ))}
         </DataTable.Header>
         <DataTable.Row style={styles.subContainer}>
-          {listTable.map(list => (
+          {listAlphabet.map(list => (
             <DataTable.Cell
               key={list.alphabetFirstList}
               style={styles.containerTableRow}>
@@ -110,7 +139,7 @@ const AlphabetTable = () => {
       </DataTable>
       <DataTable style={styles.container}>
         <DataTable.Header style={styles.subContainer}>
-          {listTable.map(list => (
+          {listNumber.map(list => (
             <DataTable.Title
               key={list.numberLastList}
               style={styles.containerTableHeader}>
@@ -119,7 +148,7 @@ const AlphabetTable = () => {
           ))}
         </DataTable.Header>
         <DataTable.Row style={styles.subContainer}>
-          {listTable.map(list => (
+          {listAlphabet.map(list => (
             <DataTable.Cell
               key={list.alphabetLastList}
               style={styles.containerTableRow}>
