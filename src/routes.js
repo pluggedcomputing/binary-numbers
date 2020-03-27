@@ -4,6 +4,7 @@ import Congratulations from './screens/Congratulations';
 import ExerciseLevelFive from './screens/Exercises/LevelFive';
 import ExerciseLevelFour from './screens/Exercises/LevelFour';
 import ExerciseLevelOne from './screens/Exercises/LevelOne';
+import ExerciseLevelSeven from './screens/Exercises/LevelSeven';
 import ExerciseLevelThree from './screens/Exercises/LevelThree';
 import ExerciseLevelTwo from './screens/Exercises/LevelTwo';
 import LevelSelection from './screens/LevelSelection';
@@ -23,5 +24,7 @@ export default createAppContainer(
     ExerciseLevelTwo,
     ExerciseLevelFour,
     ExerciseLevelFive,
+    ExerciseLevelSeven,
   }),
 );
+
