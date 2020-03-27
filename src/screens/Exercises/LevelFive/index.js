@@ -1,7 +1,14 @@
 import React, {useState, useEffect} from 'react';
-import {Text, View, KeyboardAvoidingView, ScrollView} from 'react-native';
+import {
+  Text,
+  View,
+  KeyboardAvoidingView,
+  ScrollView,
+  Image,
+} from 'react-native';
 import {ProgressBar} from 'react-native-paper';
 
+import electronicMail from '../../../assets/images/electronic_mail.png';
 import AlphabetTable from '../../../components/AlphabetTable';
 import ChoiceButton from '../../../components/ChoiceButton';
 import CustomBackground from '../../../components/CustomBackground';
@@ -25,6 +32,10 @@ export default function LevelFive({navigation}) {
   }, [step]);
 
   const viewOfContent = [
+    <View style={styles.containerContent}>
+      <Text style={styles.contentText}>Texto da api</Text>
+      <Image source={electronicMail} style={styles.image} />
+    </View>,
     <Text style={styles.contentText}>
       Usando o mesmo código que Tom utilizou na loja, tente enviar uma mensagem
       de correio eletrônico ao seu amigo.
