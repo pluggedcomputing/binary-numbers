@@ -18,7 +18,7 @@ function LevelSelection({navigation}) {
     level2: true,
     level3: true,
     level4: true,
-    level5: false,
+    level5: true,
     level6: false,
     level7: false,
     level8: false,
@@ -37,7 +37,7 @@ function LevelSelection({navigation}) {
       level2: true,
       level3: true,
       level4: true,
-      level5: false,
+      level5: true,
       level6: false,
       level7: false,
       level8: false,
@@ -80,7 +80,7 @@ function LevelSelection({navigation}) {
             level="5"
             image={level5}
             available={LevelsAvailable.level5}
-            onPress={() => Alert.alert('level="5"')}
+            onPress={() => navigation.navigate('ExerciseLevelFive')}
           />
           <CardLevel
             level="6"
