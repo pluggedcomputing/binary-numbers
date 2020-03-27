@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
   },
   subContainer: {
     backgroundColor: colors.colorBackground,
-    width: metrics.screenWidth * 1.07,
+    width: metrics.screenWidth,
     height: metrics.screenHeight * 0.04,
   },
   containerTableHeader: {
