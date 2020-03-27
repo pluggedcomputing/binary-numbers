@@ -10,7 +10,7 @@ import {
   StatusBar,
   Linking,
 } from 'react-native';
-import LinearGradient from 'react-native-linear-gradient';
+import {LinearGradient} from 'expo-linear-gradient';
 
 import logo from '../../assets/images/logo_grey.png';
 import CustomBackground from '../../components/CustomBackground';
@@ -52,30 +52,26 @@ function ScreenAbout({navigation}) {
     </Text>,
   ];
   return (
-    <SafeAreaView style={styles.container}>
-      <LinearGradient
-        colors={[colors.colorPrimary, '#242F68']}
-        style={styles.container}>
-        <StatusBar
-          barStyle="light-content"
-          backgroundColor={colors.colorPrimary}
-        />
-        <Image source={logo} style={styles.logo} />
-        <CustomBackground content={viewOfContent} />
-        <View>
-          <Text style={styles.credits}>
-            Desenvolvido e mantido pela equipe do projeto Computação Desplugada
-            da UFPB campus IV.
-          </Text>
-          <Text style={styles.credits}>
-            Todos os Direitos Reservados ©2019.
-          </Text>
-          <TouchableOpacity onPress={() => navigation.navigate('Main')}>
-            <Text style={styles.textButton}>VOLTAR</Text>
-          </TouchableOpacity>
-        </View>
-      </LinearGradient>
-    </SafeAreaView>
+    <LinearGradient
+      colors={[colors.colorPrimary, '#242F68']}
+      style={styles.container}>
+      <StatusBar
+        barStyle="light-content"
+        backgroundColor={colors.colorPrimary}
+      />
+      <Image source={logo} style={styles.logo} />
+      <CustomBackground content={viewOfContent} />
+      <View>
+        <Text style={styles.credits}>
+          Desenvolvido e mantido pela equipe do projeto Computação Desplugada da
+          UFPB campus IV.
+        </Text>
+        <Text style={styles.credits}>Todos os Direitos Reservados ©2019.</Text>
+        <TouchableOpacity onPress={() => navigation.navigate('Main')}>
+          <Text style={styles.textButton}>VOLTAR</Text>
+        </TouchableOpacity>
+      </View>
+    </LinearGradient>
   );
 }
 
