@@ -40,6 +40,16 @@ const styles = StyleSheet.create({
   input: {
     height: 40,
   },
+  image: {
+    resizeMode: 'contain',
+    width: metrics.screenWidth * 0.8,
+    height: metrics.screenHeight * 0.2,
+  },
+  containerContent: {
+    height: metrics.screenHeight * 0.25,
+    justifyContent: 'space-around',
+    alignItems: 'center',
+  },
 });
 
 export default styles;
