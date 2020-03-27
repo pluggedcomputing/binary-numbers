@@ -1,29 +1,36 @@
-import React, {useState} from 'react';
-import {ScrollView, Image, StatusBar, KeyboardAvoidingView} from 'react-native';
-import LinearGradient from 'react-native-linear-gradient';
+import React, { useState } from "react";
+import {
+  ScrollView,
+  Image,
+  StatusBar,
+  KeyboardAvoidingView
+} from "react-native";
+import { LinearGradient } from "expo-linear-gradient";
 
-import image from '../../assets/images/logo_grey.png';
-import SlidingSwitch from '../../components/SlidingSwitch';
-import {colors} from '../../styles';
-import Login from './Login';
-import Register from './Register';
-import styles from './styles';
+import image from "../../assets/images/logo_grey.png";
+import SlidingSwitch from "../../components/SlidingSwitch";
+import { colors } from "../../styles";
+import Login from "./Login";
+import Register from "./Register";
+import styles from "./styles";
 
 const LoginOrRegister = props => {
-  const [status, setStatus] = useState('');
-  const {navigation} = props;
+  const [status, setStatus] = useState("");
+  const { navigation } = props;
 
   return (
     <LinearGradient
-      colors={[colors.colorPrimary, '#242F68']}
-      style={styles.container}>
+      colors={[colors.colorPrimary, "#242F68"]}
+      style={styles.container}
+    >
       <StatusBar
         barStyle="light-content"
         backgroundColor={colors.colorPrimary}
       />
       <ScrollView
         contentContainerStyle={styles.scrollView}
-        showsVerticalScrollIndicator={false}>
+        showsVerticalScrollIndicator={false}
+      >
         <Image style={styles.containerImage} source={image} />
         <KeyboardAvoidingView behavior="padding" enabled>
           <SlidingSwitch
@@ -32,7 +39,7 @@ const LoginOrRegister = props => {
             }}
             isParentScrollEnabled={false}
           />
-          {status === 'Entrar' ? (
+          {status === "Entrar" ? (
             <Login navigation={navigation} />
           ) : (
             <Register navigation={navigation} />
