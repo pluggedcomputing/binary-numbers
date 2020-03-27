@@ -1,40 +1,39 @@
 import {StyleSheet} from 'react-native';
 
-import {metrics, fonts, colors} from '../../styles';
+import {metrics, colors} from '../../styles';
 
 const styles = StyleSheet.create({
+  containerView: {
+    height: metrics.screenHeight * 0.15,
+  },
   container: {
-    flex: 1,
-    height: metrics.screenHeight * 0.26,
+    height: metrics.screenHeight * 0.09,
+    alignItems: 'center',
   },
-  textTitle: {
-    color: colors.colorBackground,
-    fontSize: fonts.input,
+  subContainer: {
+    backgroundColor: colors.colorBackground,
+    width: metrics.screenWidth,
+    height: metrics.screenHeight * 0.04,
   },
-  textCell: {
-    fontSize: fonts.title,
-    fontWeight: 'bold',
-    color: colors.textColorPrimary,
-  },
-  containerHeader: {
-    width: metrics.screenWidth * 0.2,
-    height: metrics.screenHeight * 0.03,
+  containerTableHeader: {
+    alignItems: 'center',
+    justifyContent: 'center',
     backgroundColor: colors.textColorPrimary,
     borderBottomColor: colors.textColorPrimary,
     borderWidth: metrics.smallBorder,
-    alignItems: 'center',
   },
-  containerRow: {
-    width: metrics.screenWidth * 0.2,
-    height: metrics.screenHeight * 0.1,
-    backgroundColor: colors.textColorSecondary,
+  containerTableRow: {
+    height: metrics.screenHeight * 0.05,
+    justifyContent: 'center',
     borderBottomColor: colors.textColorPrimary,
     borderWidth: metrics.smallBorder,
     borderBottomWidth: metrics.smallBorder,
   },
-  contaninerBody: {
-    justifyContent: 'center',
-    alignItems: 'center',
+  text: {
+    color: colors.colorBackground,
+  },
+  textBold: {
+    fontWeight: 'bold',
   },
 });
 

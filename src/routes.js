@@ -1,6 +1,8 @@
 import {createAppContainer, createSwitchNavigator} from 'react-navigation';
 
 import Congratulations from './screens/Congratulations';
+import ExerciseLevelFive from './screens/Exercises/LevelFive';
+import ExerciseLevelFour from './screens/Exercises/LevelFour';
 import ExerciseLevelOne from './screens/Exercises/LevelOne';
 import ExerciseLevelSeven from './screens/Exercises/LevelSeven';
 import ExerciseLevelThree from './screens/Exercises/LevelThree';
@@ -20,6 +22,9 @@ export default createAppContainer(
     ExerciseLevelOne,
     ExerciseLevelThree,
     ExerciseLevelTwo,
+    ExerciseLevelFour,
+    ExerciseLevelFive,
     ExerciseLevelSeven,
   }),
 );
+
