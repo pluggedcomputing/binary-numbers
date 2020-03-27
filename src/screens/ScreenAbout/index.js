@@ -6,10 +6,10 @@ import {
   Text,
   TouchableOpacity,
   View,
-  SafeAreaView,
   StatusBar,
   Linking,
 } from 'react-native';
+
 import {LinearGradient} from 'expo-linear-gradient';
 
 import logo from '../../assets/images/logo_grey.png';
