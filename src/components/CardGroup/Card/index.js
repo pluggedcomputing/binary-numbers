@@ -3,7 +3,7 @@ import {View, Text, TouchableOpacity, Image} from 'react-native';
 
 import PropTypes from 'prop-types';
 
-import image from '../../assets/images/logo_grey.png';
+import image from '../../../assets/images/logo_grey.png';
 import styles from './styles';
 
 const Card = props => {

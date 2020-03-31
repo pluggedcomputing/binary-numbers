@@ -1,6 +1,6 @@
 import {StyleSheet} from 'react-native';
 
-import {colors, fonts, metrics} from '../../styles';
+import {colors, fonts, metrics} from '../../../styles';
 
 const WIDHT_PORCENTAGE = 0.14;
 const HEIGHT_PORCENTAGE = 0.17;
@@ -47,7 +47,7 @@ const styles = StyleSheet.create({
   },
   image: {
     alignSelf: 'center',
-    resizeMode: "contain",
+    resizeMode: 'contain',
     width: metrics.screenWidth * 0.13,
   },
   containerContent: {

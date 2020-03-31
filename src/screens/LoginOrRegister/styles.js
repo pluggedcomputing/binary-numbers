@@ -8,6 +8,7 @@ const WIDTH_PORCENTAGE = 0.41;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    marginTop: metrics.statusBarHeight,
     width: metrics.screenWidth,
     height: metrics.screenHeight,
     alignItems: 'center',

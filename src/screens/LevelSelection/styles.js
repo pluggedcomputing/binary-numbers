@@ -4,6 +4,7 @@ import {colors, metrics} from '../../styles';
 
 const styles = StyleSheet.create({
   container: {
+    marginTop: metrics.statusBarHeight,
     flex: 1,
     width: metrics.screenWidth,
     height: metrics.screenHeight,
