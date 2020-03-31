@@ -18,6 +18,13 @@ const general = {
 
     elevation: 10,
   },
+  defaultContainer: {
+    flex: 1,
+    marginTop: metrics.statusBarHeight,
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    backgroundColor: colors.colorBackground,
+  },
 };
 
 export default general;
