@@ -2,6 +2,55 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.1-develop.3](https://gitlab.com/pluggedcomputing/plugged-computing-binary-numbers/compare/v0.0.1-develop.2...v0.0.1-develop.3) (2020-03-31)
+
+
+### Features
+
+* **#32:** adicionar imagem referente a email eletronico ([6d7fa79](https://gitlab.com/pluggedcomputing/plugged-computing-binary-numbers/commit/6d7fa79534984898385cf51a145c7102895c537a)), closes [#32](https://gitlab.com/pluggedcomputing/plugged-computing-binary-numbers/issues/32)
+* **#32:** adicionar import do exercicio nivel 5 ([8fb1d67](https://gitlab.com/pluggedcomputing/plugged-computing-binary-numbers/commit/8fb1d67c048eec3faa0fe53b51c2b90ab0886db7)), closes [#32](https://gitlab.com/pluggedcomputing/plugged-computing-binary-numbers/issues/32)
+* **#32:** adicionar navegação para o nivel 5 ([900724d](https://gitlab.com/pluggedcomputing/plugged-computing-binary-numbers/commit/900724dcf9ac753ad21b8e7f89b7b57f104663dd)), closes [#32](https://gitlab.com/pluggedcomputing/plugged-computing-binary-numbers/issues/32)
+* **#32:** adicionar view de imagem em content ([f030222](https://gitlab.com/pluggedcomputing/plugged-computing-binary-numbers/commit/f0302221720db4f6445912b88d8e705d1f33fd9f)), closes [#32](https://gitlab.com/pluggedcomputing/plugged-computing-binary-numbers/issues/32)
+* **#32:** adicoinar propiedade de estilo para imagem ([606ab1c](https://gitlab.com/pluggedcomputing/plugged-computing-binary-numbers/commit/606ab1c4301fa9b8a17601eb9ecd38f1acd9788f)), closes [#32](https://gitlab.com/pluggedcomputing/plugged-computing-binary-numbers/issues/32)
+* **#32:** criar estilo do nivel 5 ([4306a88](https://gitlab.com/pluggedcomputing/plugged-computing-binary-numbers/commit/4306a883b11d93891773d251fc0cbca1ec44dbda)), closes [#32](https://gitlab.com/pluggedcomputing/plugged-computing-binary-numbers/issues/32)
+* **#32:** criar tela do nivel 5 ([ee719e7](https://gitlab.com/pluggedcomputing/plugged-computing-binary-numbers/commit/ee719e76fcf5973968f64f1e2055e7bc8d23943b)), closes [#32](https://gitlab.com/pluggedcomputing/plugged-computing-binary-numbers/issues/32)
+* **#32:** refatorar componente datatable criando duas tabelas ([cc27658](https://gitlab.com/pluggedcomputing/plugged-computing-binary-numbers/commit/cc2765862e031b85e63055f6730204317b3410fc)), closes [#32](https://gitlab.com/pluggedcomputing/plugged-computing-binary-numbers/issues/32)
+* **#32:** refatorar estilos de row , title e conatiner ([d53f7ef](https://gitlab.com/pluggedcomputing/plugged-computing-binary-numbers/commit/d53f7ef1a74a944d341638b83d202873c9055d87)), closes [#32](https://gitlab.com/pluggedcomputing/plugged-computing-binary-numbers/issues/32)
+* **#32:** refatorar lista em duas para numeros e para letras ([473c515](https://gitlab.com/pluggedcomputing/plugged-computing-binary-numbers/commit/473c5156b587e9c97af6b09f5f8ff95621a5a494)), closes [#32](https://gitlab.com/pluggedcomputing/plugged-computing-binary-numbers/issues/32)
+* **#32:** refatorar propriedade do estilo de subContainer ([89dec4c](https://gitlab.com/pluggedcomputing/plugged-computing-binary-numbers/commit/89dec4ce86ad99c9f51acc77cfa40021628f0dcc)), closes [#32](https://gitlab.com/pluggedcomputing/plugged-computing-binary-numbers/issues/32)
+* **#39:** adicionar chamada do componente ExerciseLevelFour ([303f6af](https://gitlab.com/pluggedcomputing/plugged-computing-binary-numbers/commit/303f6afb9bc25a4d2a16d2c3f75a75e87e633f47)), closes [#39](https://gitlab.com/pluggedcomputing/plugged-computing-binary-numbers/issues/39)
+* **#39:** adicionar chamada para o card do level 4 ([405a899](https://gitlab.com/pluggedcomputing/plugged-computing-binary-numbers/commit/405a89950b2e6c533c023a6ed372ac7135bf7400)), closes [#39](https://gitlab.com/pluggedcomputing/plugged-computing-binary-numbers/issues/39)
+* **#39:** adicionar estilização no componente scrollview ([eaa4e1d](https://gitlab.com/pluggedcomputing/plugged-computing-binary-numbers/commit/eaa4e1dbf28ab0682751024b67cf0b0796a9bf8f)), closes [#39](https://gitlab.com/pluggedcomputing/plugged-computing-binary-numbers/issues/39)
+* **#39:** adicionar estilo dos componetes ([81e3edb](https://gitlab.com/pluggedcomputing/plugged-computing-binary-numbers/commit/81e3edb54366b57347e046793a19cb15eebd4ddc)), closes [#39](https://gitlab.com/pluggedcomputing/plugged-computing-binary-numbers/issues/39)
+* **#39:** adicionar estilo para os textos de perguntas e resposta ([50fc7f4](https://gitlab.com/pluggedcomputing/plugged-computing-binary-numbers/commit/50fc7f4983fb464637d7caaadd6ee7b9878edfc1)), closes [#39](https://gitlab.com/pluggedcomputing/plugged-computing-binary-numbers/issues/39)
+* **#39:** adicionar metodo para montar o componente de resposta ([928903e](https://gitlab.com/pluggedcomputing/plugged-computing-binary-numbers/commit/928903e0a9f02e24618fecf14607eda8da7cee10)), closes [#39](https://gitlab.com/pluggedcomputing/plugged-computing-binary-numbers/issues/39)
+* **#39:** adicionar propriedade de estilo de componentTree ([af44ce6](https://gitlab.com/pluggedcomputing/plugged-computing-binary-numbers/commit/af44ce6eb56d1d3a1416c6f5bed05c51c982ab14)), closes [#39](https://gitlab.com/pluggedcomputing/plugged-computing-binary-numbers/issues/39)
+* **#39:** adicionar step para componete christmansTree ([ba404ec](https://gitlab.com/pluggedcomputing/plugged-computing-binary-numbers/commit/ba404ec194b6c1541d16f657242f295147263fd8)), closes [#39](https://gitlab.com/pluggedcomputing/plugged-computing-binary-numbers/issues/39)
+* **#39:** modificar local onde o style da props sera atribuido ([2b38b7b](https://gitlab.com/pluggedcomputing/plugged-computing-binary-numbers/commit/2b38b7bfb1343b3bb530db827d5ccda101eb454b)), closes [#39](https://gitlab.com/pluggedcomputing/plugged-computing-binary-numbers/issues/39)
+* **#39:** remover repetição de view e adicionar uma lista ([dbd92a8](https://gitlab.com/pluggedcomputing/plugged-computing-binary-numbers/commit/dbd92a873235a36252a2ab7216967948d3f7946f)), closes [#39](https://gitlab.com/pluggedcomputing/plugged-computing-binary-numbers/issues/39)
+* **#41:** adicionar import para nivel 7 ([899fb90](https://gitlab.com/pluggedcomputing/plugged-computing-binary-numbers/commit/899fb90df256dc40ca6617c0ab62478a106c0ff7)), closes [#41](https://gitlab.com/pluggedcomputing/plugged-computing-binary-numbers/issues/41)
+* **#41:** adicionar navegação para nivel 7 ([176006c](https://gitlab.com/pluggedcomputing/plugged-computing-binary-numbers/commit/176006c65bf02540a229b66004eeee5294b1d47d)), closes [#41](https://gitlab.com/pluggedcomputing/plugged-computing-binary-numbers/issues/41)
+* **#41:** criar estilo para tela do nivel 7 ([068c89a](https://gitlab.com/pluggedcomputing/plugged-computing-binary-numbers/commit/068c89afbad1567d30a9e1c18c10401ab1d20338)), closes [#41](https://gitlab.com/pluggedcomputing/plugged-computing-binary-numbers/issues/41)
+* **#41:** criar tela para nivel 7 ([f5c8098](https://gitlab.com/pluggedcomputing/plugged-computing-binary-numbers/commit/f5c8098a9b229667a046be794f1ae61e94db8bb6)), closes [#41](https://gitlab.com/pluggedcomputing/plugged-computing-binary-numbers/issues/41)
+* **#43:** add mock response api ([03d98c7](https://gitlab.com/pluggedcomputing/plugged-computing-binary-numbers/commit/03d98c7f69137b957889d90be5e34e2c3283c9f3)), closes [#43](https://gitlab.com/pluggedcomputing/plugged-computing-binary-numbers/issues/43)
+* **#43:** adjusts of generic styles ([028796c](https://gitlab.com/pluggedcomputing/plugged-computing-binary-numbers/commit/028796cef5b08e8a23076758b86633e1b0b75a7a)), closes [#43](https://gitlab.com/pluggedcomputing/plugged-computing-binary-numbers/issues/43)
+* **#43:** Ajustes de margin ([e09dbe3](https://gitlab.com/pluggedcomputing/plugged-computing-binary-numbers/commit/e09dbe376ec8df76f0c8fb389a09d070598fb7c1)), closes [#43](https://gitlab.com/pluggedcomputing/plugged-computing-binary-numbers/issues/43)
+* **#43:** Ajustes no componente HeaderOfExercises ([f19cd16](https://gitlab.com/pluggedcomputing/plugged-computing-binary-numbers/commit/f19cd160cecb6b943c3343e1c6bb2d4c1899e826)), closes [#43](https://gitlab.com/pluggedcomputing/plugged-computing-binary-numbers/issues/43)
+* **#43:** create CardGroup component ([7d1f893](https://gitlab.com/pluggedcomputing/plugged-computing-binary-numbers/commit/7d1f893c2bf4b6e68bb54d814b3283d95a2b5380)), closes [#43](https://gitlab.com/pluggedcomputing/plugged-computing-binary-numbers/issues/43)
+* **#43:** Create generic componente of exercises ([eacd100](https://gitlab.com/pluggedcomputing/plugged-computing-binary-numbers/commit/eacd100f105273d19261929e2591d69bd3b189d5)), closes [#43](https://gitlab.com/pluggedcomputing/plugged-computing-binary-numbers/issues/43)
+* **#43:** Create questions types ([9681edc](https://gitlab.com/pluggedcomputing/plugged-computing-binary-numbers/commit/9681edcddd5893b54bc7f5a3b1a9322bff512444)), closes [#43](https://gitlab.com/pluggedcomputing/plugged-computing-binary-numbers/issues/43)
+* **#43:** remove old pages ([69f9bbb](https://gitlab.com/pluggedcomputing/plugged-computing-binary-numbers/commit/69f9bbb22647b1981e977c89cee59d2369c8bffa)), closes [#43](https://gitlab.com/pluggedcomputing/plugged-computing-binary-numbers/issues/43)
+* **#43:** routes adjustes ([a7019cd](https://gitlab.com/pluggedcomputing/plugged-computing-binary-numbers/commit/a7019cdb590198d12c29a453f687daa65bb08b78)), closes [#43](https://gitlab.com/pluggedcomputing/plugged-computing-binary-numbers/issues/43)
+* **#43:** update dependences ([d160f17](https://gitlab.com/pluggedcomputing/plugged-computing-binary-numbers/commit/d160f178b028cdcebc0c65e5f6a74acb37bf72e9)), closes [#43](https://gitlab.com/pluggedcomputing/plugged-computing-binary-numbers/issues/43)
+* **#5:** add splash ([db3ca76](https://gitlab.com/pluggedcomputing/plugged-computing-binary-numbers/commit/db3ca76d5b4e404bd0bf649d160bc81a0cf8a1c6)), closes [#5](https://gitlab.com/pluggedcomputing/plugged-computing-binary-numbers/issues/5)
+
+
+### Bug Fixes
+
+* **#42:** Adicionar Melhorias no componente CustomBackgroud ([fe08629](https://gitlab.com/pluggedcomputing/plugged-computing-binary-numbers/commit/fe08629673aa1695ba55ae5b2054f330293c0fb3)), closes [#42](https://gitlab.com/pluggedcomputing/plugged-computing-binary-numbers/issues/42)
+* **#44:** adicionar melhoria na visualizao dos inputs ([76aef61](https://gitlab.com/pluggedcomputing/plugged-computing-binary-numbers/commit/76aef61ea9ead7e2ef812cc486e92fb814eead5e)), closes [#44](https://gitlab.com/pluggedcomputing/plugged-computing-binary-numbers/issues/44)
+* **#44:** adicionar scrollview, para facilitar a visualizaçao nos inputs ([1f82325](https://gitlab.com/pluggedcomputing/plugged-computing-binary-numbers/commit/1f82325399f4be31de9a5bf52f8cd8cb20a757c4)), closes [#44](https://gitlab.com/pluggedcomputing/plugged-computing-binary-numbers/issues/44)
+
 ### [0.0.1-develop.2](https://gitlab.com/pluggedcomputing/plugged-computing-binary-numbers/compare/v0.0.1-develop.1...v0.0.1-develop.2) (2020-03-03)
 
 
