@@ -13,6 +13,7 @@ import CardLevel from '../../components/CardLevel';
 import styles from './styles';
 
 function LevelSelection({navigation}) {
+  const data = navigation.getParam('data');
   const [LevelsAvailable, setLevelsAvailable] = useState({
     level1: true,
     level2: true,
@@ -52,13 +53,13 @@ function LevelSelection({navigation}) {
             level="1"
             image={level1}
             available={LevelsAvailable.level1}
-            onPress={() => navigation.navigate('ExerciseLevelOne')}
+            onPress={() => navigation.navigate('Exercises', {data})}
           />
           <CardLevel
             level="2"
             image={level2}
             available={LevelsAvailable.level2}
-            onPress={() => navigation.navigate('ExerciseLevelTwo')}
+            onPress={() => navigation.navigate('Exercises', {data})}
           />
         </View>
         <View style={styles.boxContainer}>
@@ -66,13 +67,13 @@ function LevelSelection({navigation}) {
             level="3"
             image={level3}
             available={LevelsAvailable.level3}
-            onPress={() => navigation.navigate('ExerciseLevelThree')}
+            onPress={() => navigation.navigate('Exercises', {data})}
           />
           <CardLevel
             level="4"
             image={level4}
             available={LevelsAvailable.level4}
-            onPress={() => navigation.navigate('ExerciseLevelFour')}
+            onPress={() => navigation.navigate('Exercises', {data})}
           />
         </View>
         <View style={styles.boxContainer}>
@@ -80,13 +81,13 @@ function LevelSelection({navigation}) {
             level="5"
             image={level5}
             available={LevelsAvailable.level5}
-            onPress={() => navigation.navigate('ExerciseLevelFive')}
+            onPress={() => navigation.navigate('Exercises', {data})}
           />
           <CardLevel
             level="6"
             image={level6}
             available={LevelsAvailable.level6}
-            onPress={() => Alert.alert('level="6"')}
+            onPress={() => navigation.navigate('Exercises', {data})}
           />
         </View>
         <View style={styles.boxContainer}>
@@ -94,13 +95,13 @@ function LevelSelection({navigation}) {
             level="7"
             image={level7}
             available={LevelsAvailable.level7}
-            onPress={() => navigation.navigate('ExerciseLevelSeven')}
+            onPress={() => navigation.navigate('Exercises', {data})}
           />
           <CardLevel
             level="8"
             image={level8}
             available={LevelsAvailable.level8}
-            onPress={() => Alert.alert('level="8"')}
+            onPress={() => navigation.navigate('Exercises', {data})}
           />
         </View>
       </ScrollView>
