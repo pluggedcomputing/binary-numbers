@@ -17,7 +17,7 @@ export default function Exercises({navigation}) {
   const response = navigation.getParam('data');
   const [step, setSteps] = useState(0);
 
-  const [exercise, setExercise] = useState(response);
+  const [exercise] = useState(response);
   const [question, setQuestion] = useState(response.questions[step]);
 
   const maxStep = exercise.questions.length;
@@ -33,7 +33,7 @@ export default function Exercises({navigation}) {
   }, [step]);
 
   const viewOfContent = [
-    <Text style={styles.contentText}>step: {step}</Text>,
+    <Text style={styles.contentText}>{exercise.introduction}</Text>,
     <CardGroup />,
     <Text style={styles.statement}>{question.statement}</Text>,
   ];

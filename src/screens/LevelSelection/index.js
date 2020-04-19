@@ -59,7 +59,7 @@ function LevelSelection({navigation}) {
             level="2"
             image={level2}
             available={LevelsAvailable.level2}
-            onPress={() => navigation.navigate('Exercises', {data})}
+            onPress={() => navigation.navigate('Exercises', {data: data[1]})}
           />
         </View>
         <View style={styles.boxContainer}>
@@ -67,7 +67,7 @@ function LevelSelection({navigation}) {
             level="3"
             image={level3}
             available={LevelsAvailable.level3}
-            onPress={() => navigation.navigate('Exercises', {data})}
+            onPress={() => navigation.navigate('Exercises', {data: data[2]})}
           />
           <CardLevel
             level="4"

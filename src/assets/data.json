@@ -103,7 +103,7 @@
       }
     ],
     "_id": "5e9cb96e08f3901025072685",
-    "title": "Introduçao",
+    "title": "Introdução",
     "description": "Antes de iniciar a atividade, pode ser útil demonstrar os fundamentos ao grupo. Para esta atividade, são necessários cinco cartões, com pontos marcados de um lado e nada sobre o verso.",
     "introduction": "Podemos usar estes cartões para representar números binários. Cartas viradas para cima, representam o bit 1, viradas para baixo o bit 0.",
     "showCards": true,
