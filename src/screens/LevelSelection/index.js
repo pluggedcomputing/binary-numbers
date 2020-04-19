@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import {View, SafeAreaView, ScrollView} from 'react-native';
 
+import data from '../../assets/data.json';
 import level1 from '../../assets/images/levels/level1.png';
 import level2 from '../../assets/images/levels/level2.png';
 import level3 from '../../assets/images/levels/level3.png';
@@ -13,7 +14,6 @@ import CardLevel from '../../components/CardLevel';
 import styles from './styles';
 
 function LevelSelection({navigation}) {
-  const data = '../../assets/data.json';
   const [LevelsAvailable, setLevelsAvailable] = useState({
     level1: true,
     level2: true,

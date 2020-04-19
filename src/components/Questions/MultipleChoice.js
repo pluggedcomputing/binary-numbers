@@ -13,7 +13,7 @@ const multipleChoice = props => {
     <FlatList
       style={styles.alternative}
       data={alternatives}
-      keyExtractor={alternative => String(alternative.id)}
+      keyExtractor={alternative => String(alternative.text)}
       renderItem={({item}) => (
         <ChoiceButton
           text={item.text}
@@ -30,7 +30,7 @@ const multipleChoice = props => {
 };
 
 multipleChoice.propTypes = {
-  alternatives: PropTypes.array.isRequired,
+  alternatives: PropTypes.arrayOf(PropTypes.object).isRequired,
   step: PropTypes.number.isRequired,
   setSteps: PropTypes.func.isRequired,
 };
