@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import {View, SafeAreaView, ScrollView, Alert} from 'react-native';
+import {View, SafeAreaView, ScrollView} from 'react-native';
 
 import level1 from '../../assets/images/levels/level1.png';
 import level2 from '../../assets/images/levels/level2.png';
@@ -13,16 +13,16 @@ import CardLevel from '../../components/CardLevel';
 import styles from './styles';
 
 function LevelSelection({navigation}) {
-  const data = navigation.getParam('data');
+  const data = '../../assets/data.json';
   const [LevelsAvailable, setLevelsAvailable] = useState({
     level1: true,
     level2: true,
     level3: true,
     level4: true,
     level5: true,
-    level6: false,
+    level6: true,
     level7: true,
-    level8: false,
+    level8: true,
   });
 
   useEffect(() => {
@@ -53,7 +53,7 @@ function LevelSelection({navigation}) {
             level="1"
             image={level1}
             available={LevelsAvailable.level1}
-            onPress={() => navigation.navigate('Exercises', {data})}
+            onPress={() => navigation.navigate('Exercises', {data: data[0]})}
           />
           <CardLevel
             level="2"
