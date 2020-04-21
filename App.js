@@ -1,7 +1,31 @@
-import React from "react";
+import React from 'react';
+import {setCustomTextInput, setCustomText} from 'react-native-global-props';
 
-import Routes from "./src/routes";
+import {useFonts} from '@use-expo/font';
+import {AppLoading} from 'expo';
 
-export default function App() {
+import Routes from './src/routes';
+import {general} from './src/styles';
+
+const customTextInputProps = {
+  style: general.customProps,
+};
+
+const customTextProps = {
+  style: general.customProps,
+};
+
+setCustomTextInput(customTextInputProps);
+setCustomText(customTextProps);
+
+const App = () => {
+  const [fontsLoaded] = useFonts({
+    Poppins: require('./assets/fonts/Poppins/Poppins-Regular.ttf'),
+  });
+  if (!fontsLoaded) {
+    return <AppLoading />;
+  }
   return <Routes />;
-}
+};
+
+export default App;
