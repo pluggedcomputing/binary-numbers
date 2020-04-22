@@ -13,8 +13,8 @@ const styles = StyleSheet.create({
     borderWidth: metrics.smallBorder,
     borderColor: colors.colorBackground,
     borderRadius: metrics.tripleRadius,
-    marginTop: metrics.halfMargin,
-    marginBottom: metrics.halfMargin,
+    marginTop: metrics.doubleBaseMargin,
+    marginBottom: metrics.doubleBaseMargin,
   },
   switcher: {
     flexDirection: 'row',
