@@ -1,37 +1,61 @@
 import React, {useState, useEffect} from 'react';
-import {SafeAreaView, StatusBar, Text} from 'react-native';
+import {SafeAreaView, StatusBar, Text, View} from 'react-native';
+import {ProgressBar} from 'react-native-paper';
+
+import {MaterialCommunityIcons} from '@expo/vector-icons';
+import {useRoute} from '@react-navigation/native';
 
 import CardGroup from '../../components/CardGroup';
 import CustomBackground from '../../components/CustomBackground';
-import HeaderOfExercises from '../../components/HeaderOfExercises';
+import Tooltip from '../../components/HeaderOfExercises/Tooltips';
 import {
   MultipleChoice,
   Numeric,
   ShortAnswer,
   TrueOrFalse,
 } from '../../components/Questions';
-import {colors} from '../../styles';
+import {general, colors} from '../../styles';
 import styles from './styles';
 
 export default function Exercises({navigation}) {
-  const response = navigation.getParam('data');
+  const [state, setstate] = useState(false);
+
+  const response = useRoute().params.data;
   const [step, setSteps] = useState(0);
 
   const [exercise] = useState(response);
   const [question, setQuestion] = useState(response.questions[step]);
 
+  const handleTips = () => setstate(!state);
+
   const maxStep = exercise.questions.length;
   const progress = step / maxStep;
+  const test = <Text>{response.tips}</Text>;
   const finishLevel = step === maxStep;
 
   useEffect(() => {
     if (finishLevel) {
-      navigation.navigate('Congratulations');
+      navigation.navigate('Congratulations', {level: response.level});
     } else {
       setQuestion(response.questions[step]);
     }
   }, [step]);
 
+  React.useLayoutEffect(() => {
+    navigation.setOptions({
+      title: response.title,
+      headerRight: () => (
+        <MaterialCommunityIcons
+          name="lightbulb-on-outline"
+          size={general.iconSize.bigger}
+          style={styles.icon}
+          onPress={() => (
+            <Tooltip content={test} isVisible={state} onCancel={handleTips} />
+          )}
+        />
+      ),
+    });
+  }, [navigation]);
   const viewOfContent = [
     <Text style={styles.contentText}>{exercise.introduction}</Text>,
     <CardGroup />,
@@ -85,19 +109,16 @@ export default function Exercises({navigation}) {
   }
 
   return (
-    <SafeAreaView style={styles.container}>
-      <StatusBar
-        barStyle="light-content"
-        backgroundColor={colors.colorPrimary}
-      />
-      <HeaderOfExercises
-        tips={<Text>{exercise.tips}</Text>}
-        title={exercise.title}
-        progress={progress}
-        navigation={navigation}
-      />
-      <CustomBackground style={styles.info} content={viewOfContent} />
-      {chooseQuestionRender()}
-    </SafeAreaView>
+    <View>
+      <ProgressBar color={colors.colorSucess} progress={progress} />
+      <SafeAreaView style={styles.container}>
+        <StatusBar
+          barStyle="light-content"
+          backgroundColor={colors.colorPrimary}
+        />
+        <CustomBackground style={styles.info} content={viewOfContent} />
+        {chooseQuestionRender()}
+      </SafeAreaView>
+    </View>
   );
 }
