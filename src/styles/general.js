@@ -19,10 +19,8 @@ const general = {
     elevation: 10,
   },
   defaultContainer: {
-    flex: 1,
-    marginTop: metrics.statusBarHeight,
     alignItems: 'center',
-    justifyContent: 'space-between',
+    justifyContent: 'flex-start',
     backgroundColor: colors.colorBackground,
   },
 };
