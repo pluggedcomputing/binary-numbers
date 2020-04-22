@@ -34,7 +34,7 @@ export default function Exercises({navigation}) {
 
   const viewOfContent = [
     <Text style={styles.contentText}>{exercise.introduction}</Text>,
-    <CardGroup />,
+    exercise.showCards ? <CardGroup />:null ,
     <Text style={styles.statement}>{question.statement}</Text>,
   ];
 
