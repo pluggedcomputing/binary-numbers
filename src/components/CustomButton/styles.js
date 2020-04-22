@@ -16,7 +16,8 @@ const styles = StyleSheet.create({
     elevation: metrics.baseElevation,
   },
   textButton: {
-    fontSize: fonts.title,
+    fontSize: fonts.input,
+    fontWeight: 'bold',
     textTransform: 'uppercase',
     color: colors.textColorSecondary,
   },

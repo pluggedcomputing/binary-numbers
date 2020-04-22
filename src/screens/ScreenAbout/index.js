@@ -66,7 +66,7 @@ function ScreenAbout({navigation}) {
           Desenvolvido e mantido pela equipe do projeto Computação Desplugada da
           UFPB campus IV.
         </Text>
-        <Text style={styles.credits}>Todos os Direitos Reservados ©2019.</Text>
+        <Text style={styles.credits}>Todos os Direitos Reservados ©2020.</Text>
         <TouchableOpacity onPress={() => navigation.navigate('Main')}>
           <Text style={styles.textButton}>VOLTAR</Text>
         </TouchableOpacity>
