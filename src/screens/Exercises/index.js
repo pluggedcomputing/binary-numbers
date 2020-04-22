@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, useLayoutEffect} from 'react';
 import {SafeAreaView, StatusBar, Text, View} from 'react-native';
 import {ProgressBar} from 'react-native-paper';
 
@@ -18,7 +18,7 @@ import {general, colors} from '../../styles';
 import styles from './styles';
 
 export default function Exercises({navigation}) {
-  const [state, setstate] = useState(false);
+  const [showTips, setShowTips] = useState(false);
 
   const response = useRoute().params.data;
   const [step, setSteps] = useState(0);
@@ -26,12 +26,25 @@ export default function Exercises({navigation}) {
   const [exercise] = useState(response);
   const [question, setQuestion] = useState(response.questions[step]);
 
-  const handleTips = () => setstate(!state);
-
   const maxStep = exercise.questions.length;
   const progress = step / maxStep;
-  const test = <Text>{response.tips}</Text>;
   const finishLevel = step === maxStep;
+
+  const handleTips = () => setShowTips(!showTips);
+
+  useLayoutEffect(() => {
+    navigation.setOptions({
+      title: response.title,
+      headerRight: () => (
+        <MaterialCommunityIcons
+          name="lightbulb-on-outline"
+          size={general.iconSize.bigger}
+          style={styles.icon}
+          onPress={handleTips}
+        />
+      ),
+    });
+  }, [navigation]);
 
   useEffect(() => {
     if (finishLevel) {
@@ -41,21 +54,6 @@ export default function Exercises({navigation}) {
     }
   }, [step]);
 
-  React.useLayoutEffect(() => {
-    navigation.setOptions({
-      title: response.title,
-      headerRight: () => (
-        <MaterialCommunityIcons
-          name="lightbulb-on-outline"
-          size={general.iconSize.bigger}
-          style={styles.icon}
-          onPress={() => (
-            <Tooltip content={test} isVisible={state} onCancel={handleTips} />
-          )}
-        />
-      ),
-    });
-  }, [navigation]);
   const viewOfContent = [
     <Text style={styles.contentText}>{exercise.introduction}</Text>,
     <CardGroup />,
@@ -110,6 +108,11 @@ export default function Exercises({navigation}) {
 
   return (
     <View>
+      <Tooltip
+        content={<Text>{exercise.tips}</Text>}
+        isVisible={showTips}
+        onCancel={handleTips}
+      />
       <ProgressBar color={colors.colorSucess} progress={progress} />
       <SafeAreaView style={styles.container}>
         <StatusBar

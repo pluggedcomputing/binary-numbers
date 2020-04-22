@@ -47,7 +47,11 @@ function routes() {
           name="Congratulations"
           component={Congratulations}
         />
-        <Stack.Screen name="ScreenAbout" component={ScreenAbout} />
+        <Stack.Screen
+          options={{headerShown: false}}
+          name="ScreenAbout"
+          component={ScreenAbout}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );
