@@ -21,6 +21,10 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     color: colors.textColorPrimary,
   },
+  icon: {
+    color: colors.colorPrimary,
+    margin: metrics.basePadding,
+  },
 });
 
 export default styles;
