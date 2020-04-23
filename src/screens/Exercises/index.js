@@ -1,5 +1,5 @@
 import React, {useState, useEffect, useLayoutEffect} from 'react';
-import {Text, View, Image} from 'react-native';
+import {Text, View, Image, KeyboardAvoidingView} from 'react-native';
 import {ProgressBar} from 'react-native-paper';
 
 import {MaterialCommunityIcons} from '@expo/vector-icons';
@@ -140,7 +140,7 @@ export default function Exercises({navigation}) {
         onCancel={handleTips}
       />
       <ProgressBar color={colors.colorSucess} progress={progress} />
-      <View style={styles.container}>
+      <KeyboardAvoidingView style={styles.container} behavior="padding" enabled>
         <View style={styles.halfView}>
           <CustomBackground
             style={styles.info}
@@ -158,7 +158,7 @@ export default function Exercises({navigation}) {
             </Text>
           )}
         </View>
-      </View>
+      </KeyboardAvoidingView>
     </View>
   );
 }
