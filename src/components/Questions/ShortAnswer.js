@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {View, KeyboardAvoidingView} from 'react-native';
+import {View} from 'react-native';
 
 import {PropTypes} from 'prop-types';
 
@@ -17,10 +17,7 @@ const shortAnswer = props => {
   }
   return (
     <View style={styles.descriptive}>
-      <KeyboardAvoidingView
-        style={styles.subDescriptive}
-        behavior="padding"
-        enabled>
+      <View style={styles.subDescriptive}>
         <CustomTextInput
           maxLength={255}
           multiline
@@ -29,7 +26,7 @@ const shortAnswer = props => {
           onChangeText={text => setAnswer(text)}
           value={answer}
         />
-      </KeyboardAvoidingView>
+      </View>
       <ChoiceButton
         text="Enviar"
         correct={textAnswerIsCorrect()}
