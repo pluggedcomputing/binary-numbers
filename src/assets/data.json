@@ -223,7 +223,7 @@
     "questions": [
       {
         "_id": "5e75556ca8c283001e9ec217",
-        "statement": "Tente decifrar os seguintes números codificados:",
+        "statement": "1. Tente decifrar os seguintes números codificados:",
         "type": "NUMERIC",
         "level": 3,
         "tips": "Os campos devem ser preenchidos com valores decimais;2. Talvez lembrar a sequencia das cartas te ajude nesse exercicio (16,8,4,2,1);3. Responda todas as perguntas corretamente para completar a tarefa;",
@@ -231,7 +231,7 @@
         "image": {
           "_id": "5e75556ca8c283001e9ec218",
           "name": "level3_question1-1584747882449.png",
-          "url": "http://plugged-computing-production.herokuapp.com/assets/level3_question1-1584747882449.png"
+          "url": "exec1"
         },
         "alternatives": [],
         "createdAt": "2020-03-20T23:44:44.963Z",
@@ -248,7 +248,7 @@
         "image": {
           "_id": "5e7557e7a8c283001e9ec21b",
           "name": "level3_question2-1584748518970.png",
-          "url": "http://plugged-computing-production.herokuapp.com/assets/level3_question2-1584748518970.png"
+          "url": "exec2"
         },
         "alternatives": [],
         "createdAt": "2020-03-20T23:55:19.110Z",
@@ -265,7 +265,7 @@
         "image": {
           "_id": "5e755817a8c283001e9ec21d",
           "name": "level3_question3-1584748567490.png",
-          "url": "http://plugged-computing-production.herokuapp.com/assets/level3_question3-1584748567490.png"
+          "url": "exec3"
         },
         "alternatives": [],
         "createdAt": "2020-03-20T23:56:07.594Z",
@@ -282,7 +282,7 @@
         "image": {
           "_id": "5e75583aa8c283001e9ec21f",
           "name": "level3_question4-1584748602119.png",
-          "url": "http://plugged-computing-production.herokuapp.com/assets/level3_question4-1584748602119.png"
+          "url": "exec4"
         },
         "alternatives": [],
         "createdAt": "2020-03-20T23:56:42.229Z",
@@ -299,7 +299,7 @@
         "image": {
           "_id": "5e755858a8c283001e9ec221",
           "name": "level3_question5-1584748632672.png",
-          "url": "http://plugged-computing-production.herokuapp.com/assets/level3_question5-1584748632672.png"
+          "url": "exec5"
         },
         "alternatives": [],
         "createdAt": "2020-03-20T23:57:12.776Z",
@@ -316,7 +316,7 @@
         "image": {
           "_id": "5e755873a8c283001e9ec223",
           "name": "level3_question6-1584748659529.png",
-          "url": "http://plugged-computing-production.herokuapp.com/assets/level3_question6-1584748659529.png"
+          "url": "exec6"
         },
         "alternatives": [],
         "createdAt": "2020-03-20T23:57:39.616Z",
@@ -333,7 +333,7 @@
         "image": {
           "_id": "5e75589ea8c283001e9ec225",
           "name": "level3_question7-1584748702292.png",
-          "url": "http://plugged-computing-production.herokuapp.com/assets/level3_question7-1584748702292.png"
+          "url": "exec7"
         },
         "alternatives": [],
         "createdAt": "2020-03-20T23:58:22.397Z",
@@ -350,7 +350,7 @@
         "image": {
           "_id": "5e7558bca8c283001e9ec227",
           "name": "level3_question8-1584748732945.png",
-          "url": "http://plugged-computing-production.herokuapp.com/assets/level3_question8-1584748732945.png"
+          "url": "exec8"
         },
         "alternatives": [],
         "createdAt": "2020-03-20T23:58:52.993Z",
@@ -367,7 +367,7 @@
         "image": {
           "_id": "5e7558dfa8c283001e9ec229",
           "name": "level3_question9-1584748767040.png",
-          "url": "http://plugged-computing-production.herokuapp.com/assets/level3_question9-1584748767040.png"
+          "url": "exec9"
         },
         "alternatives": [],
         "createdAt": "2020-03-20T23:59:27.146Z",
@@ -384,7 +384,7 @@
         "image": {
           "_id": "5e755900a8c283001e9ec22b",
           "name": "level3_question10-1584748800259.png",
-          "url": "http://plugged-computing-production.herokuapp.com/assets/level3_question10-1584748800259.png"
+          "url": "exec10"
         },
         "alternatives": [],
         "createdAt": "2020-03-21T00:00:00.543Z",

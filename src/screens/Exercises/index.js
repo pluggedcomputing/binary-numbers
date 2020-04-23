@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import {SafeAreaView, StatusBar, Text} from 'react-native';
+import {SafeAreaView, StatusBar, Text, View, Image} from 'react-native';
 
 import CardGroup from '../../components/CardGroup';
 import CustomBackground from '../../components/CustomBackground';
@@ -32,10 +32,35 @@ export default function Exercises({navigation}) {
     }
   }, [step]);
 
+  const imagensLevel3 = {
+    exec1: require('../../assets/images/level3Images/exec1.png'),
+    exec2: require('../../assets/images/level3Images/exec2.png'),
+    exec3: require('../../assets/images/level3Images/exec3.png'),
+    exec4: require('../../assets/images/level3Images/exec4.png'),
+    exec5: require('../../assets/images/level3Images/exec5.png'),
+    exec6: require('../../assets/images/level3Images/exec6.png'),
+    exec7: require('../../assets/images/level3Images/exec7.png'),
+    exec8: require('../../assets/images/level3Images/exec8.png'),
+    exec9: require('../../assets/images/level3Images/exec9.png'),
+    exec10: require('../../assets/images/level3Images/exec10.png'),
+  };
+
+  const getImagensLevel3 = type => imagensLevel3[type] || null;
+
   const viewOfContent = [
     <Text style={styles.contentText}>{exercise.introduction}</Text>,
-    exercise.showCards ? <CardGroup />:null ,
-    <Text style={styles.statement}>{question.statement}</Text>,
+    exercise.showCards ? <CardGroup /> : null,
+    question.image ? (
+      <View style={styles.statementImageConteiner}>
+        <Text style={styles.statement}>{question.statement}</Text>
+        <Image
+          style={styles.statementImage}
+          source={getImagensLevel3(question.image.url)}
+        />
+      </View>
+    ) : (
+      <Text style={styles.statement}>{question.statement}</Text>
+    ),
   ];
 
   function chooseQuestionRender() {

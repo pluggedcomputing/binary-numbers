@@ -19,6 +19,14 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     color: colors.textColorPrimary,
   },
+  statementImageConteiner: {
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  statementImage: {
+    resizeMode: 'contain',
+    width: metrics.screenHeight * 0.4,
+  },
 });
 
 export default styles;
