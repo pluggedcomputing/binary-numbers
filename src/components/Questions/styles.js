@@ -31,7 +31,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   subDescriptive: {
-    height: metrics.screenHeight * 0.26,
+    height: metrics.screenHeight * 0.2,
   },
 });
 export default styles;
