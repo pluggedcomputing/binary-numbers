@@ -4,15 +4,14 @@ import {FlatList} from 'react-native';
 import {PropTypes} from 'prop-types';
 
 import ChoiceButton from '../ChoiceButton';
-import styles from './styles';
 
 const multipleChoice = props => {
   const {alternatives, step, setSteps} = props;
 
   return (
     <FlatList
-      style={styles.alternative}
       data={alternatives}
+      scrollEnabled={false}
       keyExtractor={alternative => String(alternative.text)}
       renderItem={({item}) => (
         <ChoiceButton
