@@ -27,6 +27,10 @@ const styles = StyleSheet.create({
     resizeMode: 'contain',
     width: metrics.screenHeight * 0.4,
   },
+  icon: {
+    color: colors.colorPrimary,
+    margin: metrics.basePadding,
+  },
 });
 
 export default styles;

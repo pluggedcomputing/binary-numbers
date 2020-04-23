@@ -8,6 +8,7 @@ import {
 } from 'react-native';
 import {ProgressBar} from 'react-native-paper';
 
+import {useRoute} from '@react-navigation/native';
 import Lottie from 'lottie-react-native';
 
 import animation from '../../assets/animations/CheckedDone.json';
@@ -16,12 +17,13 @@ import styles from './styles';
 
 const Congratulations = props => {
   const {navigation} = props;
-  const level = navigation.getParam('level', 'X');
+  const {level} = useRoute().params;
 
   const navigateScreen = async () => {
     await AsyncStorage.setItem(`level${level + 1}`, 'true');
     navigation.navigate('LevelSelection');
   };
+
   useEffect(() => {
     setTimeout(navigateScreen, 3000);
   }, []);
