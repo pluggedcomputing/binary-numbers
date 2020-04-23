@@ -10,7 +10,6 @@
         "statement": "O que você percebeu sobre o número de pontos nos cartões?",
         "type": "MULTIPLECHOICE",
         "level": 1,
-        "tips": "1. Presione o cartão para vira-lo;2. A soma dos pontos dos cartões representam o numero decimal;3. Os numero binario é representado pela sequencia de zeros e uns;4. Responda todas as perguntas corretamente para completar a tarefa.",
         "alternatives": [
           {
             "correct": true,
@@ -42,7 +41,6 @@
         "statement": "Quantos pontos teria o próximo cartão colocado à esquerda?",
         "type": "MULTIPLECHOICE",
         "level": 1,
-        "tips": "1. Presione o cartão para vira-lo;2. A soma dos pontos dos cartões representam o numero decimal;3. Os numero binario é representado pela sequencia de zeros e uns;4. Responda todas as perguntas corretamente para completar a tarefa.",
         "alternatives": [
           {
             "correct": false,
@@ -74,7 +72,6 @@
         "statement": "Como seria o número 17 em binário?",
         "type": "MULTIPLECHOICE",
         "level": 1,
-        "tips": "1. Presione o cartão para vira-lo;2. A soma dos pontos dos cartões representam o numero decimal;3. Os numero binario é representado pela sequencia de zeros e uns;4. Responda todas as perguntas corretamente para completar a tarefa.",
         "alternatives": [
           {
             "correct": false,
@@ -122,7 +119,6 @@
         "statement": "A sequencia em binário 10011 corresponde a que numero decimal?",
         "type": "MULTIPLECHOICE",
         "level": 2,
-        "tips": "1. Presione o cartão para vira-lo;2. A soma dos pontos dos cartões representam o numero decimal;3. Os numero binario é representado pela sequencia de zeros e uns;4. Decore a posição das cartas, você vai precisar;5. Responda todas as perguntas corretamente para completar a tarefa.",
         "alternatives": [
           {
             "correct": true,
@@ -154,7 +150,6 @@
         "statement": "Os numeros 3 e 12 correspondem respectivamente à: ",
         "type": "MULTIPLECHOICE",
         "level": 2,
-        "tips": "1. Presione o cartão para vira-lo;2. A soma dos pontos dos cartões representam o numero decimal;3. Os numero binario é representado pela sequencia de zeros e uns;4. Decore a posição das cartas, você vai precisar;5. Responda todas as perguntas corretamente para completar a tarefa.",
         "alternatives": [
           {
             "correct": true,
@@ -186,7 +181,6 @@
         "statement": "Qual é o maior número que você pode formar com esse cartões?",
         "type": "NUMERIC",
         "level": 2,
-        "tips": "1. Presione o cartão para vira-lo;2. A soma dos pontos dos cartões representam o numero decimal;3. Os numero binario é representado pela sequencia de zeros e uns;4. Decore a posição das cartas, você vai precisar;5. Responda todas as perguntas corretamente para completar a tarefa.",
         "numeric_answer": 31,
         "alternatives": [],
         "createdAt": "2020-03-20T23:29:47.259Z",
@@ -198,7 +192,6 @@
         "statement": "Qual é o menor número que você pode formar com esse cartões?",
         "type": "NUMERIC",
         "level": 2,
-        "tips": "1. Presione o cartão para vira-lo;2. A soma dos pontos dos cartões representam o numero decimal;3. Os numero binario é representado pela sequencia de zeros e uns;4. Decore a posição das cartas, você vai precisar;5. Responda todas as perguntas corretamente para completar a tarefa.",
         "numeric_answer": 0,
         "alternatives": [],
         "createdAt": "2020-03-20T23:30:03.320Z",
@@ -226,7 +219,6 @@
         "statement": "Tente decifrar os seguintes números codificados:",
         "type": "NUMERIC",
         "level": 3,
-        "tips": "Os campos devem ser preenchidos com valores decimais;2. Talvez lembrar a sequencia das cartas te ajude nesse exercicio (16,8,4,2,1);3. Responda todas as perguntas corretamente para completar a tarefa;",
         "numeric_answer": 9,
         "image": {
           "_id": "5e75556ca8c283001e9ec218",
@@ -243,7 +235,6 @@
         "statement": "2. Tente decifrar os seguintes números codificados:",
         "type": "NUMERIC",
         "level": 3,
-        "tips": "Os campos devem ser preenchidos com valores decimais;2. Talvez lembrar a sequencia das cartas te ajude nesse exercicio (16,8,4,2,1);3. Responda todas as perguntas corretamente para completar a tarefa;",
         "numeric_answer": 10,
         "image": {
           "_id": "5e7557e7a8c283001e9ec21b",
@@ -260,7 +251,6 @@
         "statement": "3. Tente decifrar os seguintes números codificados:",
         "type": "NUMERIC",
         "level": 3,
-        "tips": "Os campos devem ser preenchidos com valores decimais;2. Talvez lembrar a sequencia das cartas te ajude nesse exercicio (16,8,4,2,1);3. Responda todas as perguntas corretamente para completar a tarefa;",
         "numeric_answer": 5,
         "image": {
           "_id": "5e755817a8c283001e9ec21d",
@@ -277,7 +267,6 @@
         "statement": "4. Tente decifrar os seguintes números codificados:",
         "type": "NUMERIC",
         "level": 3,
-        "tips": "Os campos devem ser preenchidos com valores decimais;2. Talvez lembrar a sequencia das cartas te ajude nesse exercicio (16,8,4,2,1);3. Responda todas as perguntas corretamente para completar a tarefa;",
         "numeric_answer": 13,
         "image": {
           "_id": "5e75583aa8c283001e9ec21f",
@@ -294,7 +283,6 @@
         "statement": "5. Tente decifrar os seguintes números codificados:",
         "type": "NUMERIC",
         "level": 3,
-        "tips": "Os campos devem ser preenchidos com valores decimais;2. Talvez lembrar a sequencia das cartas te ajude nesse exercicio (16,8,4,2,1);3. Responda todas as perguntas corretamente para completar a tarefa;",
         "numeric_answer": 0,
         "image": {
           "_id": "5e755858a8c283001e9ec221",
@@ -311,7 +299,6 @@
         "statement": "6. Tente decifrar os seguintes números codificados:",
         "type": "NUMERIC",
         "level": 3,
-        "tips": "Os campos devem ser preenchidos com valores decimais;2. Talvez lembrar a sequencia das cartas te ajude nesse exercicio (16,8,4,2,1);3. Responda todas as perguntas corretamente para completar a tarefa;",
         "numeric_answer": 17,
         "image": {
           "_id": "5e755873a8c283001e9ec223",
@@ -328,7 +315,6 @@
         "statement": "7. Tente decifrar os seguintes números codificados:",
         "type": "NUMERIC",
         "level": 3,
-        "tips": "Os campos devem ser preenchidos com valores decimais;2. Talvez lembrar a sequencia das cartas te ajude nesse exercicio (16,8,4,2,1);3. Responda todas as perguntas corretamente para completar a tarefa;",
         "numeric_answer": 2,
         "image": {
           "_id": "5e75589ea8c283001e9ec225",
@@ -345,7 +331,6 @@
         "statement": "8. Tente decifrar os seguintes números codificados:",
         "type": "NUMERIC",
         "level": 3,
-        "tips": "Os campos devem ser preenchidos com valores decimais;2. Talvez lembrar a sequencia das cartas te ajude nesse exercicio (16,8,4,2,1);3. Responda todas as perguntas corretamente para completar a tarefa;",
         "numeric_answer": 0,
         "image": {
           "_id": "5e7558bca8c283001e9ec227",
@@ -362,7 +347,6 @@
         "statement": "9. Tente decifrar os seguintes números codificados:",
         "type": "NUMERIC",
         "level": 3,
-        "tips": "Os campos devem ser preenchidos com valores decimais;2. Talvez lembrar a sequencia das cartas te ajude nesse exercicio (16,8,4,2,1);3. Responda todas as perguntas corretamente para completar a tarefa;",
         "numeric_answer": 20,
         "image": {
           "_id": "5e7558dfa8c283001e9ec229",
@@ -379,7 +363,6 @@
         "statement": "10. Tente decifrar os seguintes números codificados:",
         "type": "NUMERIC",
         "level": 3,
-        "tips": "Os campos devem ser preenchidos com valores decimais;2. Talvez lembrar a sequencia das cartas te ajude nesse exercicio (16,8,4,2,1);3. Responda todas as perguntas corretamente para completar a tarefa;",
         "numeric_answer": 31,
         "image": {
           "_id": "5e755900a8c283001e9ec22b",
