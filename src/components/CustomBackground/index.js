@@ -8,14 +8,13 @@ import {colors, general} from '../../styles';
 import styles from './styles';
 
 const CustomBackground = props => {
-  const {content, style} = props;
+  const {content, style, isLastPage} = props;
   const [page, setPage] = useState(0);
   const contentSize = content.length - 1;
 
   function nextPage() {
-    if (page < contentSize) {
-      setPage(page + 1);
-    }
+    if (page < contentSize) setPage(page + 1);
+    if (page + 1 === contentSize) isLastPage(true);
   }
   function previousPage() {
     if (page > 0) {
@@ -54,9 +53,11 @@ const CustomBackground = props => {
 CustomBackground.propTypes = {
   content: PropTypes.arrayOf(PropTypes.element).isRequired,
   style: PropTypes.oneOfType([PropTypes.object, PropTypes.array]),
+  isLastPage: PropTypes.func,
 };
 CustomBackground.defaultProps = {
   style: null,
+  isLastPage: () => {},
 };
 
 export default CustomBackground;

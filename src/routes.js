@@ -46,7 +46,9 @@ function routes() {
         />
         <Stack.Screen name="Exercises" component={Exercises} />
         <Stack.Screen
-          options={{headerShown: false}}
+          options={{
+            headerShown: false,
+          }}
           name="Congratulations"
           component={Congratulations}
         />

@@ -20,12 +20,11 @@ import CardLevel from '../../components/CardLevel';
 import styles from './styles';
 
 function LevelSelection({navigation}) {
-  const [levelsAvailable, setlevelsAvailable] = useState({});
+  const [levelsAvailable, setlevelsAvailable] = useState({level1: true});
 
   const getData = async () => {
     try {
       const levels = {
-        level1: JSON.parse(await AsyncStorage.getItem('level1')),
         level2: JSON.parse(await AsyncStorage.getItem('level2')),
         level3: JSON.parse(await AsyncStorage.getItem('level3')),
         level4: JSON.parse(await AsyncStorage.getItem('level4')),
@@ -37,7 +36,6 @@ function LevelSelection({navigation}) {
       if (levels !== null) {
         setlevelsAvailable(levels);
       } else {
-        await AsyncStorage.setItem('level1', 'true');
         await AsyncStorage.setItem('level2', 'false');
         await AsyncStorage.setItem('level3', 'false');
         await AsyncStorage.setItem('level4', 'false');
@@ -62,7 +60,7 @@ function LevelSelection({navigation}) {
           <CardLevel
             level="1"
             image={level1}
-            available={levelsAvailable.level1}
+            available
             onPress={() => navigation.navigate('Exercises', {data: data[0]})}
           />
           <CardLevel

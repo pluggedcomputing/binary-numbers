@@ -152,7 +152,7 @@
         "level": 2,
         "alternatives": [
           {
-            "correct": true,
+            "correct": false,
             "_id": "5e75513fa8c283001e9ec211",
             "text": "01101 e 00011"
           },
@@ -167,7 +167,7 @@
             "text": "01001 e 10001"
           },
           {
-            "correct": false,
+            "correct": true,
             "_id": "5e75513fa8c283001e9ec214",
             "text": "00011 e 01100"
           }
