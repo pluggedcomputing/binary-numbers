@@ -16,6 +16,12 @@ const styles = StyleSheet.create({
     margin: metrics.baseMargin,
     padding: metrics.smallPadding,
   },
+  contentTips: {
+    alignItems: 'stretch',
+  },
+  tip: {
+    padding: metrics.basePadding,
+  },
 });
 
 export default styles;

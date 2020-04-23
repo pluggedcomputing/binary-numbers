@@ -135,7 +135,7 @@ export default function Exercises({navigation}) {
   return (
     <View>
       <Tooltip
-        content={<Text>{exercise.tips}</Text>}
+        content={exercise.tips}
         isVisible={showTips}
         onCancel={handleTips}
       />

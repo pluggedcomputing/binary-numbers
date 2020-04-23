@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Modal} from 'react-native';
+import {View, Modal, Text} from 'react-native';
 
 import {PropTypes} from 'prop-types';
 
@@ -8,6 +8,7 @@ import styles from './styles';
 
 const Tooltips = props => {
   const {onCancel, isVisible, content} = props;
+  const tipsArray = content.split(';');
   return (
     <Modal
       visible={isVisible}
@@ -16,7 +17,15 @@ const Tooltips = props => {
       transparent>
       <View style={styles.frame}>
         <View style={styles.container}>
-          <View>{content}</View>
+          <View style={styles.contentTips}>
+            {tipsArray.map(tip => {
+              return (
+                <Text key={tip} style={styles.tip}>
+                  {tip}
+                </Text>
+              );
+            })}
+          </View>
           <ChoiceButton text="Fechar" onPress={onCancel} />
         </View>
       </View>
@@ -25,7 +34,7 @@ const Tooltips = props => {
 };
 
 Tooltips.propTypes = {
-  content: PropTypes.element.isRequired,
+  content: PropTypes.string.isRequired,
   onCancel: PropTypes.func.isRequired,
   isVisible: PropTypes.bool,
 };
