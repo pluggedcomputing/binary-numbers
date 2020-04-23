@@ -21,6 +21,9 @@ function routes() {
         screenOptions={{
           headerTitleAlign: 'center',
           headerTintColor: colors.colorPrimary,
+          headerStyle: {
+            backgroundColor: colors.textColorSecondary,
+          },
           headerTitleStyle: {
             fontWeight: 'bold',
             color: colors.textColorPrimary,
