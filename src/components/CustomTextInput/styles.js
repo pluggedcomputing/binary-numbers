@@ -17,7 +17,6 @@ const styles = StyleSheet.create({
     flex: 7,
     color: colors.textColorPrimary,
     fontSize: fonts.input,
-    fontWeight: 'bold',
     backgroundColor: colors.colorBackground,
   },
   iconSecure: {

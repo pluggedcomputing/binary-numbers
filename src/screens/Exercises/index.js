@@ -26,7 +26,7 @@ export default function Exercises({navigation}) {
 
   useEffect(() => {
     if (finishLevel) {
-      navigation.navigate('Congratulations');
+      navigation.navigate('Congratulations', {level: exercise.level});
     } else {
       setQuestion(response.questions[step]);
     }
@@ -49,7 +49,7 @@ export default function Exercises({navigation}) {
 
   const viewOfContent = [
     <Text style={styles.contentText}>{exercise.introduction}</Text>,
-    <CardGroup />,
+    exercise.showCards ? <CardGroup /> : null,
     question.image ? (
       <View style={styles.statementImageConteiner}>
         <Text style={styles.statement}>{question.statement}</Text>

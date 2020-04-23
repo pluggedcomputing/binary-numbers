@@ -1,5 +1,11 @@
 import React, {useState, useEffect} from 'react';
-import {View, SafeAreaView, ScrollView} from 'react-native';
+import {
+  View,
+  SafeAreaView,
+  ScrollView,
+  AsyncStorage,
+  Alert,
+} from 'react-native';
 
 import data from '../../assets/data.json';
 import level1 from '../../assets/images/levelSelection/level1.png';
@@ -14,35 +20,39 @@ import CardLevel from '../../components/CardLevel';
 import styles from './styles';
 
 function LevelSelection({navigation}) {
-  const [LevelsAvailable, setLevelsAvailable] = useState({
-    level1: true,
-    level2: true,
-    level3: true,
-    level4: true,
-    level5: true,
-    level6: true,
-    level7: true,
-    level8: true,
-  });
+  const [levelsAvailable, setlevelsAvailable] = useState({});
+
+  const getData = async () => {
+    try {
+      const levels = {
+        level1: JSON.parse(await AsyncStorage.getItem('level1')),
+        level2: JSON.parse(await AsyncStorage.getItem('level2')),
+        level3: JSON.parse(await AsyncStorage.getItem('level3')),
+        level4: JSON.parse(await AsyncStorage.getItem('level4')),
+        level5: JSON.parse(await AsyncStorage.getItem('level5')),
+        level6: JSON.parse(await AsyncStorage.getItem('level6')),
+        level7: JSON.parse(await AsyncStorage.getItem('level7')),
+        level8: JSON.parse(await AsyncStorage.getItem('level8')),
+      };
+      if (levels !== null) {
+        setlevelsAvailable(levels);
+      } else {
+        await AsyncStorage.setItem('level1', 'true');
+        await AsyncStorage.setItem('level2', 'false');
+        await AsyncStorage.setItem('level3', 'false');
+        await AsyncStorage.setItem('level4', 'false');
+        await AsyncStorage.setItem('level5', 'false');
+        await AsyncStorage.setItem('level6', 'false');
+        await AsyncStorage.setItem('level7', 'false');
+        await AsyncStorage.setItem('level8', 'false');
+      }
+    } catch (e) {
+      Alert.alert('Erro', 'Não foi possivel carregar o seu nível atual');
+    }
+  };
 
   useEffect(() => {
-    setLevelsAvailable({
-      /* Aqui vai se fazer uma consulta no banco para saber
-       qual o nivel atual do usuario e assim mudar a tela automaticamente.
-
-       - Remova os niveis abaixo e os subistitua pela chamada a API.
-       - Remova esse comentario.
-       */
-
-      level1: true,
-      level2: true,
-      level3: true,
-      level4: true,
-      level5: true,
-      level6: false,
-      level7: true,
-      level8: false,
-    });
+    setlevelsAvailable(getData());
   }, []);
 
   return (
@@ -52,13 +62,13 @@ function LevelSelection({navigation}) {
           <CardLevel
             level="1"
             image={level1}
-            available={LevelsAvailable.level1}
+            available={levelsAvailable.level1}
             onPress={() => navigation.navigate('Exercises', {data: data[0]})}
           />
           <CardLevel
             level="2"
             image={level2}
-            available={LevelsAvailable.level2}
+            available={levelsAvailable.level2}
             onPress={() => navigation.navigate('Exercises', {data: data[1]})}
           />
         </View>
@@ -66,13 +76,13 @@ function LevelSelection({navigation}) {
           <CardLevel
             level="3"
             image={level3}
-            available={LevelsAvailable.level3}
+            available={levelsAvailable.level3}
             onPress={() => navigation.navigate('Exercises', {data: data[2]})}
           />
           <CardLevel
             level="4"
             image={level4}
-            available={LevelsAvailable.level4}
+            available={levelsAvailable.level4}
             onPress={() => navigation.navigate('Exercises', {data})}
           />
         </View>
@@ -80,13 +90,13 @@ function LevelSelection({navigation}) {
           <CardLevel
             level="5"
             image={level5}
-            available={LevelsAvailable.level5}
+            available={levelsAvailable.level5}
             onPress={() => navigation.navigate('Exercises', {data})}
           />
           <CardLevel
             level="6"
             image={level6}
-            available={LevelsAvailable.level6}
+            available={levelsAvailable.level6}
             onPress={() => navigation.navigate('Exercises', {data})}
           />
         </View>
@@ -94,13 +104,13 @@ function LevelSelection({navigation}) {
           <CardLevel
             level="7"
             image={level7}
-            available={LevelsAvailable.level7}
+            available={levelsAvailable.level7}
             onPress={() => navigation.navigate('Exercises', {data})}
           />
           <CardLevel
             level="8"
             image={level8}
-            available={LevelsAvailable.level8}
+            available={levelsAvailable.level8}
             onPress={() => navigation.navigate('Exercises', {data})}
           />
         </View>

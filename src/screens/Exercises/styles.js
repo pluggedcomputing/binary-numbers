@@ -11,8 +11,6 @@ const styles = StyleSheet.create({
   },
   contentText: {
     textAlign: 'center',
-    fontSize: fonts.regular,
-    fontWeight: 'bold',
     color: colors.textColorPrimary,
   },
   statement: {

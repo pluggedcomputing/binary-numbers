@@ -18,14 +18,10 @@ const styles = StyleSheet.create({
     height: metrics.screenHeight * HEIGHT_PORCENTAGE,
   },
   credits: {
-    fontSize: fonts.regular,
-    fontWeight: 'bold',
     color: colors.textColorSecondary,
     textAlign: 'center',
   },
   textContent: {
-    fontSize: fonts.regular,
-    fontWeight: 'bold',
     textAlign: 'center',
   },
   textButton: {

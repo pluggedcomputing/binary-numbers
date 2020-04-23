@@ -11,7 +11,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   text: {
-    fontSize: fonts.title,
+    fontSize: fonts.input,
     fontWeight: 'bold',
     color: colors.textColorSecondary,
   },

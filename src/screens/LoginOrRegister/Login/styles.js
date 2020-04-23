@@ -35,7 +35,6 @@ const styles = StyleSheet.create({
   text: {
     color: colors.colorBackground,
     fontWeight: 'bold',
-    fontSize: fonts.title,
     alignSelf: 'center',
     marginBottom: metrics.doubleBaseMargin,
     marginTop: metrics.baseMargin,
@@ -50,8 +49,6 @@ const styles = StyleSheet.create({
   textButton: {
     color: colors.colorBackground,
     textDecorationLine: 'underline',
-    fontSize: fonts.title,
-    fontWeight: 'bold',
   },
   buttonAltenative: {
     alignItems: 'center',
