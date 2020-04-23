@@ -1,6 +1,6 @@
 import {StyleSheet} from 'react-native';
 
-import {metrics, colors} from '../../../styles';
+import {metrics, colors} from '../../styles';
 
 const styles = StyleSheet.create({
   frame: {

@@ -3,7 +3,7 @@ import {View, Modal} from 'react-native';
 
 import {PropTypes} from 'prop-types';
 
-import ChoiceButton from '../../ChoiceButton';
+import ChoiceButton from '../ChoiceButton';
 import styles from './styles';
 
 const Tooltips = props => {

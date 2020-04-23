@@ -7,13 +7,13 @@ import {useRoute} from '@react-navigation/native';
 
 import CardGroup from '../../components/CardGroup';
 import CustomBackground from '../../components/CustomBackground';
-import Tooltip from '../../components/HeaderOfExercises/Tooltips';
 import {
   MultipleChoice,
   Numeric,
   ShortAnswer,
   TrueOrFalse,
 } from '../../components/Questions';
+import Tooltip from '../../components/Tooltips';
 import {general, colors} from '../../styles';
 import styles from './styles';
 
