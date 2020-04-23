@@ -1,14 +1,12 @@
 import {StyleSheet} from 'react-native';
 
-import {colors, fonts, metrics} from '../../styles';
+import {colors, general, fonts, metrics} from '../../styles';
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    width: metrics.screenWidth,
-    height: metrics.screenHeight ,
+    ...general.defaultContainer,
     backgroundColor: 'rgba(0, 0, 0, 0.8)',
-    justifyContent: 'space-around'
+    justifyContent: 'space-around',
   },
   textTop: {
     flex: 4,
@@ -33,7 +31,7 @@ const styles = StyleSheet.create({
   buttonAltenative: {
     alignItems: 'center',
     marginTop: metrics.halfMargin,
-    marginBottom: 30
+    marginBottom: 30,
   },
 });
 

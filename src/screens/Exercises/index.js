@@ -26,7 +26,7 @@ export default function Exercises({navigation}) {
 
   useEffect(() => {
     if (finishLevel) {
-      navigation.navigate('Congratulations');
+      navigation.navigate('Congratulations', {level: exercise.level});
     } else {
       setQuestion(response.questions[step]);
     }
