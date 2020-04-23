@@ -26,13 +26,8 @@ const styles = StyleSheet.create({
     justifyContent: 'flex-end',
     alignItems: 'center',
   },
-  alternative: {
-    marginTop: metrics.halfMargin,
-  },
   descriptive: {
-    margin: metrics.baseMargin,
-    height: metrics.screenWidth * 0.7,
-    justifyContent: 'space-around',
+    height: metrics.screenWidth,
     alignItems: 'center',
   },
   subDescriptive: {
