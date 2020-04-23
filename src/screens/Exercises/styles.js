@@ -42,6 +42,12 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
+  contentTips: {
+    alignItems: 'stretch',
+  },
+  tip: {
+    padding: metrics.basePadding,
+  },
 });
 
 export default styles;
