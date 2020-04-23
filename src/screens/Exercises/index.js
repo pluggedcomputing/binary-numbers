@@ -42,6 +42,26 @@ export default function Exercises({navigation}) {
     l3q8: require('../../assets/images/level3/l3q8.png'),
     l3q9: require('../../assets/images/level3/l3q9.png'),
     l3q10: require('../../assets/images/level3/l3q10.png'),
+
+    l4q1: require('../../assets/images/level4/l4q1.png'),
+    l4q2: require('../../assets/images/level4/l4q2.png'),
+    l4q3_10: require('../../assets/images/level4/l4q3-10.png'),
+    l4q4: require('../../assets/images/level4/l4q4.png'),
+    l4q5_6_13: require('../../assets/images/level4/l4q5-6-13.png'),
+    l4q7_14: require('../../assets/images/level4/l4q7-14.png'),
+    l4q8: require('../../assets/images/level4/l4q8.png'),
+    l4q9_15: require('../../assets/images/level4/l4q9-15.png'),
+    l4q11: require('../../assets/images/level4/l4q11.png'),
+    l4q12: require('../../assets/images/level4/l4q12.png'),
+    l4q16: require('../../assets/images/level4/l4q16.png'),
+
+    l5q1: require('../../assets/images/level5/l5q1.png'),
+    l5q2: require('../../assets/images/level5/l5q2.png'),
+
+    l6q3: require('../../assets/images/level6/l6q3.png'),
+
+    l7q2: require('../../assets/images/level7/l7q2.png'),
+    l7q3: require('../../assets/images/level7/l7q3.png'),
   };
 
   const handleTips = () => setShowTips(!showTips);
