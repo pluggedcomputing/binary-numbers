@@ -19,20 +19,20 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     color: colors.textColorSecondary,
     fontSize: metrics.screenWidth * 0.14,
-    fontWeight: 'bold',
+    fontFamily: 'Poppins-Bold',
   },
   textEnd: {
     flex: 1,
     textAlign: 'center',
     color: colors.textColorSecondary,
     fontSize: metrics.screenWidth * 0.1,
-    fontWeight: 'bold',
+    fontFamily: 'Poppins-Bold',
   },
   textButton: {
     color: colors.colorBackground,
     textDecorationLine: 'underline',
     fontSize: fonts.title,
-    fontWeight: 'bold',
+    fontFamily: 'Poppins-Bold',
   },
   buttonAltenative: {
     alignItems: 'center',

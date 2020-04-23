@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
     margin: metrics.smallMargin,
     textAlign: 'center',
     fontSize: 50,
-    fontWeight: 'bold',
+    fontFamily: 'Poppins-Bold',
     color: colors.colorPrimary,
   },
   subTitle: {

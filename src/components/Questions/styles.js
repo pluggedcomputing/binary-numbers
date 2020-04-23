@@ -20,7 +20,7 @@ const styles = StyleSheet.create({
     justifyContent: 'space-evenly',
     alignItems: 'center',
   },
-  correspondenceListText: {fontWeight: 'bold', margin: 10},
+  correspondenceListText: {fontFamily: 'Poppins-Bold', margin: 10},
   correspondenceSecondListView: {
     flexDirection: 'row',
     justifyContent: 'flex-end',

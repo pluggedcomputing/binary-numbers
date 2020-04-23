@@ -20,7 +20,8 @@ setCustomText(customTextProps);
 
 const App = () => {
   const [fontsLoaded] = useFonts({
-    Poppins: require('./assets/fonts/Poppins/Poppins-Regular.ttf'),
+    'Poppins-Regular': require('./assets/fonts/Poppins/Poppins-Regular.ttf'),
+    'Poppins-Bold': require('./assets/fonts/Poppins/Poppins-Bold.ttf'),
   });
   if (!fontsLoaded) {
     return <AppLoading />;

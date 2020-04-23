@@ -26,7 +26,7 @@ const general = {
   },
   customProps: {
     fontSize: fonts.regular,
-    fontFamily: 'Poppins',
+    fontFamily: 'Poppins-Regular',
     color: colors.textColorPrimary,
   },
 };

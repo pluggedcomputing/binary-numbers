@@ -31,7 +31,7 @@ const styles = StyleSheet.create({
   textLevel: {
     flex: 1,
     fontSize: fonts.title,
-    fontWeight: 'bold',
+    fontFamily: 'Poppins-Bold',
     color: colors.textColorSecondary,
   },
 });

@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
   },
   text: {
     fontSize: fonts.input,
-    fontWeight: 'bold',
+    fontFamily: 'Poppins-Bold',
     color: colors.textColorSecondary,
   },
 });

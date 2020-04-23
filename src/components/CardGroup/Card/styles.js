@@ -36,7 +36,7 @@ const styles = StyleSheet.create({
   text: {
     flex: 1,
     fontSize: fonts.regular,
-    fontWeight: 'bold',
+    fontFamily: 'Poppins-Bold',
     color: colors.colorPrimary,
   },
   circle: {

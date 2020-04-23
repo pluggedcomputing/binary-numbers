@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
     alignContent: 'flex-end',
     fontSize: fonts.regular,
     color: colors.textColorPrimary,
-    fontWeight: 'bold',
+    fontFamily: 'Poppins-Bold',
     padding: metrics.basePadding,
   },
 });

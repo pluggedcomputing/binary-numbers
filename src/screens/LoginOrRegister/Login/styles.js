@@ -1,6 +1,6 @@
 import {StyleSheet} from 'react-native';
 
-import {colors, metrics, fonts} from '../../../styles';
+import {colors, metrics} from '../../../styles';
 
 const styles = StyleSheet.create({
   containerBase: {
@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
   },
   text: {
     color: colors.colorBackground,
-    fontWeight: 'bold',
+    fontFamily: 'Poppins-Bold',
     alignSelf: 'center',
     marginBottom: metrics.doubleBaseMargin,
     marginTop: metrics.baseMargin,

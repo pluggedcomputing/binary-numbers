@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
   statement: {
     textAlign: 'center',
     fontSize: fonts.input,
-    fontWeight: 'bold',
+    fontFamily: 'Poppins-Bold',
     color: colors.textColorPrimary,
   },
   statementImageConteiner: {

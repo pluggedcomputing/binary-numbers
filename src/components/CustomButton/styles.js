@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
   },
   textButton: {
     fontSize: fonts.input,
-    fontWeight: 'bold',
+    fontFamily: 'Poppins-Bold',
     textTransform: 'uppercase',
     color: colors.textColorSecondary,
   },

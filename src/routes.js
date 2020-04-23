@@ -25,7 +25,7 @@ function routes() {
             backgroundColor: colors.textColorSecondary,
           },
           headerTitleStyle: {
-            fontWeight: 'bold',
+            fontFamily: 'Poppins-Bold',
             color: colors.textColorPrimary,
           },
         }}>

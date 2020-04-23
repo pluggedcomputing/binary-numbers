@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
     color: colors.colorBackground,
   },
   textBold: {
-    fontWeight: 'bold',
+    fontFamily: 'Poppins-Bold',
   },
 });
 
