@@ -31,7 +31,22 @@ export default function Exercises({navigation}) {
   const progress = step / maxStep;
   const finishLevel = step === maxStep;
 
+  const imagens = {
+    l3q1: require('../../assets/images/level3/l3q1.png'),
+    l3q2: require('../../assets/images/level3/l3q2.png'),
+    l3q3: require('../../assets/images/level3/l3q3.png'),
+    l3q4: require('../../assets/images/level3/l3q4.png'),
+    l3q5: require('../../assets/images/level3/l3q5.png'),
+    l3q6: require('../../assets/images/level3/l3q6.png'),
+    l3q7: require('../../assets/images/level3/l3q7.png'),
+    l3q8: require('../../assets/images/level3/l3q8.png'),
+    l3q9: require('../../assets/images/level3/l3q9.png'),
+    l3q10: require('../../assets/images/level3/l3q10.png'),
+  };
+
   const handleTips = () => setShowTips(!showTips);
+
+  const getImagens = type => imagens[type] || null;
 
   useLayoutEffect(() => {
     navigation.setOptions({
@@ -55,21 +70,6 @@ export default function Exercises({navigation}) {
     }
   }, [step]);
 
-  const imagensLevel3 = {
-    exec1: require('../../assets/images/level3Images/exec1.png'),
-    exec2: require('../../assets/images/level3Images/exec2.png'),
-    exec3: require('../../assets/images/level3Images/exec3.png'),
-    exec4: require('../../assets/images/level3Images/exec4.png'),
-    exec5: require('../../assets/images/level3Images/exec5.png'),
-    exec6: require('../../assets/images/level3Images/exec6.png'),
-    exec7: require('../../assets/images/level3Images/exec7.png'),
-    exec8: require('../../assets/images/level3Images/exec8.png'),
-    exec9: require('../../assets/images/level3Images/exec9.png'),
-    exec10: require('../../assets/images/level3Images/exec10.png'),
-  };
-
-  const getImagensLevel3 = type => imagensLevel3[type] || null;
-
   const viewOfContent = [
     <Text style={styles.contentText}>{exercise.introduction}</Text>,
     exercise.showCards ? <CardGroup /> : null,
@@ -78,7 +78,7 @@ export default function Exercises({navigation}) {
         <Text style={styles.statement}>{question.statement}</Text>
         <Image
           style={styles.statementImage}
-          source={getImagensLevel3(question.image.url)}
+          source={getImagens(question.image.url)}
         />
       </View>
     ) : (
