@@ -7,7 +7,6 @@ const styles = StyleSheet.create({
     ...general.defaultContainer,
     height: metrics.screenHeight,
     justifyContent: 'flex-end',
-    backgroundColor: colors.colorError,
   },
   halfView: {
     height: metrics.screenHeight / 2,
