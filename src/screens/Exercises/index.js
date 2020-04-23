@@ -86,20 +86,6 @@ export default function Exercises({navigation}) {
     ),
   ];
 
-  function viewOfTips(tips) {
-    const tipsArray = tips.split(';');
-    return (
-      <View style={styles.contentTips}>
-        {tipsArray.map(tip => {
-          return (
-            <Text key={tip} style={styles.tip}>
-              {tip}
-            </Text>
-          );
-        })}
-      </View>
-    );
-  }
   function chooseQuestionRender() {
     switch (question.type) {
       case 'MULTIPLECHOICE':
@@ -149,7 +135,7 @@ export default function Exercises({navigation}) {
   return (
     <View>
       <Tooltip
-        content={viewOfTips(exercise.tips)}
+        content={exercise.tips}
         isVisible={showTips}
         onCancel={handleTips}
       />
