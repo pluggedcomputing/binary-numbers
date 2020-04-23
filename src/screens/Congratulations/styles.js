@@ -1,12 +1,18 @@
 import {StyleSheet} from 'react-native';
 
-import {colors, general, fonts, metrics} from '../../styles';
+import {colors, fonts, metrics} from '../../styles';
 
 const styles = StyleSheet.create({
   container: {
-    ...general.defaultContainer,
+    flex: 1,
     backgroundColor: 'rgba(0, 0, 0, 0.8)',
     justifyContent: 'space-around',
+  },
+  content: {
+    flex: 1,
+    width: metrics.screenWidth,
+    height: metrics.screenHeight,
+    marginTop: 50,
   },
   textTop: {
     flex: 4,

@@ -1,5 +1,5 @@
 import React, {useState, useEffect, useLayoutEffect} from 'react';
-import {SafeAreaView, StatusBar, Text, View} from 'react-native';
+import {Text, View, Image} from 'react-native';
 import {ProgressBar} from 'react-native-paper';
 
 import {MaterialCommunityIcons} from '@expo/vector-icons';
@@ -19,6 +19,7 @@ import styles from './styles';
 
 export default function Exercises({navigation}) {
   const [showTips, setShowTips] = useState(false);
+  const [showAnswerOptions, setShowAnswerOptions] = useState(false);
 
   const response = useRoute().params.data;
   const [step, setSteps] = useState(0);
@@ -48,11 +49,7 @@ export default function Exercises({navigation}) {
 
   useEffect(() => {
     if (finishLevel) {
-<<<<<<< HEAD
       navigation.navigate('Congratulations', {level: exercise.level});
-=======
-      navigation.navigate('Congratulations', {level: response.level});
->>>>>>> feature/#47
     } else {
       setQuestion(response.questions[step]);
     }
@@ -143,14 +140,25 @@ export default function Exercises({navigation}) {
         onCancel={handleTips}
       />
       <ProgressBar color={colors.colorSucess} progress={progress} />
-      <SafeAreaView style={styles.container}>
-        <StatusBar
-          barStyle="light-content"
-          backgroundColor={colors.colorPrimary}
-        />
-        <CustomBackground style={styles.info} content={viewOfContent} />
-        {chooseQuestionRender()}
-      </SafeAreaView>
+      <View style={styles.container}>
+        <View style={styles.halfView}>
+          <CustomBackground
+            style={styles.info}
+            content={viewOfContent}
+            isLastPage={value => setShowAnswerOptions(value)}
+          />
+        </View>
+        <View style={styles.halfView}>
+          {showAnswerOptions ? (
+            chooseQuestionRender()
+          ) : (
+            <Text style={styles.defaultText}>
+              Leia atentamente todas as páginas do exercício para responder às
+              questões.
+            </Text>
+          )}
+        </View>
+      </View>
     </View>
   );
 }

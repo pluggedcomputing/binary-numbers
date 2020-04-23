@@ -5,6 +5,7 @@ import {
   StatusBar,
   TouchableOpacity,
   AsyncStorage,
+  View,
 } from 'react-native';
 import {ProgressBar} from 'react-native-paper';
 
@@ -34,15 +35,17 @@ const Congratulations = props => {
         barStyle="light-content"
         backgroundColor="rgba(0, 0, 0, 0.8)"
       />
-      <Text style={styles.textTop}>Parabéns!!!</Text>
-      <Lottie source={animation} autoPlay loop />
-      <Text style={styles.textEnd}>Você completou o nível {level}</Text>
-      <TouchableOpacity
-        style={styles.buttonAltenative}
-        onPress={navigateScreen}>
-        <Text style={styles.textButton}>Continuar </Text>
-      </TouchableOpacity>
-      <ProgressBar color={colors.colorSucess} progress={1} />
+      <View style={styles.content}>
+        <Text style={styles.textTop}>Parabéns!!!</Text>
+        <Lottie source={animation} autoPlay loop />
+        <Text style={styles.textEnd}>Você completou o nível {level}</Text>
+        <TouchableOpacity
+          style={styles.buttonAltenative}
+          onPress={navigateScreen}>
+          <Text style={styles.textButton}>Continuar </Text>
+        </TouchableOpacity>
+        <ProgressBar color={colors.colorSucess} progress={1} />
+      </View>
     </SafeAreaView>
   );
 };

@@ -21,7 +21,7 @@ const general = {
   },
   defaultContainer: {
     alignItems: 'center',
-    justifyContent: 'flex-start',
+    justifyContent: 'center',
     backgroundColor: colors.colorBackground,
   },
   customProps: {
