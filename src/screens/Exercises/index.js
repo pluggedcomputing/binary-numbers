@@ -8,6 +8,7 @@ import {useRoute} from '@react-navigation/native';
 import CardGroup from '../../components/CardGroup';
 import CustomBackground from '../../components/CustomBackground';
 import {
+  Explanation,
   MultipleChoice,
   Numeric,
   ShortAnswer,
@@ -124,6 +125,14 @@ export default function Exercises({navigation}) {
             step={step}
             setSteps={setSteps}
             correctAnswer={question.numeric_answer}
+          />
+        );
+
+      case 'EXPLANATION':
+        return (
+          <Explanation
+            step={step}
+            setSteps={setSteps}
           />
         );
 
