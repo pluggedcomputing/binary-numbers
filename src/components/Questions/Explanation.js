@@ -13,7 +13,7 @@ const explanation = props => {
     <View style={styles.descriptive}>
       <ChoiceButton
         text="Próximo"
-        onPress={setSteps(step + 1)}
+        onPress={() => setSteps(step + 1)}
       />
     </View>
   );
