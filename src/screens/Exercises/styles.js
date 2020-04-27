@@ -1,6 +1,6 @@
 import {StyleSheet} from 'react-native';
 
-import {general, colors, metrics, fonts} from '../../styles';
+import {general, colors, metrics} from '../../styles';
 
 const styles = StyleSheet.create({
   container: {
@@ -18,19 +18,14 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     color: colors.textColorPrimary,
   },
-  statement: {
-    textAlign: 'center',
-    fontSize: fonts.input,
-    fontFamily: 'Poppins-Bold',
-    color: colors.textColorPrimary,
-  },
   statementImageConteiner: {
     justifyContent: 'center',
     alignItems: 'center',
   },
   statementImage: {
     resizeMode: 'contain',
-    width: metrics.screenHeight * 0.4,
+    width: 150,
+    height: 150,
   },
   icon: {
     color: colors.colorPrimary,
