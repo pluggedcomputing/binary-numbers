@@ -62,6 +62,11 @@ export default function Exercises({navigation}) {
 
     l7q2: require('../../assets/images/level7/l7q2.png'),
     l7q3: require('../../assets/images/level7/l7q3.png'),
+
+    l8q1: require('../../assets/images/level8/l8q1.png'),
+    l8q2: require('../../assets/images/level8/l8q2.png'),
+    l8q3: require('../../assets/images/level8/l8q3.png'),
+    l8q5: require('../../assets/images/level8/l8q5.png'),
   };
 
   const handleTips = () => setShowTips(!showTips);
