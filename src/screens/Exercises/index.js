@@ -140,7 +140,7 @@ export default function Exercises({navigation}) {
         onCancel={handleTips}
       />
       <ProgressBar color={colors.colorSucess} progress={progress} />
-      <KeyboardAvoidingView style={styles.container} behavior="padding" enabled>
+      <View style={styles.container}>
         <View style={styles.halfView}>
           <CustomBackground
             style={styles.info}
@@ -148,7 +148,11 @@ export default function Exercises({navigation}) {
             isLastPage={value => setShowAnswerOptions(value)}
           />
         </View>
-        <View style={styles.halfView}>
+        <KeyboardAvoidingView
+          style={styles.halfView}
+          enabled
+          behavior="padding"
+          keyboardVerticalOffset={-105}>
           {showAnswerOptions ? (
             chooseQuestionRender()
           ) : (
@@ -157,8 +161,8 @@ export default function Exercises({navigation}) {
               questões.
             </Text>
           )}
-        </View>
-      </KeyboardAvoidingView>
+        </KeyboardAvoidingView>
+      </View>
     </View>
   );
 }
