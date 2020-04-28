@@ -1,5 +1,5 @@
 import React, {useState, useEffect, useLayoutEffect} from 'react';
-import {Text, View, Image} from 'react-native';
+import {Text, View, Image, KeyboardAvoidingView} from 'react-native';
 import {ProgressBar} from 'react-native-paper';
 
 import {MaterialCommunityIcons} from '@expo/vector-icons';
@@ -181,7 +181,11 @@ export default function Exercises({navigation}) {
             isLastPage={value => setShowAnswerOptions(value)}
           />
         </View>
-        <View style={styles.halfView}>
+        <KeyboardAvoidingView
+          style={styles.halfView}
+          enabled
+          behavior="padding"
+          keyboardVerticalOffset={-105}>
           {showAnswerOptions ? (
             chooseQuestionRender()
           ) : (
@@ -190,7 +194,7 @@ export default function Exercises({navigation}) {
               questões.
             </Text>
           )}
-        </View>
+        </KeyboardAvoidingView>
       </View>
     </View>
   );

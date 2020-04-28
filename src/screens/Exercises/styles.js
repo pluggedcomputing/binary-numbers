@@ -5,11 +5,13 @@ import {general, colors, metrics} from '../../styles';
 const styles = StyleSheet.create({
   container: {
     ...general.defaultContainer,
-    width: metrics.screenWidth,
     height: metrics.screenHeight,
+    justifyContent: 'flex-end',
   },
   halfView: {
     height: metrics.screenHeight / 2,
+    justifyContent: 'space-around',
+    alignItems: 'center',
   },
   info: {
     marginTop: metrics.halfMargin,
@@ -32,9 +34,9 @@ const styles = StyleSheet.create({
     margin: metrics.basePadding,
   },
   defaultText: {
-    marginTop: metrics.halfMargin,
+    height: metrics.screenHeight / 4,
     textAlign: 'center',
-    justifyContent: 'center',
+    justifyContent: 'flex-start',
     alignItems: 'center',
   },
 });
