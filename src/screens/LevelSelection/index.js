@@ -37,14 +37,17 @@ function LevelSelection({navigation}) {
       };
 
       if (!levels) {
-        await AsyncStorage.setItem('level2', 'false');
-        await AsyncStorage.setItem('level3', 'false');
-        await AsyncStorage.setItem('level4', 'false');
-        await AsyncStorage.setItem('level5', 'false');
-        await AsyncStorage.setItem('level6', 'false');
-        await AsyncStorage.setItem('level7', 'false');
-        await AsyncStorage.setItem('level8', 'false');
+        await Promise.all([
+          AsyncStorage.setItem('level2', 'false'),
+          AsyncStorage.setItem('level3', 'false'),
+          AsyncStorage.setItem('level4', 'false'),
+          AsyncStorage.setItem('level5', 'false'),
+          AsyncStorage.setItem('level6', 'false'),
+          AsyncStorage.setItem('level7', 'false'),
+          AsyncStorage.setItem('level8', 'false'),
+        ]);
       }
+
       setlevelsAvailable(levels);
     } catch (e) {
       Alert.alert('Erro', 'Não foi possivel carregar o seu nível atual');
@@ -53,7 +56,7 @@ function LevelSelection({navigation}) {
 
   useFocusEffect(
     React.useCallback(() => {
-      setlevelsAvailable(getData());
+      getData();
     }, []),
   );
 
