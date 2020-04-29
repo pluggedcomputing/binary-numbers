@@ -622,7 +622,7 @@
     "_id": "5ea72656127b53001e919353",
     "title": "Enviar Mensagens Secretas",
     "description": "É apresentado um enredo em que um personagem chamado Tom tenta enviar uma mensagem utilizando um código binário. O usuário deve converter todos os números para decifrar a mensagem enviada.",
-    "introduction": "Tom está preso no último andar de uma loja. É noite de Natal e ele quer ir para casa com seus presentes. O que ele pode fazer? Ele tentou chamar alguém, até mesmo gritar, mas não há ninguém por perto. Do outro lado da rua ele pode ver uma pessoa ainda trabalhando em seu computador até tarde da noite. Como ele poderia atrair sua atenção? Tom olha em volta para ver o que poderia usar. Então, ele tem uma brilhante idéia: utilizar as lâmpadas da árvore de Natal para enviar uma mensagem! Ele coletou todas as lâmpadas disponíveis e as conectou aos bocais de forma que pudesse acendê-las ou apagá-las. Ele usou um código binário simples, que ele sabia ser de conhecimento da mulher do outro lado da rua.",
+    "introduction": "Tom está preso no último andar de uma loja. É noite de Natal e ele quer ir para casa. O que ele pode fazer? Ele tentou chamar alguém, até mesmo gritar, mas não funcionou. Do outro lado da rua ele pode ver uma pessoa ainda trabalhando até tarde da noite. Tom olha em volta para ver o que poderia usar. Então, ele tem uma brilhante idéia: utilizar as lâmpadas da árvore de Natal para enviar uma mensagem! Ele coletou todas as lâmpadas disponíveis e as conectou aos bocais de forma que pudesse acendê-las ou apagá-las.",
     "showCards": false,
     "tips": "1. Os campos devem ser preenchidos com valores decimais;2. Decifre todos os numeros e ao final traduza a mensagem;3. Responda todas as perguntas corretamente para completar a tarefa.",
     "level": 4,
@@ -668,7 +668,7 @@
     "_id": "5ea72656127b53001e919356",
     "title": "Correio Eletrônico e Modems",
     "description": "O usuário envia uma mensagem que é rapidamente respondida em binário. O usuário deve converter corretamente a mensagem de resposta para finalizar o exercício.",
-    "introduction": "Os computadores conectados à Internet através de um equipamento conhecido por modem também utilizam o sistema binário para enviar mensagens. A única diferença é que eles usam um sinal sonoro ou bip. Um bip agudo é utilizado para o um e um bip grave é utilizado para o zero. Estes sinais são transmitidos rapidamente. Tão rápido, na verdade, que apenas ouvimos um horrível zumbido contínuo. Se você nunca o ouviu, ouça um modem conectar-se à Internet ou tente ligar para uma máquina de fax – as máquinas de fax também usam modems para enviar informação.",
+    "introduction": "Os computadores conectados à Internet através de um equipamento conhecido por modem também utilizam o sistema binário para enviar mensagens. A única diferença é que eles usam um sinal sonoro ou bip. Um bip agudo é utilizado para o um e um bip grave é utilizado para o zero. Estes sinais são transmitidos rapidamente. Tão rápido, na verdade, que apenas ouvimos um horrível zumbido contínuo. Se você nunca o ouviu, ouça um modem conectar-se à Internet.",
     "showCards": false,
     "tips": "1. Digite o seu nome e clique em enviar;2. Decifre a mensagem enviada pelo seu amigo;3. Não esqueça da virgula;",
     "level": 5,
@@ -782,7 +782,7 @@
     "_id": "5ea72657127b53001e919358",
     "title": "Contar acima de 31",
     "description": "Três questões de múltipla escolha com um nível mais elevado de complexidade, onde o usuário é desafiado a contar além do máximo possível com os cartões.",
-    "introduction": "Você já colocou todos os seus dedos para trabalhar? Pois agora seus dedos podem contar e ir muito além do número dez. Não, você não precisa ser de outro planeta! Se utilizar o sistema binário e deixar que cada dedo de uma mão represente um dos cartões com pontos, então pode contar de zero a 31. Ao total, temos 32 números. (Não se esqueça de que o zero também é um número!). Tente contar sequencialmente utilizando seus dedos. Se o dedo estiver para cima, é um, e, se estiver para baixo, é zero. Você pode contar de 0 a 1023 se usar as duas mãos! São 1024 números!",
+    "introduction": "Você já colocou todos os seus dedos para trabalhar? Pois agora seus dedos podem contar e ir muito além do número dez. Não, você não precisa ser de outro planeta! Se utilizar o sistema binário e deixar que cada dedo de uma mão represente um dos cartões com pontos, então pode contar de zero a 31. Ao total, temos 32 números. (Não se esqueça de que o zero também é um número!). Se o dedo estiver para cima, é um, e, se estiver para baixo, é zero. Você pode contar de 0 a 1023 se usar as duas mãos! São 1024 números!",
     "showCards": false,
     "tips": "1. Não esqueça a sequencia dos cartões 16, 8, 4, 2, 1...;2. Responda todas as perguntas corretamente para completar a tarefa.",
     "level": 6,
@@ -915,7 +915,7 @@
     "questions": [
       {
         "_id": "5ea72654127b53001e91932d",
-        "statement": "Os computadores atualmente utilizam o sistema binário para representar informações. Chama-se binário porque utiliza dois dígitos distintos. Também é conhecido como base dois (as pessoas utilizam no dia-a-dia a base 10). Cada zero ou um é chamado de bit (dígito binário). Um bit é normalmente representado na memória principal do computador por um transistor, que pode estar ligado ou desligado, ou um capacitor, que pode estar carregado ou descarregado. ",
+        "statement": "Os computadores utilizam o sistema binário para representar informações. Chama-se binário porque utiliza dois dígitos distintos tambem chamados de bit. Um bit é normalmente representado na memória do computador por um transistor, que pode estar ligado ou desligado, ou um capacitor, que pode estar carregado ou descarregado. ",
         "type": "EXPLANATION",
         "level": 8,
         "image": {
