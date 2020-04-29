@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import {
   View,
   SafeAreaView,
@@ -6,6 +6,8 @@ import {
   AsyncStorage,
   Alert,
 } from 'react-native';
+
+import {useFocusEffect} from '@react-navigation/native';
 
 import data from '../../assets/data.json';
 import level1 from '../../assets/images/levelSelection/level1.png';
@@ -33,25 +35,30 @@ function LevelSelection({navigation}) {
         level7: JSON.parse(await AsyncStorage.getItem('level7')),
         level8: JSON.parse(await AsyncStorage.getItem('level8')),
       };
-      if (levels !== null) {
-        serLevelsAvailable(levels);
-      } else {
-        await AsyncStorage.setItem('level2', 'false');
-        await AsyncStorage.setItem('level3', 'false');
-        await AsyncStorage.setItem('level4', 'false');
-        await AsyncStorage.setItem('level5', 'false');
-        await AsyncStorage.setItem('level6', 'false');
-        await AsyncStorage.setItem('level7', 'false');
-        await AsyncStorage.setItem('level8', 'false');
+
+      if (!levels) {
+        await Promise.all([
+          AsyncStorage.setItem('level2', 'false'),
+          AsyncStorage.setItem('level3', 'false'),
+          AsyncStorage.setItem('level4', 'false'),
+          AsyncStorage.setItem('level5', 'false'),
+          AsyncStorage.setItem('level6', 'false'),
+          AsyncStorage.setItem('level7', 'false'),
+          AsyncStorage.setItem('level8', 'false'),
+        ]);
       }
+
+      setlevelsAvailable(levels);
     } catch (e) {
       Alert.alert('Erro', 'Não foi possivel carregar o seu nível atual');
     }
   };
 
-  useEffect(() => {
-    serLevelsAvailable(getData());
-  }, []);
+  useFocusEffect(
+    React.useCallback(() => {
+      getData();
+    }, []),
+  );
 
   return (
     <SafeAreaView style={styles.container}>
