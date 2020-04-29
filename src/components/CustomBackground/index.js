@@ -1,52 +1,31 @@
-import React, {useState} from 'react';
-import {View, Text} from 'react-native';
-import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+import React from 'react';
+import {View, Text, FlatList} from 'react-native';
 
 import PropTypes from 'prop-types';
 
-import {colors, general} from '../../styles';
 import styles from './styles';
 
 const CustomBackground = props => {
   const {content, style, isLastPage} = props;
-  const [page, setPage] = useState(0);
-  const contentSize = content.length - 1;
-
-  function nextPage() {
-    if (page < contentSize) setPage(page + 1);
-    if (page + 1 === contentSize) isLastPage(true);
-  }
-  function previousPage() {
-    if (page > 0) {
-      setPage(page - 1);
-    }
-  }
 
   return (
-    <View style={[styles.container, style]}>
-      <View style={styles.content}>{content[page]}</View>
-      <View style={styles.footer}>
-        <View style={styles.iconsContainer}>
-          <Icon
-            name="arrow-left-bold-circle-outline"
-            size={general.iconSize.regular}
-            color={page === 0 ? '#CACACA' : colors.colorPrimary}
-            onPress={previousPage}
-            disabled={page === 0}
-          />
-          <Icon
-            name="arrow-right-bold-circle-outline"
-            size={general.iconSize.regular}
-            color={page === contentSize ? '#CACACA' : colors.colorPrimary}
-            onPress={nextPage}
-            disabled={page === contentSize}
-          />
+    <FlatList
+      style={[styles.container, style]}
+      keyExtractor={(item, index) => String(index)}
+      showsHorizontalScrollIndicator={false}
+      onEndReached={() => isLastPage(true)}
+      onEndReachedThreshold={0.1}
+      data={content}
+      horizontal
+      renderItem={({item, index}) => (
+        <View style={styles.listContainer}>
+          <View style={styles.content}>{item}</View>
+          <View style={styles.footer}>
+            <Text style={styles.textCont}>{index + 1}</Text>
+          </View>
         </View>
-        <Text style={styles.textCont}>
-          {page + 1}/{content.length}
-        </Text>
-      </View>
-    </View>
+      )}
+    />
   );
 };
 

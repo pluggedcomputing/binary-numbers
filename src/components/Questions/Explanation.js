@@ -1,5 +1,5 @@
 import React from 'react';
-import {View } from 'react-native';
+import {View} from 'react-native';
 
 import {PropTypes} from 'prop-types';
 
@@ -11,10 +11,7 @@ const explanation = props => {
 
   return (
     <View style={styles.descriptive}>
-      <ChoiceButton
-        text="Próximo"
-        onPress={() => setSteps(step + 1)}
-      />
+      <ChoiceButton correct text="Próximo" onPress={() => setSteps(step + 1)} />
     </View>
   );
 };

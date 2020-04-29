@@ -6,100 +6,100 @@
     },
     "questions": [
       {
-        "_id": "5e754c21a8c283001e9ec1fc",
+        "_id": "5ea72647127b53001e9192b9",
         "statement": "O que você percebeu sobre o número de pontos nos cartões?",
         "type": "MULTIPLECHOICE",
         "level": 1,
         "alternatives": [
           {
             "correct": true,
-            "_id": "5e754c21a8c283001e9ec1fd",
+            "_id": "5ea72647127b53001e9192ba",
             "text": "Possuem metade do valor do anterior"
           },
           {
             "correct": false,
-            "_id": "5e754c21a8c283001e9ec1fe",
+            "_id": "5ea72647127b53001e9192bb",
             "text": "São valores aleatórios"
           },
           {
             "correct": false,
-            "_id": "5e754c21a8c283001e9ec1ff",
+            "_id": "5ea72647127b53001e9192bc",
             "text": "São a soma do próximo com o anterior"
           },
           {
             "correct": false,
-            "_id": "5e754c21a8c283001e9ec200",
+            "_id": "5ea72647127b53001e9192bd",
             "text": "Estão em ordem crescente"
           }
         ],
-        "createdAt": "2020-03-20T23:05:05.681Z",
-        "updatedAt": "2020-03-20T23:05:05.681Z",
+        "createdAt": "2020-04-27T18:36:55.684Z",
+        "updatedAt": "2020-04-27T18:36:55.684Z",
         "__v": 0
       },
       {
-        "_id": "5e754d28a8c283001e9ec201",
+        "_id": "5ea72647127b53001e9192be",
         "statement": "Quantos pontos teria o próximo cartão colocado à esquerda?",
         "type": "MULTIPLECHOICE",
         "level": 1,
         "alternatives": [
           {
             "correct": false,
-            "_id": "5e754d28a8c283001e9ec202",
+            "_id": "5ea72647127b53001e9192bf",
             "text": "24"
           },
           {
             "correct": false,
-            "_id": "5e754d28a8c283001e9ec203",
+            "_id": "5ea72647127b53001e9192c0",
             "text": "20"
           },
           {
             "correct": true,
-            "_id": "5e754d28a8c283001e9ec204",
+            "_id": "5ea72647127b53001e9192c1",
             "text": "32"
           },
           {
             "correct": false,
-            "_id": "5e754d28a8c283001e9ec205",
+            "_id": "5ea72647127b53001e9192c2",
             "text": "18"
           }
         ],
-        "createdAt": "2020-03-20T23:09:28.991Z",
-        "updatedAt": "2020-03-20T23:09:28.991Z",
+        "createdAt": "2020-04-27T18:36:55.956Z",
+        "updatedAt": "2020-04-27T18:36:55.956Z",
         "__v": 0
       },
       {
-        "_id": "5e754db7a8c283001e9ec206",
+        "_id": "5ea72648127b53001e9192c3",
         "statement": "Como seria o número 17 em binário?",
         "type": "MULTIPLECHOICE",
         "level": 1,
         "alternatives": [
           {
             "correct": false,
-            "_id": "5e754db7a8c283001e9ec207",
+            "_id": "5ea72648127b53001e9192c4",
             "text": "01101"
           },
           {
             "correct": true,
-            "_id": "5e754db7a8c283001e9ec208",
+            "_id": "5ea72648127b53001e9192c5",
             "text": "10001"
           },
           {
             "correct": false,
-            "_id": "5e754db7a8c283001e9ec209",
+            "_id": "5ea72648127b53001e9192c6",
             "text": "10011"
           },
           {
             "correct": false,
-            "_id": "5e754db7a8c283001e9ec20a",
+            "_id": "5ea72648127b53001e9192c7",
             "text": "01001"
           }
         ],
-        "createdAt": "2020-03-20T23:11:51.868Z",
-        "updatedAt": "2020-03-20T23:11:51.868Z",
+        "createdAt": "2020-04-27T18:36:56.220Z",
+        "updatedAt": "2020-04-27T18:36:56.220Z",
         "__v": 0
       }
     ],
-    "_id": "5e9cb96e08f3901025072685",
+    "_id": "5ea72655127b53001e919336",
     "title": "Introdução",
     "description": "Antes de iniciar a atividade, pode ser útil demonstrar os fundamentos ao grupo. Para esta atividade, são necessários cinco cartões, com pontos marcados de um lado e nada sobre o verso.",
     "introduction": "Podemos usar estes cartões para representar números binários. Cartas viradas para cima, representam o bit 1, viradas para baixo o bit 0.",
@@ -115,91 +115,89 @@
     },
     "questions": [
       {
-        "_id": "5e7550a7a8c283001e9ec20b",
+        "_id": "5ea72648127b53001e9192c8",
         "statement": "A sequencia em binário 10011 corresponde a que numero decimal?",
         "type": "MULTIPLECHOICE",
         "level": 2,
         "alternatives": [
           {
             "correct": true,
-            "_id": "5e7550a7a8c283001e9ec20c",
+            "_id": "5ea72648127b53001e9192c9",
             "text": "19"
           },
           {
             "correct": false,
-            "_id": "5e7550a7a8c283001e9ec20d",
+            "_id": "5ea72648127b53001e9192ca",
             "text": "5"
           },
           {
             "correct": false,
-            "_id": "5e7550a7a8c283001e9ec20e",
+            "_id": "5ea72648127b53001e9192cb",
             "text": "13"
           },
           {
             "correct": false,
-            "_id": "5e7550a7a8c283001e9ec20f",
+            "_id": "5ea72648127b53001e9192cc",
             "text": "7"
           }
         ],
-        "createdAt": "2020-03-20T23:24:23.070Z",
-        "updatedAt": "2020-03-20T23:24:23.070Z",
+        "createdAt": "2020-04-27T18:36:56.583Z",
+        "updatedAt": "2020-04-27T18:36:56.583Z",
         "__v": 0
       },
       {
-        "_id": "5e75513fa8c283001e9ec210",
+        "_id": "5ea72648127b53001e9192cd",
         "statement": "Os numeros 3 e 12 correspondem respectivamente à: ",
         "type": "MULTIPLECHOICE",
         "level": 2,
         "alternatives": [
           {
-            "correct": true,
-            "_id": "5e75513fa8c283001e9ec211",
+            "correct": false,
+            "_id": "5ea72648127b53001e9192ce",
             "text": "01101 e 00011"
           },
           {
             "correct": false,
-            "_id": "5e75513fa8c283001e9ec212",
+            "_id": "5ea72648127b53001e9192cf",
             "text": "10011 e 01101"
           },
           {
             "correct": false,
-            "_id": "5e75513fa8c283001e9ec213",
+            "_id": "5ea72648127b53001e9192d0",
             "text": "01001 e 10001"
           },
           {
-            "correct": false,
-            "_id": "5e75513fa8c283001e9ec214",
+            "correct": true,
+            "_id": "5ea72648127b53001e9192d1",
             "text": "00011 e 01100"
           }
         ],
-        "createdAt": "2020-03-20T23:26:55.320Z",
-        "updatedAt": "2020-03-20T23:26:55.320Z",
+        "createdAt": "2020-04-27T18:36:56.941Z",
+        "updatedAt": "2020-04-27T18:36:56.941Z",
         "__v": 0
       },
       {
-        "_id": "5e7551eba8c283001e9ec215",
+        "_id": "5ea72649127b53001e9192d2",
         "statement": "Qual é o maior número que você pode formar com esse cartões?",
         "type": "NUMERIC",
         "level": 2,
         "numeric_answer": 31,
-        "alternatives": [],
-        "createdAt": "2020-03-20T23:29:47.259Z",
-        "updatedAt": "2020-03-20T23:29:47.259Z",
+        "createdAt": "2020-04-27T18:36:57.140Z",
+        "updatedAt": "2020-04-27T18:36:57.140Z",
         "__v": 0
       },
       {
-        "_id": "5e7551fba8c283001e9ec216",
+        "_id": "5ea72649127b53001e9192d3",
         "statement": "Qual é o menor número que você pode formar com esse cartões?",
         "type": "NUMERIC",
         "level": 2,
         "numeric_answer": 0,
-        "alternatives": [],
-        "createdAt": "2020-03-20T23:30:03.320Z",
-        "updatedAt": "2020-03-20T23:30:03.320Z",
+        "createdAt": "2020-04-27T18:36:57.444Z",
+        "updatedAt": "2020-04-27T18:36:57.444Z",
         "__v": 0
       }
     ],
-    "_id": "5e9cbbd908f3901025072686",
+    "_id": "5ea72656127b53001e919337",
     "title": "Números Binários",
     "description": "Antes de iniciar a atividade, pode ser útil demonstrar os fundamentos ao grupo. Para esta atividade, são necessários cinco cartões, com pontos marcados de um lado e nada sobre o verso.",
     "introduction": "Então, você achava que sabia contar? Bem, aqui está uma nova forma de fazer isso!  Sabia que os computadores utilizam apenas zeros e uns? Tudo o que você vê ou ouve no computador - palavras, imagens, números, filmes e até mesmo o som - são armazenados usando apenas estes dois numerais! Estas atividades ensinarão como enviar mensagens secretas aos seus amigos usando exatamente o mesmo método que um computador.",
@@ -215,173 +213,779 @@
     },
     "questions": [
       {
-        "_id": "5e75556ca8c283001e9ec217",
-        "statement": "1. Tente decifrar os seguintes números codificados:",
+        "_id": "5ea72649127b53001e9192d4",
+        "statement": "1. Tente decifrar os seguintes números codificados: ",
         "type": "NUMERIC",
         "level": 3,
         "numeric_answer": 9,
         "image": {
-          "_id": "5e75556ca8c283001e9ec218",
-          "name": "level3_question1-1584747882449.png",
+          "_id": "5ea72649127b53001e9192d5",
+          "name": "l3q1-1588012617750.png",
           "url": "l3q1"
         },
-        "alternatives": [],
-        "createdAt": "2020-03-20T23:44:44.963Z",
-        "updatedAt": "2020-03-20T23:44:44.963Z",
+        "createdAt": "2020-04-27T18:36:57.996Z",
+        "updatedAt": "2020-04-27T18:36:57.996Z",
         "__v": 0
       },
       {
-        "_id": "5e7557e7a8c283001e9ec21a",
-        "statement": "2. Tente decifrar os seguintes números codificados:",
+        "_id": "5ea7264a127b53001e9192d6",
+        "statement": "2. Tente decifrar os seguintes números codificados: ",
         "type": "NUMERIC",
         "level": 3,
         "numeric_answer": 10,
         "image": {
-          "_id": "5e7557e7a8c283001e9ec21b",
-          "name": "level3_question2-1584748518970.png",
+          "_id": "5ea7264a127b53001e9192d7",
+          "name": "l3q2-1588012618187.png",
           "url": "l3q2"
         },
-        "alternatives": [],
-        "createdAt": "2020-03-20T23:55:19.110Z",
-        "updatedAt": "2020-03-21T00:01:43.860Z",
+        "createdAt": "2020-04-27T18:36:58.310Z",
+        "updatedAt": "2020-04-27T18:36:58.310Z",
         "__v": 0
       },
       {
-        "_id": "5e755817a8c283001e9ec21c",
-        "statement": "3. Tente decifrar os seguintes números codificados:",
+        "_id": "5ea7264a127b53001e9192d8",
+        "statement": "3. Tente decifrar os seguintes números codificados: ",
         "type": "NUMERIC",
         "level": 3,
         "numeric_answer": 5,
         "image": {
-          "_id": "5e755817a8c283001e9ec21d",
-          "name": "level3_question3-1584748567490.png",
+          "_id": "5ea7264a127b53001e9192d9",
+          "name": "l3q3-1588012618505.png",
           "url": "l3q3"
         },
-        "alternatives": [],
-        "createdAt": "2020-03-20T23:56:07.594Z",
-        "updatedAt": "2020-03-20T23:56:07.594Z",
+        "createdAt": "2020-04-27T18:36:58.626Z",
+        "updatedAt": "2020-04-27T18:36:58.626Z",
         "__v": 0
       },
       {
-        "_id": "5e75583aa8c283001e9ec21e",
-        "statement": "4. Tente decifrar os seguintes números codificados:",
+        "_id": "5ea7264a127b53001e9192da",
+        "statement": "4. Tente decifrar os seguintes números codificados: ",
         "type": "NUMERIC",
         "level": 3,
         "numeric_answer": 13,
         "image": {
-          "_id": "5e75583aa8c283001e9ec21f",
-          "name": "level3_question4-1584748602119.png",
+          "_id": "5ea7264a127b53001e9192db",
+          "name": "l3q4-1588012618809.png",
           "url": "l3q4"
         },
-        "alternatives": [],
-        "createdAt": "2020-03-20T23:56:42.229Z",
-        "updatedAt": "2020-03-20T23:56:42.229Z",
+        "createdAt": "2020-04-27T18:36:58.923Z",
+        "updatedAt": "2020-04-27T18:36:58.923Z",
         "__v": 0
       },
       {
-        "_id": "5e755858a8c283001e9ec220",
-        "statement": "5. Tente decifrar os seguintes números codificados:",
+        "_id": "5ea7264b127b53001e9192dc",
+        "statement": "5. Tente decifrar os seguintes números codificados: ",
         "type": "NUMERIC",
         "level": 3,
         "numeric_answer": 0,
         "image": {
-          "_id": "5e755858a8c283001e9ec221",
-          "name": "level3_question5-1584748632672.png",
+          "_id": "5ea7264b127b53001e9192dd",
+          "name": "l3q5-1588012619110.png",
           "url": "l3q5"
         },
-        "alternatives": [],
-        "createdAt": "2020-03-20T23:57:12.776Z",
-        "updatedAt": "2020-03-20T23:57:12.776Z",
+        "createdAt": "2020-04-27T18:36:59.216Z",
+        "updatedAt": "2020-04-27T18:36:59.216Z",
         "__v": 0
       },
       {
-        "_id": "5e755873a8c283001e9ec222",
-        "statement": "6. Tente decifrar os seguintes números codificados:",
+        "_id": "5ea7264b127b53001e9192de",
+        "statement": "6. Tente decifrar os seguintes números codificados: ",
         "type": "NUMERIC",
         "level": 3,
         "numeric_answer": 17,
         "image": {
-          "_id": "5e755873a8c283001e9ec223",
-          "name": "level3_question6-1584748659529.png",
+          "_id": "5ea7264b127b53001e9192df",
+          "name": "l3q6-1588012619414.png",
           "url": "l3q6"
         },
-        "alternatives": [],
-        "createdAt": "2020-03-20T23:57:39.616Z",
-        "updatedAt": "2020-03-20T23:57:39.616Z",
+        "createdAt": "2020-04-27T18:36:59.524Z",
+        "updatedAt": "2020-04-27T18:36:59.524Z",
         "__v": 0
       },
       {
-        "_id": "5e75589ea8c283001e9ec224",
-        "statement": "7. Tente decifrar os seguintes números codificados:",
+        "_id": "5ea7264b127b53001e9192e0",
+        "statement": "7. Tente decifrar os seguintes números codificados: ",
         "type": "NUMERIC",
         "level": 3,
         "numeric_answer": 2,
         "image": {
-          "_id": "5e75589ea8c283001e9ec225",
-          "name": "level3_question7-1584748702292.png",
+          "_id": "5ea7264b127b53001e9192e1",
+          "name": "l3q7-1588012619713.png",
           "url": "l3q7"
         },
-        "alternatives": [],
-        "createdAt": "2020-03-20T23:58:22.397Z",
-        "updatedAt": "2020-03-20T23:58:22.397Z",
+        "createdAt": "2020-04-27T18:36:59.826Z",
+        "updatedAt": "2020-04-27T18:36:59.826Z",
         "__v": 0
       },
       {
-        "_id": "5e7558bca8c283001e9ec226",
-        "statement": "8. Tente decifrar os seguintes números codificados:",
-        "type": "NUMERIC",
-        "level": 3,
-        "numeric_answer": 0,
-        "image": {
-          "_id": "5e7558bca8c283001e9ec227",
-          "name": "level3_question8-1584748732945.png",
-          "url": "l3q8"
-        },
-        "alternatives": [],
-        "createdAt": "2020-03-20T23:58:52.993Z",
-        "updatedAt": "2020-03-20T23:58:52.993Z",
-        "__v": 0
-      },
-      {
-        "_id": "5e7558dfa8c283001e9ec228",
-        "statement": "9. Tente decifrar os seguintes números codificados:",
+        "_id": "5ea7264c127b53001e9192e2",
+        "statement": "8. Tente decifrar os seguintes números codificados: ",
         "type": "NUMERIC",
         "level": 3,
         "numeric_answer": 20,
         "image": {
-          "_id": "5e7558dfa8c283001e9ec229",
-          "name": "level3_question9-1584748767040.png",
-          "url": "l3q9"
+          "_id": "5ea7264c127b53001e9192e3",
+          "name": "l3q8-1588012620025.png",
+          "url": "l3q8"
         },
-        "alternatives": [],
-        "createdAt": "2020-03-20T23:59:27.146Z",
-        "updatedAt": "2020-03-20T23:59:27.146Z",
+        "createdAt": "2020-04-27T18:37:00.128Z",
+        "updatedAt": "2020-04-27T18:37:00.128Z",
         "__v": 0
       },
       {
-        "_id": "5e755900a8c283001e9ec22a",
-        "statement": "10. Tente decifrar os seguintes números codificados:",
+        "_id": "5ea7264c127b53001e9192e4",
+        "statement": "9. Tente decifrar os seguintes números codificados: ",
         "type": "NUMERIC",
         "level": 3,
-        "numeric_answer": 31,
+        "numeric_answer": 0,
         "image": {
-          "_id": "5e755900a8c283001e9ec22b",
-          "name": "level3_question10-1584748800259.png",
+          "_id": "5ea7264c127b53001e9192e5",
+          "name": "l3q9-1588012620314.png",
+          "url": "l3q9"
+        },
+        "createdAt": "2020-04-27T18:37:00.426Z",
+        "updatedAt": "2020-04-27T18:37:00.426Z",
+        "__v": 0
+      },
+      {
+        "_id": "5ea7264c127b53001e9192e6",
+        "statement": "10. Tente decifrar os seguintes números codificados: ",
+        "type": "NUMERIC",
+        "level": 3,
+        "numeric_answer": 0,
+        "image": {
+          "_id": "5ea7264c127b53001e9192e7",
+          "name": "l3q10-1588012620626.png",
           "url": "l3q10"
         },
-        "alternatives": [],
-        "createdAt": "2020-03-21T00:00:00.543Z",
-        "updatedAt": "2020-03-21T00:00:00.543Z",
+        "createdAt": "2020-04-27T18:37:00.729Z",
+        "updatedAt": "2020-04-27T18:37:00.729Z",
         "__v": 0
       }
     ],
-    "_id": "5e9cbd9708f3901025072691",
+    "_id": "5ea72656127b53001e919342",
     "title": "Trabalhar com Números Binários",
     "description": "São exibidas dez imagens com legendas em que o usuário deve traduzir para binário e converter em decimal.",
-    "introduction": "O sistema binário utiliza o zero e o um para representar se um cartão está virado para cima ou não. O 0 indica que os pontos do cartão estão escondidos, e o 1 significa que os pontos do cartão são visíveis.",
+    "introduction": "O sistema binário utiliza o zero e o um para representar se um cartão está virado para cima ou não. O '0' indica que os pontos do cartão estão escondidos, e o '1' significa que os pontos do cartão são visíveis.",
     "showCards": true,
     "tips": "1. Presione o cartão para vira-lo;2. A soma dos pontos dos cartões representam o numero decimal;3. Os numero binario é representado pela sequencia de zeros e uns;4. Responda todas as perguntas corretamente para completar a tarefa.",
     "level": 3,
+    "__v": 0
+  },
+  {
+    "module": {
+      "id": 1,
+      "name": "Binary Numbers"
+    },
+    "questions": [
+      {
+        "_id": "5ea7264d127b53001e9192e8",
+        "statement": "1. Você pode identificar a mensagem enviada por Tom? ",
+        "type": "NUMERIC",
+        "level": 4,
+        "numeric_answer": 1,
+        "image": {
+          "_id": "5ea7264d127b53001e9192e9",
+          "name": "l4q1-1588012620919.png",
+          "url": "l4q1"
+        },
+        "createdAt": "2020-04-27T18:37:01.029Z",
+        "updatedAt": "2020-04-27T18:37:01.029Z",
+        "__v": 0
+      },
+      {
+        "_id": "5ea7264d127b53001e9192ea",
+        "statement": "2. Você pode identificar a mensagem enviada por Tom? ",
+        "type": "NUMERIC",
+        "level": 4,
+        "numeric_answer": 10,
+        "image": {
+          "_id": "5ea7264d127b53001e9192eb",
+          "name": "l4q2-1588012621222.png",
+          "url": "l4q2"
+        },
+        "createdAt": "2020-04-27T18:37:01.333Z",
+        "updatedAt": "2020-04-27T18:37:01.333Z",
+        "__v": 0
+      },
+      {
+        "_id": "5ea7264d127b53001e9192ec",
+        "statement": "3. Você pode identificar a mensagem enviada por Tom? ",
+        "type": "NUMERIC",
+        "level": 4,
+        "numeric_answer": 21,
+        "image": {
+          "_id": "5ea7264d127b53001e9192ed",
+          "name": "l4q3-10-1588012621515.png",
+          "url": "l4q3_10"
+        },
+        "createdAt": "2020-04-27T18:37:01.629Z",
+        "updatedAt": "2020-04-27T18:37:01.629Z",
+        "__v": 0
+      },
+      {
+        "_id": "5ea7264d127b53001e9192ee",
+        "statement": "4. Você pode identificar a mensagem enviada por Tom? ",
+        "type": "NUMERIC",
+        "level": 4,
+        "numeric_answer": 4,
+        "image": {
+          "_id": "5ea7264d127b53001e9192ef",
+          "name": "l4q4-1588012621813.png",
+          "url": "l4q4"
+        },
+        "createdAt": "2020-04-27T18:37:01.921Z",
+        "updatedAt": "2020-04-27T18:37:01.921Z",
+        "__v": 0
+      },
+      {
+        "_id": "5ea7264e127b53001e9192f0",
+        "statement": "5. Você pode identificar a mensagem enviada por Tom? ",
+        "type": "NUMERIC",
+        "level": 4,
+        "numeric_answer": 5,
+        "image": {
+          "_id": "5ea7264e127b53001e9192f1",
+          "name": "l4q5-6-13-1588012622147.png",
+          "url": "l4q5_6_13"
+        },
+        "createdAt": "2020-04-27T18:37:02.265Z",
+        "updatedAt": "2020-04-27T18:37:02.265Z",
+        "__v": 0
+      },
+      {
+        "_id": "5ea7264e127b53001e9192f2",
+        "statement": "6. Você pode identificar a mensagem enviada por Tom? ",
+        "type": "NUMERIC",
+        "level": 4,
+        "numeric_answer": 5,
+        "image": {
+          "_id": "5ea7264e127b53001e9192f3",
+          "name": "l4q5-6-13-1588012622509.png",
+          "url": "l4q5-6-13"
+        },
+        "createdAt": "2020-04-27T18:37:02.610Z",
+        "updatedAt": "2020-04-27T18:37:02.610Z",
+        "__v": 0
+      },
+      {
+        "_id": "5ea7264e127b53001e9192f4",
+        "statement": "7. Você pode identificar a mensagem enviada por Tom? ",
+        "type": "NUMERIC",
+        "level": 4,
+        "numeric_answer": 19,
+        "image": {
+          "_id": "5ea7264e127b53001e9192f5",
+          "name": "l4q7-14-1588012622792.png",
+          "url": "l4q7_14"
+        },
+        "createdAt": "2020-04-27T18:37:02.902Z",
+        "updatedAt": "2020-04-27T18:37:02.902Z",
+        "__v": 0
+      },
+      {
+        "_id": "5ea7264f127b53001e9192f6",
+        "statement": "8. Você pode identificar a mensagem enviada por Tom? ",
+        "type": "NUMERIC",
+        "level": 4,
+        "numeric_answer": 20,
+        "image": {
+          "_id": "5ea7264f127b53001e9192f7",
+          "name": "l4q8-1588012623107.png",
+          "url": "l4q8"
+        },
+        "createdAt": "2020-04-27T18:37:03.216Z",
+        "updatedAt": "2020-04-27T18:37:03.216Z",
+        "__v": 0
+      },
+      {
+        "_id": "5ea7264f127b53001e9192f8",
+        "statement": "9. Você pode identificar a mensagem enviada por Tom? ",
+        "type": "NUMERIC",
+        "level": 4,
+        "numeric_answer": 15,
+        "image": {
+          "_id": "5ea7264f127b53001e9192f9",
+          "name": "l4q9-15-1588012623413.png",
+          "url": "l4q9_15"
+        },
+        "createdAt": "2020-04-27T18:37:03.521Z",
+        "updatedAt": "2020-04-27T18:37:03.521Z",
+        "__v": 0
+      },
+      {
+        "_id": "5ea7264f127b53001e9192fa",
+        "statement": "10. Você pode identificar a mensagem enviada por Tom? ",
+        "type": "NUMERIC",
+        "level": 4,
+        "numeric_answer": 21,
+        "image": {
+          "_id": "5ea7264f127b53001e9192fb",
+          "name": "l4q3-10-1588012623712.png",
+          "url": "l4q3_10"
+        },
+        "createdAt": "2020-04-27T18:37:03.823Z",
+        "updatedAt": "2020-04-27T18:37:03.823Z",
+        "__v": 0
+      },
+      {
+        "_id": "5ea72650127b53001e9192fc",
+        "statement": "11. Você pode identificar a mensagem enviada por Tom? ",
+        "type": "NUMERIC",
+        "level": 4,
+        "numeric_answer": 16,
+        "image": {
+          "_id": "5ea72650127b53001e9192fd",
+          "name": "l4q11-1588012624007.png",
+          "url": "l4q11"
+        },
+        "createdAt": "2020-04-27T18:37:04.118Z",
+        "updatedAt": "2020-04-27T18:37:04.118Z",
+        "__v": 0
+      },
+      {
+        "_id": "5ea72650127b53001e9192fe",
+        "statement": "12. Você pode identificar a mensagem enviada por Tom? ",
+        "type": "NUMERIC",
+        "level": 4,
+        "numeric_answer": 18,
+        "image": {
+          "_id": "5ea72650127b53001e9192ff",
+          "name": "l4q12-1588012624299.png",
+          "url": "l4q12"
+        },
+        "createdAt": "2020-04-27T18:37:04.408Z",
+        "updatedAt": "2020-04-27T18:37:04.408Z",
+        "__v": 0
+      },
+      {
+        "_id": "5ea72650127b53001e919300",
+        "statement": "13. Você pode identificar a mensagem enviada por Tom? ",
+        "type": "NUMERIC",
+        "level": 4,
+        "numeric_answer": 5,
+        "image": {
+          "_id": "5ea72650127b53001e919301",
+          "name": "l4q5-6-13-1588012624589.png",
+          "url": "l4q5_6_13"
+        },
+        "createdAt": "2020-04-27T18:37:04.705Z",
+        "updatedAt": "2020-04-27T18:37:04.705Z",
+        "__v": 0
+      },
+      {
+        "_id": "5ea72650127b53001e919302",
+        "statement": "14. Você pode identificar a mensagem enviada por Tom? ",
+        "type": "NUMERIC",
+        "level": 4,
+        "numeric_answer": 19,
+        "image": {
+          "_id": "5ea72650127b53001e919303",
+          "name": "l4q7-14-1588012624877.png",
+          "url": "l4q7_14"
+        },
+        "createdAt": "2020-04-27T18:37:04.992Z",
+        "updatedAt": "2020-04-27T18:37:04.992Z",
+        "__v": 0
+      },
+      {
+        "_id": "5ea72651127b53001e919304",
+        "statement": "15. Você pode identificar a mensagem enviada por Tom? ",
+        "type": "NUMERIC",
+        "level": 4,
+        "numeric_answer": 15,
+        "image": {
+          "_id": "5ea72651127b53001e919305",
+          "name": "l4q9-15-1588012625181.png",
+          "url": "l4q9_15"
+        },
+        "createdAt": "2020-04-27T18:37:05.312Z",
+        "updatedAt": "2020-04-27T18:37:05.312Z",
+        "__v": 0
+      },
+      {
+        "_id": "5ea72651127b53001e919306",
+        "statement": "Agora vamos traduzir a mensagem do Tom?",
+        "type": "SHORTANSWER",
+        "level": 4,
+        "short_answer": "Esses foram os numeros que você selecionou: {relative_answer}",
+        "image": {
+          "_id": "5ea72651127b53001e919307",
+          "name": "tabela_alfabeto-1588012625477.png",
+          "url": "l4q16"
+        },
+        "createdAt": "2020-04-27T18:37:05.606Z",
+        "updatedAt": "2020-04-27T18:37:05.606Z",
+        "__v": 0
+      }
+    ],
+    "_id": "5ea72656127b53001e919353",
+    "title": "Enviar Mensagens Secretas",
+    "description": "É apresentado um enredo em que um personagem chamado Tom tenta enviar uma mensagem utilizando um código binário. O usuário deve converter todos os números para decifrar a mensagem enviada.",
+    "introduction": "Tom está preso no último andar de uma loja. É noite de Natal e ele quer ir para casa. O que ele pode fazer? Ele tentou chamar alguém, até mesmo gritar, mas não funcionou. Do outro lado da rua ele pode ver uma pessoa ainda trabalhando até tarde da noite. Tom olha em volta para ver o que poderia usar. Então, ele tem uma brilhante idéia: utilizar as lâmpadas da árvore de Natal para enviar uma mensagem! Ele coletou todas as lâmpadas disponíveis e as conectou aos bocais de forma que pudesse acendê-las ou apagá-las.",
+    "showCards": false,
+    "tips": "1. Os campos devem ser preenchidos com valores decimais;2. Decifre todos os numeros e ao final traduza a mensagem;3. Responda todas as perguntas corretamente para completar a tarefa.",
+    "level": 4,
+    "__v": 0
+  },
+  {
+    "module": {
+      "id": 1,
+      "name": "Binary Numbers"
+    },
+    "questions": [
+      {
+        "_id": "5ea72651127b53001e919308",
+        "statement": "Usando o mesmo código que Tom utilizou na loja, tente enviar uma mensagem de correio eletrônico. Mas facilite as coisas, envie apenas o seu nome. ",
+        "type": "SHORTANSWER",
+        "level": 5,
+        "short_answer": "{relative_answer}",
+        "image": {
+          "_id": "5ea72651127b53001e919309",
+          "name": "l5q1-1588012625786.png",
+          "url": "l5q1"
+        },
+        "createdAt": "2020-04-27T18:37:05.896Z",
+        "updatedAt": "2020-04-27T18:37:05.896Z",
+        "__v": 0
+      },
+      {
+        "_id": "5ea72652127b53001e91930a",
+        "statement": "Opaaa! O Tom receber a sua mensagem e já te respondeu... Traduza para saber o que ele falou",
+        "type": "SHORTANSWER",
+        "level": 5,
+        "short_answer": "Oi {relative_answer}, prazer em te conhecer",
+        "image": {
+          "_id": "5ea72652127b53001e91930b",
+          "name": "tabela_alfabeto-1588012626117.png",
+          "url": "l5q2"
+        },
+        "createdAt": "2020-04-27T18:37:06.240Z",
+        "updatedAt": "2020-04-27T18:37:06.240Z",
+        "__v": 0
+      }
+    ],
+    "_id": "5ea72656127b53001e919356",
+    "title": "Correio Eletrônico e Modems",
+    "description": "O usuário envia uma mensagem que é rapidamente respondida em binário. O usuário deve converter corretamente a mensagem de resposta para finalizar o exercício.",
+    "introduction": "Os computadores conectados à Internet através de um equipamento conhecido por modem também utilizam o sistema binário para enviar mensagens. A única diferença é que eles usam um sinal sonoro ou bip. Um bip agudo é utilizado para o um e um bip grave é utilizado para o zero. Estes sinais são transmitidos rapidamente. Tão rápido, na verdade, que apenas ouvimos um horrível zumbido contínuo. Se você nunca o ouviu, ouça um modem conectar-se à Internet.",
+    "showCards": false,
+    "tips": "1. Digite o seu nome e clique em enviar;2. Decifre a mensagem enviada pelo seu amigo;3. Não esqueça da virgula;",
+    "level": 5,
+    "__v": 0
+  },
+  {
+    "module": {
+      "id": 1,
+      "name": "Binary Numbers"
+    },
+    "questions": [
+      {
+        "_id": "5ea72652127b53001e91930c",
+        "statement": "Utilizando apenas uma mão, qual a representação do número 30 em binário?",
+        "type": "MULTIPLECHOICE",
+        "level": 6,
+        "alternatives": [
+          {
+            "correct": true,
+            "_id": "5ea72652127b53001e91930d",
+            "text": "11110"
+          },
+          {
+            "correct": false,
+            "_id": "5ea72652127b53001e91930e",
+            "text": "11101"
+          },
+          {
+            "correct": false,
+            "_id": "5ea72652127b53001e91930f",
+            "text": "01001"
+          },
+          {
+            "correct": false,
+            "_id": "5ea72652127b53001e919310",
+            "text": "01111"
+          }
+        ],
+        "createdAt": "2020-04-27T18:37:06.462Z",
+        "updatedAt": "2020-04-27T18:37:06.462Z",
+        "__v": 0
+      },
+      {
+        "_id": "5ea72652127b53001e919311",
+        "statement": "Agora com às duas mãos converta o número 1010110011 para decimal.",
+        "type": "MULTIPLECHOICE",
+        "level": 6,
+        "alternatives": [
+          {
+            "correct": false,
+            "_id": "5ea72652127b53001e919312",
+            "text": "890"
+          },
+          {
+            "correct": false,
+            "_id": "5ea72652127b53001e919313",
+            "text": "111"
+          },
+          {
+            "correct": false,
+            "_id": "5ea72652127b53001e919314",
+            "text": "394"
+          },
+          {
+            "correct": true,
+            "_id": "5ea72652127b53001e919315",
+            "text": "691"
+          }
+        ],
+        "createdAt": "2020-04-27T18:37:06.768Z",
+        "updatedAt": "2020-04-27T18:37:06.768Z",
+        "__v": 0
+      },
+      {
+        "_id": "5ea72653127b53001e919316",
+        "statement": "Se os dedos dos seus pés forem realmente flexíveis (se você fosse de outro planeta), seria possível obter números ainda maiores. Se uma mão pode contar até 32 e duas mãos podem contar até 32 × 32 = 1024, qual o maior número que se poderia contar?",
+        "type": "MULTIPLECHOICE",
+        "level": 6,
+        "alternatives": [
+          {
+            "correct": false,
+            "_id": "5ea72653127b53001e919317",
+            "text": "32.768"
+          },
+          {
+            "correct": true,
+            "_id": "5ea72653127b53001e919318",
+            "text": "1.048.576"
+          },
+          {
+            "correct": false,
+            "_id": "5ea72653127b53001e919319",
+            "text": "33.554.432"
+          },
+          {
+            "correct": false,
+            "_id": "5ea72653127b53001e91931a",
+            "text": "1.073.741"
+          }
+        ],
+        "image": {
+          "_id": "5ea72653127b53001e91931b",
+          "name": "l6q3-1588012627010.png",
+          "url": "l6q3"
+        },
+        "createdAt": "2020-04-27T18:37:07.122Z",
+        "updatedAt": "2020-04-27T18:37:07.122Z",
+        "__v": 0
+      }
+    ],
+    "_id": "5ea72657127b53001e919358",
+    "title": "Contar acima de 31",
+    "description": "Três questões de múltipla escolha com um nível mais elevado de complexidade, onde o usuário é desafiado a contar além do máximo possível com os cartões.",
+    "introduction": "Você já colocou todos os seus dedos para trabalhar? Pois agora seus dedos podem contar e ir muito além do número dez. Não, você não precisa ser de outro planeta! Se utilizar o sistema binário e deixar que cada dedo de uma mão represente um dos cartões com pontos, então pode contar de zero a 31. Ao total, temos 32 números. (Não se esqueça de que o zero também é um número!). Se o dedo estiver para cima, é um, e, se estiver para baixo, é zero. Você pode contar de 0 a 1023 se usar as duas mãos! São 1024 números!",
+    "showCards": false,
+    "tips": "1. Não esqueça a sequencia dos cartões 16, 8, 4, 2, 1...;2. Responda todas as perguntas corretamente para completar a tarefa.",
+    "level": 6,
+    "__v": 0
+  },
+  {
+    "module": {
+      "id": 1,
+      "name": "Binary Numbers"
+    },
+    "questions": [
+      {
+        "_id": "5ea72653127b53001e91931c",
+        "statement": "O que acontece quando você coloca um 0 à direita de um número binário?",
+        "type": "MULTIPLECHOICE",
+        "level": 7,
+        "alternatives": [
+          {
+            "correct": false,
+            "_id": "5ea72653127b53001e91931d",
+            "text": "É dividido por 2"
+          },
+          {
+            "correct": false,
+            "_id": "5ea72653127b53001e91931e",
+            "text": "Nada acontece"
+          },
+          {
+            "correct": false,
+            "_id": "5ea72653127b53001e91931f",
+            "text": "É multiplicado por 10"
+          },
+          {
+            "correct": true,
+            "_id": "5ea72653127b53001e919320",
+            "text": "O número é dobrado"
+          }
+        ],
+        "createdAt": "2020-04-27T18:37:07.333Z",
+        "updatedAt": "2020-04-27T18:37:07.333Z",
+        "__v": 0
+      },
+      {
+        "_id": "5ea72653127b53001e919321",
+        "statement": "Qual número deve estar no lugar da (?) na imagem?",
+        "type": "MULTIPLECHOICE",
+        "level": 7,
+        "alternatives": [
+          {
+            "correct": false,
+            "_id": "5ea72653127b53001e919322",
+            "text": "9"
+          },
+          {
+            "correct": true,
+            "_id": "5ea72653127b53001e919323",
+            "text": "18"
+          },
+          {
+            "correct": false,
+            "_id": "5ea72653127b53001e919324",
+            "text": "2"
+          },
+          {
+            "correct": false,
+            "_id": "5ea72653127b53001e919325",
+            "text": "11"
+          }
+        ],
+        "image": {
+          "_id": "5ea72653127b53001e919326",
+          "name": "l7q2-1588012627639.png",
+          "url": "l7q2"
+        },
+        "createdAt": "2020-04-27T18:37:07.783Z",
+        "updatedAt": "2020-04-27T18:37:07.783Z",
+        "__v": 0
+      },
+      {
+        "_id": "5ea72654127b53001e919327",
+        "statement": "Um computador precisa de 7 bits para armazenar todos os caracteres. Isto permite representar até quantos caracteres? ",
+        "type": "MULTIPLECHOICE",
+        "level": 7,
+        "alternatives": [
+          {
+            "correct": true,
+            "_id": "5ea72654127b53001e919328",
+            "text": "128"
+          },
+          {
+            "correct": false,
+            "_id": "5ea72654127b53001e919329",
+            "text": "64"
+          },
+          {
+            "correct": false,
+            "_id": "5ea72654127b53001e91932a",
+            "text": "256"
+          },
+          {
+            "correct": false,
+            "_id": "5ea72654127b53001e91932b",
+            "text": "32"
+          }
+        ],
+        "image": {
+          "_id": "5ea72654127b53001e91932c",
+          "name": "l7q3-1588012628050.png",
+          "url": "l7q3"
+        },
+        "createdAt": "2020-04-27T18:37:08.188Z",
+        "updatedAt": "2020-04-27T18:37:08.188Z",
+        "__v": 0
+      }
+    ],
+    "_id": "5ea72657127b53001e91935b",
+    "title": "Mais Sobre Números Binários",
+    "description": "Três questões de múltipla escolha abordando outros conceitos da matemática e da relação binário-decimal.",
+    "introduction": "Outra situação interessante dos números binários acontece quando um zero é colocado ao lado direito de um número. Se estivermos trabalhando na base 10 (decimal), ao colocarmos um zero ao lado direito de um número, este é multiplicado por 10. Por exemplo, 9 torna-se 90, 30 torna-se 300.",
+    "showCards": false,
+    "tips": "1. Responda todas as perguntas corretamente para completar a tarefa.",
+    "level": 7,
+    "__v": 0
+  },
+  {
+    "module": {
+      "id": 1,
+      "name": "Binary Numbers"
+    },
+    "questions": [
+      {
+        "_id": "5ea72654127b53001e91932d",
+        "statement": "Os computadores utilizam o sistema binário para representar informações. Chama-se binário porque utiliza dois dígitos distintos tambem chamados de bit. Um bit é normalmente representado na memória do computador por um transistor, que pode estar ligado ou desligado, ou um capacitor, que pode estar carregado ou descarregado. ",
+        "type": "EXPLANATION",
+        "level": 8,
+        "image": {
+          "_id": "5ea72654127b53001e91932e",
+          "name": "l8q1-1588012628459.png",
+          "url": "l8q1"
+        },
+        "createdAt": "2020-04-27T18:37:08.573Z",
+        "updatedAt": "2020-04-27T18:37:08.573Z",
+        "__v": 0
+      },
+      {
+        "_id": "5ea72654127b53001e91932f",
+        "statement": "Quando os dados devem ser transmitidos por uma linha telefônica ou enlace de rádio, tons de alta e baixa freqüência são utilizados para os zeros e uns. Em discos magnéticos (disquetes e discos rígidos) e fitas, os bits são representados pela direção de um campo magnético sobre uma superfície revestida, podendo ser norte-sul ou sul-norte. ",
+        "type": "EXPLANATION",
+        "level": 8,
+        "image": {
+          "_id": "5ea72654127b53001e919330",
+          "name": "l8q2-1588012628759.png",
+          "url": "l8q2"
+        },
+        "createdAt": "2020-04-27T18:37:08.868Z",
+        "updatedAt": "2020-04-27T18:37:08.868Z",
+        "__v": 0
+      },
+      {
+        "_id": "5ea72655127b53001e919331",
+        "statement": "CDs de áudio, CD-ROMs e DVDs armazenam bits de forma ótica — a parte da superfície correspondente a um bit reflete ou não a luz. ",
+        "type": "EXPLANATION",
+        "level": 8,
+        "image": {
+          "_id": "5ea72655127b53001e919332",
+          "name": "l8q3-1588012629072.png",
+          "url": "l8q3"
+        },
+        "createdAt": "2020-04-27T18:37:09.179Z",
+        "updatedAt": "2020-04-27T18:37:09.179Z",
+        "__v": 0
+      },
+      {
+        "_id": "5ea72655127b53001e919333",
+        "statement": "Um único bit não consegue representar muito. Por isso, os bits são utilizados geralmente em grupos de oito, podendo representar números de 0 a 255. Um grupo de oito bits é chamado de byte. A velocidade de um computador depende do número de bits que este pode processar de uma só vez. Por exemplo, um computador de 32 bits pode processar números de 32 bits em uma única operação, ao passo que um computador de 16 bits divide os números de 32 bits em partes menores, o que o torna mais lento.",
+        "type": "EXPLANATION",
+        "level": 8,
+        "createdAt": "2020-04-27T18:37:09.371Z",
+        "updatedAt": "2020-04-27T18:37:09.371Z",
+        "__v": 0
+      },
+      {
+        "_id": "5ea72655127b53001e919334",
+        "statement": "Em suma, bits e bytes são tudo que um computador utiliza para armazenar e transmitir\nnúmeros, texto e todas as outras informações. Em algumas das atividades seguintes\nveremos como outros tipos de informações podem ser representados em um computador. ",
+        "type": "EXPLANATION",
+        "level": 8,
+        "image": {
+          "_id": "5ea72655127b53001e919335",
+          "name": "l8q5-1588012629556.png",
+          "url": "l8q5"
+        },
+        "createdAt": "2020-04-27T18:37:09.672Z",
+        "updatedAt": "2020-04-27T18:37:09.672Z",
+        "__v": 0
+      }
+    ],
+    "_id": "5ea72657127b53001e919360",
+    "title": "De que se trata tudo isso",
+    "description": "Não possui nenhum exercício, apresenta apenas uma explicação mais detalhada sobre números binários e sua importância.",
+    "introduction": "Dados são a matéria-prima, os números com os quais os computadores trabalham. Um computador transforma seus dados em informações (palavras, números e fotos) que podemos compreender.",
+    "showCards": false,
+    "tips": "1. Leia com atenção toda a explicação",
+    "level": 8,
     "__v": 0
   }
 ]

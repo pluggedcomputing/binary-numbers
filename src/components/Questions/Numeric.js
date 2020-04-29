@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {View, KeyboardAvoidingView} from 'react-native';
+import {View} from 'react-native';
 
 import {PropTypes} from 'prop-types';
 
@@ -17,10 +17,7 @@ const numeric = props => {
   }
   return (
     <View style={styles.descriptive}>
-      <KeyboardAvoidingView
-        style={styles.subDescriptive}
-        behavior="padding"
-        enabled>
+      <View style={styles.subDescriptive}>
         <CustomTextInput
           keyboardType="numeric"
           placeholder="Digite aqui.."
@@ -28,7 +25,7 @@ const numeric = props => {
           onChangeText={text => setNumericAnswer(text)}
           value={numericAnswer}
         />
-      </KeyboardAvoidingView>
+      </View>
       <ChoiceButton
         text="Enviar"
         correct={numericAnswerIsCorrect()}

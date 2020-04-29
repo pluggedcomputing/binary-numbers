@@ -1,15 +1,16 @@
 import {StyleSheet} from 'react-native';
 
-import {general, colors, metrics, fonts} from '../../styles';
+import {general, colors, metrics} from '../../styles';
 
 const styles = StyleSheet.create({
   container: {
     ...general.defaultContainer,
-    width: metrics.screenWidth,
     height: metrics.screenHeight,
   },
   halfView: {
+    flex: 1,
     height: metrics.screenHeight / 2,
+    justifyContent: 'space-around',
   },
   info: {
     marginTop: metrics.halfMargin,
@@ -18,28 +19,23 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     color: colors.textColorPrimary,
   },
-  statement: {
-    textAlign: 'center',
-    fontSize: fonts.input,
-    fontFamily: 'Poppins-Bold',
-    color: colors.textColorPrimary,
-  },
   statementImageConteiner: {
     justifyContent: 'center',
     alignItems: 'center',
   },
   statementImage: {
     resizeMode: 'contain',
-    width: metrics.screenHeight * 0.4,
+    width: 200,
+    height: 100,
   },
   icon: {
     color: colors.colorPrimary,
     margin: metrics.basePadding,
   },
   defaultText: {
-    marginTop: metrics.halfMargin,
+    height: metrics.screenHeight / 4,
     textAlign: 'center',
-    justifyContent: 'center',
+    justifyContent: 'flex-start',
     alignItems: 'center',
   },
 });

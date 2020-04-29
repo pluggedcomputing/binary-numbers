@@ -1,5 +1,5 @@
 import React, {useState, useEffect, useLayoutEffect} from 'react';
-import {Text, View, Image} from 'react-native';
+import {Text, View, Image, KeyboardAvoidingView} from 'react-native';
 import {ProgressBar} from 'react-native-paper';
 
 import {MaterialCommunityIcons} from '@expo/vector-icons';
@@ -96,21 +96,25 @@ export default function Exercises({navigation}) {
     }
   }, [step]);
 
-  const viewOfContent = [
-    <Text style={styles.contentText}>{exercise.introduction}</Text>,
-    exercise.showCards ? <CardGroup /> : null,
-    question.image ? (
+  const viewOfContent = () => {
+    const content = [
+      <Text style={styles.contentText}>{exercise.introduction}</Text>,
+    ];
+    if (exercise.showCards) content.push(<CardGroup />);
+    const statementPage = question.image ? (
       <View style={styles.statementImageConteiner}>
-        <Text style={styles.statement}>{question.statement}</Text>
+        <Text style={styles.contentText}>{question.statement}</Text>
         <Image
           style={styles.statementImage}
           source={getImagens(question.image.url)}
         />
       </View>
     ) : (
-      <Text style={styles.statement}>{question.statement}</Text>
-    ),
-  ];
+      <Text style={styles.contentText}>{question.statement}</Text>
+    );
+    content.push(statementPage);
+    return content;
+  };
 
   function chooseQuestionRender() {
     switch (question.type) {
@@ -154,12 +158,7 @@ export default function Exercises({navigation}) {
         );
 
       case 'EXPLANATION':
-        return (
-          <Explanation
-            step={step}
-            setSteps={setSteps}
-          />
-        );
+        return <Explanation step={step} setSteps={setSteps} />;
 
       default:
         return null;
@@ -178,11 +177,15 @@ export default function Exercises({navigation}) {
         <View style={styles.halfView}>
           <CustomBackground
             style={styles.info}
-            content={viewOfContent}
+            content={viewOfContent()}
             isLastPage={value => setShowAnswerOptions(value)}
           />
         </View>
-        <View style={styles.halfView}>
+        <KeyboardAvoidingView
+          style={styles.halfView}
+          enabled
+          behavior="padding"
+          keyboardVerticalOffset={-105}>
           {showAnswerOptions ? (
             chooseQuestionRender()
           ) : (
@@ -191,7 +194,7 @@ export default function Exercises({navigation}) {
               questões.
             </Text>
           )}
-        </View>
+        </KeyboardAvoidingView>
       </View>
     </View>
   );
