@@ -6,12 +6,11 @@ const styles = StyleSheet.create({
   container: {
     ...general.defaultContainer,
     height: metrics.screenHeight,
-    justifyContent: 'flex-end',
   },
   halfView: {
+    flex: 1,
     height: metrics.screenHeight / 2,
     justifyContent: 'space-around',
-    alignItems: 'center',
   },
   info: {
     marginTop: metrics.halfMargin,
@@ -26,8 +25,8 @@ const styles = StyleSheet.create({
   },
   statementImage: {
     resizeMode: 'contain',
-    width: 150,
-    height: 150,
+    width: 200,
+    height: 100,
   },
   icon: {
     color: colors.colorPrimary,
