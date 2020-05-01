@@ -27,14 +27,14 @@ const numeric = props => {
         />
       </View>
       <ChoiceButton
+        step={step}
         text="Enviar"
         correct={numericAnswerIsCorrect()}
         onPress={() => {
+          setNumericAnswer('');
           if (numericAnswerIsCorrect()) {
             setSteps(step + 1);
-            setNumericAnswer('')
           }
-          setNumericAnswer('')
         }}
       />
     </View>

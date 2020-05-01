@@ -26,7 +26,7 @@ const Tooltips = props => {
               );
             })}
           </View>
-          <ChoiceButton text="Fechar" onPress={onCancel} />
+          <ChoiceButton step={isVisible} text="Fechar" onPress={onCancel} />
         </View>
       </View>
     </Modal>

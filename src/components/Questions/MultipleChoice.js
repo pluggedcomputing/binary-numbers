@@ -15,6 +15,7 @@ const multipleChoice = props => {
       keyExtractor={alternative => String(alternative.text)}
       renderItem={({item}) => (
         <ChoiceButton
+          step={step}
           text={item.text}
           correct={item.correct}
           onPress={() => {

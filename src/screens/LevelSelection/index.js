@@ -22,7 +22,8 @@ import CardLevel from '../../components/CardLevel';
 import styles from './styles';
 
 function LevelSelection({navigation}) {
-  const [levelsAvailable, setLevelsAvailable] = useState({level1: true});
+  // eslint-disable-next-line no-unused-vars
+  const [levelsAvailable, setLevelsAvailable] = useState({});
 
   const getData = async () => {
     try {
@@ -67,7 +68,7 @@ function LevelSelection({navigation}) {
           <CardLevel
             level="1"
             image={level1}
-            available={levelsAvailable.level1}
+            available
             onPress={() => navigation.navigate('Exercises', {data: data[0]})}
           />
           <CardLevel

@@ -28,14 +28,14 @@ const shortAnswer = props => {
         />
       </View>
       <ChoiceButton
+        step={step}
         text="Enviar"
         correct={textAnswerIsCorrect()}
         onPress={() => {
+          setAnswer('');
           if (textAnswerIsCorrect()) {
             setSteps(step + 1);
-            setAnswer('')
           }
-          setAnswer('')
         }}
       />
     </View>
