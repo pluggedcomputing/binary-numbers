@@ -32,7 +32,9 @@ const numeric = props => {
         onPress={() => {
           if (numericAnswerIsCorrect()) {
             setSteps(step + 1);
+            setNumericAnswer('')
           }
+          setNumericAnswer('')
         }}
       />
     </View>

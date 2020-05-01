@@ -33,7 +33,9 @@ const shortAnswer = props => {
         onPress={() => {
           if (textAnswerIsCorrect()) {
             setSteps(step + 1);
+            setAnswer('')
           }
+          setAnswer('')
         }}
       />
     </View>

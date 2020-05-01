@@ -22,7 +22,7 @@ import CardLevel from '../../components/CardLevel';
 import styles from './styles';
 
 function LevelSelection({navigation}) {
-  const [levelsAvailable, serLevelsAvailable] = useState({level1: true});
+  const [levelsAvailable, setLevelsAvailable] = useState({level1: true});
 
   const getData = async () => {
     try {
@@ -48,7 +48,7 @@ function LevelSelection({navigation}) {
         ]);
       }
 
-      setlevelsAvailable(levels);
+      setLevelsAvailable(levels);
     } catch (e) {
       Alert.alert('Erro', 'Não foi possivel carregar o seu nível atual');
     }
