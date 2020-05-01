@@ -41,6 +41,7 @@ const correspondence = props => {
         />
       </View>
       <ChoiceButton
+        step={step}
         text="Enviar"
         correct={correspondenceAnswerIsCorrect(true)}
         onPress={() => {
@@ -54,6 +55,7 @@ const correspondence = props => {
 };
 
 correspondence.propTypes = {
+  // eslint-disable-next-line react/forbid-prop-types
   correspondenceList: PropTypes.object.isRequired,
   step: PropTypes.number.isRequired,
   setSteps: PropTypes.func.isRequired,

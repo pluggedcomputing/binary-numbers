@@ -11,7 +11,12 @@ const explanation = props => {
 
   return (
     <View style={styles.descriptive}>
-      <ChoiceButton correct text="Próximo" onPress={() => setSteps(step + 1)} />
+      <ChoiceButton
+        step={step}
+        correct
+        text="Próximo"
+        onPress={() => setSteps(step + 1)}
+      />
     </View>
   );
 };

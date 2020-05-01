@@ -16,6 +16,7 @@ const trueOrFalse = props => {
   return (
     <View style={styles.trueOrFalseButtons}>
       <ChoiceButton
+        step={step}
         text="Verdadeiro"
         correct={trueOrFalseAnswerIsCorrect(true)}
         onPress={() => {
@@ -25,6 +26,7 @@ const trueOrFalse = props => {
         }}
       />
       <ChoiceButton
+        step={step}
         text="Falso"
         correct={trueOrFalseAnswerIsCorrect(false)}
         onPress={() => {

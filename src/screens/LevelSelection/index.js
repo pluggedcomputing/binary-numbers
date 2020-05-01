@@ -22,7 +22,8 @@ import CardLevel from '../../components/CardLevel';
 import styles from './styles';
 
 function LevelSelection({navigation}) {
-  const [levelsAvailable, serLevelsAvailable] = useState({level1: true});
+  // eslint-disable-next-line no-unused-vars
+  const [levelsAvailable, setLevelsAvailable] = useState({});
 
   const getData = async () => {
     try {
@@ -48,7 +49,7 @@ function LevelSelection({navigation}) {
         ]);
       }
 
-      setlevelsAvailable(levels);
+      setLevelsAvailable(levels);
     } catch (e) {
       Alert.alert('Erro', 'Não foi possivel carregar o seu nível atual');
     }
@@ -67,7 +68,7 @@ function LevelSelection({navigation}) {
           <CardLevel
             level="1"
             image={level1}
-            available={levelsAvailable.level1}
+            available
             onPress={() => navigation.navigate('Exercises', {data: data[0]})}
           />
           <CardLevel

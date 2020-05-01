@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import {View, Text, TouchableOpacity} from 'react-native';
 
 import PropTypes from 'prop-types';
@@ -7,8 +7,12 @@ import {colors} from '../../styles';
 import styles from './styles';
 
 const ChoiceButton = props => {
-  const {correct, onPress, text} = props;
+  const {correct, onPress, text, step} = props;
   const [backgroundColor, setbackgroundColor] = useState(colors.colorPrimary);
+
+  useEffect(() => {
+    setbackgroundColor(colors.colorPrimary);
+  }, [step]);
 
   function onPressButton() {
     if (correct) {
@@ -33,6 +37,7 @@ ChoiceButton.propTypes = {
   correct: PropTypes.bool,
   onPress: PropTypes.func.isRequired,
   text: PropTypes.string.isRequired,
+  step: PropTypes.number.isRequired,
 };
 
 ChoiceButton.defaultProps = {
