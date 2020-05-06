@@ -27,10 +27,8 @@ const App = () => {
   const [fontsLoaded, setFontsLoaded] = useState(false);
 
   const loadFontsAsync = async () => {
-    console.log('Antes', new Date());
     await Font.loadAsync(customFonts);
     setFontsLoaded(true);
-    console.log('Depois', new Date());
   };
 
   useEffect(() => {
