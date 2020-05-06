@@ -605,10 +605,10 @@
       },
       {
         "_id": "5ea72651127b53001e919306",
-        "statement": "Agora vamos traduzir a mensagem do Tom?",
+        "statement": "Esses foram os numeros que você selecionou: 1 10 21 4 5   5 19 20 15 21   16 18 5 19 15. Agora vamos traduzir a mensagem do Tom?",
         "type": "SHORTANSWER",
         "level": 4,
-        "short_answer": "Esses foram os numeros que você selecionou: {relative_answer}",
+        "short_answer": "ajude estou preso",
         "image": {
           "_id": "5ea72651127b53001e919307",
           "name": "tabela_alfabeto-1588012625477.png",
@@ -651,10 +651,10 @@
       },
       {
         "_id": "5ea72652127b53001e91930a",
-        "statement": "Opaaa! O Tom receber a sua mensagem e já te respondeu... Traduza para saber o que ele falou",
+        "statement": "Opaaa! O Tom receber a sua mensagem e já te respondeu... Traduza para saber o que ele falou: 01111 01001, 10000 10010 00001 11010 00101 10010   00101 01101   10100 00101   00011 01111 01110 01000 00101 00011 00101 10010",
         "type": "SHORTANSWER",
         "level": 5,
-        "short_answer": "Oi {relative_answer}, prazer em te conhecer",
+        "short_answer": "oi, prazer em te conhecer",
         "image": {
           "_id": "5ea72652127b53001e91930b",
           "name": "tabela_alfabeto-1588012626117.png",

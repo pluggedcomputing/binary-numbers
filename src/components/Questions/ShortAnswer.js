@@ -13,7 +13,12 @@ const shortAnswer = props => {
   const [answer, setAnswer] = useState('');
 
   function textAnswerIsCorrect() {
-    return String(answer) === String(correctAnswer);
+    const res = answer.toLowerCase();
+    if (correctAnswer.includes('{relative_answer}')) {
+      const relativeAnswer = correctAnswer.split('{relative_answer}');
+      return res.includes(relativeAnswer[0]) && res.includes(relativeAnswer[1]);
+    }
+    return String(res) === String(correctAnswer);
   }
   return (
     <View style={styles.descriptive}>
@@ -32,10 +37,10 @@ const shortAnswer = props => {
         text="Enviar"
         correct={textAnswerIsCorrect()}
         onPress={() => {
-          setAnswer('');
           if (textAnswerIsCorrect()) {
             setSteps(step + 1);
           }
+          setAnswer('');
         }}
       />
     </View>
