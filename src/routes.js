@@ -9,7 +9,7 @@ import LevelSelection from './screens/LevelSelection';
 import LoginOrRegister from './screens/LoginOrRegister';
 import Main from './screens/Main';
 import ScreenAbout from './screens/ScreenAbout';
-import {colors} from './styles';
+import {colors, metrics} from './styles';
 
 const Stack = createStackNavigator();
 
@@ -27,6 +27,7 @@ function routes() {
           headerTitleStyle: {
             fontFamily: 'Poppins-Bold',
             color: colors.textColorPrimary,
+            fontSize: metrics.screenWidth * 0.046
           },
         }}>
         <Stack.Screen

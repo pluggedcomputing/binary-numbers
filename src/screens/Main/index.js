@@ -10,7 +10,7 @@ function Main({navigation}) {
     <SafeAreaView style={styles.container}>
       <Image source={logo} style={styles.logo} />
       <Text style={styles.title}>Computação Plugada</Text>
-      <Text style={styles.subTitle}>Contanto os Pontos</Text>
+      <Text style={styles.subTitle}>Contando os Pontos</Text>
       <CustomButton
         style={styles.buttons}
         text="Iniciar"
