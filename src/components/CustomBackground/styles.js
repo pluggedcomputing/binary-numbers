@@ -3,7 +3,7 @@ import {StyleSheet} from 'react-native';
 import {colors, metrics, general} from '../../styles';
 
 const WIDHT_PORCENTAGE = 0.9;
-const HEIGHT_PORCENTAGE = 0.33;
+const HEIGHT_PORCENTAGE = 0.4;
 
 const styles = StyleSheet.create({
   container: {
