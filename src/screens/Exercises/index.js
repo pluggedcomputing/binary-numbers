@@ -168,6 +168,7 @@ export default function Exercises({navigation}) {
   return (
     <View>
       <Tooltip
+        step={step}
         content={exercise.tips}
         isVisible={showTips}
         onCancel={handleTips}
