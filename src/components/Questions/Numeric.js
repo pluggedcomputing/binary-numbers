@@ -33,7 +33,7 @@ const numeric = props => {
         onPress={() => {
           setNumericAnswer('');
           if (numericAnswerIsCorrect()) {
-            setSteps(step + 1);
+            setTimeout(() => setSteps(step + 1), 100);
           }
         }}
       />
