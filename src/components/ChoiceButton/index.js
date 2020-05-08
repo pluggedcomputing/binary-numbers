@@ -20,7 +20,7 @@ const ChoiceButton = props => {
     } else {
       setbackgroundColor(colors.colorError);
     }
-    onPress();
+    setTimeout(() => onPress(), 350);
   }
   return (
     <View {...props} style={styles.container}>
