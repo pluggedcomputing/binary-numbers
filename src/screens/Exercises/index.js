@@ -183,7 +183,7 @@ export default function Exercises({navigation}) {
           />
         </View>
         <KeyboardAvoidingView
-          style={styles.halfView}
+          style={styles.halfViewKeyBoard}
           enabled
           behavior="padding"
           keyboardVerticalOffset={-105}>

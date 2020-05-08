@@ -9,7 +9,9 @@ const styles = StyleSheet.create({
   },
   halfView: {
     flex: 1,
-    height: metrics.screenHeight / 2,
+  },
+  halfViewKeyBoard: {
+    flex: 1.1,
     justifyContent: 'space-around',
   },
   info: {
