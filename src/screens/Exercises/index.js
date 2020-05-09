@@ -100,24 +100,30 @@ export default function Exercises({navigation}) {
     const content = [
       <Text style={styles.contentText}>{exercise.introduction}</Text>,
     ];
-    let statementPage = question.image ? (
-      <View style={styles.statementImageConteiner}>
-        <Text style={styles.contentText}>{question.statement}</Text>
-        <Image
-          style={styles.statementImage}
-          source={getImagens(question.image.url)}
-        />
-      </View>
-    ) : (
-      <Text style={styles.contentText}>{question.statement}</Text>
-    );
-    if(exercise.showCards) {
+
+    let statementPage;
+
+    if (question.image) {
       statementPage = (
-        <View style={styles.statementImageConteiner}>
+        <View style={styles.statementConteiner}>
+          <Text style={styles.contentText}>{question.statement}</Text>
+          <Image
+            style={styles.statementImage}
+            source={getImagens(question.image.url)}
+          />
+        </View>
+      );
+    } else if (exercise.showCards) {
+      statementPage = (
+        <View style={styles.statementConteiner}>
           <Text style={styles.contentText}>{question.statement}</Text>
           <CardGroup />
         </View>
-      )
+      );
+    } else {
+      statementPage = (
+        <Text style={styles.contentText}>{question.statement}</Text>
+      );
     }
     content.push(statementPage);
     return content;
@@ -175,6 +181,7 @@ export default function Exercises({navigation}) {
   return (
     <View>
       <Tooltip
+        step={step}
         content={exercise.tips}
         isVisible={showTips}
         onCancel={handleTips}
@@ -189,7 +196,7 @@ export default function Exercises({navigation}) {
           />
         </View>
         <KeyboardAvoidingView
-          style={styles.halfView}
+          style={styles.halfViewKeyBoard}
           enabled
           behavior="padding"
           keyboardVerticalOffset={-105}>

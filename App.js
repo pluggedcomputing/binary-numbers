@@ -1,8 +1,8 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import {setCustomTextInput, setCustomText} from 'react-native-global-props';
 
-import {useFonts} from '@use-expo/font';
 import {AppLoading} from 'expo';
+import * as Font from 'expo-font';
 
 import Routes from './src/routes';
 import {general} from './src/styles';
@@ -18,11 +18,23 @@ const customTextProps = {
 setCustomTextInput(customTextInputProps);
 setCustomText(customTextProps);
 
+const customFonts = {
+  'Poppins-Regular': require('./src/assets/fonts/Poppins-Regular.ttf'),
+  'Poppins-Bold': require('./src/assets/fonts/Poppins-Bold.ttf'),
+};
+
 const App = () => {
-  const [fontsLoaded] = useFonts({
-    'Poppins-Regular': require('./src/assets/fonts/Poppins-Regular.ttf'),
-    'Poppins-Bold': require('./src/assets/fonts/Poppins-Bold.ttf'),
-  });
+  const [fontsLoaded, setFontsLoaded] = useState(false);
+
+  const loadFontsAsync = async () => {
+    await Font.loadAsync(customFonts);
+    setFontsLoaded(true);
+  };
+
+  useEffect(() => {
+    loadFontsAsync();
+  }, []);
+
   if (!fontsLoaded) {
     return <AppLoading />;
   }
