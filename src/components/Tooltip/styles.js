@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
     backgroundColor: colors.colorBackground,
     alignItems: 'center',
     justifyContent: 'center',
-    margin: metrics.baseMargin,
+    margin: metrics.halfMargin,
     padding: metrics.smallPadding,
   },
   contentTips: {

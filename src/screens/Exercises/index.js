@@ -14,7 +14,7 @@ import {
   ShortAnswer,
   TrueOrFalse,
 } from '../../components/Questions';
-import Tooltip from '../../components/Tooltips';
+import Tooltip from '../../components/Tooltip';
 import {general, colors} from '../../styles';
 import styles from './styles';
 

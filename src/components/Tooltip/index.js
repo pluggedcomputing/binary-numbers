@@ -3,11 +3,11 @@ import {View, Modal, Text} from 'react-native';
 
 import {PropTypes} from 'prop-types';
 
-import ChoiceButton from '../ChoiceButton';
+import CustomButton from '../CustomButton';
 import styles from './styles';
 
-const Tooltips = props => {
-  const {onCancel, isVisible, content, step} = props;
+const Tooltip = props => {
+  const {onCancel, isVisible, content} = props;
   const tipsArray = content.split(';');
   return (
     <Modal
@@ -26,21 +26,20 @@ const Tooltips = props => {
               );
             })}
           </View>
-          <ChoiceButton step={step} text="Fechar" onPress={onCancel} />
+          <CustomButton text="Fechar" onPress={onCancel} />
         </View>
       </View>
     </Modal>
   );
 };
 
-Tooltips.propTypes = {
+Tooltip.propTypes = {
   content: PropTypes.string.isRequired,
   onCancel: PropTypes.func.isRequired,
   isVisible: PropTypes.bool,
-  step: PropTypes.number.isRequired,
 };
 
-Tooltips.defaultProps = {
+Tooltip.defaultProps = {
   isVisible: false,
 };
-export default Tooltips;
+export default Tooltip;
