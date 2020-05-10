@@ -100,18 +100,31 @@ export default function Exercises({navigation}) {
     const content = [
       <Text style={styles.contentText}>{exercise.introduction}</Text>,
     ];
-    if (exercise.showCards) content.push(<CardGroup />);
-    const statementPage = question.image ? (
-      <View style={styles.statementImageConteiner}>
+
+    let statementPage;
+
+    if (question.image) {
+      statementPage = (
+        <View style={styles.statementConteiner}>
+          <Text style={styles.contentText}>{question.statement}</Text>
+          <Image
+            style={styles.statementImage}
+            source={getImagens(question.image.url)}
+          />
+        </View>
+      );
+    } else if (exercise.showCards) {
+      statementPage = (
+        <View style={styles.statementConteiner}>
+          <Text style={styles.contentText}>{question.statement}</Text>
+          <CardGroup />
+        </View>
+      );
+    } else {
+      statementPage = (
         <Text style={styles.contentText}>{question.statement}</Text>
-        <Image
-          style={styles.statementImage}
-          source={getImagens(question.image.url)}
-        />
-      </View>
-    ) : (
-      <Text style={styles.contentText}>{question.statement}</Text>
-    );
+      );
+    }
     content.push(statementPage);
     return content;
   };

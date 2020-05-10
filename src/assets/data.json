@@ -367,7 +367,7 @@
     "title": "Trabalhar com Números Binários",
     "description": "São exibidas dez imagens com legendas em que o usuário deve traduzir para binário e converter em decimal.",
     "introduction": "O sistema binário utiliza o zero e o um para representar se um cartão está virado para cima ou não. O '0' indica que os pontos do cartão estão escondidos, e o '1' significa que os pontos do cartão são visíveis.",
-    "showCards": true,
+    "showCards": false,
     "tips": "1. Presione o cartão para vira-lo;2. A soma dos pontos dos cartões representam o numero decimal;3. Os numero binario é representado pela sequencia de zeros e uns;4. Responda todas as perguntas corretamente para completar a tarefa.",
     "level": 3,
     "__v": 0
