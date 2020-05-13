@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   descriptive: {
-    height: metrics.screenWidth,
+    height: metrics.screenWidth / 1.35,
     alignItems: 'center',
   },
   subDescriptive: {
