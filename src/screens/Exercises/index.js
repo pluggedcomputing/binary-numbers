@@ -199,7 +199,7 @@ export default function Exercises({navigation}) {
           style={styles.halfViewKeyBoard}
           enabled
           behavior="padding"
-          keyboardVerticalOffset={-105}>
+          keyboardVerticalOffset={-85}>
           {showAnswerOptions ? (
             chooseQuestionRender()
           ) : (
