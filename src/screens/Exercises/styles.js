@@ -15,7 +15,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   info: {
-    marginTop: metrics.halfMargin,
+    marginTop: metrics.baseMargin,
   },
   contentText: {
     textAlign: 'center',
@@ -37,8 +37,6 @@ const styles = StyleSheet.create({
   defaultText: {
     height: metrics.screenHeight / 4,
     textAlign: 'center',
-    // justifyContent: 'flex-start',
-    // alignItems: 'center',
   },
 });
 
