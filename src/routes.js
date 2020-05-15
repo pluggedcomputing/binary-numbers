@@ -17,7 +17,7 @@ function routes() {
   return (
     <NavigationContainer>
       <Stack.Navigator
-        initialState="Main"
+        initialRouteName="Main"
         screenOptions={{
           headerTitleAlign: 'center',
           headerTintColor: colors.colorPrimary,
