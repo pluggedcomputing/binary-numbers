@@ -105,7 +105,7 @@ export default function Exercises({navigation}) {
 
     if (question.image) {
       statementPage = (
-        <View style={styles.statementConteiner}>
+        <View style={styles.statementImageConteiner}>
           <Text style={styles.contentText}>{question.statement}</Text>
           <Image
             style={styles.statementImage}
