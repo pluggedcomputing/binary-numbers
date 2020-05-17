@@ -116,7 +116,7 @@
     "questions": [
       {
         "_id": "5ea72648127b53001e9192c8",
-        "statement": "A sequencia em binário 10011 corresponde a que numero decimal?",
+        "statement": "A sequência em binário 10011 corresponde a que número decimal?",
         "type": "MULTIPLECHOICE",
         "level": 2,
         "alternatives": [
