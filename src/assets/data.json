@@ -352,7 +352,7 @@
         "statement": "10. Tente decifrar os seguintes números codificados: ",
         "type": "NUMERIC",
         "level": 3,
-        "numeric_answer": 0,
+        "numeric_answer": 31,
         "image": {
           "_id": "5ea7264c127b53001e9192e7",
           "name": "l3q10-1588012620626.png",
