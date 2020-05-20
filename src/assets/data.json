@@ -322,7 +322,7 @@
         "statement": "8. Tente decifrar os seguintes números codificados: ",
         "type": "NUMERIC",
         "level": 3,
-        "numeric_answer": 20,
+        "numeric_answer": 0,
         "image": {
           "_id": "5ea7264c127b53001e9192e3",
           "name": "l3q8-1588012620025.png",
