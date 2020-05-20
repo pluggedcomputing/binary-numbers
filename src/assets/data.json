@@ -782,7 +782,7 @@
     "_id": "5ea72657127b53001e919358",
     "title": "Contar acima de 31",
     "description": "Três questões de múltipla escolha com um nível mais elevado de complexidade, onde o usuário é desafiado a contar além do máximo possível com os cartões.",
-    "introduction": "Você já colocou todos os seus dedos para trabalhar? Pois agora seus dedos podem contar e ir muito além do número dez. Não, você não precisa ser de outro planeta! Se utilizar o sistema binário e deixar que cada dedo de uma mão represente um dos cartões com pontos, então pode contar de zero a 31. Ao total, temos 32 números. (Não se esqueça de que o zero também é um número!). Se o dedo estiver para cima, é um, e, se estiver para baixo, é zero. Você pode contar de 0 a 1023 se usar as duas mãos! São 1024 números!",
+    "introduction": "Você já colocou todos os seus dedos para trabalhar? Pois agora eles podem contar e ir muito além do número dez. Não, você não precisa ser de outro planeta! Se utilizar o sistema binário e deixar que cada dedo de uma mão retrate um dos cartões com pontos, então pode contar de 0 a 31. Ao total, temos 32 números. (Não se esqueça, zero também é um número!). Se o dedo estiver para cima, é um, e, se estiver para baixo, é zero. Você pode contar de 0 a 1023 se usar as duas mãos! São 1024 números!",
     "showCards": false,
     "tips": "1. Não esqueça a sequencia dos cartões 16, 8, 4, 2, 1...;2. Responda todas as perguntas corretamente para completar a tarefa.",
     "level": 6,

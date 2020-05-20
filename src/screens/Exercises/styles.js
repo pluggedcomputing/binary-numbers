@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
   statementImage: {
     resizeMode: 'contain',
     width: metrics.screenWidth * 0.6,
-    height: metrics.screenHeight * 0.12,
+    height: metrics.screenHeight * 0.1,
   },
   icon: {
     color: colors.colorPrimary,
