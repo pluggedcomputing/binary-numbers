@@ -11,11 +11,11 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   halfViewKeyBoard: {
-    flex: 1.1,
-    justifyContent: 'space-around',
+    height: metrics.screenHeight / 1.9,
+    justifyContent: 'center',
   },
   info: {
-    marginTop: metrics.halfMargin,
+    marginTop: metrics.baseMargin,
   },
   contentText: {
     textAlign: 'center',
@@ -37,8 +37,6 @@ const styles = StyleSheet.create({
   defaultText: {
     height: metrics.screenHeight / 4,
     textAlign: 'center',
-    justifyContent: 'flex-start',
-    alignItems: 'center',
   },
 });
 

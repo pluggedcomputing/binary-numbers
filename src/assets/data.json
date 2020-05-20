@@ -116,7 +116,7 @@
     "questions": [
       {
         "_id": "5ea72648127b53001e9192c8",
-        "statement": "A sequencia em binário 10011 corresponde a que numero decimal?",
+        "statement": "A sequência em binário 10011 corresponde a que número decimal?",
         "type": "MULTIPLECHOICE",
         "level": 2,
         "alternatives": [
@@ -262,7 +262,7 @@
         "statement": "4. Tente decifrar os seguintes números codificados: ",
         "type": "NUMERIC",
         "level": 3,
-        "numeric_answer": 13,
+        "numeric_answer": 11,
         "image": {
           "_id": "5ea7264a127b53001e9192db",
           "name": "l3q4-1588012618809.png",
@@ -322,7 +322,7 @@
         "statement": "8. Tente decifrar os seguintes números codificados: ",
         "type": "NUMERIC",
         "level": 3,
-        "numeric_answer": 20,
+        "numeric_answer": 0,
         "image": {
           "_id": "5ea7264c127b53001e9192e3",
           "name": "l3q8-1588012620025.png",
@@ -337,7 +337,7 @@
         "statement": "9. Tente decifrar os seguintes números codificados: ",
         "type": "NUMERIC",
         "level": 3,
-        "numeric_answer": 0,
+        "numeric_answer": 20,
         "image": {
           "_id": "5ea7264c127b53001e9192e5",
           "name": "l3q9-1588012620314.png",
@@ -352,7 +352,7 @@
         "statement": "10. Tente decifrar os seguintes números codificados: ",
         "type": "NUMERIC",
         "level": 3,
-        "numeric_answer": 0,
+        "numeric_answer": 31,
         "image": {
           "_id": "5ea7264c127b53001e9192e7",
           "name": "l3q10-1588012620626.png",
