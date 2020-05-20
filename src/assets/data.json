@@ -337,7 +337,7 @@
         "statement": "9. Tente decifrar os seguintes números codificados: ",
         "type": "NUMERIC",
         "level": 3,
-        "numeric_answer": 0,
+        "numeric_answer": 20,
         "image": {
           "_id": "5ea7264c127b53001e9192e5",
           "name": "l3q9-1588012620314.png",
