@@ -35,6 +35,8 @@ const styles = StyleSheet.create({
     margin: metrics.basePadding,
   },
   defaultText: {
+    marginLeft: metrics.baseMargin,
+    marginRight: metrics.baseMargin,
     height: metrics.screenHeight / 4,
     textAlign: 'center',
   },

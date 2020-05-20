@@ -204,8 +204,9 @@ export default function Exercises({navigation}) {
             chooseQuestionRender()
           ) : (
             <Text style={styles.defaultText}>
-              Leia atentamente todas as páginas do exercício para responder às
-              questões.
+              Leia atentamente cada questão para que possa responder o que é
+              solicitado em cada exercício. Arraste a carta para o lado e verá
+              as próximas instruções.
             </Text>
           )}
         </KeyboardAvoidingView>
