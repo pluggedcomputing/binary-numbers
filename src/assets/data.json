@@ -178,7 +178,7 @@
       },
       {
         "_id": "5ea72649127b53001e9192d2",
-        "statement": "Qual é o maior número que você pode formar com esse cartões?",
+        "statement": "Com os seguintes cartões qual o maior número que os mesmos permitem que você forme? Lembre-se de converter para decimal para inserir a resposta.",
         "type": "NUMERIC",
         "level": 2,
         "numeric_answer": 31,
