@@ -102,7 +102,7 @@
     "_id": "5ea72655127b53001e919336",
     "title": "Introdução",
     "description": "Antes de iniciar a atividade, pode ser útil demonstrar os fundamentos ao grupo. Para esta atividade, são necessários cinco cartões, com pontos marcados de um lado e nada sobre o verso.",
-    "introduction": "Podemos usar estes cartões para representar números binários. Cartas viradas para cima, representam o bit 1, viradas para baixo o bit 0.",
+    "introduction": "Sendo o sistema binário representados pelos números 0 e 1, podemos usar estes cartões para simbolizá-los, onde as cartas viradas para cima tem o valor  1 e as cartas viradas para baixo possuem o valor 0.",
     "showCards": true,
     "tips": "1. Presione o cartão para vira-lo;2. A soma dos pontos dos cartões representam o numero decimal;3. Os numero binario é representado pela sequencia de zeros e uns;4. Responda todas as perguntas corretamente para completar a tarefa.",
     "level": 1,
