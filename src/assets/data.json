@@ -380,7 +380,7 @@
     "questions": [
       {
         "_id": "5ea7264d127b53001e9192e8",
-        "statement": "1. Você pode identificar a mensagem enviada por Tom? ",
+        "statement": "1. Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal. ",
         "type": "NUMERIC",
         "level": 4,
         "numeric_answer": 1,
@@ -395,7 +395,7 @@
       },
       {
         "_id": "5ea7264d127b53001e9192ea",
-        "statement": "2. Você pode identificar a mensagem enviada por Tom? ",
+        "statement": "2. Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal. ",
         "type": "NUMERIC",
         "level": 4,
         "numeric_answer": 10,
@@ -410,7 +410,7 @@
       },
       {
         "_id": "5ea7264d127b53001e9192ec",
-        "statement": "3. Você pode identificar a mensagem enviada por Tom? ",
+        "statement": "3. Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal. ",
         "type": "NUMERIC",
         "level": 4,
         "numeric_answer": 21,
@@ -425,7 +425,7 @@
       },
       {
         "_id": "5ea7264d127b53001e9192ee",
-        "statement": "4. Você pode identificar a mensagem enviada por Tom? ",
+        "statement": "4. Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal. ",
         "type": "NUMERIC",
         "level": 4,
         "numeric_answer": 4,
@@ -440,7 +440,7 @@
       },
       {
         "_id": "5ea7264e127b53001e9192f0",
-        "statement": "5. Você pode identificar a mensagem enviada por Tom? ",
+        "statement": "5. Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal. ",
         "type": "NUMERIC",
         "level": 4,
         "numeric_answer": 5,
@@ -455,7 +455,7 @@
       },
       {
         "_id": "5ea7264e127b53001e9192f2",
-        "statement": "6. Você pode identificar a mensagem enviada por Tom? ",
+        "statement": "6. Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal. ",
         "type": "NUMERIC",
         "level": 4,
         "numeric_answer": 5,
@@ -470,7 +470,7 @@
       },
       {
         "_id": "5ea7264e127b53001e9192f4",
-        "statement": "7. Você pode identificar a mensagem enviada por Tom? ",
+        "statement": "7. Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal. ",
         "type": "NUMERIC",
         "level": 4,
         "numeric_answer": 19,
@@ -485,7 +485,7 @@
       },
       {
         "_id": "5ea7264f127b53001e9192f6",
-        "statement": "8. Você pode identificar a mensagem enviada por Tom? ",
+        "statement": "8. Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal. ",
         "type": "NUMERIC",
         "level": 4,
         "numeric_answer": 20,
@@ -500,7 +500,7 @@
       },
       {
         "_id": "5ea7264f127b53001e9192f8",
-        "statement": "9. Você pode identificar a mensagem enviada por Tom? ",
+        "statement": "9. Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal. ",
         "type": "NUMERIC",
         "level": 4,
         "numeric_answer": 15,
@@ -515,7 +515,7 @@
       },
       {
         "_id": "5ea7264f127b53001e9192fa",
-        "statement": "10. Você pode identificar a mensagem enviada por Tom? ",
+        "statement": "10. Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal. ",
         "type": "NUMERIC",
         "level": 4,
         "numeric_answer": 21,
@@ -530,7 +530,7 @@
       },
       {
         "_id": "5ea72650127b53001e9192fc",
-        "statement": "11. Você pode identificar a mensagem enviada por Tom? ",
+        "statement": "11. Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal. ",
         "type": "NUMERIC",
         "level": 4,
         "numeric_answer": 16,
@@ -545,7 +545,7 @@
       },
       {
         "_id": "5ea72650127b53001e9192fe",
-        "statement": "12. Você pode identificar a mensagem enviada por Tom? ",
+        "statement": "12. Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal. ",
         "type": "NUMERIC",
         "level": 4,
         "numeric_answer": 18,
@@ -560,7 +560,7 @@
       },
       {
         "_id": "5ea72650127b53001e919300",
-        "statement": "13. Você pode identificar a mensagem enviada por Tom? ",
+        "statement": "13. Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal. ",
         "type": "NUMERIC",
         "level": 4,
         "numeric_answer": 5,
@@ -575,7 +575,7 @@
       },
       {
         "_id": "5ea72650127b53001e919302",
-        "statement": "14. Você pode identificar a mensagem enviada por Tom? ",
+        "statement": "14. Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal. ",
         "type": "NUMERIC",
         "level": 4,
         "numeric_answer": 19,
@@ -590,7 +590,7 @@
       },
       {
         "_id": "5ea72651127b53001e919304",
-        "statement": "15. Você pode identificar a mensagem enviada por Tom? ",
+        "statement": "15. Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal. ",
         "type": "NUMERIC",
         "level": 4,
         "numeric_answer": 15,
