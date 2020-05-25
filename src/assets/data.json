@@ -104,7 +104,7 @@
     "description": "Antes de iniciar a atividade, pode ser útil demonstrar os fundamentos ao grupo. Para esta atividade, são necessários cinco cartões, com pontos marcados de um lado e nada sobre o verso.",
     "introduction": "Podemos usar estes cartões para representar números binários. Cartas viradas para cima, representam o bit 1, viradas para baixo o bit 0.",
     "showCards": true,
-    "tips": "1. Presione o cartão para vira-lo;2. A soma dos pontos dos cartões representam o numero decimal;3. Os numero binario é representado pela sequencia de zeros e uns;4. Responda todas as perguntas corretamente para completar a tarefa.",
+    "tips": "1. Pressione o cartão para virá-lo;2. A soma dos pontos dos cartões representam o número decimal;3. Os números binários é representado pela sequência de zeros e uns;4. Responda todas as perguntas corretamente para completar a tarefa.",
     "level": 1,
     "__v": 0
   },
@@ -202,7 +202,7 @@
     "description": "Antes de iniciar a atividade, pode ser útil demonstrar os fundamentos ao grupo. Para esta atividade, são necessários cinco cartões, com pontos marcados de um lado e nada sobre o verso.",
     "introduction": "Então, você achava que sabia contar? Bem, aqui está uma nova forma de fazer isso!  Sabia que os computadores utilizam apenas zeros e uns? Tudo o que você vê ou ouve no computador - palavras, imagens, números, filmes e até mesmo o som - são armazenados usando apenas estes dois numerais! Estas atividades ensinarão como enviar mensagens secretas aos seus amigos usando exatamente o mesmo método que um computador.",
     "showCards": true,
-    "tips": "1. Presione o cartão para vira-lo;2. A soma dos pontos dos cartões representam o numero decimal;3. Os numero binario é representado pela sequencia de zeros e uns;4. Responda todas as perguntas corretamente para completar a tarefa.",
+    "tips": "1. Pressione o cartão para virá-lo;2. A soma dos pontos dos cartões representam o número decimal;3. Os números binários é representado pela sequência de zeros e uns;4. Responda todas as perguntas corretamente para completar a tarefa.",
     "level": 2,
     "__v": 0
   },
@@ -368,7 +368,7 @@
     "description": "São exibidas dez imagens com legendas em que o usuário deve traduzir para binário e converter em decimal.",
     "introduction": "O sistema binário utiliza o zero e o um para representar se um cartão está virado para cima ou não. O '0' indica que os pontos do cartão estão escondidos, e o '1' significa que os pontos do cartão são visíveis.",
     "showCards": false,
-    "tips": "1. Presione o cartão para vira-lo;2. A soma dos pontos dos cartões representam o numero decimal;3. Os numero binario é representado pela sequencia de zeros e uns;4. Responda todas as perguntas corretamente para completar a tarefa.",
+    "tips": "1. Pressione o cartão para virá-lo;2. A soma dos pontos dos cartões representam o número decimal;3. Os números binários é representado pela sequência de zeros e uns;4. Responda todas as perguntas corretamente para completar a tarefa.",
     "level": 3,
     "__v": 0
   },
