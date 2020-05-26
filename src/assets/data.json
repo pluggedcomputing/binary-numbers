@@ -102,7 +102,7 @@
     "_id": "5ea72655127b53001e919336",
     "title": "Introdução",
     "description": "Antes de iniciar a atividade, pode ser útil demonstrar os fundamentos ao grupo. Para esta atividade, são necessários cinco cartões, com pontos marcados de um lado e nada sobre o verso.",
-    "introduction": "Sendo o sistema binário representados pelos números 0 e 1, podemos usar estes cartões para simbolizá-los, onde as cartas viradas para cima tem o valor  1 e as cartas viradas para baixo possuem o valor 0.",
+    "introduction": "Sendo o sistema binário representado pelos números 0 e 1, podemos usar estes cartões ao lado para simbolizá-los. Quando um cartão está com a face para baixo, sem mostrar os pontos, este cartão é representado por um zero. Quando os pontos são exibidos, o cartão é representado por um. Este é o sistema numérico binário. Inicialmente os cartões ao lado representam o número 9 (Soma dos pontos das cartas) e a sua conversão em binário 01001 (Parte inferior da carta).",
     "showCards": true,
     "tips": "1. Presione o cartão para vira-lo;2. A soma dos pontos dos cartões representam o numero decimal;3. Os numero binario é representado pela sequencia de zeros e uns;4. Responda todas as perguntas corretamente para completar a tarefa.",
     "level": 1,
