@@ -188,7 +188,7 @@
       },
       {
         "_id": "5ea72649127b53001e9192d3",
-        "statement": "Qual é o menor número que você pode formar com esse cartões?",
+        "statement": "Ainda utilizando os cartões, qual o MENOR número decimal que você pode formar?",
         "type": "NUMERIC",
         "level": 2,
         "numeric_answer": 0,
