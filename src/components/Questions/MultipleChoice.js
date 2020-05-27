@@ -1,20 +1,16 @@
 import React from 'react';
-import {FlatList} from 'react-native';
 
-import {PropTypes} from 'prop-types';
+import { PropTypes } from 'prop-types';
 
 import ChoiceButton from '../ChoiceButton';
 
 const multipleChoice = props => {
-  const {alternatives, step, setSteps} = props;
-
+  const { alternatives, step, setSteps} = props;
   return (
-    <FlatList
-      data={alternatives}
-      scrollEnabled={false}
-      keyExtractor={alternative => String(alternative.text)}
-      renderItem={({item}) => (
+    alternatives.map(item => {
+      return (
         <ChoiceButton
+          key={item.text}
           step={step}
           text={item.text}
           correct={item.correct}
@@ -24,9 +20,9 @@ const multipleChoice = props => {
             }
           }}
         />
-      )}
-    />
-  );
+      )
+    })
+  )
 };
 
 multipleChoice.propTypes = {
