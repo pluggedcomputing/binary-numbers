@@ -1,5 +1,5 @@
 import React, {useState, useEffect, useLayoutEffect} from 'react';
-import {Text, View, Image, KeyboardAvoidingView} from 'react-native';
+import {Text, View, Image, KeyboardAvoidingView, Platform} from 'react-native';
 import {ProgressBar} from 'react-native-paper';
 
 import {MaterialCommunityIcons} from '@expo/vector-icons';
@@ -198,7 +198,10 @@ export default function Exercises({navigation}) {
         <KeyboardAvoidingView
           style={styles.halfViewKeyBoard}
           enabled
-          behavior="padding"
+          behavior={Platform.select({
+            ios: 'padding',
+            android: null,
+          })}
           keyboardVerticalOffset={-60}>
           {showAnswerOptions ? (
             chooseQuestionRender()
