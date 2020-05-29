@@ -102,7 +102,7 @@
     "_id": "5ea72655127b53001e919336",
     "title": "Introdução",
     "description": "Antes de iniciar a atividade, pode ser útil demonstrar os fundamentos ao grupo. Para esta atividade, são necessários cinco cartões, com pontos marcados de um lado e nada sobre o verso.",
-    "introduction": "Podemos usar estes cartões para representar números binários. Cartas viradas para cima, representam o bit 1, viradas para baixo o bit 0.",
+    "introduction": "Sendo o sistema binário representado pelos números 0 e 1, podemos usar estes cartões ao lado para simbolizá-los. Quando um cartão está com a face para baixo, sem mostrar os pontos, este cartão é representado por um zero. Quando os pontos são exibidos, o cartão é representado por um. Este é o sistema numérico binário. Inicialmente os cartões ao lado representam o número 9 (Soma dos pontos das cartas) e a sua conversão em binário 01001 (Parte inferior da carta).",
     "showCards": true,
     "tips": "1. Pressione o cartão para virá-lo;2. A soma dos pontos dos cartões representam o número decimal;3. Os números binários é representado pela sequência de zeros e uns;4. Responda todas as perguntas corretamente para completar a tarefa.",
     "level": 1,
@@ -366,7 +366,7 @@
     "_id": "5ea72656127b53001e919342",
     "title": "Trabalhar com Números Binários",
     "description": "São exibidas dez imagens com legendas em que o usuário deve traduzir para binário e converter em decimal.",
-    "introduction": "O sistema binário utiliza o zero e o um para representar se um cartão está virado para cima ou não. O '0' indica que os pontos do cartão estão escondidos, e o '1' significa que os pontos do cartão são visíveis.",
+    "introduction": "Nos níveis anteriores utilizamos cartões para representar o sistema binário, você recorda? O zero quando a carta estava virada para baixo e o 1 quando estava virada para cima. Perceba que os números binários são compostos também por uniões menores, ou seja, você pode retirar em ordem decrescentes as cartas para formar novas combinações. Neste nível você irá decifrar a combinação binária que está codificada, ah! lembre-se de converter para decimal para inserir sua resposta.",
     "showCards": false,
     "tips": "1. Pressione o cartão para virá-lo;2. A soma dos pontos dos cartões representam o número decimal;3. Os números binários é representado pela sequência de zeros e uns;4. Responda todas as perguntas corretamente para completar a tarefa.",
     "level": 3,
@@ -380,7 +380,7 @@
     "questions": [
       {
         "_id": "5ea7264d127b53001e9192e8",
-        "statement": "1. Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal. ",
+        "statement": "1. Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal e fique atento pois as luzes apagadas (os espaços em brancos) representam o bit 0 e as luzes acesas (os espaços com a árvore) representam o bit 1. ",
         "type": "NUMERIC",
         "level": 4,
         "numeric_answer": 1,
@@ -395,7 +395,7 @@
       },
       {
         "_id": "5ea7264d127b53001e9192ea",
-        "statement": "2. Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal. ",
+        "statement": "2. Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal e fique atento pois as luzes apagadas (os espaços em brancos) representam o bit 0 e as luzes acesas (os espaços com a árvore) representam o bit 1. ",
         "type": "NUMERIC",
         "level": 4,
         "numeric_answer": 10,
@@ -410,7 +410,7 @@
       },
       {
         "_id": "5ea7264d127b53001e9192ec",
-        "statement": "3. Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal. ",
+        "statement": "3. Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal e fique atento pois as luzes apagadas (os espaços em brancos) representam o bit 0 e as luzes acesas (os espaços com a árvore) representam o bit 1. ",
         "type": "NUMERIC",
         "level": 4,
         "numeric_answer": 21,
@@ -425,7 +425,7 @@
       },
       {
         "_id": "5ea7264d127b53001e9192ee",
-        "statement": "4. Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal. ",
+        "statement": "4. Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal e fique atento pois as luzes apagadas (os espaços em brancos) representam o bit 0 e as luzes acesas (os espaços com a árvore) representam o bit 1. ",
         "type": "NUMERIC",
         "level": 4,
         "numeric_answer": 4,
@@ -440,7 +440,7 @@
       },
       {
         "_id": "5ea7264e127b53001e9192f0",
-        "statement": "5. Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal. ",
+        "statement": "5. Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal e fique atento pois as luzes apagadas (os espaços em brancos) representam o bit 0 e as luzes acesas (os espaços com a árvore) representam o bit 1. ",
         "type": "NUMERIC",
         "level": 4,
         "numeric_answer": 5,
@@ -455,7 +455,7 @@
       },
       {
         "_id": "5ea7264e127b53001e9192f2",
-        "statement": "6. Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal. ",
+        "statement": "6. Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal e fique atento pois as luzes apagadas (os espaços em brancos) representam o bit 0 e as luzes acesas (os espaços com a árvore) representam o bit 1. ",
         "type": "NUMERIC",
         "level": 4,
         "numeric_answer": 5,
@@ -470,7 +470,7 @@
       },
       {
         "_id": "5ea7264e127b53001e9192f4",
-        "statement": "7. Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal. ",
+        "statement": "7. Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal e fique atento pois as luzes apagadas (os espaços em brancos) representam o bit 0 e as luzes acesas (os espaços com a árvore) representam o bit 1. ",
         "type": "NUMERIC",
         "level": 4,
         "numeric_answer": 19,
@@ -485,7 +485,7 @@
       },
       {
         "_id": "5ea7264f127b53001e9192f6",
-        "statement": "8. Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal. ",
+        "statement": "8. Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal e fique atento pois as luzes apagadas (os espaços em brancos) representam o bit 0 e as luzes acesas (os espaços com a árvore) representam o bit 1. ",
         "type": "NUMERIC",
         "level": 4,
         "numeric_answer": 20,
@@ -500,7 +500,7 @@
       },
       {
         "_id": "5ea7264f127b53001e9192f8",
-        "statement": "9. Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal. ",
+        "statement": "9. Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal e fique atento pois as luzes apagadas (os espaços em brancos) representam o bit 0 e as luzes acesas (os espaços com a árvore) representam o bit 1. ",
         "type": "NUMERIC",
         "level": 4,
         "numeric_answer": 15,
@@ -515,7 +515,7 @@
       },
       {
         "_id": "5ea7264f127b53001e9192fa",
-        "statement": "10. Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal. ",
+        "statement": "10. Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal e fique atento pois as luzes apagadas (os espaços em brancos) representam o bit 0 e as luzes acesas (os espaços com a árvore) representam o bit 1. ",
         "type": "NUMERIC",
         "level": 4,
         "numeric_answer": 21,
@@ -530,7 +530,7 @@
       },
       {
         "_id": "5ea72650127b53001e9192fc",
-        "statement": "11. Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal. ",
+        "statement": "11. Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal e fique atento pois as luzes apagadas (os espaços em brancos) representam o bit 0 e as luzes acesas (os espaços com a árvore) representam o bit 1. ",
         "type": "NUMERIC",
         "level": 4,
         "numeric_answer": 16,
@@ -545,7 +545,7 @@
       },
       {
         "_id": "5ea72650127b53001e9192fe",
-        "statement": "12. Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal. ",
+        "statement": "12. Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal e fique atento pois as luzes apagadas (os espaços em brancos) representam o bit 0 e as luzes acesas (os espaços com a árvore) representam o bit 1. ",
         "type": "NUMERIC",
         "level": 4,
         "numeric_answer": 18,
@@ -560,7 +560,7 @@
       },
       {
         "_id": "5ea72650127b53001e919300",
-        "statement": "13. Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal. ",
+        "statement": "13. Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal e fique atento pois as luzes apagadas (os espaços em brancos) representam o bit 0 e as luzes acesas (os espaços com a árvore) representam o bit 1. ",
         "type": "NUMERIC",
         "level": 4,
         "numeric_answer": 5,
@@ -575,7 +575,7 @@
       },
       {
         "_id": "5ea72650127b53001e919302",
-        "statement": "14. Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal. ",
+        "statement": "14. Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal e fique atento pois as luzes apagadas (os espaços em brancos) representam o bit 0 e as luzes acesas (os espaços com a árvore) representam o bit 1. ",
         "type": "NUMERIC",
         "level": 4,
         "numeric_answer": 19,
@@ -590,7 +590,7 @@
       },
       {
         "_id": "5ea72651127b53001e919304",
-        "statement": "15. Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal. ",
+        "statement": "15. Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal e fique atento pois as luzes apagadas (os espaços em brancos) representam o bit 0 e as luzes acesas (os espaços com a árvore) representam o bit 1. ",
         "type": "NUMERIC",
         "level": 4,
         "numeric_answer": 15,

@@ -1,7 +1,6 @@
 import React, {useState, useEffect, useLayoutEffect} from 'react';
-import {Text, View, Image, KeyboardAvoidingView, ScrollView} from 'react-native';
+import {Text, View, Image, KeyboardAvoidingView, Platform, ScrollView} from 'react-native';
 import {ProgressBar} from 'react-native-paper';
-
 import {MaterialCommunityIcons} from '@expo/vector-icons';
 import {useRoute} from '@react-navigation/native';
 
@@ -198,7 +197,10 @@ export default function Exercises({navigation}) {
         <KeyboardAvoidingView
           style={styles.halfViewKeyBoard}
           enabled
-          behavior="padding"
+          behavior={Platform.select({
+            ios: 'padding',
+            android: null,
+          })}
           keyboardVerticalOffset={-60}>
           {showAnswerOptions ? (
             chooseQuestionRender()
