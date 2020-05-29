@@ -1,7 +1,6 @@
 import React, {useState, useEffect, useLayoutEffect} from 'react';
-import {Text, View, Image, KeyboardAvoidingView, Platform} from 'react-native';
+import {Text, View, Image, KeyboardAvoidingView, Platform, ScrollView} from 'react-native';
 import {ProgressBar} from 'react-native-paper';
-
 import {MaterialCommunityIcons} from '@expo/vector-icons';
 import {useRoute} from '@react-navigation/native';
 
@@ -179,7 +178,7 @@ export default function Exercises({navigation}) {
   }
 
   return (
-    <View>
+    <ScrollView>
       <Tooltip
         step={step}
         content={exercise.tips}
@@ -214,6 +213,6 @@ export default function Exercises({navigation}) {
           )}
         </KeyboardAvoidingView>
       </View>
-    </View>
+    </ScrollView>
   );
 }
