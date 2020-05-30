@@ -1,6 +1,7 @@
 import React, {useState, useEffect, useLayoutEffect} from 'react';
 import {Text, View, Image, KeyboardAvoidingView, Platform, ScrollView} from 'react-native';
 import {ProgressBar} from 'react-native-paper';
+
 import {MaterialCommunityIcons} from '@expo/vector-icons';
 import {useRoute} from '@react-navigation/native';
 
@@ -178,7 +179,7 @@ export default function Exercises({navigation}) {
   }
 
   return (
-    <ScrollView>
+    <View>
       <Tooltip
         step={step}
         content={exercise.tips}
@@ -186,33 +187,35 @@ export default function Exercises({navigation}) {
         onCancel={handleTips}
       />
       <ProgressBar color={colors.colorSucess} progress={progress} />
-      <View style={styles.container}>
-        <View style={styles.halfView}>
-          <CustomBackground
-            style={styles.info}
-            content={viewOfContent()}
-            isLastPage={value => setShowAnswerOptions(value)}
-          />
+      <ScrollView>
+        <View style={styles.container}>
+          <View style={styles.halfView}>
+            <CustomBackground
+              style={styles.info}
+              content={viewOfContent()}
+              isLastPage={value => setShowAnswerOptions(value)}
+            />
+          </View>
+          <KeyboardAvoidingView
+            style={styles.halfViewKeyBoard}
+            enabled
+            behavior={Platform.select({
+              ios: 'padding',
+              android: null,
+            })}
+            keyboardVerticalOffset={-60}>
+            {showAnswerOptions ? (
+              chooseQuestionRender()
+            ) : (
+              <Text style={styles.defaultText}>
+                Leia atentamente cada questão para que possa responder o que é
+                solicitado em cada exercício. Arraste a carta para o lado e verá
+                as próximas instruções.
+              </Text>
+              )}
+          </KeyboardAvoidingView>
         </View>
-        <KeyboardAvoidingView
-          style={styles.halfViewKeyBoard}
-          enabled
-          behavior={Platform.select({
-            ios: 'padding',
-            android: null,
-          })}
-          keyboardVerticalOffset={-60}>
-          {showAnswerOptions ? (
-            chooseQuestionRender()
-          ) : (
-            <Text style={styles.defaultText}>
-              Leia atentamente cada questão para que possa responder o que é
-              solicitado em cada exercício. Arraste a carta para o lado e verá
-              as próximas instruções.
-            </Text>
-          )}
-        </KeyboardAvoidingView>
-      </View>
-    </ScrollView>
+      </ScrollView>
+    </View>
   );
 }
