@@ -11,8 +11,9 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   halfViewKeyBoard: {
-    height: metrics.screenHeight / 1.9,
+    flex: 1,
     justifyContent: 'center',
+    alignItems: 'center',
   },
   info: {
     marginTop: metrics.baseMargin,

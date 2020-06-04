@@ -26,17 +26,19 @@ const numeric = props => {
           value={numericAnswer}
         />
       </View>
-      <ChoiceButton
-        step={step}
-        text="Enviar"
-        correct={numericAnswerIsCorrect()}
-        onPress={() => {
-          setNumericAnswer('');
-          if (numericAnswerIsCorrect()) {
-            setSteps(step + 1);
-          }
-        }}
-      />
+      <View style={{flex: 1}}>
+        <ChoiceButton
+          step={step}
+          text="Enviar"
+          correct={numericAnswerIsCorrect()}
+          onPress={() => {
+            setNumericAnswer('');
+            if (numericAnswerIsCorrect()) {
+              setSteps(step + 1);
+            }
+          }}
+        />
+      </View>
     </View>
   );
 };

@@ -1,5 +1,12 @@
 import React, {useState, useEffect, useLayoutEffect} from 'react';
-import {Text, View, Image, KeyboardAvoidingView, Platform, ScrollView} from 'react-native';
+import {
+  Text,
+  View,
+  Image,
+  KeyboardAvoidingView,
+  Platform,
+  ScrollView,
+} from 'react-native';
 import {ProgressBar} from 'react-native-paper';
 
 import {MaterialCommunityIcons} from '@expo/vector-icons';
@@ -187,7 +194,7 @@ export default function Exercises({navigation}) {
         onCancel={handleTips}
       />
       <ProgressBar color={colors.colorSucess} progress={progress} />
-      <ScrollView>
+      <ScrollView showsVerticalScrollIndicator={false}>
         <View style={styles.container}>
           <View style={styles.halfView}>
             <CustomBackground
@@ -203,7 +210,7 @@ export default function Exercises({navigation}) {
               ios: 'padding',
               android: null,
             })}
-            keyboardVerticalOffset={-60}>
+            keyboardVerticalOffset={-145}>
             {showAnswerOptions ? (
               chooseQuestionRender()
             ) : (
@@ -212,7 +219,7 @@ export default function Exercises({navigation}) {
                 solicitado em cada exercício. Arraste a carta para o lado e verá
                 as próximas instruções.
               </Text>
-              )}
+            )}
           </KeyboardAvoidingView>
         </View>
       </ScrollView>

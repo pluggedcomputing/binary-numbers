@@ -32,17 +32,19 @@ const shortAnswer = props => {
           value={answer}
         />
       </View>
-      <ChoiceButton
-        step={step}
-        text="Enviar"
-        correct={textAnswerIsCorrect()}
-        onPress={() => {
-          if (textAnswerIsCorrect()) {
-            setSteps(step + 1);
-          }
-          setAnswer('');
-        }}
-      />
+      <View style={{flex: 1}}>
+        <ChoiceButton
+          step={step}
+          text="Enviar"
+          correct={textAnswerIsCorrect()}
+          onPress={() => {
+            if (textAnswerIsCorrect()) {
+              setSteps(step + 1);
+            }
+            setAnswer('');
+          }}
+        />
+      </View>
     </View>
   );
 };

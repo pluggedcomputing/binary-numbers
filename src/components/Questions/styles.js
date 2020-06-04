@@ -1,7 +1,5 @@
 import {StyleSheet} from 'react-native';
 
-import {metrics} from '../../styles';
-
 const styles = StyleSheet.create({
   trueOrFalseButtons: {
     height: '50%',
@@ -28,11 +26,11 @@ const styles = StyleSheet.create({
   },
   descriptive: {
     flex: 1,
-    justifyContent: 'center',
+    justifyContent: 'space-between',
     alignItems: 'center',
   },
   subDescriptive: {
-    height: metrics.screenHeight * 0.25,
+    flex: 1,
   },
 });
 export default styles;
