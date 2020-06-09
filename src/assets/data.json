@@ -113,8 +113,8 @@
       {
         "text": "Quando os pontos são exibidos, o cartão é representado por um. Este é o sistema numérico binário. Inicialmente os cartões ao lado representam o número 9 (Soma dos pontos das cartas) e a sua conversão em binário 01001 (Parte inferior da carta).",
         "image": {
-          "name": "l3q1-1588012617750.png",
-          "url": "l3q1"
+          "name": null,
+          "url": null
         }
       }
     ],
@@ -226,8 +226,8 @@
       {
         "text": "Estas atividades ensinarão como enviar mensagens secretas aos seus amigos usando exatamente o mesmo método que um computador.",
         "image": {
-          "name": "l3q2-1588012618187.png",
-          "url": "l3q2"
+          "name": null,
+          "url": null
         }
       }
     ],
@@ -398,17 +398,17 @@
     "description": "São exibidas dez imagens com legendas em que o usuário deve traduzir para binário e converter em decimal.",
     "introduction": [
       {
-        "text": "Nos níveis anteriores utilizamos cartões para representar o sistema binário, você recorda? O zero quando a carta estava virada para baixo e o 1 quando estava virada para cima.",
+        "text": "Nos níveis anteriores utilizamos cartões para representar o sistema binário, você recorda? O zero quando a carta estava virada para baixo e o 1 quando estava virada para cima. Perceba que os números binários são compostos também por uniões menores, ou seja,",
         "image": {
           "name": null,
           "url": null
         }
       },
       {
-        "text": "Perceba que os números binários são compostos também por uniões menores, ou seja, você pode retirar em ordem decrescentes as cartas para formar novas combinações. Neste nível você irá decifrar a combinação binária que está codificada, ah! lembre-se de converter para decimal para inserir sua resposta.",
+        "text": "você pode retirar em ordem decrescentes as cartas para formar novas combinações. Neste nível você irá decifrar a combinação binária que está codificada, ah! lembre-se de converter para decimal para inserir sua resposta.",
         "image": {
-          "name": "l3q3-1588012618505.png",
-          "url": "l3q3"
+          "name": null,
+          "url": null
         }
       }
     ],
@@ -730,14 +730,14 @@
     "description": "O usuário envia uma mensagem que é rapidamente respondida em binário. O usuário deve converter corretamente a mensagem de resposta para finalizar o exercício.",
     "introduction": [
       {
-        "text": "Os computadores conectados à Internet através de um equipamento conhecido por modem também utilizam o sistema binário para enviar mensagens. A única diferença é que eles usam um sinal sonoro ou bip. Um bip agudo é utilizado para o um e um bip grave é utilizado para o zero.",
+        "text": "Os computadores conectados à Internet através de um equipamento conhecido por modem também utilizam o sistema binário para enviar mensagens. A única diferença é que eles usam um sinal sonoro ou bip.",
         "image": {
           "name": null,
           "url": null
         }
       },
       {
-        "text": "Estes sinais são transmitidos rapidamente. Tão rápido, na verdade, que apenas ouvimos um horrível zumbido contínuo. Se você nunca o ouviu, ouça um modem conectar-se à Internet.",
+        "text": "Um bip agudo é utilizado para o um e um bip grave é utilizado para o zero. Estes sinais são transmitidos rapidamente. Tão rápido, na verdade, que apenas ouvimos um horrível zumbido contínuo. Se você nunca o ouviu, ouça um modem conectar-se à Internet.",
         "image": {
           "name": null,
           "url": null
@@ -861,15 +861,15 @@
       {
         "text": "Você já colocou todos os seus dedos para trabalhar? Pois agora eles podem contar e ir muito além do número dez. Não, você não precisa ser de outro planeta! Se utilizar o sistema binário e deixar que cada dedo de uma mão retrate um dos cartões com pontos, então pode contar de 0 a 31.",
         "image": {
-          "name": "l3q4-1588012618809.png",
-          "url": "l3q4"
+          "name": null,
+          "url": null
         }
       },
       {
         "text": "Ao total, temos 32 números. (Não se esqueça, zero também é um número!). Se o dedo estiver para cima, é um, e, se estiver para baixo, é zero. Você pode contar de 0 a 1023 se usar as duas mãos! São 1024 números!",
         "image": {
-          "name": "l3q4-1588012618809.png",
-          "url": "l3q4"
+          "name": null,
+          "url": null
         }
       }
     ],
