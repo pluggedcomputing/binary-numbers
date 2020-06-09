@@ -102,7 +102,22 @@
     "_id": "5ea72655127b53001e919336",
     "title": "Introdução",
     "description": "Antes de iniciar a atividade, pode ser útil demonstrar os fundamentos ao grupo. Para esta atividade, são necessários cinco cartões, com pontos marcados de um lado e nada sobre o verso.",
-    "introduction": "Sendo o sistema binário representado pelos números 0 e 1, podemos usar estes cartões ao lado para simbolizá-los. Quando um cartão está com a face para baixo, sem mostrar os pontos, este cartão é representado por um zero. Quando os pontos são exibidos, o cartão é representado por um. Este é o sistema numérico binário. Inicialmente os cartões ao lado representam o número 9 (Soma dos pontos das cartas) e a sua conversão em binário 01001 (Parte inferior da carta).",
+    "introduction": [
+      {
+        "text": "Sendo o sistema binário representado pelos números 0 e 1, podemos usar estes cartões ao lado para simbolizá-los. Quando um cartão está com a face para baixo, sem mostrar os pontos, este cartão é representado por um zero.",
+        "image": {
+          "name": null,
+          "url": null
+        }
+      },
+      {
+        "text": "Quando os pontos são exibidos, o cartão é representado por um. Este é o sistema numérico binário. Inicialmente os cartões ao lado representam o número 9 (Soma dos pontos das cartas) e a sua conversão em binário 01001 (Parte inferior da carta).",
+        "image": {
+          "name": "l3q1-1588012617750.png",
+          "url": "l3q1"
+        }
+      }
+    ],
     "showCards": true,
     "tips": "1. Pressione o cartão para virá-lo;2. A soma dos pontos dos cartões representam o número decimal;3. Os números binários é representado pela sequência de zeros e uns;4. Responda todas as perguntas corretamente para completar a tarefa.",
     "level": 1,
@@ -200,7 +215,22 @@
     "_id": "5ea72656127b53001e919337",
     "title": "Números Binários",
     "description": "Antes de iniciar a atividade, pode ser útil demonstrar os fundamentos ao grupo. Para esta atividade, são necessários cinco cartões, com pontos marcados de um lado e nada sobre o verso.",
-    "introduction": "Então, você achava que sabia contar? Bem, aqui está uma nova forma de fazer isso!  Sabia que os computadores utilizam apenas zeros e uns? Tudo o que você vê ou ouve no computador - palavras, imagens, números, filmes e até mesmo o som - são armazenados usando apenas estes dois numerais! Estas atividades ensinarão como enviar mensagens secretas aos seus amigos usando exatamente o mesmo método que um computador.",
+    "introduction": [
+      {
+        "text": "Então, você achava que sabia contar? Bem, aqui está uma nova forma de fazer isso!  Sabia que os computadores utilizam apenas zeros e uns? Tudo o que você vê ou ouve no computador - palavras, imagens, números, filmes e até mesmo o som - são armazenados usando apenas estes dois numerais!",
+        "image": {
+          "name": null,
+          "url": null
+        }
+      },
+      {
+        "text": "Estas atividades ensinarão como enviar mensagens secretas aos seus amigos usando exatamente o mesmo método que um computador.",
+        "image": {
+          "name": "l3q2-1588012618187.png",
+          "url": "l3q2"
+        }
+      }
+    ],
     "showCards": true,
     "tips": "1. Pressione o cartão para virá-lo;2. A soma dos pontos dos cartões representam o número decimal;3. Os números binários é representado pela sequência de zeros e uns;4. Responda todas as perguntas corretamente para completar a tarefa.",
     "level": 2,
@@ -366,7 +396,22 @@
     "_id": "5ea72656127b53001e919342",
     "title": "Trabalhar com Números Binários",
     "description": "São exibidas dez imagens com legendas em que o usuário deve traduzir para binário e converter em decimal.",
-    "introduction": "Nos níveis anteriores utilizamos cartões para representar o sistema binário, você recorda? O zero quando a carta estava virada para baixo e o 1 quando estava virada para cima. Perceba que os números binários são compostos também por uniões menores, ou seja, você pode retirar em ordem decrescentes as cartas para formar novas combinações. Neste nível você irá decifrar a combinação binária que está codificada, ah! lembre-se de converter para decimal para inserir sua resposta.",
+    "introduction": [
+      {
+        "text": "Nos níveis anteriores utilizamos cartões para representar o sistema binário, você recorda? O zero quando a carta estava virada para baixo e o 1 quando estava virada para cima.",
+        "image": {
+          "name": null,
+          "url": null
+        }
+      },
+      {
+        "text": "Perceba que os números binários são compostos também por uniões menores, ou seja, você pode retirar em ordem decrescentes as cartas para formar novas combinações. Neste nível você irá decifrar a combinação binária que está codificada, ah! lembre-se de converter para decimal para inserir sua resposta.",
+        "image": {
+          "name": "l3q3-1588012618505.png",
+          "url": "l3q3"
+        }
+      }
+    ],
     "showCards": false,
     "tips": "1. Pressione o cartão para virá-lo;2. A soma dos pontos dos cartões representam o número decimal;3. Os números binários é representado pela sequência de zeros e uns;4. Responda todas as perguntas corretamente para completar a tarefa.",
     "level": 3,
@@ -622,7 +667,22 @@
     "_id": "5ea72656127b53001e919353",
     "title": "Enviar Mensagens Secretas",
     "description": "É apresentado um enredo em que um personagem chamado Tom tenta enviar uma mensagem utilizando um código binário. O usuário deve converter todos os números para decifrar a mensagem enviada.",
-    "introduction": "Tom está preso no último andar de uma loja. É noite de Natal e ele quer ir para casa. O que ele pode fazer? Ele tentou chamar alguém, até mesmo gritar, mas não funcionou. Do outro lado da rua ele pode ver uma pessoa ainda trabalhando até tarde da noite. Tom olha em volta para ver o que poderia usar. Então, ele tem uma brilhante idéia: utilizar as lâmpadas da árvore de Natal para enviar uma mensagem! Ele coletou todas as lâmpadas disponíveis e as conectou aos bocais de forma que pudesse acendê-las ou apagá-las.",
+    "introduction": [
+      {
+        "text": "Tom está preso no último andar de uma loja. É noite de Natal e ele quer ir para casa. O que ele pode fazer? Ele tentou chamar alguém, até mesmo gritar, mas não funcionou. Do outro lado da rua ele pode ver uma pessoa ainda trabalhando até tarde da noite.",
+        "image": {
+          "name": null,
+          "url": null
+        }
+      },
+      {
+        "text": "Tom olha em volta para ver o que poderia usar. Então, ele tem uma brilhante idéia: utilizar as lâmpadas da árvore de Natal para enviar uma mensagem! Ele coletou todas as lâmpadas disponíveis e as conectou aos bocais de forma que pudesse acendê-las ou apagá-las.",
+        "image": {
+          "name": null,
+          "url": null
+        }
+      }
+    ],
     "showCards": false,
     "tips": "1. Os campos devem ser preenchidos com valores decimais;2. Decifre todos os numeros e ao final traduza a mensagem;3. Responda todas as perguntas corretamente para completar a tarefa.",
     "level": 4,
@@ -668,7 +728,22 @@
     "_id": "5ea72656127b53001e919356",
     "title": "Correio Eletrônico e Modems",
     "description": "O usuário envia uma mensagem que é rapidamente respondida em binário. O usuário deve converter corretamente a mensagem de resposta para finalizar o exercício.",
-    "introduction": "Os computadores conectados à Internet através de um equipamento conhecido por modem também utilizam o sistema binário para enviar mensagens. A única diferença é que eles usam um sinal sonoro ou bip. Um bip agudo é utilizado para o um e um bip grave é utilizado para o zero. Estes sinais são transmitidos rapidamente. Tão rápido, na verdade, que apenas ouvimos um horrível zumbido contínuo. Se você nunca o ouviu, ouça um modem conectar-se à Internet.",
+    "introduction": [
+      {
+        "text": "Os computadores conectados à Internet através de um equipamento conhecido por modem também utilizam o sistema binário para enviar mensagens. A única diferença é que eles usam um sinal sonoro ou bip. Um bip agudo é utilizado para o um e um bip grave é utilizado para o zero.",
+        "image": {
+          "name": null,
+          "url": null
+        }
+      },
+      {
+        "text": "Estes sinais são transmitidos rapidamente. Tão rápido, na verdade, que apenas ouvimos um horrível zumbido contínuo. Se você nunca o ouviu, ouça um modem conectar-se à Internet.",
+        "image": {
+          "name": null,
+          "url": null
+        }
+      }
+    ],
     "showCards": false,
     "tips": "1. Digite o seu nome e clique em enviar;2. Decifre a mensagem enviada pelo seu amigo;3. Não esqueça da virgula;",
     "level": 5,
@@ -782,7 +857,22 @@
     "_id": "5ea72657127b53001e919358",
     "title": "Contar acima de 31",
     "description": "Três questões de múltipla escolha com um nível mais elevado de complexidade, onde o usuário é desafiado a contar além do máximo possível com os cartões.",
-    "introduction": "Você já colocou todos os seus dedos para trabalhar? Pois agora eles podem contar e ir muito além do número dez. Não, você não precisa ser de outro planeta! Se utilizar o sistema binário e deixar que cada dedo de uma mão retrate um dos cartões com pontos, então pode contar de 0 a 31. Ao total, temos 32 números. (Não se esqueça, zero também é um número!). Se o dedo estiver para cima, é um, e, se estiver para baixo, é zero. Você pode contar de 0 a 1023 se usar as duas mãos! São 1024 números!",
+    "introduction": [
+      {
+        "text": "Você já colocou todos os seus dedos para trabalhar? Pois agora eles podem contar e ir muito além do número dez. Não, você não precisa ser de outro planeta! Se utilizar o sistema binário e deixar que cada dedo de uma mão retrate um dos cartões com pontos, então pode contar de 0 a 31.",
+        "image": {
+          "name": "l3q4-1588012618809.png",
+          "url": "l3q4"
+        }
+      },
+      {
+        "text": "Ao total, temos 32 números. (Não se esqueça, zero também é um número!). Se o dedo estiver para cima, é um, e, se estiver para baixo, é zero. Você pode contar de 0 a 1023 se usar as duas mãos! São 1024 números!",
+        "image": {
+          "name": "l3q4-1588012618809.png",
+          "url": "l3q4"
+        }
+      }
+    ],
     "showCards": false,
     "tips": "1. Não esqueça a sequencia dos cartões 16, 8, 4, 2, 1...;2. Responda todas as perguntas corretamente para completar a tarefa.",
     "level": 6,
@@ -901,7 +991,15 @@
     "_id": "5ea72657127b53001e91935b",
     "title": "Mais Sobre Números Binários",
     "description": "Três questões de múltipla escolha abordando outros conceitos da matemática e da relação binário-decimal.",
-    "introduction": "Outra situação interessante dos números binários acontece quando um zero é colocado ao lado direito de um número. Se estivermos trabalhando na base 10 (decimal), ao colocarmos um zero ao lado direito de um número, este é multiplicado por 10. Por exemplo, 9 torna-se 90, 30 torna-se 300.",
+    "introduction": [
+      {
+        "text": "Outra situação interessante dos números binários acontece quando um zero é colocado ao lado direito de um número. Se estivermos trabalhando na base 10 (decimal), ao colocarmos um zero ao lado direito de um número, este é multiplicado por 10. Por exemplo, 9 torna-se 90, 30 torna-se 300.",
+        "image": {
+          "name": null,
+          "url": null
+        }
+      }
+    ],
     "showCards": false,
     "tips": "1. Responda todas as perguntas corretamente para completar a tarefa.",
     "level": 7,
@@ -982,7 +1080,15 @@
     "_id": "5ea72657127b53001e919360",
     "title": "De que se trata tudo isso",
     "description": "Não possui nenhum exercício, apresenta apenas uma explicação mais detalhada sobre números binários e sua importância.",
-    "introduction": "Dados são a matéria-prima, os números com os quais os computadores trabalham. Um computador transforma seus dados em informações (palavras, números e fotos) que podemos compreender.",
+    "introduction": [
+      {
+        "text": "Dados são a matéria-prima, os números com os quais os computadores trabalham. Um computador transforma seus dados em informações (palavras, números e fotos) que podemos compreender.",
+        "image": {
+          "name": null,
+          "url": null
+        }
+      }
+    ],
     "showCards": false,
     "tips": "1. Leia com atenção toda a explicação",
     "level": 8,
