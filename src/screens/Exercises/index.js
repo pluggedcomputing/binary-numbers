@@ -51,6 +51,7 @@ export default function Exercises({navigation}) {
     l3q9: require('../../assets/images/level3/l3q9.png'),
     l3q10: require('../../assets/images/level3/l3q10.png'),
 
+    l4q00: require('../../assets/images/level4/l4q00.png'),
     l4q1: require('../../assets/images/level4/l4q1.png'),
     l4q2: require('../../assets/images/level4/l4q2.png'),
     l4q3_10: require('../../assets/images/level4/l4q3-10.png'),
@@ -103,36 +104,38 @@ export default function Exercises({navigation}) {
     }
   }, [step]);
 
-  const viewOfContent = () => {
-    const content = [
-      <Text style={styles.contentText}>{exercise.introduction}</Text>,
-    ];
-
-    let statementPage;
-
-    if (question.image) {
-      statementPage = (
-        <View style={styles.statementImageConteiner}>
-          <Text style={styles.contentText}>{question.statement}</Text>
-          <Image
-            style={styles.statementImage}
-            source={getImagens(question.image.url)}
-          />
-        </View>
-      );
-    } else if (exercise.showCards) {
-      statementPage = (
-        <View style={styles.statementConteiner}>
-          <Text style={styles.contentText}>{question.statement}</Text>
-          <CardGroup />
-        </View>
-      );
-    } else {
-      statementPage = (
-        <Text style={styles.contentText}>{question.statement}</Text>
-      );
+  const showImage = url => {
+    if (url) {
+      return <Image style={styles.statementImage} source={getImagens(url)} />;
     }
-    content.push(statementPage);
+    return null;
+  };
+
+  const showImageOurCardGroup = () => {
+    if (question.image) {
+      return showImage(question.image.url);
+    }
+    if (exercise.showCards) {
+      return <CardGroup />;
+    }
+    return null;
+  };
+
+  const viewOfContent = () => {
+    const content = exercise.introduction.map(item => (      
+      <View style={styles.statementImageConteiner}>
+        <Text style={styles.contentText}>{item.text}</Text>
+        {showImage(item.image.url)}
+      </View>
+    ));
+
+    content.push(
+      <View style={styles.statementImageConteiner}>
+        <Text style={styles.contentText}>{question.statement}</Text>
+        {showImageOurCardGroup()}
+      </View>,
+    );
+
     return content;
   };
 
