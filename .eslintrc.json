@@ -1,0 +1,39 @@
+{
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true,
+    "jest": true
+  },
+  "plugins": [
+    "react",
+    "jsx-a11y",
+    "import",
+    "prettier",
+    "eslint-plugin-import-helpers"
+  ],
+  "extends": ["airbnb", "prettier"],
+  "rules": {
+    "import-helpers/order-imports": [
+      "warn",
+      {
+        "newlinesBetween": "always", // new line between groups
+        "groups": ["/^react/", "module", ["parent", "sibling", "index"]],
+        "alphabetize": {"order": "asc", "ignoreCase": true}
+      }
+    ],
+    "react/jsx-filename-extension": [
+      "error",
+      {
+        "extensions": [".js", ".jsx"]
+      }
+    ],
+    "global-require": "off",
+    "import/prefer-default-export": "off",
+    "no-unused-expressions": ["error", {"allowTaggedTemplates": true}],
+    "no-use-before-define": ["error", {"variables": false}],
+    "react/jsx-closing-bracket-location": 0,
+    "react/jsx-one-expression-per-line": 0,
+    "react/jsx-props-no-spreading": 0,
+    "react/prop-types": ["error", {"ignore": ["navigation"]}]
+  }
+}

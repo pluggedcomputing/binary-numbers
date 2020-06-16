@@ -1,8 +1,5 @@
 # Merge Request
 
-**Id da Issue:** [000]  
-**Link da Issue:** <htts://linkdaissue.com>
-
 ### Tipo
 * [ ]  ~feature
 * [ ]  ~bugfix 
@@ -12,3 +9,5 @@
 
 ### Changelog
 > Descrevas suas alterações em formato de lista não ordenada.
+
+Closes <issueId>

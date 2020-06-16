@@ -1,37 +1,81 @@
 {
-  "name": "pluggedComputingBinaryNumbers",
-  "version": "0.0.1",
+  "main": "node_modules/expo/AppEntry.js",
+  "name": "plugged-computing-binary-numbers",
+  "version": "0.0.1-develop.4",
   "private": true,
   "scripts": {
-    "android": "react-native run-android",
-    "ios": "react-native run-ios",
-    "start": "react-native start",
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "eject": "expo eject",
     "test": "jest",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "release": "standard-version",
+    "pre-release": "standard-version --prerelease develop"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "post-checkout": "yarn install"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix"
+    ]
   },
   "dependencies": {
-    "react": "16.9.0",
-    "react-native": "0.61.5"
+    "@expo/vector-icons": "^10.0.6",
+    "@react-native-community/masked-view": "0.1.5",
+    "@react-navigation/native": "^5.1.5",
+    "@react-navigation/stack": "^5.2.13",
+    "expo": "~36.0.0",
+    "expo-constants": "~8.0.0",
+    "expo-font": "~8.0.0",
+    "expo-linear-gradient": "~8.0.0",
+    "lottie-react-native": "~2.6.1",
+    "prop-types": "^15.7.2",
+    "react": "~16.9.0",
+    "react-dom": "~16.9.0",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-36.0.0.tar.gz",
+    "react-native-elements": "^1.2.7",
+    "react-native-gesture-handler": "~1.5.0",
+    "react-native-global-props": "^1.1.5",
+    "react-native-paper": "^3.5.0",
+    "react-native-reanimated": "~1.4.0",
+    "react-native-safe-area-context": "0.6.0",
+    "react-native-screens": "2.0.0-alpha.12",
+    "react-native-table-component": "^1.2.1",
+    "react-native-vector-icons": "^6.6.0",
+    "react-native-web": "~0.11.7",
+    "react-navigation": "^4.0.10",
+    "react-navigation-stack": "^1.10.3"
   },
   "devDependencies": {
-    "@babel/core": "^7.7.4",
+    "@babel/core": "^7.0.0",
     "@babel/runtime": "^7.7.4",
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
     "@react-native-community/eslint-config": "^0.0.5",
     "babel-jest": "^24.9.0",
-    "eslint": "6.1.0",
+    "babel-preset-expo": "~8.0.0",
+    "eslint": "^6.8.0",
     "eslint-config-airbnb": "18.0.1",
-    "eslint-config-prettier": "^6.7.0",
-    "eslint-plugin-import": "2.18.2",
-    "eslint-plugin-jsx-a11y": "6.2.3",
-    "eslint-plugin-prettier": "^3.1.1",
-    "eslint-plugin-react": "7.14.3",
-    "eslint-plugin-react-hooks": "1.7.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-import-helpers": "^1.0.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "husky": "^4.2.1",
     "jest": "^24.9.0",
+    "lint-staged": "^10.0.2",
     "metro-react-native-babel-preset": "^0.57.0",
     "prettier": "^1.19.1",
-    "react-test-renderer": "16.9.0"
-  },
-  "jest": {
-    "preset": "react-native"
+    "react-test-renderer": "16.9.0",
+    "standard-version": "^7.1.0"
   }
 }
