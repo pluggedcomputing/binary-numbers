@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import {ScrollView, Image, StatusBar, KeyboardAvoidingView} from 'react-native';
-
-import {LinearGradient} from 'expo-linear-gradient';
+import LinearGradient from 'react-native-linear-gradient';
 
 import image from '../../assets/images/logo_grey.png';
 import SlidingSwitch from '../../components/SlidingSwitch';
