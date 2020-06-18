@@ -8,8 +8,8 @@ import {
   ScrollView,
 } from 'react-native';
 import {ProgressBar} from 'react-native-paper';
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
-import {MaterialCommunityIcons} from '@expo/vector-icons';
 import {useRoute} from '@react-navigation/native';
 
 import CardGroup from '../../components/CardGroup';
@@ -86,7 +86,7 @@ export default function Exercises({navigation}) {
     navigation.setOptions({
       title: response.title,
       headerRight: () => (
-        <MaterialCommunityIcons
+        <Icon
           name="lightbulb-on-outline"
           size={general.iconSize.bigger}
           style={styles.icon}
@@ -122,7 +122,7 @@ export default function Exercises({navigation}) {
   };
 
   const viewOfContent = () => {
-    const content = exercise.introduction.map(item => (      
+    const content = exercise.introduction.map(item => (
       <View style={styles.statementImageConteiner}>
         <Text style={styles.contentText}>{item.text}</Text>
         {showImage(item.image.url)}
