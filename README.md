@@ -43,7 +43,7 @@ Para mais informações, acesse: https://pluggedcomputing.gitlab.io/post/2020012
 
 ## 6: No terminal na raiz do projeto execute `echo "module.exports = {extends: ['@commitlint/config-conventional']}" > commitlint.config.js`
 
-## 7: No arquivo `package.sjon` faça as seguintes alterações, depois execute o comando `npm install`:
+## 7: No arquivo `package.json` faça as seguintes alterações, depois execute o comando `npm install`:
 
 - substiuição
 
