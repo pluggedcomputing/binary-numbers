@@ -39,11 +39,9 @@ Para mais informações, acesse: https://pluggedcomputing.gitlab.io/post/2020012
 
 ## 4: Execute o comando npm install para baixar as dependências
 
-## 5: Instalar dependência para o commitlint com `npm install -g @commitlint/cli @commitlint/config-conventional`
+## 5: Copiar o arquivo `commitlint.config.js` do projeto anterior para o novo projeto.
 
-## 6: No terminal na raiz do projeto execute `echo "module.exports = {extends: ['@commitlint/config-conventional']}" > commitlint.config.js`
-
-## 7: No arquivo `package.json` faça as seguintes alterações, depois execute o comando `npm install`:
+## 6: No arquivo `package.json` faça as seguintes alterações, depois execute o comando `npm install`:
 
 - substiuição
 
@@ -68,7 +66,7 @@ Para mais informações, acesse: https://pluggedcomputing.gitlab.io/post/2020012
 
   - "@react-native-community/async-storage": "^1.11.0"
 
-## 8: No arquivo `App.js` copie e cole o codigo abaixo:
+## 7: No arquivo `App.js` copie e cole o codigo abaixo:
 
     import React from 'react';
 
@@ -94,15 +92,15 @@ Para mais informações, acesse: https://pluggedcomputing.gitlab.io/post/2020012
 
     export default App;
 
-## 9: No `index.js` dos componentes `LoginOrRegister` e `ScreenAbout` faça:
+## 8: No `index.js` dos componentes `LoginOrRegister` e `ScreenAbout` faça:
 
 - import {LinearGradient} from 'expo-linear-gradient' -> import LinearGradient from 'react-native-linear-gradient'
 
-## 10: No `index.js` dos componentes `Congratulations` e `LevelSelection` faça:
+## 9: No `index.js` dos componentes `Congratulations` e `LevelSelection` faça:
 
 - import {..., AsyncStorage, ...} -> import AsyncStorage from '@react-native-community/async-storage'
 
-## 11: No `index.js` do componete `Exercises` faça:
+## 10: No `index.js` do componete `Exercises` faça:
 
 - impot {MaterialCommunityIcons} from '@expo/vector-icons' -> import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
 
@@ -126,9 +124,9 @@ Para mais informações, acesse: https://pluggedcomputing.gitlab.io/post/2020012
 
 - No terminal execute o comando `yarn add react-native-vector-icons`
 
-## 12: Instalar dependência babel present-env com o comando `npm install --save-dev @babel/preset-env`
+## 11: Instalar dependência babel present-env com o comando `npm install --save-dev @babel/preset-env`
 
-## 13: Adicionar configuração para Fonts faça:
+## 12: Adicionar configuração para Fonts faça:
 
 - No terminal na raiz do projeto execute `echo "module.exports = {assets: ['./assets/fonts/Poppins'],};" > react-native.config.js`
 
@@ -136,9 +134,9 @@ Para mais informações, acesse: https://pluggedcomputing.gitlab.io/post/2020012
 
 * Execute o seguinte codigo no terminal `react-native link`
 
-## 14: Mudar versão minima do android, na pasta `android` no arquivo `build.gragle` mude minSdkVersion para 19
+## 13: Mudar versão minima do android, na pasta `android` no arquivo `build.gragle` mude minSdkVersion para 19
 
-## 15: Para o ReactNative funcionar na versão 19 do android, faça os seguintes paços:
+## 14: Para o ReactNative funcionar na versão 19 do android, faça os seguintes paços:
 
 1. Abra o Android Studio va em `File` -> `open` -> `va até a pasta do prejeto` e depois selecione a pasta `android`
 
@@ -153,9 +151,9 @@ Para mais informações, acesse: https://pluggedcomputing.gitlab.io/post/2020012
   implementation 'com.squareup.okhttp3:logging-interceptor:3.12.12'
 ```
 
-## 16: Rodar o projeto com o comando `npx react-native run-android`
+## 15: Rodar o projeto com o comando `npx react-native run-android`
 
-## 17: Caso ocorra o erro da imagem a baixo, execute o comando `npx react-native start`
+## 16: Caso ocorra o erro da imagem a baixo, execute o comando `npx react-native start`
 
 ![Image erro run android](src/assets/images/erro_run_android.jpeg)
 
