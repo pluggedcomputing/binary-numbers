@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/PluggedComputingBinaryNumbersCli.iml" filepath="$PROJECT_DIR$/.idea/modules/PluggedComputingBinaryNumbersCli.iml" group="PluggedComputingBinaryNumbersCli" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="PluggedComputingBinaryNumbersCli/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1459212635/lottie-react-native.iml" filepath="$PROJECT_DIR$/.idea/modules/1459212635/lottie-react-native.iml" group="PluggedComputingBinaryNumbersCli/lottie-react-native" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/759548367/react-native-community_async-storage.iml" filepath="$PROJECT_DIR$/.idea/modules/759548367/react-native-community_async-storage.iml" group="PluggedComputingBinaryNumbersCli/react-native-community_async-storage" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1211543412/react-native-community_masked-view.iml" filepath="$PROJECT_DIR$/.idea/modules/-1211543412/react-native-community_masked-view.iml" group="PluggedComputingBinaryNumbersCli/react-native-community_masked-view" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1870313931/react-native-gesture-handler.iml" filepath="$PROJECT_DIR$/.idea/modules/1870313931/react-native-gesture-handler.iml" group="PluggedComputingBinaryNumbersCli/react-native-gesture-handler" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1804702243/react-native-linear-gradient.iml" filepath="$PROJECT_DIR$/.idea/modules/-1804702243/react-native-linear-gradient.iml" group="PluggedComputingBinaryNumbersCli/react-native-linear-gradient" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/575254897/react-native-reanimated.iml" filepath="$PROJECT_DIR$/.idea/modules/575254897/react-native-reanimated.iml" group="PluggedComputingBinaryNumbersCli/react-native-reanimated" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1568240780/react-native-safe-area-context.iml" filepath="$PROJECT_DIR$/.idea/modules/-1568240780/react-native-safe-area-context.iml" group="PluggedComputingBinaryNumbersCli/react-native-safe-area-context" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-748688244/react-native-screens.iml" filepath="$PROJECT_DIR$/.idea/modules/-748688244/react-native-screens.iml" group="PluggedComputingBinaryNumbersCli/react-native-screens" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1461430763/react-native-vector-icons.iml" filepath="$PROJECT_DIR$/.idea/modules/1461430763/react-native-vector-icons.iml" group="PluggedComputingBinaryNumbersCli/react-native-vector-icons" />
+    </modules>
+  </component>
+</project>

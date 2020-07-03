@@ -1,17 +1,3 @@
-node_modules/**/*
-.expo/*
-npm-debug.*
-*.jks
-*.p8
-*.p12
-*.key
-*.mobileprovision
-*.orig.*
-web-build/
-web-report/
-
-# macOS
-.DS_Store
 
 # Created by https://www.toptal.com/developers/gitignore/api/reactnative
 # Edit at https://www.toptal.com/developers/gitignore?templates=reactnative
@@ -311,8 +297,3 @@ Temporary Items
 .apdisk
 
 # End of https://www.toptal.com/developers/gitignore/api/reactnative
-
-# Outros
-yarn.error
-yarn.lock
-package-lock.json

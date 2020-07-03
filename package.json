@@ -24,6 +24,7 @@
   "dependencies": {
     "@react-native-community/async-storage": "^1.11.0",
     "@react-native-community/masked-view": "0.1.5",
+    "@react-native-community/toolbar-android": "^0.1.0-rc.2",
     "@react-navigation/native": "^5.1.5",
     "@react-navigation/stack": "^5.2.13",
     "lottie-ios": "3.1.3",
