@@ -1,12 +1,7 @@
 import React, {useState} from 'react';
-import {
-  View,
-  SafeAreaView,
-  ScrollView,
-  AsyncStorage,
-  Alert,
-} from 'react-native';
+import {View, SafeAreaView, ScrollView, Alert} from 'react-native';
 
+import AsyncStorage from '@react-native-community/async-storage';
 import {useFocusEffect} from '@react-navigation/native';
 
 import data from '../../assets/data.json';
@@ -74,7 +69,7 @@ function LevelSelection({navigation}) {
           <CardLevel
             level="2"
             image={level2}
-            available
+            available={levelsAvailable.level2}
             onPress={() => navigation.navigate('Exercises', {data: data[1]})}
           />
         </View>
@@ -82,13 +77,13 @@ function LevelSelection({navigation}) {
           <CardLevel
             level="3"
             image={level3}
-            available
+            available={levelsAvailable.level3}
             onPress={() => navigation.navigate('Exercises', {data: data[2]})}
           />
           <CardLevel
             level="4"
             image={level4}
-            available
+            available={levelsAvailable.level4}
             onPress={() => navigation.navigate('Exercises', {data: data[3]})}
           />
         </View>
@@ -96,13 +91,13 @@ function LevelSelection({navigation}) {
           <CardLevel
             level="5"
             image={level5}
-            available
+            available={levelsAvailable.level5}
             onPress={() => navigation.navigate('Exercises', {data: data[4]})}
           />
           <CardLevel
             level="6"
             image={level6}
-            available
+            available={levelsAvailable.level6}
             onPress={() => navigation.navigate('Exercises', {data: data[5]})}
           />
         </View>
@@ -110,13 +105,13 @@ function LevelSelection({navigation}) {
           <CardLevel
             level="7"
             image={level7}
-            available
+            available={levelsAvailable.level7}
             onPress={() => navigation.navigate('Exercises', {data: data[6]})}
           />
           <CardLevel
             level="8"
             image={level8}
-            available
+            available={levelsAvailable.level6}
             onPress={() => navigation.navigate('Exercises', {data: data[7]})}
           />
         </View>

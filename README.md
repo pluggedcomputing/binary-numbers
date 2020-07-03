@@ -6,6 +6,8 @@ Frontend da aplicação Plugged Computing, desenvolvido em React Native. Contand
 
 - ### React Native
   React Native é uma biblioteca Javascript criada pelo Facebook. É usada para desenvolver aplicativos para os sistemas Android e IOS de forma nativa
+- ### Expo
+  Migrar Expo para ReactNative CLI: https://pluggedcomputing.gitlab.io/post/20200703_migrate_to_cli/
 
 ## Padrão de commits
 
@@ -27,23 +29,20 @@ Para mais informações, acesse: https://pluggedcomputing.gitlab.io/post/2020012
 
 > Lembre-se de conferir o CHANGELOG.md
 
-## Boas Praticas
+## Gerando APK
 
-### Obrigatórias
+1. Vá para o diretório do projeto e execute este comando no terminal
 
-1. Todos os nomes de variaveis, funções e metodos devem ser em ingles.
-2. Deve ser aplicado o _design pattern [Model View Controller (MVC)](https://www.geeksforgeeks.org/mvc-design-pattern/)_.
-3. Por padrão usaremos **";"** no final dos comandos.
-4. Deve-se utilizar um estilo de programação mais funcional, aproveitando-se dos metodos já existentes na lingaugem e das dependencias. **Nada de reinventar a roda...**
-5. Todos os metodos devem ter um ou mais testes unitarios equivalentes. Usaremos o [Jest](https://jestjs.io/).
-6. Utilizar a [integração Prettier + ESLint + Airbnb Style Guide + EditorConfig no VSCode](https://pluggedcomputing.gitlab.io/post/20190901_style_guide/)
-7. Crie estilos dos componentes em arquivos separados.
+```
+react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res/
+```
 
-### Opcionais
+2. Acesse o diretório do Android: `cd android`
 
-1. Utilizar comentarios nas funções e metodos e sempre que achar necessario.
-2. Coloque os Scripts na Parte Final da Sua Página.
-3. Declare Variáveis, Fora da Instrução For.
-4. Use {} Ao Invés de New Object().
-5. Use [] Ao Invés de New Array().
-6. Use === Ao Invés de ==.
+3. No caminho do Android, execute este comando: `./gradlew assembleDebug`
+
+4. Vá para esta pasta e verifique o arquivo apk.
+
+```
+your_project-> android-> app-> build-> outputs-> apk-> debug-> app-debug.apk
+```
