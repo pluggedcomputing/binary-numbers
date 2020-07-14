@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
     flex: 1,
     textAlign: 'center',
     color: colors.textColorSecondary,
-    fontSize: metrics.screenWidth * 0.1,
+    fontSize: metrics.screenWidth * 0.09,
     fontFamily: 'Poppins-Bold',
   },
   textButton: {
@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
   buttonAltenative: {
     alignItems: 'center',
     marginTop: metrics.halfMargin,
-    marginBottom: 30,
+    marginBottom: metrics.halfMargin,
   },
 });
 
