@@ -1,8 +1,7 @@
 /* eslint-disable react/jsx-curly-newline */
 import React from 'react';
 import {Image, Text, TouchableOpacity, View, StatusBar} from 'react-native';
-
-import {LinearGradient} from 'expo-linear-gradient';
+import LinearGradient from 'react-native-linear-gradient';
 
 import data from '../../../package.json';
 import logo from '../../assets/images/logo_grey.png';

@@ -28,8 +28,9 @@ const styles = StyleSheet.create({
   },
   statementImage: {
     resizeMode: 'contain',
-    width: metrics.screenWidth * 0.6,
-    height: metrics.screenHeight * 0.1,
+    justifyContent: 'flex-end',
+    width: Math.round((metrics.screenWidth * 14) / 16),
+    height: metrics.screenHeight * 0.12,
   },
   icon: {
     color: colors.colorPrimary,

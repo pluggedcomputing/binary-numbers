@@ -1,12 +1,7 @@
 import React, {useState} from 'react';
-import {
-  View,
-  SafeAreaView,
-  ScrollView,
-  AsyncStorage,
-  Alert,
-} from 'react-native';
+import {View, SafeAreaView, ScrollView, Alert} from 'react-native';
 
+import AsyncStorage from '@react-native-community/async-storage';
 import {useFocusEffect} from '@react-navigation/native';
 
 import data from '../../assets/data.json';
