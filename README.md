@@ -46,3 +46,14 @@ react-native bundle --platform android --dev false --entry-file index.js --bundl
 ```
 your_project-> android-> app-> build-> outputs-> apk-> debug-> app-debug.apk
 ```
+
+## Modificar valor do versionCode (# = novo valor)
+
+```
+your_project -> android -> app -> build.gradle
+
+ defaultConfig {
+   ...,
+    versionCode #
+ }
+```
