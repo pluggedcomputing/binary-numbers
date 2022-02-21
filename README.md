@@ -6,6 +6,8 @@
 
 <h3 align="center">
   Frontend da aplicação Plugged Computing, desenvolvido em React Native. Aplicativo Contando os pontos - Números Binários. Para saber mais, acesse: <a href="https://sites.google.com/view/computacaoplugada/">https://sites.google.com/view/computacaoplugada/</a>
+
+  <a href="https://www.figma.com/file/uEbG70zjzxLWCiFYAIjsrL/Meus-Projetos-team-library">Figma</a>
 </h3>
 
 <div align="center">
