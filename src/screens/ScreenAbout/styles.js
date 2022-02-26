@@ -2,8 +2,8 @@ import {StyleSheet} from 'react-native';
 
 import {colors, metrics, fonts} from '../../styles';
 
-const HEIGHT_PORCENTAGE = 0.2;
-const WIDTH_PORCENTAGE = 0.4;
+const HEIGHT_PORCENTAGE = 0.13;
+const WIDTH_PORCENTAGE = 0.65;
 const TEXT_PORCENTAGE = 0.85;
 
 const styles = StyleSheet.create({
@@ -17,9 +17,10 @@ const styles = StyleSheet.create({
     alignItems:'center'
   },
   logo: {
-    resizeMode: 'contain',
+    resizeMode:'contain',
     width: metrics.screenWidth * WIDTH_PORCENTAGE,
     height: metrics.screenHeight * HEIGHT_PORCENTAGE,
+    margin:metrics.doubleBaseMargin
   },
   title: {
     textAlign: 'center',
@@ -39,8 +40,8 @@ const styles = StyleSheet.create({
   },
   
   images:{
-    resizeMode:'contain',
-    margin:metrics.baseMargin
+    margin:metrics.baseMargin,
+    width:metrics.screenWidth * TEXT_PORCENTAGE,
   }
 });
 

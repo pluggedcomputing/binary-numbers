@@ -2,11 +2,11 @@
 import React from 'react';
 import {Image, Text,View, StatusBar, ScrollView, Linking, TouchableHighlight, SafeAreaView} from 'react-native';
 
-import cards from '../../assets/images/cards.png';
-import cs from '../../assets/images/cs_unplugged.png';
-import logo from '../../assets/images/logo_name.png';
-import ordIcon from '../../assets/images/ordenacao_icon.png'
-import pixelIcon from '../../assets/images/pixel_icon.png';
+import cards from '../../assets/images/cards/cards.png';
+import cs from '../../assets/images/cs_unplugged/cs_unplugged.png';
+import logo from '../../assets/images/logo_horizontal/logo_horizontal.png';
+import ordIcon from '../../assets/images/ordenacao_icon/ordenacao_icon.png';
+import pixelIcon from '../../assets/images/pixel_icon/pixel_icon.png';
 import styles from './styles';
 
 function ScreenAbout() {

@@ -1,7 +1,7 @@
 import React from 'react';
 import {SafeAreaView, Image, Text, StatusBar, View} from 'react-native';
 
-import cover from '../../assets/images/cover.png';
+import cover from '../../assets/images/cover/cover.png';
 import CustomButton from '../../components/CustomButton';
 import styles from './styles';
 
