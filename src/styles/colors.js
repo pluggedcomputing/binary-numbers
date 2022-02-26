@@ -3,7 +3,7 @@ const colors = {
   colorBackground: '#FFFFFF',
   colorBackgroundSecondary:'#90CCFF',
   textColorPrimary: '#07377A',
-  textColorSecondary: '#F1F1F1',
+  textColorSecondary: '#FFFFFF',
   colorSucess: '#00E676',
   colorError: '#EF5350',
 };
