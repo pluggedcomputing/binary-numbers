@@ -23,8 +23,8 @@ const styles = StyleSheet.create({
     margin:metrics.doubleBaseMargin
   },
   title: {
+    fontFamily:'Poppins-Bold',
     textAlign: 'center',
-    fontWeight:"bold",
     fontSize:fonts.regular,
     padding:metrics.basePadding
   },

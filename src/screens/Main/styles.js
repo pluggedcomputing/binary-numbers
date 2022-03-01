@@ -23,11 +23,11 @@ const styles = StyleSheet.create({
     height: metrics.screenHeight * HEIGHT_PORCENTAGE,
   },
   textPrimary:{
-    fontWeight:'bold',
+    fontFamily: 'Poppins-Bold',
     fontSize:fonts.title,
   },
   textSecondary:{
-    top:-2
+    top:-4
   },
   buttons: {
     margin: metrics.smallMargin,
