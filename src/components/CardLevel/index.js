@@ -3,7 +3,7 @@ import {View, Image, Text, Alert, TouchableWithoutFeedback} from 'react-native';
 
 import PropTypes from 'prop-types';
 
-import {colors} from '../../styles';
+import rightArrow from "../../assets/images/icons/right_arrow/right_arrow.png"
 import styles from './styles';
 
 const CardLevel = props => {
@@ -16,22 +16,24 @@ const CardLevel = props => {
     return () =>
       Alert.alert(
         'Que Pena :(',
-        'Esse nível ainda não está liberado, complete os niveis anteriores para debloquea-lo.',
+        `Você não pode acessar a FASE ${level} ainda. Ela só estará disponível após você passar pelas fases anteriores. `,
       );
   }
 
   return (
-    <View
-      style={[
-        available
-          ? {borderColor: colors.colorSucess}
-          : {borderColor: colors.colorPrimary},
-        styles.container,
-      ]}>
+    <View style={styles.container}>
       <TouchableWithoutFeedback onPress={onPressCardLevel()}>
         <View style={styles.subContainer}>
-          <Image source={image} style={styles.imageLevel} />
-          <Text style={styles.textLevel}>Nível {level}</Text>
+          <View> 
+            <Image source={image} style={styles.imageLevel} />
+          </View>
+          <View>
+            <Text style={styles.textLevel}>Fase {level}</Text>
+            <Text style={styles.bio}>Criar uma minibio da fase explicando de forma suscinta </Text>
+          </View>
+          <View>
+            <Image source={rightArrow} />
+          </View>
         </View>
       </TouchableWithoutFeedback>
     </View>

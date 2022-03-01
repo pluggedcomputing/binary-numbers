@@ -7,15 +7,14 @@ const styles = StyleSheet.create({
     flex: 1,
     width: metrics.screenWidth,
     height: metrics.screenHeight,
-    backgroundColor: colors.colorBackground,
+    backgroundColor: colors.colorBackgroundTertiary,
   },
   boxContainer: {
-    margin: metrics.doubleBaseMargin,
+    margin:metrics.smallMargin,
     flexDirection: 'row',
     justifyContent: 'space-evenly',
-    alignItems: 'center',
-    backgroundColor: colors.colorBackground,
   },
+  
 });
 
 export default styles;
