@@ -1,5 +1,5 @@
 import React from 'react';
-import { Image } from 'react-native';
+import { Image, StyleSheet } from 'react-native';
 
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
@@ -13,10 +13,18 @@ import Main from './screens/Main';
 import ScreenAbout from './screens/ScreenAbout';
 import {colors, fonts} from './styles';
 
+const styles = StyleSheet.create({
+  logo: {
+    resizeMode:'contain',
+    width:125,
+    height:40,
+  }
+});
+
 function LogoTitle() {
   return (
     <Image
-      style={{ width: 125, height: 40}}
+      style={styles.logo}
       source={logo}
     />
   );
