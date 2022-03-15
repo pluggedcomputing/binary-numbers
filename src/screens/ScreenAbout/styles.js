@@ -4,7 +4,7 @@ import {colors, metrics, fonts} from '../../styles';
 
 const HEIGHT_PORCENTAGE = 0.13;
 const WIDTH_PORCENTAGE = 0.65;
-const TEXT_PORCENTAGE = 0.85;
+const MARGIN_PORCENTAGE = 0.85;
 
 const styles = StyleSheet.create({
   container: {
@@ -12,9 +12,10 @@ const styles = StyleSheet.create({
     width: metrics.screenWidth,
     height: metrics.screenHeight,
     backgroundColor: colors.colorBackground,
+    alignItems:'center',
   },
-  box:{
-    alignItems:'center'
+  marginScreen:{
+    width: metrics.screenWidth * MARGIN_PORCENTAGE
   },
   logo: {
     resizeMode:'contain',
@@ -30,18 +31,16 @@ const styles = StyleSheet.create({
   },
   textContent: {
     textAlign:'left',
-    width:metrics.screenWidth * TEXT_PORCENTAGE,
     margin:metrics.baseMargin
   },
   links:{
     flexDirection:'row',
     justifyContent:'space-around',
-    width:metrics.screenWidth * TEXT_PORCENTAGE,
   },
   
   images:{
     margin:metrics.baseMargin,
-    width:metrics.screenWidth * TEXT_PORCENTAGE,
+    width:metrics.screenWidth * MARGIN_PORCENTAGE,
   }
 });
 

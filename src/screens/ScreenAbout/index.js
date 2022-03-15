@@ -7,7 +7,7 @@ import cs from '../../assets/images/cs_unplugged/cs_unplugged.png';
 import logo from '../../assets/images/logo_horizontal/logo_horizontal.png';
 import ordIcon from '../../assets/images/ordenacao_icon/ordenacao_icon.png';
 import pixelIcon from '../../assets/images/pixel_icon/pixel_icon.png';
-import styles from './styles';
+import styles from './styles'
 
 function ScreenAbout() {
   
@@ -16,10 +16,10 @@ function ScreenAbout() {
       <StatusBar barStyle='light-content' backgroundColor='#FFFFFF' />
 
       <ScrollView>
-        <Text style={styles.title}>SOBRE</Text>
-        <View style={styles.box}>
+        <View style={styles.boxContainer}>
+          <Text style={styles.title}>SOBRE</Text>
           <Image source={logo} style={styles.logo} />
-          <Text style={styles.textContent}>
+          <Text style={[styles.textContent, styles.marginScreen]}>
             O aplicativo Computação Plugada foi inspirado no livro de Bell, T.;
             Witten, I. e Fellows, M. (2011). “Computer Science Unplugged – Ensinando
             Ciência da Computação sem o uso do Computador”. Tradução de Luciano Porto
@@ -29,7 +29,7 @@ function ScreenAbout() {
 
         <View style={styles.box}>
           <Image source={cs} style={styles.images} />
-          <Text style={styles.textContent}>
+          <Text style={[styles.textContent, styles.marginScreen]}>
             Este livro apresenta atividades práticas, lúdicas e acessíveis sobre
             diversos temas da ciência da computação. O mesmo engloba técnicas fáceis
             para seu uso, tornando-se disponível para todos. Sua prática é fácil não
@@ -40,7 +40,7 @@ function ScreenAbout() {
 
         <View style={styles.box}>
           <Image source={cards} style={styles.images} />
-          <Text style={styles.textContent}>
+          <Text style={[styles.textContent, styles.marginScreen]}>
             O aplicativo aqui apresentado busca simplificar ainda mais a aplicação das
             atividades propostas sem a necessidade de produção de materiais
             adicionais. O aplicativo é uma grande inovação para as técnicas de
@@ -50,23 +50,23 @@ function ScreenAbout() {
         </View>
 
         <View style={styles.box}>
-          <View style={styles.links}>
+          <View style={[styles.links, styles.marginScreen]}>
             <TouchableHighlight onPress={() => {
-                Linking.openURL('https://play.google.com/store/apps/details?id=br.ufpb.dcx.computacaoplugada.pixel');
-              }}>
+                  Linking.openURL('https://play.google.com/store/apps/details?id=br.ufpb.dcx.computacaoplugada.pixel');
+                }}>
               <Image source={pixelIcon} />
             </TouchableHighlight>
 
             <TouchableHighlight onPress={() => {
-                Linking.openURL('https://play.google.com/store/apps/details?id=br.ufpb.dcx.computacaoplugada.sortingalgorithms');
-              }}>
+                  Linking.openURL('https://play.google.com/store/apps/details?id=br.ufpb.dcx.computacaoplugada.sortingalgorithms');
+                }}>
               <Image source={ordIcon} />
             </TouchableHighlight>
           </View>
-          <Text style={styles.textContent}>
-            O aplicativo Binários faz parte de uma família com vários outros aplicativos. Conheça mais sobre os demais clicando na imagem abaixo.
+          <Text style={[styles.textContent, styles.marginScreen]}>
+            O aplicativo Binários faz parte de uma família com vários outros aplicativos. Conheça mais sobre os demais clicando nas imagens acima.
           </Text>
-        </View>
+        </View>  
       </ScrollView>
     </SafeAreaView>
   );
