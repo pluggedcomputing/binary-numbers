@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
     height: metrics.screenHeight,
     justifyContent: 'space-evenly',
     alignItems: 'center',
-    backgroundColor: colors.colorBackgroundSecondary,
+    backgroundColor: colors.colorPrimary
   },
   box:{
     alignItems:'center'

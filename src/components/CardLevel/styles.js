@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
     flexDirection:'row',
     justifyContent:'space-around',
     alignItems:'center',
-    backgroundColor: colors.colorBackgroundSecondary,
+    backgroundColor: colors.colorPrimary,
     borderRadius: metrics.baseRadius,
     
   },
