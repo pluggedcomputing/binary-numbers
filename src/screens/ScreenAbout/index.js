@@ -7,7 +7,7 @@ import cs from '../../assets/images/cs_unplugged/cs_unplugged.png';
 import logo from '../../assets/images/logo_horizontal/logo_horizontal.png';
 import ordIcon from '../../assets/images/ordenacao_icon/ordenacao_icon.png';
 import pixelIcon from '../../assets/images/pixel_icon/pixel_icon.png';
-import styles from './styles'
+import styles from './styles';
 
 function ScreenAbout() {
   

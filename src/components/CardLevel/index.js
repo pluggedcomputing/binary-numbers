@@ -3,7 +3,7 @@ import {View, Image, Text, Alert, TouchableWithoutFeedback} from 'react-native';
 
 import PropTypes from 'prop-types';
 
-import rightArrow from "../../assets/images/icons/right_arrow/right_arrow.png"
+import rightArrow from "../../assets/images/icons/right_arrow/right_arrow.png";
 import styles from './styles';
 
 const CardLevel = props => {
