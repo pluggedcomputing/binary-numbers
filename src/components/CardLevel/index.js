@@ -6,9 +6,22 @@ import PropTypes from 'prop-types';
 import rightArrow from "../../assets/images/icons/right_arrow/right_arrow.png";
 import styles from './styles';
 
+
+
 const CardLevel = props => {
   const {image, level, onPress, available} = props;
 
+  const viewOfContent = [
+    'Introdução ao sistema binário.',
+    'Números Binários.',
+    'Trabalhando com Números Binários.',
+    'Mensagem secreta com Binários.',
+    'Correio Eletrônico e Modens.',
+    'Contar acima de 31.',
+    'Mais Sobre Números Binários.',
+    'De que se trata tudo isso?',
+  
+  ];
   function onPressCardLevel() {
     if (onPress && available) {
       return onPress;
@@ -18,8 +31,9 @@ const CardLevel = props => {
         'Que Pena :(',
         `Você não pode acessar a FASE ${level} ainda. Ela só estará disponível após você passar pelas fases anteriores. `,
       );
-  }
 
+      
+  }
   return (
     <View style={styles.container}>
       <TouchableWithoutFeedback onPress={onPressCardLevel()}>
@@ -29,7 +43,7 @@ const CardLevel = props => {
           </View>
           <View>
             <Text style={styles.textLevel}>Fase {level}</Text>
-            <Text style={styles.bio}>Criar uma minibio da fase explicando de forma suscinta </Text>
+            <Text style={styles.bio}>{viewOfContent[level-1]}</Text>
           </View>
           <View>
             <Image source={rightArrow} />
