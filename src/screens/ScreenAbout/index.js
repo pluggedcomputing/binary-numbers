@@ -15,7 +15,7 @@ function ScreenAbout() {
     <SafeAreaView style={styles.container}>
       <StatusBar barStyle='light-content' backgroundColor='#FFFFFF' />
 
-      <ScrollView>
+      <ScrollView showsVerticalScrollIndicator={false}>
         <View style={styles.boxContainer}>
           <Text style={styles.title}>SOBRE</Text>
           <Image source={logo} style={styles.logo} />
