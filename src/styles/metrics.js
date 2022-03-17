@@ -10,6 +10,7 @@ const metrics = {
   fullMargin: 60,
   smallPadding: 4,
   basePadding: 8,
+  doubleBasePadding:16,
   screenWidth: width < height ? width : height,
   screenHeight: width < height ? height : width,
   tabBarHeight: 54,

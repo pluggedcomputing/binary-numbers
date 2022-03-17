@@ -1,7 +1,9 @@
 const colors = {
-  colorPrimary: '#3F51B5',
+  colorPrimary: '#90CCFF',
+  ColorSecondary: '#FFFFFF',
+  colorAcent: '#07377A',
   colorBackground: '#FFFFFF',
-  textColorPrimary: '#212121',
+  textColorPrimary: '#07377A',
   textColorSecondary: '#F1F1F1',
   colorSucess: '#00E676',
   colorError: '#EF5350',

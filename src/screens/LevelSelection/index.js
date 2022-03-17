@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {View, SafeAreaView, ScrollView, Alert} from 'react-native';
+import {View, SafeAreaView, ScrollView, Alert, StatusBar} from 'react-native';
 
 import AsyncStorage from '@react-native-community/async-storage';
 import {useFocusEffect} from '@react-navigation/native';
@@ -58,6 +58,7 @@ function LevelSelection({navigation}) {
 
   return (
     <SafeAreaView style={styles.container}>
+      <StatusBar barStyle='light-content' backgroundColor='#FFFFFF' />
       <ScrollView>
         <View style={styles.boxContainer}>
           <CardLevel
@@ -66,12 +67,14 @@ function LevelSelection({navigation}) {
             available
             onPress={() => navigation.navigate('Exercises', {data: data[0]})}
           />
+        </View>
+        <View style={styles.boxContainer}>
           <CardLevel
             level="2"
             image={level2}
             available={levelsAvailable.level2}
             onPress={() => navigation.navigate('Exercises', {data: data[1]})}
-          />
+            />
         </View>
         <View style={styles.boxContainer}>
           <CardLevel
@@ -79,13 +82,15 @@ function LevelSelection({navigation}) {
             image={level3}
             available={levelsAvailable.level3}
             onPress={() => navigation.navigate('Exercises', {data: data[2]})}
-          />
+            />
+        </View>
+        <View style={styles.boxContainer}>
           <CardLevel
             level="4"
             image={level4}
             available={levelsAvailable.level4}
             onPress={() => navigation.navigate('Exercises', {data: data[3]})}
-          />
+            />
         </View>
         <View style={styles.boxContainer}>
           <CardLevel
@@ -93,13 +98,15 @@ function LevelSelection({navigation}) {
             image={level5}
             available={levelsAvailable.level5}
             onPress={() => navigation.navigate('Exercises', {data: data[4]})}
-          />
+            />
+        </View>
+        <View style={styles.boxContainer}>
           <CardLevel
             level="6"
             image={level6}
             available={levelsAvailable.level6}
             onPress={() => navigation.navigate('Exercises', {data: data[5]})}
-          />
+            />
         </View>
         <View style={styles.boxContainer}>
           <CardLevel
@@ -107,7 +114,9 @@ function LevelSelection({navigation}) {
             image={level7}
             available={levelsAvailable.level7}
             onPress={() => navigation.navigate('Exercises', {data: data[6]})}
-          />
+            />
+        </View>
+        <View style={styles.boxContainer}>
           <CardLevel
             level="8"
             image={level8}

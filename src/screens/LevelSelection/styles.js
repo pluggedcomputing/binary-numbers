@@ -1,21 +1,21 @@
 import {StyleSheet} from 'react-native';
 
-import {colors, metrics} from '../../styles';
+import {metrics} from '../../styles';
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     width: metrics.screenWidth,
     height: metrics.screenHeight,
-    backgroundColor: colors.colorBackground,
+    backgroundColor: '#E5E5E5',
+    paddingVertical:metrics.doubleBasePadding
   },
   boxContainer: {
-    margin: metrics.doubleBaseMargin,
+    margin:metrics.smallMargin,
     flexDirection: 'row',
     justifyContent: 'space-evenly',
-    alignItems: 'center',
-    backgroundColor: colors.colorBackground,
   },
+  
 });
 
 export default styles;
