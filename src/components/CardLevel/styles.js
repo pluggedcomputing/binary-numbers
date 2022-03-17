@@ -4,7 +4,7 @@ import {colors, metrics, fonts} from '../../styles';
 
 const styles = StyleSheet.create({
   container: {
-    height: metrics.screenHeight * 0.19,
+    height: metrics.screenHeight * 0.14,
     width: metrics.screenWidth * 0.80,
     
   },
