@@ -8,6 +8,7 @@ const styles = StyleSheet.create({
     width: metrics.screenWidth,
     height: metrics.screenHeight,
     backgroundColor: '#E5E5E5',
+    paddingVertical:metrics.doubleBasePadding
   },
   boxContainer: {
     margin:metrics.smallMargin,
