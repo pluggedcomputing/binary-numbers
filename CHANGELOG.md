@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.1](https://github.com/pluggedcomputing/binary-numbers/compare/v1.1.0...v1.1.1) (2022-05-11)
+
+
+### Features
+
+* **#19:** adicionado configuracao do codepush no android ([7d76a16](https://github.com/pluggedcomputing/binary-numbers/commit/7d76a166a45ff27e587303d59d4c8fec337c0d53)), closes [#19](https://github.com/pluggedcomputing/binary-numbers/issues/19)
+* **#develop:** adicionar documentação para alterar versionCode ([d8789b7](https://github.com/pluggedcomputing/binary-numbers/commit/d8789b78b9e0dea361a40504624b0532b8f2e879))
+* **#develop:** modificar valor do versinCode ([bf1598e](https://github.com/pluggedcomputing/binary-numbers/commit/bf1598e2cd22f0dcece6ef5ae68ad1d02640b6b3))
+* **develop:** modificar nome do pacote ([73ef4e2](https://github.com/pluggedcomputing/binary-numbers/commit/73ef4e20d65b46ea3ecaf6d4cd85f66ac4a3d2eb))
+
+
+### Bug Fixes
+
+* **master:** alterado imagem incorreta no level 7 ([62c8627](https://github.com/pluggedcomputing/binary-numbers/commit/62c86274301d3038c27f815934003bc7483483da))
+
 ## [1.1.0](https://gitlab.com/pluggedcomputing/plugged-computing-binary-numbers/compare/v0.0.1-develop.4...v1.1.0) (2020-07-27)
 
 ### Features
