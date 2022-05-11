@@ -11,11 +11,7 @@
     "release": "standard-version"
   },
   "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "post-checkout": "yarn install"
-    }
+    "hooks": {}
   },
   "lint-staged": {
     "*.js": [
