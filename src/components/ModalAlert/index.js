@@ -21,7 +21,7 @@ const ModalAlert= props => {
           <View style={styles.modalContainer}>
             <Text style={styles.textModal}>
               Você não pode acessar a 
-              <Text style={styles.levelIndicator}> FASE {level} </Text> ainda. Ela só estará disponível após você passar pelas fases anteriores. 
+              <Text style={[styles.textModal,styles.levelIndicator]}> FASE {level} </Text> ainda. Ela só estará disponível após você passar pelas fases anteriores. 
             </Text>
 
             <CustomButton text="OK" onPress={onCancel} />

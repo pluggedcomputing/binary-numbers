@@ -29,7 +29,6 @@ const styles = StyleSheet.create({
       },
       levelIndicator:{
         fontFamily: 'Poppins-Bold',
-        fontSize: fonts.regular
       }
 });
 
