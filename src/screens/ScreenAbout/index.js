@@ -13,7 +13,7 @@ function ScreenAbout() {
   
   return (
     <SafeAreaView style={styles.container}>
-      <StatusBar barStyle='light-content' backgroundColor='#FFFFFF' />
+      <StatusBar barStyle='dark-content' backgroundColor='#FFFFFF' />
 
       <ScrollView showsVerticalScrollIndicator={false}>
         <View style={styles.boxContainer}>
