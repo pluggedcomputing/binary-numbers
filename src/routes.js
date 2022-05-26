@@ -7,6 +7,7 @@ import {createStackNavigator} from '@react-navigation/stack';
 import logo from "./assets/images/logo_horizontal/logo_horizontal.png";
 import Congratulations from './screens/Congratulations';
 import Exercises from './screens/Exercises';
+import HelpScreen from './screens/HelpScreen';
 import LevelSelection from './screens/LevelSelection';
 import LoginOrRegister from './screens/LoginOrRegister';
 import Main from './screens/Main';
@@ -77,6 +78,11 @@ const Stack = createStackNavigator();
           component={ScreenAbout}
         />
       </Stack.Navigator>
+      <Stack.Screen
+        options={{headerShown: false}}
+        name="HelpScreen"
+        component={HelpScreen}
+        />
     </NavigationContainer>
   );
 }
