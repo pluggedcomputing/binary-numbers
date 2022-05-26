@@ -12,6 +12,7 @@ const styles = StyleSheet.create({
         height: metrics.screenHeight,
         backgroundColor: colors.colorBackground,
         alignItems:'center',
+        paddingBottom:metrics.doubleBasePadding
     },
     title:{
         fontFamily:'Poppins-Bold',
@@ -28,8 +29,11 @@ const styles = StyleSheet.create({
 
     image:{
         width:metrics.screenWidth * WIDTH_PORCENTAGE,
-        borderRadius:5,
+        borderRadius:metrics.smallRadius,
         marginVertical:metrics.doubleBaseMargin
+    },
+    link:{
+        fontFamily: 'Poppins-Bold'
     }
 });
 

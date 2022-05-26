@@ -77,12 +77,12 @@ const Stack = createStackNavigator();
           name="ScreenAbout"
           component={ScreenAbout}
         />
-      </Stack.Navigator>
-      <Stack.Screen
-        options={{headerShown: false}}
-        name="HelpScreen"
-        component={HelpScreen}
+        <Stack.Screen
+          options={{headerShown: false}}
+          name="HelpScreen"
+          component={HelpScreen}
         />
+      </Stack.Navigator>
     </NavigationContainer>
   );
 }
