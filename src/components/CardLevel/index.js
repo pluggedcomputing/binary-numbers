@@ -1,15 +1,18 @@
-import React from 'react';
-import {View, Image, Text, Alert, TouchableWithoutFeedback} from 'react-native';
+import React, {useState} from 'react';
+import {View, Image, Text, TouchableWithoutFeedback} from 'react-native';
 
 import PropTypes from 'prop-types';
 
 import rightArrow from "../../assets/images/icons/right_arrow/right_arrow.png";
+import ModalAlert from '../ModalAlert';
 import styles from './styles';
-
 
 
 const CardLevel = props => {
   const {image, level, onPress, available} = props;
+  const [showModal, setShowModal] = useState(false);
+  
+  const handleModal = () => setShowModal(!showModal);
 
   const viewOfContent = [
     'Introdução ao sistema binário.',
@@ -26,11 +29,10 @@ const CardLevel = props => {
     if (onPress && available) {
       return onPress;
     }
-    return () =>
-      Alert.alert(
-        'Que Pena :(',
-        `Você não pode acessar a FASE ${level} ainda. Ela só estará disponível após você passar pelas fases anteriores. `,
-      );
+
+    return () =>{
+      handleModal();
+    }
 
       
   }
@@ -50,6 +52,11 @@ const CardLevel = props => {
           </View>
         </View>
       </TouchableWithoutFeedback>
+      <ModalAlert
+        isVisible={showModal}
+        onCancel={handleModal}
+        level={level}
+      />
     </View>
   );
 };
