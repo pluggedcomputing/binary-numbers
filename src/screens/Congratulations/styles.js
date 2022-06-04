@@ -4,9 +4,9 @@ import {colors, fonts, metrics} from '../../styles';
 
 const styles = StyleSheet.create({
   container:{
+    flex: 1,
     backgroundColor:colors.colorPrimary,
-    width:metrics.screenWidth,
-    height:metrics.screenHeight,
+    padding: metrics.basePadding,
     justifyContent:'space-around',
     alignItems:'center'
   },

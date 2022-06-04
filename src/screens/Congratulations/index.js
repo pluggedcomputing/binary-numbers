@@ -14,13 +14,15 @@ import AsyncStorage from '@react-native-community/async-storage';
 import {useRoute} from '@react-navigation/native';
 
 import data from '../../assets/data.json';
-import Home from '../../assets/images/buttons/home.png';
-import Remake from '../../assets/images/buttons/reload.png';
-import ShareImg from '../../assets/images/buttons/share.png';
+import Home from '../../assets/images/house_icon/house.png';
+import Remake from "../../assets/images/reload_icon/reload.png";
+import ShareImg from '../../assets/images/share_icon/share.png';
 import Star from '../../assets/images/stars/star.png';
 import WinLevel from '../../assets/images/win_level/win.png';
 import files from '../../filesBase64';
+import { colors } from '../../styles';
 import styles from './styles';
+
 
 
 
@@ -55,13 +57,15 @@ const Congratulations = props => {
     <SafeAreaView style={styles.container}>
       <StatusBar
         barStyle="light-content"
-        backgroundColor="#90CCFF"
+        backgroundColor={colors.colorPrimary}
       />
       <Text style={styles.title}>FASE {level}</Text>
       <Image source={WinLevel} style={styles.WinLevel} />
       <View style={styles.textContent}> 
         <Text style={styles.textCongralulations}>PARABÉNS</Text>
-        <Text style={styles.textCongralulations}>Você concluiu a FASE {level}</Text>
+        <Text style={styles.textCongralulations}>Você concluiu a 
+          FASE {level}
+        </Text>
       </View>
       <View style={styles.starsContainer}>
         <Image source={Star} />
