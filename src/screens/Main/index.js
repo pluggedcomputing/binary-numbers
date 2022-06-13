@@ -22,11 +22,7 @@ function Main({navigation}) {
           text="Iniciar"
           onPress={() => navigation.navigate('LevelSelection')}
         />
-        <CustomButton
-          style={styles.buttons}
-          text="Sobre"
-          onPress={() => navigation.navigate('ScreenAbout')}
-        />
+        
       </View>
       
     </SafeAreaView>
