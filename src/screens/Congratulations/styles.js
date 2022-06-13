@@ -1,44 +1,62 @@
-import {StyleSheet} from 'react-native';
+import { StyleSheet } from 'react-native';
 
 import {colors, fonts, metrics} from '../../styles';
 
 const styles = StyleSheet.create({
-  container: {
+  container:{
     flex: 1,
-    backgroundColor: 'rgba(0, 0, 0, 0.8)',
-    justifyContent: 'space-around',
+    backgroundColor:colors.colorPrimary,
+    padding: metrics.basePadding,
+    justifyContent:'space-around',
+    alignItems:'center'
   },
-  content: {
-    flex: 1,
-    width: metrics.screenWidth,
-    height: metrics.screenHeight,
-    marginTop: 50,
-  },
-  textTop: {
-    flex: 4,
+  title: {
+    fontFamily:'Poppins-Bold',
     textAlign: 'center',
-    color: colors.textColorSecondary,
-    fontSize: metrics.screenWidth * 0.14,
-    fontFamily: 'Poppins-Bold',
+    fontSize:fonts.regular,
+    padding:metrics.basePadding
   },
-  textEnd: {
-    flex: 1,
-    textAlign: 'center',
-    color: colors.textColorSecondary,
-    fontSize: metrics.screenWidth * 0.09,
-    fontFamily: 'Poppins-Bold',
+  textCongralulations:{
+    fontSize:fonts.header,
+    fontFamily:'Poppins-Bold'
   },
-  textButton: {
-    color: colors.colorBackground,
-    textDecorationLine: 'underline',
-    fontSize: fonts.title,
-    fontFamily: 'Poppins-Bold',
+  textContent:{
+    alignItems:'center',
   },
-  buttonAltenative: {
-    alignItems: 'center',
-    marginTop: metrics.halfMargin,
-    marginBottom: metrics.halfMargin,
+  button:{
+    alignItems:"center",
+    justifyContent:'center',
+
   },
+  starsContainer:{
+    flexDirection:'row'
+  },
+  feedbackContent:{
+    maxWidth:209,
+    maxHeight:120,
+    textAlign:'left',
+  },
+  buttonContainer:{
+    justifyContent:"center",
+    alignItems:'center',
+    backgroundColor:colors.colorAcent,
+    width:50,
+    height:50,
+    borderRadius:50 /2
+  },
+  textIcon:{
+    paddingVertical:5,
+  },
+  WinLevel:{
+    width:metrics.screenWidth * 0.90
+  },
+  buttonsContainer:{
+    flexDirection:'row',
+    width: metrics.screenWidth * 0.80,
+
+    justifyContent:'space-around'
+  },
+
 });
 
 export default styles;
