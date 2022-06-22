@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
   }
 });
 
-// eslint-disable-next-line react/prop-types
+
 function LogoTitle() {
   return (
     <Image

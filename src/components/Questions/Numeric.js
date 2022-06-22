@@ -21,7 +21,6 @@ const numeric = props => {
         <CustomTextInput
           keyboardType="numeric"
           placeholder="Digite aqui.."
-          icon="numeric"
           onChangeText={text => setNumericAnswer(text)}
           value={numericAnswer}
         />
