@@ -7,14 +7,12 @@ import {
   Platform,
   ScrollView,
 } from 'react-native';
-
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
-import RightArrow from '../../assets/images/icons/left_arrow/rigth_arrow.png'
-import LeftArrow from '../../assets/images/icons/left_arrow/left_arrow.png'
 import {useRoute} from '@react-navigation/native';
 
-
+import LeftArrow from '../../assets/images/icons/left_arrow/left_arrow.png'
+import RightArrow from '../../assets/images/icons/left_arrow/rigth_arrow.png'
 import CardGroup from '../../components/CardGroup';
 import CustomBackground from '../../components/CustomBackground';
 import {
@@ -37,10 +35,6 @@ export default function Exercises({navigation}) {
   const [question, setQuestion] = useState(response.questions[step]);
 
   const [backgroundColor, setBackgroundColor] = useState(colors.colorBackground);
-
-
-
- 
 
   const maxStep = exercise.questions.length;
   
@@ -75,7 +69,7 @@ export default function Exercises({navigation}) {
     l4q3_10: require('../../assets/images/level4/l4q3_10.png'),
     l4q4: require('../../assets/images/level4/l4q4.png'),
     l4q5_6_13: require('../../assets/images/level4/l4q5_6_13.png'),
-    l4q7_14: require('../../assets/images/level4/l4q7-14.png'),
+    l4q7_14: require('../../assets/images/level4/l4q7_14.png'),
     l4q8: require('../../assets/images/level4/l4q8.png'),
     l4q9_15: require('../../assets/images/level4/l4q9_15.png'),
     l4q11: require('../../assets/images/level4/l4q11.png'),
