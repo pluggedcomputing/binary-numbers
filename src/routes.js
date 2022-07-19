@@ -7,7 +7,6 @@ import {createBottomTabNavigator} from '@react-navigation/bottom-tabs'
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 
-
 import logo from "./assets/images/logo_horizontal/logo_horizontal.png";
 import Congratulations from './screens/Congratulations';
 import Exercises from './screens/Exercises';

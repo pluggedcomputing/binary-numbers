@@ -35,7 +35,6 @@ export default function Exercises({navigation}) {
   const [question, setQuestion] = useState(response.questions[step]);
 
   const [backgroundColor, setBackgroundColor] = useState(colors.colorBackground);
-
   const maxStep = exercise.questions.length;
   
   const finishLevel = step === maxStep;

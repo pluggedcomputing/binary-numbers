@@ -11,10 +11,11 @@ import {
 import Share from 'react-native-share';
 
 import AsyncStorage from '@react-native-community/async-storage';
-import {useRoute} from '@react-navigation/native';
+import {useRoute, CommonActions} from '@react-navigation/native';
 
+import Close from '../../assets/images/close_icon/close.png'
 import data from '../../assets/data.json';
-import Home from '../../assets/images/house_icon/house.png';
+import Next from '../../assets/images/next_icon/next.png';
 import Remake from "../../assets/images/reload_icon/reload.png";
 import ShareImg from '../../assets/images/share_icon/share.png';
 import Star from '../../assets/images/stars/star.png';
@@ -34,6 +35,23 @@ const Congratulations = props => {
     await AsyncStorage.setItem(`level${level + 1}`, 'true');
     navigation.navigate('LevelSelection');
   };
+
+ const nextLevel = async () =>{
+  await AsyncStorage.setItem(`level${level + 1}`, 'true');
+  navigation.dispatch(
+    CommonActions.reset({
+      index: 1,
+      routes: [
+        {
+          name: 'Exercises',
+          params: {data:data[level] },
+        },
+        
+      ],
+    })
+  )
+  
+ }
 
   const customShare = async() =>{
     const ShareOptions={
@@ -59,7 +77,16 @@ const Congratulations = props => {
         barStyle="light-content"
         backgroundColor={colors.colorPrimary}
       />
-      <Text style={styles.title}>FASE {level}</Text>
+      <View style={styles.headerContainer}>
+        <Text style={styles.title}>FASE {level}</Text>
+        <TouchableOpacity 
+          style={styles.closeButton}
+          onPress={navigateScreen}
+            
+            >
+          <Image source={Close} />
+        </TouchableOpacity>
+      </View>
       <Image source={WinLevel} style={styles.WinLevel} />
       <View style={styles.textContent}> 
         <Text style={styles.textCongralulations}>PARABÉNS</Text>
@@ -93,8 +120,18 @@ const Congratulations = props => {
         <View style={styles.button}>
           <TouchableOpacity
             style={styles.buttonContainer}
-            disabled// desabilitado temporariamente 
-            onPress={() => navigation.navigate('Exercises', data[level-1])}
+            onPress={() => navigation.dispatch(
+              CommonActions.reset({
+                index: 1,
+                routes: [
+                  {
+                    name: 'Exercises',
+                    params: {data:data[level-1] },
+                  },
+                  
+                ],
+              })
+            )}
             >
             <Image source={Remake} />
           </TouchableOpacity>
@@ -104,11 +141,12 @@ const Congratulations = props => {
         <View style={styles.button}>
           <TouchableOpacity
             style={styles.buttonContainer}
-            onPress={navigateScreen}
+            onPress={() => nextLevel()}
+                
         >
-            <Image source={Home} />
+            <Image source={Next} />
           </TouchableOpacity>
-          <Text>Ir para fases</Text>
+          <Text>Próxima fase</Text>
         </View>
       </View>
     </SafeAreaView>
