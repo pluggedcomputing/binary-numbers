@@ -1,6 +1,9 @@
 import React from 'react';
 import { Image, StyleSheet } from 'react-native';
 
+import Ionicons from 'react-native-vector-icons/Ionicons';
+
+import {createBottomTabNavigator} from '@react-navigation/bottom-tabs'
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 
@@ -22,6 +25,7 @@ const styles = StyleSheet.create({
   }
 });
 
+
 function LogoTitle() {
   return (
     <Image
@@ -31,6 +35,35 @@ function LogoTitle() {
   );
 }
 
+function Tabs() {
+  const Tab = createBottomTabNavigator();
+  return(
+    <Tab.Navigator
+      initialRouteName="Main"
+      screenOptions={({ route }) => ({
+        // eslint-disable-next-line react/prop-types
+        tabBarIcon: ({ focused, color, size }) => {
+          let iconName;
+
+          if (route.name === 'Sobre') {
+            iconName = focused ? 'information-circle' : 'information-circle-outline';
+          } else if (route.name === 'Ajuda') {
+            iconName = focused ? 'help-circle' : 'help-circle-outline';
+          }else if(route.name === 'Fases'){
+            iconName = focused ? 'home' : 'home';
+          }
+
+          return <Ionicons name={iconName} size={size} color={color} />;
+          
+        },
+        
+    })}>
+      <Tab.Screen name='Fases' component={LevelSelection} />
+      <Tab.Screen name='Ajuda' component={HelpScreen}  />
+      <Tab.Screen name='Sobre' component={ScreenAbout} />
+    </Tab.Navigator>
+  );
+}
 function routes() {
 const Stack = createStackNavigator();
   return (
@@ -61,10 +94,10 @@ const Stack = createStackNavigator();
         />
         <Stack.Screen
           name="LevelSelection"
-          component={LevelSelection}
-          options={{ headerTitle: (props) => <LogoTitle {...props} /> }}
+          component={Tabs}
+          options={{ headerShown:false }}
         />
-        <Stack.Screen name="Exercises" component={Exercises} />
+        <Stack.Screen name="Exercises" component={Exercises} options={{headerShown:false}} />
         <Stack.Screen
           options={{
             headerShown: false,
@@ -73,14 +106,14 @@ const Stack = createStackNavigator();
           component={Congratulations}
         />
         <Stack.Screen
-          options={{headerShown: false}}
           name="ScreenAbout"
-          component={ScreenAbout}
+          component={Tabs}
+          options={{headerShown: false}}
         />
         <Stack.Screen
           options={{headerShown: false}}
           name="HelpScreen"
-          component={HelpScreen}
+          component={Tabs}
         />
       </Stack.Navigator>
     </NavigationContainer>

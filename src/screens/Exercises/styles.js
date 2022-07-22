@@ -1,26 +1,36 @@
 import {StyleSheet} from 'react-native';
 
-import {general, colors, metrics} from '../../styles';
+import {colors, metrics, fonts} from '../../styles';
+
+
 
 const styles = StyleSheet.create({
   container: {
-    ...general.defaultContainer,
+    justifyContent:'center',
+    width:metrics.screenWidth,
     height: metrics.screenHeight,
+    backgroundColor:colors.colorBackground
   },
   halfView: {
     flex: 1,
+    justifyContent:'center',
+    alignItems:'center',
   },
   halfViewKeyBoard: {
-    flex: 1,
+    position:'absolute',
+    bottom:50,
     justifyContent: 'center',
     alignItems: 'center',
+    width: metrics.screenWidth
   },
   info: {
     marginTop: metrics.baseMargin,
   },
   contentText: {
-    textAlign: 'center',
+    textAlign: 'left',
     color: colors.textColorPrimary,
+    width: metrics.screenWidth * 0.60,
+    paddingVertical:10
   },
   statementImageConteiner: {
     justifyContent: 'center',
@@ -30,7 +40,7 @@ const styles = StyleSheet.create({
     resizeMode: 'contain',
     justifyContent: 'flex-end',
     width: Math.round((metrics.screenWidth * 14) / 16),
-    height: metrics.screenHeight * 0.12,
+    height: metrics.screenHeight * 0.40,
   },
   icon: {
     color: colors.colorPrimary,
@@ -42,6 +52,28 @@ const styles = StyleSheet.create({
     height: metrics.screenHeight / 4,
     textAlign: 'center',
   },
+  title: {
+    fontFamily:'Poppins-Bold',
+    textAlign: 'center',
+    fontSize:fonts.regular,
+    padding:metrics.basePadding
+  },
+  button:{
+    backgroundColor:'red',
+    color:'white'
+  },
+  textQuestion:{
+    borderWidth:1,
+    position:'relative'
+  },
+  left:{
+    position:'absolute',
+    left:40
+  },
+  right:{
+    position:'absolute',
+    right:40
+  }
 });
 
 export default styles;

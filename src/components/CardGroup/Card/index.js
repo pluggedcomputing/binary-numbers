@@ -2,21 +2,22 @@ import React, {useState} from 'react';
 import {View, Text, TouchableOpacity, Image} from 'react-native';
 
 import PropTypes from 'prop-types';
-
 import image from '../../../assets/images/logo_grey.png';
 import styles from './styles';
+import  colors  from '../../../styles/colors';
 
 const Card = props => {
   const {number, rotate} = props;
+  const [backgroundColor] = useState(colors.colorAcent)
 
   const [state, setState] = useState({
     rotate,
     carCenter: () => getAmountCard(rotate),
-    textCard: rotate ? 0 : 1,
+    textCard: rotate ? 0 : 1, 
   });
 
   const imageCard = (
-    <View style={styles.containerContent}>
+    <View style={[styles.containerContent, {backgroundColor}]}>
       <Image style={styles.image} source={image} />
     </View>
   );
@@ -133,12 +134,14 @@ const Card = props => {
   };
 
   return (
-    <TouchableOpacity style={styles.card} onPress={rotateCard}>
+   <View style={styles.cardContainer}> 
+      <TouchableOpacity style={styles.card} onPress={rotateCard}>
       <View style={styles.cardWhite}>
         {state.carCenter()}
-        <Text style={styles.text}>{state.textCard}</Text>
       </View>
     </TouchableOpacity>
+    <Text style={styles.text}>{state.textCard}</Text>
+   </View>
   );
 };
 

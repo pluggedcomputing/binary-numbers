@@ -56,6 +56,18 @@ const styles = StyleSheet.create({
 
     justifyContent:'space-around'
   },
+  headerContainer:{
+    flexDirection:'row',
+    alignItems:"center",
+    justifyContent:"center",
+    width:"100%",
+    position:'relative'
+  },
+  closeButton:{
+    position:'absolute',
+    right:10
+  }
+
 
 });
 

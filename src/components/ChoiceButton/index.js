@@ -8,10 +8,10 @@ import styles from './styles';
 
 const ChoiceButton = props => {
   const {correct, onPress, text, step} = props;
-  const [backgroundColor, setbackgroundColor] = useState(colors.colorPrimary);
+  const [backgroundColor, setbackgroundColor] = useState(colors.colorAcent);
 
   useEffect(() => {
-    setbackgroundColor(colors.colorPrimary);
+    setbackgroundColor(colors.colorAcent);
   }, [step]);
 
   function onPressButton() {

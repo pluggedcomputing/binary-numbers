@@ -104,17 +104,17 @@
     "description": "Antes de iniciar a atividade, pode ser útil demonstrar os fundamentos ao grupo. Para esta atividade, são necessários cinco cartões, com pontos marcados de um lado e nada sobre o verso.",
     "introduction": [
       {
-        "text": "Sendo o sistema binário representado pelos números 0 e 1, podemos usar estes cartões ao lado para simbolizá-los. Quando um cartão está com a face para baixo, sem mostrar os pontos, este cartão é representado por um zero.",
+        "text": "Sendo o sistema binário representado pelos números 0 e 1, podemos usar estes cartões como esse acima para simbolizá-los. Quando um cartão está com a face para baixo, sem mostrar os pontos, este cartão é representado por um zero.",
         "image": {
           "name": null,
-          "url": null
+          "url": "l1q1_a"
         }
       },
       {
         "text": "Quando os pontos são exibidos, o cartão é representado por um. Este é o sistema numérico binário. Inicialmente os cartões ao lado representam o número 9 (Soma dos pontos das cartas) e a sua conversão em binário 01001 (Parte inferior da carta).",
         "image": {
           "name": null,
-          "url": null
+          "url": "l1q1_b"
         }
       }
     ],
@@ -220,14 +220,14 @@
         "text": "Então, você achava que sabia contar? Bem, aqui está uma nova forma de fazer isso!  Sabia que os computadores utilizam apenas zeros e uns? Tudo o que você vê ou ouve no computador - palavras, imagens, números, filmes e até mesmo o som - são armazenados usando apenas estes dois numerais!",
         "image": {
           "name": null,
-          "url": null
+          "url": "l2q1_a"
         }
       },
       {
         "text": "Estas atividades ensinarão como enviar mensagens secretas aos seus amigos usando exatamente o mesmo método que um computador.",
         "image": {
           "name": null,
-          "url": null
+          "url": "l2q1_b"
         }
       }
     ],
@@ -401,14 +401,14 @@
         "text": "Nos níveis anteriores utilizamos cartões para representar o sistema binário, você recorda? O zero quando a carta estava virada para baixo e o 1 quando estava virada para cima. Perceba que os números binários são compostos também por uniões menores, ou seja,",
         "image": {
           "name": null,
-          "url": null
+          "url": "l3q1_a"
         }
       },
       {
-        "text": "você pode retirar em ordem decrescentes as cartas para formar novas combinações. Neste nível você irá decifrar a combinação binária que está codificada, ah! lembre-se de converter para decimal para inserir sua resposta.",
+        "text": "Você pode retirar em ordem decrescente as cartas para formar novas combinações. Neste nível você irá decifrar a combinação binária que está codificada, ah! lembre-se de converter para decimal para inserir sua resposta.",
         "image": {
           "name": null,
-          "url": null
+          "url": "l3q1_b"
         }
       }
     ],
@@ -672,14 +672,14 @@
         "text": "Tom está preso no último andar de uma loja. É noite de Natal e ele quer ir para casa. O que ele pode fazer? Ele tentou chamar alguém, até mesmo gritar, mas não funcionou. Do outro lado da rua ele pode ver uma pessoa ainda trabalhando até tarde da noite.",
         "image": {
           "name": null,
-          "url": null
+          "url": "l4q1_a"
         }
       },
       {
         "text": "Tom olha em volta para ver o que poderia usar. Então, ele tem uma brilhante idéia: utilizar as lâmpadas da árvore de Natal para enviar uma mensagem! Ele coletou todas as lâmpadas disponíveis e as conectou aos bocais de forma que pudesse acendê-las ou apagá-las.",
         "image": {
           "name": "l4q00-1588012620919.png",
-          "url": "l4q00"
+          "url": "l4q1_b"
         }
       }
     ],
@@ -733,14 +733,14 @@
         "text": "Os computadores conectados à Internet através de um equipamento conhecido por modem também utilizam o sistema binário para enviar mensagens. A única diferença é que eles usam um sinal sonoro ou bip.",
         "image": {
           "name": null,
-          "url": null
+          "url": "l5q1_a"
         }
       },
       {
         "text": "Um bip agudo é utilizado para o um e um bip grave é utilizado para o zero. Estes sinais são transmitidos rapidamente. Tão rápido, na verdade, que apenas ouvimos um horrível zumbido contínuo. Se você nunca o ouviu, ouça um modem conectar-se à Internet.",
         "image": {
           "name": null,
-          "url": null
+          "url": "l5q1_b"
         }
       }
     ],
@@ -760,6 +760,11 @@
         "statement": "Utilizando apenas uma mão, qual a representação do número 30 em binário?",
         "type": "MULTIPLECHOICE",
         "level": 6,
+        "image": {
+          "_id": null,
+          "name": null,
+          "url": "l6q1"
+        },
         "alternatives": [
           {
             "correct": true,
@@ -791,6 +796,11 @@
         "statement": "Agora com às duas mãos converta o número 1010110011 para decimal.",
         "type": "MULTIPLECHOICE",
         "level": 6,
+        "image": {
+          "_id": null,
+          "name": null,
+          "url": "l6q2"
+        },
         "alternatives": [
           {
             "correct": false,
@@ -862,14 +872,14 @@
         "text": "Você já colocou todos os seus dedos para trabalhar? Pois agora eles podem contar e ir muito além do número dez. Não, você não precisa ser de outro planeta! Se utilizar o sistema binário e deixar que cada dedo de uma mão retrate um dos cartões com pontos, então pode contar de 0 a 31.",
         "image": {
           "name": null,
-          "url": null
+          "url": "l6q1_a"
         }
       },
       {
         "text": "Ao total, temos 32 números. (Não se esqueça, zero também é um número!). Se o dedo estiver para cima, é um, e, se estiver para baixo, é zero. Você pode contar de 0 a 1023 se usar as duas mãos! São 1024 números!",
         "image": {
           "name": null,
-          "url": null
+          "url": "l6q1_b"
         }
       }
     ],
@@ -889,6 +899,11 @@
         "statement": "O que acontece quando você coloca um 0 à direita de um número binário?",
         "type": "MULTIPLECHOICE",
         "level": 7,
+        "image": {
+          "_id": null,
+          "name": null,
+          "url": "l7q1_b"
+        },
         "alternatives": [
           {
             "correct": false,
@@ -996,7 +1011,7 @@
         "text": "Outra situação interessante dos números binários acontece quando um zero é colocado ao lado direito de um número. Se estivermos trabalhando na base 10 (decimal), ao colocarmos um zero ao lado direito de um número, este é multiplicado por 10. Por exemplo, 9 torna-se 90, 30 torna-se 300.",
         "image": {
           "name": null,
-          "url": null
+          "url": "l7q1_a"
         }
       }
     ],
@@ -1019,7 +1034,7 @@
         "image": {
           "_id": "5ea72654127b53001e91932e",
           "name": "l8q1-1588012628459.png",
-          "url": "l8q1"
+          "url": "l8q2"
         },
         "createdAt": "2020-04-27T18:37:08.573Z",
         "updatedAt": "2020-04-27T18:37:08.573Z",
@@ -1033,7 +1048,7 @@
         "image": {
           "_id": "5ea72654127b53001e919330",
           "name": "l8q2-1588012628759.png",
-          "url": "l8q2"
+          "url": "l8q3"
         },
         "createdAt": "2020-04-27T18:37:08.868Z",
         "updatedAt": "2020-04-27T18:37:08.868Z",
@@ -1047,7 +1062,7 @@
         "image": {
           "_id": "5ea72655127b53001e919332",
           "name": "l8q3-1588012629072.png",
-          "url": "l8q3"
+          "url": "l8q4"
         },
         "createdAt": "2020-04-27T18:37:09.179Z",
         "updatedAt": "2020-04-27T18:37:09.179Z",
@@ -1058,6 +1073,11 @@
         "statement": "Um único bit não consegue representar muito. Por isso, os bits são utilizados geralmente em grupos de oito, podendo representar números de 0 a 255. Um grupo de oito bits é chamado de byte. A velocidade de um computador depende do número de bits que este pode processar de uma só vez. Por exemplo, um computador de 32 bits pode processar números de 32 bits em uma única operação, ao passo que um computador de 16 bits divide os números de 32 bits em partes menores, o que o torna mais lento.",
         "type": "EXPLANATION",
         "level": 8,
+        "image": {
+          "_id": "5ea72655127b53001e919335",
+          "name": "l8q5-1588012629556.png",
+          "url": "l8q5"
+        },
         "createdAt": "2020-04-27T18:37:09.371Z",
         "updatedAt": "2020-04-27T18:37:09.371Z",
         "__v": 0
@@ -1070,7 +1090,7 @@
         "image": {
           "_id": "5ea72655127b53001e919335",
           "name": "l8q5-1588012629556.png",
-          "url": "l8q5"
+          "url": "l8q6"
         },
         "createdAt": "2020-04-27T18:37:09.672Z",
         "updatedAt": "2020-04-27T18:37:09.672Z",
@@ -1085,7 +1105,7 @@
         "text": "Dados são a matéria-prima, os números com os quais os computadores trabalham. Um computador transforma seus dados em informações (palavras, números e fotos) que podemos compreender.",
         "image": {
           "name": null,
-          "url": null
+          "url": "l8q1"
         }
       }
     ],
