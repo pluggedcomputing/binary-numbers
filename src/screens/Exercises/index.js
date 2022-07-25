@@ -6,13 +6,15 @@ import {
   KeyboardAvoidingView,
   Platform,
   ScrollView,
+  TouchableOpacity,
+  Alert
 } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
 import {useRoute} from '@react-navigation/native';
 
-import LeftArrow from '../../assets/images/icons/left_arrow/left_arrow.png'
-import RightArrow from '../../assets/images/icons/left_arrow/rigth_arrow.png'
+
+import Close from '../../assets/images/close_icon/close.png';
 import CardGroup from '../../components/CardGroup';
 import CustomBackground from '../../components/CustomBackground';
 import {
@@ -26,6 +28,7 @@ import Tooltip from '../../components/Tooltip';
 import {general, colors} from '../../styles';
 import styles from './styles';
 
+
 export default function Exercises({navigation}) {
   const [showTips, setShowTips] = useState(false);
   const [showAnswerOptions, setShowAnswerOptions] = useState(false);
@@ -33,6 +36,7 @@ export default function Exercises({navigation}) {
   const [step, setSteps] = useState(0);
   const [exercise] = useState(response);
   const [question, setQuestion] = useState(response.questions[step]);
+  
 
   const [backgroundColor, setBackgroundColor] = useState(colors.colorBackground);
   const maxStep = exercise.questions.length;
@@ -117,6 +121,10 @@ export default function Exercises({navigation}) {
       ),
     });
   }, [navigation]);
+
+  const navigateScreen = async () => {
+    navigation.navigate('LevelSelection');
+  };
 
   useEffect(() => {
     if (finishLevel) {
@@ -234,10 +242,26 @@ export default function Exercises({navigation}) {
       />
       <ScrollView showsVerticalScrollIndicator={false}>
         <View style={[styles.container, {backgroundColor}]}>
-          <Text style={styles.title}>FASE {exercise.level}</Text>
+          <View style={styles.header}>
+            <Text style={styles.title}>FASE {exercise.level}</Text>
+            <TouchableOpacity
+              onPress={() => Alert.alert('Aviso','O progresso atual será perdido, deseja sair?',
+             [
+              {
+                text: "Sair",
+                onPress: navigateScreen
+              },
+            {
+              text:'Cancelar',
+              onPress: () => null
+            }
+            ]
+            )}
+              style={styles.closeButton}>
+              <Image source={Close}  />
+            </TouchableOpacity>
+          </View>
           <View style={styles.halfView}>
-            <Image source={RightArrow} style={styles.right} />
-            <Image source={LeftArrow} style={styles.left} />
             <CustomBackground
               style={styles.info}
               content={viewOfContent()}

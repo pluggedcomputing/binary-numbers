@@ -9,7 +9,7 @@ const styles = StyleSheet.create({
     justifyContent:'center',
     width:metrics.screenWidth,
     height: metrics.screenHeight,
-    backgroundColor:colors.colorBackground
+    backgroundColor:colors.colorBackground,
   },
   halfView: {
     flex: 1,
@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
     resizeMode: 'contain',
     justifyContent: 'flex-end',
     width: Math.round((metrics.screenWidth * 14) / 16),
-    height: metrics.screenHeight * 0.40,
+    height: metrics.screenHeight * 0.35,
   },
   icon: {
     color: colors.colorPrimary,
@@ -73,6 +73,17 @@ const styles = StyleSheet.create({
   right:{
     position:'absolute',
     right:40
+  },
+  header:{
+    position:'relative',
+    flexDirection:'row',
+    justifyContent:'center',
+    alignItems:'center',
+    
+  },
+  closeButton:{
+    position:'absolute',
+    right:20,
   }
 });
 
