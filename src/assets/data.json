@@ -942,14 +942,14 @@
             "text": "9"
           },
           {
-            "correct": true,
+            "correct": false,
             "_id": "5ea72653127b53001e919323",
             "text": "18"
           },
           {
-            "correct": false,
+            "correct": true,
             "_id": "5ea72653127b53001e919324",
-            "text": "2"
+            "text": "20"
           },
           {
             "correct": false,
