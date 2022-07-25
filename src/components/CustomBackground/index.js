@@ -17,15 +17,12 @@ const CustomBackground = props => {
     if(scrollRef.current.getCurrentIndex() !== 2){
       scrollRef.current.scrollToIndex({index: scrollRef.current.getCurrentIndex() + 1,Animated:false})
     }
-    // eslint-disable-next-line no-unused-expressions
-    scrollRef.current.getCurrentIndex() === 2 ? isLastPage(false) : null
   }
   const LeftArrowFunction = async () =>{
     if(scrollRef.current.getCurrentIndex() !== 0){
       scrollRef.current.scrollToIndex({index: scrollRef.current.getCurrentIndex() - 1,Animated:false})
     }
-    // eslint-disable-next-line no-unused-expressions
-    scrollRef.current.getCurrentIndex() !== 3 ? isLastPage(false) : null
+    
   }
   const scrollRef = React.useRef(null);
 
