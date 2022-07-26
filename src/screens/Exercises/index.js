@@ -11,7 +11,7 @@ import {
 } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
-import {useRoute} from '@react-navigation/native';
+import {useRoute, CommonActions} from '@react-navigation/native';
 
 
 import Close from '../../assets/images/close_icon/close.png';
@@ -123,7 +123,17 @@ export default function Exercises({navigation}) {
   }, [navigation]);
 
   const navigateScreen = async () => {
-    navigation.navigate('LevelSelection');
+    navigation.dispatch(
+      CommonActions.reset({
+        index: 1,
+        routes: [
+          {
+            name: 'LevelSelection',
+          },
+          
+        ],
+      })
+    )
   };
 
   useEffect(() => {
