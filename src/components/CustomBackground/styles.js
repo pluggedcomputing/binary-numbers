@@ -7,8 +7,6 @@ const HEIGHT_PORCENTAGE = 0.60;
 
 const styles = StyleSheet.create({
   container: {
-    marginRight: metrics.smallPadding,
-    marginLeft: metrics.smallPadding,
     height:metrics.screenHeight,
     width:metrics.screenWidth,
     position:'relative'
@@ -48,6 +46,18 @@ const styles = StyleSheet.create({
     borderRadius:50,
     backgroundColor:'gray',
     marginHorizontal:5
+  },
+  left:{
+    zIndex:1,
+    position:'absolute',
+    top:260,
+    left:25
+  },
+  right:{
+    zIndex:1,
+    position:'absolute',
+    top:260,
+    right:25
   }
 });
 

@@ -13,8 +13,8 @@ import Share from 'react-native-share';
 import AsyncStorage from '@react-native-community/async-storage';
 import {useRoute, CommonActions} from '@react-navigation/native';
 
-import Close from '../../assets/images/close_icon/close.png'
 import data from '../../assets/data.json';
+import Close from '../../assets/images/close_icon/close.png'
 import Next from '../../assets/images/next_icon/next.png';
 import Remake from "../../assets/images/reload_icon/reload.png";
 import ShareImg from '../../assets/images/share_icon/share.png';
@@ -36,22 +36,23 @@ const Congratulations = props => {
     navigation.navigate('LevelSelection');
   };
 
- const nextLevel = async () =>{
-  await AsyncStorage.setItem(`level${level + 1}`, 'true');
-  navigation.dispatch(
-    CommonActions.reset({
-      index: 1,
-      routes: [
-        {
-          name: 'Exercises',
-          params: {data:data[level] },
-        },
-        
-      ],
-    })
-  )
-  
- }
+  const nextLevel = async () =>{
+    if(level < 8){
+      await AsyncStorage.setItem(`level${level + 1}`, 'true');
+      navigation.dispatch(
+      CommonActions.reset({
+        index: 1,
+        routes: [
+          {
+            name: 'Exercises',
+            params: {data:data[level] },
+          },
+          
+        ],
+      })
+    )
+    }
+  }
 
   const customShare = async() =>{
     const ShareOptions={

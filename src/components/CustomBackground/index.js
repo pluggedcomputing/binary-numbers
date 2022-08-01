@@ -1,37 +1,55 @@
 import React from 'react';
-import {View, FlatList, Animated} from 'react-native';
-
+import {View, Image, TouchableOpacity} from 'react-native';
+import { SwiperFlatList } from 'react-native-swiper-flatlist';
 
 import PropTypes from 'prop-types';
 
+import LeftArrow from '../../assets/images/icons/left_arrow/left_arrow.png'
+import RightArrow from '../../assets/images/icons/left_arrow/rigth_arrow.png'
 import styles from './styles';
 
+
 const CustomBackground = props => {
+
   const {content, style, isLastPage} = props;
 
-  const scrollX = React.useRef(new Animated.Value(0)).current;
+  const RightArrowFunction = async () =>{
+    if(scrollRef.current.getCurrentIndex() !== 2){
+      scrollRef.current.scrollToIndex({index: scrollRef.current.getCurrentIndex() + 1,Animated:false})
+    }
+  }
+  const LeftArrowFunction = async () =>{
+    if(scrollRef.current.getCurrentIndex() !== 0){
+      scrollRef.current.scrollToIndex({index: scrollRef.current.getCurrentIndex() - 1,Animated:false})
+    }
+    
+  }
+  const scrollRef = React.useRef(null);
 
   return (
-    <FlatList
+    <SwiperFlatList 
+      ref={scrollRef}
       style={[styles.container, style]}
       keyExtractor={(item, index) => String(index)}
       showsHorizontalScrollIndicator={false}
-      onEndReached={() => isLastPage(true)}
-      onEndReachedThreshold={0.1}
-      onScroll={Animated.event(
-        [{ nativeEvent: { contentOffset: { x: scrollX } } }],
-        {
-          useNativeDriver: false,
-        }
-      )}
-      decelerationRate="normal"
-      scrollEventThrottle={16}
       data={content}
       horizontal
+      showPagination
+      paginationDefaultColor="#ee82ee"
+      paginationActiveColor="#07377A"
+      onChangeIndex={() => scrollRef.current.getCurrentIndex() === 2 ? isLastPage(true) : isLastPage(false)}
       renderItem={({item}) => (
         <View style={styles.container}>
           <View style={styles.listContainer}>
+            <TouchableOpacity onPress={RightArrowFunction} style={styles.right}>
+              <Image source={RightArrow}  />
+            </TouchableOpacity>
+            <TouchableOpacity onPress={LeftArrowFunction} style={styles.left}>
+              <Image source={LeftArrow}  />
+            </TouchableOpacity>
             <View style={styles.content}>{item}</View>
+            
+            
           </View>
         </View>
       )}
