@@ -35,7 +35,7 @@ const CustomBackground = props => {
       data={content}
       horizontal
       showPagination
-      paginationDefaultColor="#ee82ee"
+      paginationDefaultColor="#c0c0c0"
       paginationActiveColor="#07377A"
       onChangeIndex={() => scrollRef.current.getCurrentIndex() === 2 ? isLastPage(true) : isLastPage(false)}
       renderItem={({item}) => (
