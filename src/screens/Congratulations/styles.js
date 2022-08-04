@@ -32,9 +32,10 @@ const styles = StyleSheet.create({
     flexDirection:'row'
   },
   feedbackContent:{
+    
+    textAlign:'center',
     maxWidth:209,
     maxHeight:120,
-    textAlign:'left',
   },
   buttonContainer:{
     justifyContent:"center",

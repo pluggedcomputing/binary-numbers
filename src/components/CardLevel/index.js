@@ -15,13 +15,13 @@ const CardLevel = props => {
   const handleModal = () => setShowModal(!showModal);
 
   const viewOfContent = [
-    'Introdução ao sistema binário.',
-    'Números Binários.',
-    'Trabalhando com Números Binários.',
-    'Mensagem secreta com Binários.',
-    'Correio Eletrônico e Modens.',
-    'Contar acima de 31.',
-    'Mais Sobre Números Binários.',
+    'Introdução ao sistema binário',
+    'Aprendendo a contar',
+    'Trabalhando com Números Binários',
+    'Mensagem secreta com Binários',
+    'Correio Eletrônico e Modens',
+    'Contar acima de 31',
+    'Mais Sobre Números Binários',
     'De que se trata tudo isso?',
   
   ];

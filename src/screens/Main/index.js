@@ -13,7 +13,7 @@ function Main({navigation}) {
       <View style={styles.box}>
         <Image source={cover} style={styles.logo} />
         <Text style={styles.textPrimary}>CONTANDO OS PONTOS</Text>
-        <Text style={styles.textSecondary}>Numeros binários</Text>
+        <Text style={styles.textSecondary}>Números binários</Text>
       </View>
 
       <View style={styles.box}>
