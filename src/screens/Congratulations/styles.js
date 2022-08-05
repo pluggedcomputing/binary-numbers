@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
     fontSize:fonts.regular,
     padding:metrics.basePadding
   },
-  textCongralulations:{
+  textCongratulations:{
     fontSize:fonts.header,
     fontFamily:'Poppins-Bold'
   },
@@ -32,10 +32,8 @@ const styles = StyleSheet.create({
     flexDirection:'row'
   },
   feedbackContent:{
-    
     textAlign:'center',
-    maxWidth:209,
-    maxHeight:120,
+    width: metrics.screenWidth * 0.40,
   },
   buttonContainer:{
     justifyContent:"center",
@@ -49,6 +47,8 @@ const styles = StyleSheet.create({
     paddingVertical:5,
   },
   WinLevel:{
+    resizeMode:'contain',
+    height: metrics.screenHeight * 0.50,
     width:metrics.screenWidth * 0.90
   },
   buttonsContainer:{

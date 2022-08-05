@@ -3,13 +3,11 @@ import { StyleSheet } from "react-native";
 import { colors, fonts, metrics} from "../../styles";
 
 
-const WIDTH_PORCENTAGE = 0.85;
+const WIDTH_PORCENTAGE = 0.90;
 
 const styles = StyleSheet.create({
     container:{
         flex: 1,
-        width: metrics.screenWidth,
-        height: metrics.screenHeight,
         backgroundColor: colors.colorBackground,
         alignItems:'center',
         paddingBottom:metrics.doubleBasePadding
@@ -28,7 +26,9 @@ const styles = StyleSheet.create({
     },
 
     image:{
+        resizeMode:'contain',
         width:metrics.screenWidth * WIDTH_PORCENTAGE,
+        height: metrics.screenHeight * 0.30,
         borderRadius:metrics.smallRadius,
         marginVertical:metrics.doubleBaseMargin
     },

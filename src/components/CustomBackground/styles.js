@@ -50,13 +50,13 @@ const styles = StyleSheet.create({
   left:{
     zIndex:1,
     position:'absolute',
-    top:260,
+    top:metrics.screenWidth * 0.60,
     left:25
   },
   right:{
     zIndex:1,
     position:'absolute',
-    top:260,
+    top:metrics.screenWidth * 0.60,
     right:25
   }
 });

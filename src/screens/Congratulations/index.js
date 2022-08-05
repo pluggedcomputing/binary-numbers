@@ -101,7 +101,7 @@ const Congratulations = props => {
       </View>
       <Image source={WinLevel} style={styles.WinLevel} />
       <View style={styles.textContent}> 
-        <Text style={styles.textCongralulations}>PARABÉNS</Text>
+        <Text style={styles.textCongratulations}>PARABÉNS</Text>
       </View>
       <View>
         <Text style={styles.feedbackContent}>Você concluiu a 

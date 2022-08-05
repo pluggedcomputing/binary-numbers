@@ -31,7 +31,7 @@ const styles = StyleSheet.create({
   },
   bio:{
     fontSize:fonts.medium,
-    maxWidth:116,
+    maxWidth: metrics.screenWidth * 0.25,
   },
 });
 
