@@ -14,7 +14,7 @@ const CustomBackground = props => {
   const {content, style, isLastPage} = props;
 
   const RightArrowFunction = async () =>{
-    if(scrollRef.current.getCurrentIndex() !== 2){
+    if(scrollRef.current.getCurrentIndex() !== content.length -1){
       scrollRef.current.scrollToIndex({index: scrollRef.current.getCurrentIndex() + 1,Animated:false})
     }
   }
@@ -37,7 +37,7 @@ const CustomBackground = props => {
       showPagination
       paginationDefaultColor="#c0c0c0"
       paginationActiveColor="#07377A"
-      onChangeIndex={() => scrollRef.current.getCurrentIndex() === 2 ? isLastPage(true) : isLastPage(false)}
+      onChangeIndex={() => scrollRef.current.getCurrentIndex() === content.length -1 ? isLastPage(true) : isLastPage(false)}
       renderItem={({item}) => (
         <View style={styles.container}>
           <View style={styles.listContainer}>

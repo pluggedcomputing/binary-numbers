@@ -425,7 +425,7 @@
     "questions": [
       {
         "_id": "5ea7264d127b53001e9192e8",
-        "statement": "1. Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal e fique atento pois as luzes apagadas (os espaços em brancos) representam o bit 0 e as luzes acesas (os espaços com a árvore) representam o bit 1. ",
+        "statement": "Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal e fique atento pois as luzes apagadas representam o bit 0 e as luzes acesas representam o bit 1. ",
         "type": "NUMERIC",
         "level": 4,
         "numeric_answer": 1,
@@ -440,7 +440,7 @@
       },
       {
         "_id": "5ea7264d127b53001e9192ea",
-        "statement": "2. Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal e fique atento pois as luzes apagadas (os espaços em brancos) representam o bit 0 e as luzes acesas (os espaços com a árvore) representam o bit 1. ",
+        "statement": "Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal e fique atento pois as luzes apagadas representam o bit 0 e as luzes acesas representam o bit 1. ",
         "type": "NUMERIC",
         "level": 4,
         "numeric_answer": 10,
@@ -455,7 +455,7 @@
       },
       {
         "_id": "5ea7264d127b53001e9192ec",
-        "statement": "3. Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal e fique atento pois as luzes apagadas (os espaços em brancos) representam o bit 0 e as luzes acesas (os espaços com a árvore) representam o bit 1. ",
+        "statement": "Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal e fique atento pois as luzes apagadas representam o bit 0 e as luzes acesas representam o bit 1. ",
         "type": "NUMERIC",
         "level": 4,
         "numeric_answer": 21,
@@ -470,7 +470,7 @@
       },
       {
         "_id": "5ea7264d127b53001e9192ee",
-        "statement": "4. Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal e fique atento pois as luzes apagadas (os espaços em brancos) representam o bit 0 e as luzes acesas (os espaços com a árvore) representam o bit 1. ",
+        "statement": "Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal e fique atento pois as luzes apagadas representam o bit 0 e as luzes acesas representam o bit 1. ",
         "type": "NUMERIC",
         "level": 4,
         "numeric_answer": 4,
@@ -485,7 +485,7 @@
       },
       {
         "_id": "5ea7264e127b53001e9192f0",
-        "statement": "5. Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal e fique atento pois as luzes apagadas (os espaços em brancos) representam o bit 0 e as luzes acesas (os espaços com a árvore) representam o bit 1. ",
+        "statement": "Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal e fique atento pois as luzes apagadas representam o bit 0 e as luzes acesas representam o bit 1. ",
         "type": "NUMERIC",
         "level": 4,
         "numeric_answer": 5,
@@ -500,7 +500,7 @@
       },
       {
         "_id": "5ea7264e127b53001e9192f2",
-        "statement": "6. Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal e fique atento pois as luzes apagadas (os espaços em brancos) representam o bit 0 e as luzes acesas (os espaços com a árvore) representam o bit 1. ",
+        "statement": "Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal e fique atento pois as luzes apagadas representam o bit 0 e as luzes acesas representam o bit 1. ",
         "type": "NUMERIC",
         "level": 4,
         "numeric_answer": 5,
@@ -515,7 +515,7 @@
       },
       {
         "_id": "5ea7264e127b53001e9192f4",
-        "statement": "7. Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal e fique atento pois as luzes apagadas (os espaços em brancos) representam o bit 0 e as luzes acesas (os espaços com a árvore) representam o bit 1. ",
+        "statement": "Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal e fique atento pois as luzes apagadas representam o bit 0 e as luzes acesas representam o bit 1. ",
         "type": "NUMERIC",
         "level": 4,
         "numeric_answer": 19,
@@ -530,7 +530,7 @@
       },
       {
         "_id": "5ea7264f127b53001e9192f6",
-        "statement": "8. Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal e fique atento pois as luzes apagadas (os espaços em brancos) representam o bit 0 e as luzes acesas (os espaços com a árvore) representam o bit 1. ",
+        "statement": "Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal e fique atento pois as luzes apagadas representam o bit 0 e as luzes acesas representam o bit 1. ",
         "type": "NUMERIC",
         "level": 4,
         "numeric_answer": 20,
@@ -545,7 +545,7 @@
       },
       {
         "_id": "5ea7264f127b53001e9192f8",
-        "statement": "9. Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal e fique atento pois as luzes apagadas (os espaços em brancos) representam o bit 0 e as luzes acesas (os espaços com a árvore) representam o bit 1. ",
+        "statement": "Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal e fique atento pois as luzes apagadas representam o bit 0 e as luzes acesas representam o bit 1. ",
         "type": "NUMERIC",
         "level": 4,
         "numeric_answer": 15,
@@ -560,7 +560,7 @@
       },
       {
         "_id": "5ea7264f127b53001e9192fa",
-        "statement": "10. Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal e fique atento pois as luzes apagadas (os espaços em brancos) representam o bit 0 e as luzes acesas (os espaços com a árvore) representam o bit 1. ",
+        "statement": "Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal e fique atento pois as luzes apagadas representam o bit 0 e as luzes acesas representam o bit 1. ",
         "type": "NUMERIC",
         "level": 4,
         "numeric_answer": 21,
@@ -575,7 +575,7 @@
       },
       {
         "_id": "5ea72650127b53001e9192fc",
-        "statement": "11. Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal e fique atento pois as luzes apagadas (os espaços em brancos) representam o bit 0 e as luzes acesas (os espaços com a árvore) representam o bit 1. ",
+        "statement": "Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal e fique atento pois as luzes apagadas representam o bit 0 e as luzes acesas representam o bit 1. ",
         "type": "NUMERIC",
         "level": 4,
         "numeric_answer": 16,
@@ -590,7 +590,7 @@
       },
       {
         "_id": "5ea72650127b53001e9192fe",
-        "statement": "12. Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal e fique atento pois as luzes apagadas (os espaços em brancos) representam o bit 0 e as luzes acesas (os espaços com a árvore) representam o bit 1. ",
+        "statement": "Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal e fique atento pois as luzes apagadas representam o bit 0 e as luzes acesas representam o bit 1. ",
         "type": "NUMERIC",
         "level": 4,
         "numeric_answer": 18,
@@ -605,7 +605,7 @@
       },
       {
         "_id": "5ea72650127b53001e919300",
-        "statement": "13. Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal e fique atento pois as luzes apagadas (os espaços em brancos) representam o bit 0 e as luzes acesas (os espaços com a árvore) representam o bit 1. ",
+        "statement": "Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal e fique atento pois as luzes apagadas representam o bit 0 e as luzes acesas representam o bit 1. ",
         "type": "NUMERIC",
         "level": 4,
         "numeric_answer": 5,
@@ -620,7 +620,7 @@
       },
       {
         "_id": "5ea72650127b53001e919302",
-        "statement": "14. Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal e fique atento pois as luzes apagadas (os espaços em brancos) representam o bit 0 e as luzes acesas (os espaços com a árvore) representam o bit 1. ",
+        "statement": "Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal e fique atento pois as luzes apagadas representam o bit 0 e as luzes acesas representam o bit 1. ",
         "type": "NUMERIC",
         "level": 4,
         "numeric_answer": 19,
@@ -635,7 +635,7 @@
       },
       {
         "_id": "5ea72651127b53001e919304",
-        "statement": "15. Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal e fique atento pois as luzes apagadas (os espaços em brancos) representam o bit 0 e as luzes acesas (os espaços com a árvore) representam o bit 1. ",
+        "statement": "Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal e fique atento pois as luzes apagadas representam o bit 0 e as luzes acesas representam o bit 1. ",
         "type": "NUMERIC",
         "level": 4,
         "numeric_answer": 15,
@@ -1027,62 +1027,6 @@
     },
     "questions": [
       {
-        "_id": "5ea72654127b53001e91932d",
-        "statement": "Os computadores utilizam o sistema binário para representar informações. Chama-se binário porque utiliza dois dígitos distintos tambem chamados de bit. Um bit é normalmente representado na memória do computador por um transistor, que pode estar ligado ou desligado, ou um capacitor, que pode estar carregado ou descarregado. ",
-        "type": "EXPLANATION",
-        "level": 8,
-        "image": {
-          "_id": "5ea72654127b53001e91932e",
-          "name": "l8q1-1588012628459.png",
-          "url": "l8q2"
-        },
-        "createdAt": "2020-04-27T18:37:08.573Z",
-        "updatedAt": "2020-04-27T18:37:08.573Z",
-        "__v": 0
-      },
-      {
-        "_id": "5ea72654127b53001e91932f",
-        "statement": "Quando os dados devem ser transmitidos por uma linha telefônica ou enlace de rádio, tons de alta e baixa freqüência são utilizados para os zeros e uns. Em discos magnéticos (disquetes e discos rígidos) e fitas, os bits são representados pela direção de um campo magnético sobre uma superfície revestida, podendo ser norte-sul ou sul-norte. ",
-        "type": "EXPLANATION",
-        "level": 8,
-        "image": {
-          "_id": "5ea72654127b53001e919330",
-          "name": "l8q2-1588012628759.png",
-          "url": "l8q3"
-        },
-        "createdAt": "2020-04-27T18:37:08.868Z",
-        "updatedAt": "2020-04-27T18:37:08.868Z",
-        "__v": 0
-      },
-      {
-        "_id": "5ea72655127b53001e919331",
-        "statement": "CDs de áudio, CD-ROMs e DVDs armazenam bits de forma ótica — a parte da superfície correspondente a um bit reflete ou não a luz. ",
-        "type": "EXPLANATION",
-        "level": 8,
-        "image": {
-          "_id": "5ea72655127b53001e919332",
-          "name": "l8q3-1588012629072.png",
-          "url": "l8q4"
-        },
-        "createdAt": "2020-04-27T18:37:09.179Z",
-        "updatedAt": "2020-04-27T18:37:09.179Z",
-        "__v": 0
-      },
-      {
-        "_id": "5ea72655127b53001e919333",
-        "statement": "Um único bit não consegue representar muito. Por isso, os bits são utilizados geralmente em grupos de oito, podendo representar números de 0 a 255. Um grupo de oito bits é chamado de byte. A velocidade de um computador depende do número de bits que este pode processar de uma só vez. Por exemplo, um computador de 32 bits pode processar números de 32 bits em uma única operação, ao passo que um computador de 16 bits divide os números de 32 bits em partes menores, o que o torna mais lento.",
-        "type": "EXPLANATION",
-        "level": 8,
-        "image": {
-          "_id": "5ea72655127b53001e919335",
-          "name": "l8q5-1588012629556.png",
-          "url": "l8q5"
-        },
-        "createdAt": "2020-04-27T18:37:09.371Z",
-        "updatedAt": "2020-04-27T18:37:09.371Z",
-        "__v": 0
-      },
-      {
         "_id": "5ea72655127b53001e919334",
         "statement": "Em suma, bits e bytes são tudo que um computador utiliza para armazenar e transmitir\nnúmeros, texto e todas as outras informações. Em algumas das atividades seguintes\nveremos como outros tipos de informações podem ser representados em um computador. ",
         "type": "EXPLANATION",
@@ -1106,6 +1050,41 @@
         "image": {
           "name": null,
           "url": "l8q1"
+        }
+      },
+      {
+        "text": "Os computadores utilizam o sistema binário para representar informações. Chama-se binário porque utiliza dois dígitos distintos tambem chamados de bit. Um bit é normalmente representado na memória do computador por um transistor, que pode estar ligado ou desligado, ou um capacitor, que pode estar carregado ou descarregado. ",
+        "image": {
+          "name": null,
+          "url": "l8q2"
+        }
+      },
+      {
+        "text": "Quando os dados devem ser transmitidos por uma linha telefônica ou enlace de rádio, tons de alta e baixa freqüência são utilizados para os zeros e uns. Em discos magnéticos (disquetes e discos rígidos) e fitas, os bits são representados pela direção de um campo magnético sobre uma superfície revestida, podendo ser norte-sul ou sul-norte. ",
+        "image": {
+          "name": null,
+          "url": "l8q3"
+        }
+      },
+      {
+        "text": "CDs de áudio, CD-ROMs e DVDs armazenam bits de forma ótica — a parte da superfície correspondente a um bit reflete ou não a luz. ",
+        "image": {
+          "name": null,
+          "url": "l8q4"
+        }
+      },
+      {
+        "text": "Um único bit não consegue representar muito. Por isso, os bits são utilizados geralmente em grupos de oito, podendo representar números de 0 a 255. Um grupo de oito bits é chamado de byte.",
+        "image": {
+          "name": null,
+          "url": "l8q5"
+        }
+      },
+      {
+        "text": "A velocidade de um computador depende do número de bits que este pode processar de uma só vez. Por exemplo, um computador de 32 bits pode processar números de 32 bits em uma única operação, ao passo que um computador de 16 bits divide os números de 32 bits em partes menores, o que o torna mais lento.",
+        "image": {
+          "name": null,
+          "url": "l8q5"
         }
       }
     ],

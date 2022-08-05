@@ -50,6 +50,18 @@ const Congratulations = props => {
         ],
       })
     )
+    }else{
+      navigation.dispatch(
+        CommonActions.reset({
+          index: 1,
+          routes: [
+            {
+              name: 'LevelSelection',
+            },
+            
+          ],
+        })
+      )
     }
   }
 
