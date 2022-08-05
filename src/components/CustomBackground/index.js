@@ -42,10 +42,10 @@ const CustomBackground = props => {
         <View style={styles.container}>
           <View style={styles.listContainer}>
             <TouchableOpacity onPress={RightArrowFunction} style={styles.right}>
-              <Image source={RightArrow}  />
+              <Image source={RightArrow} style={styles.arrow} />
             </TouchableOpacity>
             <TouchableOpacity onPress={LeftArrowFunction} style={styles.left}>
-              <Image source={LeftArrow}  />
+              <Image source={LeftArrow} style={styles.arrow} />
             </TouchableOpacity>
             <View style={styles.content}>{item}</View>
             

@@ -84,6 +84,11 @@ const styles = StyleSheet.create({
   closeButton:{
     position:'absolute',
     right:20,
+  },
+  closeImage:{
+    resizeMode:'contain',
+    width:metrics.screenWidth * 0.04,
+    height: metrics.screenHeight * 0.04
   }
 });
 

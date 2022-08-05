@@ -96,7 +96,7 @@ const Congratulations = props => {
           onPress={navigateScreen}
             
             >
-          <Image source={Close} />
+          <Image source={Close} style={styles.closeImage} />
         </TouchableOpacity>
       </View>
       <Image source={WinLevel} style={styles.WinLevel} />
