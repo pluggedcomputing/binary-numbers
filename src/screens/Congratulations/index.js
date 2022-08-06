@@ -32,8 +32,17 @@ const Congratulations = props => {
 
   const navigateScreen = async () => {
     await AsyncStorage.setItem(`level${level + 1}`, 'true');
-    navigation.navigate('LevelSelection');
-  };
+    navigation.dispatch(
+      CommonActions.reset({
+        index: 1,
+        routes: [
+          {
+            name: 'LevelSelection',
+          },
+          
+        ],
+      })
+    )}
 
   const nextLevel = async () =>{
     if(level < 8){
