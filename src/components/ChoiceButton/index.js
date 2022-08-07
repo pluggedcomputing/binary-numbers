@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import {View, Text, TouchableOpacity} from 'react-native';
+import {View, Text, TouchableOpacity, ToastAndroid} from 'react-native';
 
 import PropTypes from 'prop-types';
 
@@ -18,6 +18,13 @@ const ChoiceButton = props => {
     if (correct) {
       setbackgroundColor(colors.colorSucess);
     } else {
+      ToastAndroid.showWithGravityAndOffset(
+        "Tente outra vez.",
+        ToastAndroid.SHORT,
+        ToastAndroid.CENTER,
+        25,
+        50
+      );
       setbackgroundColor(colors.colorError);
     }
     setTimeout(() => onPress(), 350);

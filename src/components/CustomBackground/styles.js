@@ -50,14 +50,19 @@ const styles = StyleSheet.create({
   left:{
     zIndex:1,
     position:'absolute',
-    top:260,
+    top:metrics.screenWidth * 0.60,
     left:25
   },
   right:{
     zIndex:1,
     position:'absolute',
-    top:260,
+    top:metrics.screenWidth * 0.60,
     right:25
+  },
+  arrow:{
+    resizeMode:'contain',
+    height: metrics.screenHeight * 0.05,
+    width:metrics.screenWidth * 0.03
   }
 });
 

@@ -268,7 +268,7 @@ export default function Exercises({navigation}) {
             ]
             )}
               style={styles.closeButton}>
-              <Image source={Close}  />
+              <Image source={Close} style={styles.closeImage} />
             </TouchableOpacity>
           </View>
           <View style={styles.halfView}>

@@ -14,7 +14,7 @@ const CustomBackground = props => {
   const {content, style, isLastPage} = props;
 
   const RightArrowFunction = async () =>{
-    if(scrollRef.current.getCurrentIndex() !== 2){
+    if(scrollRef.current.getCurrentIndex() !== content.length -1){
       scrollRef.current.scrollToIndex({index: scrollRef.current.getCurrentIndex() + 1,Animated:false})
     }
   }
@@ -35,17 +35,17 @@ const CustomBackground = props => {
       data={content}
       horizontal
       showPagination
-      paginationDefaultColor="#ee82ee"
+      paginationDefaultColor="#c0c0c0"
       paginationActiveColor="#07377A"
-      onChangeIndex={() => scrollRef.current.getCurrentIndex() === 2 ? isLastPage(true) : isLastPage(false)}
+      onChangeIndex={() => scrollRef.current.getCurrentIndex() === content.length -1 ? isLastPage(true) : isLastPage(false)}
       renderItem={({item}) => (
         <View style={styles.container}>
           <View style={styles.listContainer}>
             <TouchableOpacity onPress={RightArrowFunction} style={styles.right}>
-              <Image source={RightArrow}  />
+              <Image source={RightArrow} style={styles.arrow} />
             </TouchableOpacity>
             <TouchableOpacity onPress={LeftArrowFunction} style={styles.left}>
-              <Image source={LeftArrow}  />
+              <Image source={LeftArrow} style={styles.arrow} />
             </TouchableOpacity>
             <View style={styles.content}>{item}</View>
             

@@ -69,7 +69,7 @@
       },
       {
         "_id": "5ea72648127b53001e9192c3",
-        "statement": "Como seria o número 17 em binário?",
+        "statement": "Como seria o número 17 em binário?\nDica: veja os números abaixo dos cartões",
         "type": "MULTIPLECHOICE",
         "level": 1,
         "alternatives": [
@@ -104,17 +104,17 @@
     "description": "Antes de iniciar a atividade, pode ser útil demonstrar os fundamentos ao grupo. Para esta atividade, são necessários cinco cartões, com pontos marcados de um lado e nada sobre o verso.",
     "introduction": [
       {
-        "text": "Sendo o sistema binário representado pelos números 0 e 1, podemos usar estes cartões como esse acima para simbolizá-los. Quando um cartão está com a face para baixo, sem mostrar os pontos, este cartão é representado por um zero.",
-        "image": {
-          "name": null,
-          "url": "l1q1_a"
-        }
-      },
-      {
-        "text": "Quando os pontos são exibidos, o cartão é representado por um. Este é o sistema numérico binário. Inicialmente os cartões ao lado representam o número 9 (Soma dos pontos das cartas) e a sua conversão em binário 01001 (Parte inferior da carta).",
+        "text": "Podemos usar cartões com pontos para representar números utilizando o sistema numérico binário, que só aceita 1s e 0s. Quando os cartões são exibidos com os seus pontos, o cartão é representado por 1 (um).",
         "image": {
           "name": null,
           "url": "l1q1_b"
+        }
+      },
+      {
+        "text": "Quando um cartão está com a face para baixo, sem mostrar os pontos, podemos representá-lo por um 0 (zero).",
+        "image": {
+          "name": null,
+          "url": "l1q1_a"
         }
       }
     ],
@@ -131,7 +131,7 @@
     "questions": [
       {
         "_id": "5ea72648127b53001e9192c8",
-        "statement": "A sequência em binário 10011 corresponde a que número decimal?",
+        "statement": "A sequência em binário 10011 corresponde a que número decimal? Para descobir você pode virar os cartões e olhar o número binário correspondente mostrado na parte de baixo.",
         "type": "MULTIPLECHOICE",
         "level": 2,
         "alternatives": [
@@ -162,7 +162,7 @@
       },
       {
         "_id": "5ea72648127b53001e9192cd",
-        "statement": "Os numeros 3 e 12 correspondem respectivamente à: ",
+        "statement": "Os números 3 e 12 correspondem respectivamente a: ",
         "type": "MULTIPLECHOICE",
         "level": 2,
         "alternatives": [
@@ -217,14 +217,14 @@
     "description": "Antes de iniciar a atividade, pode ser útil demonstrar os fundamentos ao grupo. Para esta atividade, são necessários cinco cartões, com pontos marcados de um lado e nada sobre o verso.",
     "introduction": [
       {
-        "text": "Então, você achava que sabia contar? Bem, aqui está uma nova forma de fazer isso!  Sabia que os computadores utilizam apenas zeros e uns? Tudo o que você vê ou ouve no computador - palavras, imagens, números, filmes e até mesmo o som - são armazenados usando apenas estes dois numerais!",
+        "text": "Então, você achava que sabia contar? Bem, aqui está uma nova forma de fazer isso!  Sabia que os computadores utilizam apenas zeros e uns? Tudo o que você vê ou ouve no computador - palavras, imagens, números, filmes e até mesmo o som - são representados usando apenas estes dois algarismos!",
         "image": {
           "name": null,
           "url": "l2q1_a"
         }
       },
       {
-        "text": "Estas atividades ensinarão como enviar mensagens secretas aos seus amigos usando exatamente o mesmo método que um computador.",
+        "text": "As atividades a seguir ensinarão como enviar mensagens secretas aos seus amigos usando exatamente o mesmo método que um computador.",
         "image": {
           "name": null,
           "url": "l2q1_b"
@@ -244,7 +244,7 @@
     "questions": [
       {
         "_id": "5ea72649127b53001e9192d4",
-        "statement": "1. Tente decifrar os seguintes números codificados: ",
+        "statement": "Ao invés de 1 e 0, poderíamos usar outros códigos para representar cartões virados ou não.  Considerando isso, que valor decimal representariam esses códigos? Tente lembrar a quantidade de pontos em cada cartão para fazer essa conversão.",
         "type": "NUMERIC",
         "level": 3,
         "numeric_answer": 9,
@@ -259,7 +259,7 @@
       },
       {
         "_id": "5ea7264a127b53001e9192d6",
-        "statement": "2. Tente decifrar os seguintes números codificados: ",
+        "statement": "Que número decimal está sendo representado por esses códigos?",
         "type": "NUMERIC",
         "level": 3,
         "numeric_answer": 10,
@@ -274,7 +274,7 @@
       },
       {
         "_id": "5ea7264a127b53001e9192d8",
-        "statement": "3. Tente decifrar os seguintes números codificados: ",
+        "statement": "Que número decimal está sendo representado por esses códigos?",
         "type": "NUMERIC",
         "level": 3,
         "numeric_answer": 5,
@@ -289,7 +289,7 @@
       },
       {
         "_id": "5ea7264a127b53001e9192da",
-        "statement": "4. Tente decifrar os seguintes números codificados: ",
+        "statement": "Que número decimal está sendo representado por esses códigos?",
         "type": "NUMERIC",
         "level": 3,
         "numeric_answer": 11,
@@ -304,7 +304,7 @@
       },
       {
         "_id": "5ea7264b127b53001e9192dc",
-        "statement": "5. Tente decifrar os seguintes números codificados: ",
+        "statement": "Que número decimal está sendo representado por esses códigos?",
         "type": "NUMERIC",
         "level": 3,
         "numeric_answer": 0,
@@ -319,7 +319,7 @@
       },
       {
         "_id": "5ea7264b127b53001e9192de",
-        "statement": "6. Tente decifrar os seguintes números codificados: ",
+        "statement": "Que número decimal está sendo representado por esses códigos?",
         "type": "NUMERIC",
         "level": 3,
         "numeric_answer": 17,
@@ -334,7 +334,7 @@
       },
       {
         "_id": "5ea7264b127b53001e9192e0",
-        "statement": "7. Tente decifrar os seguintes números codificados: ",
+        "statement": "Que número decimal está sendo representado por esses códigos?",
         "type": "NUMERIC",
         "level": 3,
         "numeric_answer": 2,
@@ -349,7 +349,7 @@
       },
       {
         "_id": "5ea7264c127b53001e9192e2",
-        "statement": "8. Tente decifrar os seguintes números codificados: ",
+        "statement": "Que número decimal está sendo representado por esses códigos? ",
         "type": "NUMERIC",
         "level": 3,
         "numeric_answer": 0,
@@ -364,7 +364,7 @@
       },
       {
         "_id": "5ea7264c127b53001e9192e4",
-        "statement": "9. Tente decifrar os seguintes números codificados: ",
+        "statement": "Que número decimal está sendo representado por esses códigos?",
         "type": "NUMERIC",
         "level": 3,
         "numeric_answer": 20,
@@ -379,7 +379,7 @@
       },
       {
         "_id": "5ea7264c127b53001e9192e6",
-        "statement": "10. Tente decifrar os seguintes números codificados: ",
+        "statement": "Que número decimal está sendo representado por esses códigos?",
         "type": "NUMERIC",
         "level": 3,
         "numeric_answer": 31,
@@ -398,14 +398,14 @@
     "description": "São exibidas dez imagens com legendas em que o usuário deve traduzir para binário e converter em decimal.",
     "introduction": [
       {
-        "text": "Nos níveis anteriores utilizamos cartões para representar o sistema binário, você recorda? O zero quando a carta estava virada para baixo e o 1 quando estava virada para cima. Perceba que os números binários são compostos também por uniões menores, ou seja,",
+        "text": "Nos níveis anteriores utilizamos cartões para representar o sistema binário, você recorda? O zero quando o cartão estava virado para baixo e o 1 quando estava virado para cima.",
         "image": {
           "name": null,
           "url": "l3q1_a"
         }
       },
       {
-        "text": "Você pode retirar em ordem decrescente as cartas para formar novas combinações. Neste nível você irá decifrar a combinação binária que está codificada, ah! lembre-se de converter para decimal para inserir sua resposta.",
+        "text": "Imagine todos os cartões virados para cima. Note que com eles poderemos representar muitos números somando a quantidade de pontos dos cartões",
         "image": {
           "name": null,
           "url": "l3q1_b"
@@ -425,7 +425,7 @@
     "questions": [
       {
         "_id": "5ea7264d127b53001e9192e8",
-        "statement": "1. Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal e fique atento pois as luzes apagadas (os espaços em brancos) representam o bit 0 e as luzes acesas (os espaços com a árvore) representam o bit 1. ",
+        "statement": "Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal e fique atento pois as luzes apagadas representam o bit 0 e as luzes acesas representam o bit 1. ",
         "type": "NUMERIC",
         "level": 4,
         "numeric_answer": 1,
@@ -440,7 +440,7 @@
       },
       {
         "_id": "5ea7264d127b53001e9192ea",
-        "statement": "2. Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal e fique atento pois as luzes apagadas (os espaços em brancos) representam o bit 0 e as luzes acesas (os espaços com a árvore) representam o bit 1. ",
+        "statement": "Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal e fique atento pois as luzes apagadas representam o bit 0 e as luzes acesas representam o bit 1. ",
         "type": "NUMERIC",
         "level": 4,
         "numeric_answer": 10,
@@ -455,7 +455,7 @@
       },
       {
         "_id": "5ea7264d127b53001e9192ec",
-        "statement": "3. Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal e fique atento pois as luzes apagadas (os espaços em brancos) representam o bit 0 e as luzes acesas (os espaços com a árvore) representam o bit 1. ",
+        "statement": "Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal e fique atento pois as luzes apagadas representam o bit 0 e as luzes acesas representam o bit 1. ",
         "type": "NUMERIC",
         "level": 4,
         "numeric_answer": 21,
@@ -470,7 +470,7 @@
       },
       {
         "_id": "5ea7264d127b53001e9192ee",
-        "statement": "4. Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal e fique atento pois as luzes apagadas (os espaços em brancos) representam o bit 0 e as luzes acesas (os espaços com a árvore) representam o bit 1. ",
+        "statement": "Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal e fique atento pois as luzes apagadas representam o bit 0 e as luzes acesas representam o bit 1. ",
         "type": "NUMERIC",
         "level": 4,
         "numeric_answer": 4,
@@ -485,7 +485,7 @@
       },
       {
         "_id": "5ea7264e127b53001e9192f0",
-        "statement": "5. Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal e fique atento pois as luzes apagadas (os espaços em brancos) representam o bit 0 e as luzes acesas (os espaços com a árvore) representam o bit 1. ",
+        "statement": "Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal e fique atento pois as luzes apagadas representam o bit 0 e as luzes acesas representam o bit 1. ",
         "type": "NUMERIC",
         "level": 4,
         "numeric_answer": 5,
@@ -500,7 +500,7 @@
       },
       {
         "_id": "5ea7264e127b53001e9192f2",
-        "statement": "6. Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal e fique atento pois as luzes apagadas (os espaços em brancos) representam o bit 0 e as luzes acesas (os espaços com a árvore) representam o bit 1. ",
+        "statement": "Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal e fique atento pois as luzes apagadas representam o bit 0 e as luzes acesas representam o bit 1. ",
         "type": "NUMERIC",
         "level": 4,
         "numeric_answer": 5,
@@ -515,7 +515,7 @@
       },
       {
         "_id": "5ea7264e127b53001e9192f4",
-        "statement": "7. Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal e fique atento pois as luzes apagadas (os espaços em brancos) representam o bit 0 e as luzes acesas (os espaços com a árvore) representam o bit 1. ",
+        "statement": "Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal e fique atento pois as luzes apagadas representam o bit 0 e as luzes acesas representam o bit 1. ",
         "type": "NUMERIC",
         "level": 4,
         "numeric_answer": 19,
@@ -530,7 +530,7 @@
       },
       {
         "_id": "5ea7264f127b53001e9192f6",
-        "statement": "8. Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal e fique atento pois as luzes apagadas (os espaços em brancos) representam o bit 0 e as luzes acesas (os espaços com a árvore) representam o bit 1. ",
+        "statement": "Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal e fique atento pois as luzes apagadas representam o bit 0 e as luzes acesas representam o bit 1. ",
         "type": "NUMERIC",
         "level": 4,
         "numeric_answer": 20,
@@ -545,7 +545,7 @@
       },
       {
         "_id": "5ea7264f127b53001e9192f8",
-        "statement": "9. Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal e fique atento pois as luzes apagadas (os espaços em brancos) representam o bit 0 e as luzes acesas (os espaços com a árvore) representam o bit 1. ",
+        "statement": "Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal e fique atento pois as luzes apagadas representam o bit 0 e as luzes acesas representam o bit 1. ",
         "type": "NUMERIC",
         "level": 4,
         "numeric_answer": 15,
@@ -560,7 +560,7 @@
       },
       {
         "_id": "5ea7264f127b53001e9192fa",
-        "statement": "10. Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal e fique atento pois as luzes apagadas (os espaços em brancos) representam o bit 0 e as luzes acesas (os espaços com a árvore) representam o bit 1. ",
+        "statement": "Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal e fique atento pois as luzes apagadas representam o bit 0 e as luzes acesas representam o bit 1. ",
         "type": "NUMERIC",
         "level": 4,
         "numeric_answer": 21,
@@ -575,7 +575,7 @@
       },
       {
         "_id": "5ea72650127b53001e9192fc",
-        "statement": "11. Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal e fique atento pois as luzes apagadas (os espaços em brancos) representam o bit 0 e as luzes acesas (os espaços com a árvore) representam o bit 1. ",
+        "statement": "Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal e fique atento pois as luzes apagadas representam o bit 0 e as luzes acesas representam o bit 1. ",
         "type": "NUMERIC",
         "level": 4,
         "numeric_answer": 16,
@@ -590,7 +590,7 @@
       },
       {
         "_id": "5ea72650127b53001e9192fe",
-        "statement": "12. Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal e fique atento pois as luzes apagadas (os espaços em brancos) representam o bit 0 e as luzes acesas (os espaços com a árvore) representam o bit 1. ",
+        "statement": "Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal e fique atento pois as luzes apagadas representam o bit 0 e as luzes acesas representam o bit 1. ",
         "type": "NUMERIC",
         "level": 4,
         "numeric_answer": 18,
@@ -605,7 +605,7 @@
       },
       {
         "_id": "5ea72650127b53001e919300",
-        "statement": "13. Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal e fique atento pois as luzes apagadas (os espaços em brancos) representam o bit 0 e as luzes acesas (os espaços com a árvore) representam o bit 1. ",
+        "statement": "Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal e fique atento pois as luzes apagadas representam o bit 0 e as luzes acesas representam o bit 1. ",
         "type": "NUMERIC",
         "level": 4,
         "numeric_answer": 5,
@@ -620,7 +620,7 @@
       },
       {
         "_id": "5ea72650127b53001e919302",
-        "statement": "14. Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal e fique atento pois as luzes apagadas (os espaços em brancos) representam o bit 0 e as luzes acesas (os espaços com a árvore) representam o bit 1. ",
+        "statement": "Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal e fique atento pois as luzes apagadas representam o bit 0 e as luzes acesas representam o bit 1. ",
         "type": "NUMERIC",
         "level": 4,
         "numeric_answer": 19,
@@ -635,7 +635,7 @@
       },
       {
         "_id": "5ea72651127b53001e919304",
-        "statement": "15. Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal e fique atento pois as luzes apagadas (os espaços em brancos) representam o bit 0 e as luzes acesas (os espaços com a árvore) representam o bit 1. ",
+        "statement": "Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal e fique atento pois as luzes apagadas representam o bit 0 e as luzes acesas representam o bit 1. ",
         "type": "NUMERIC",
         "level": 4,
         "numeric_answer": 15,
@@ -696,7 +696,7 @@
     "questions": [
       {
         "_id": "5ea72651127b53001e919308",
-        "statement": "Usando o mesmo código que Tom utilizou na loja, tente enviar uma mensagem de correio eletrônico. Mas facilite as coisas, envie apenas o seu nome. ",
+        "statement": "Vamos agora tentar mandar uma mensagem codificada como fez o Tom? Para isso, digite abaixo a mensagem a enviar. Para facilitar, digite apenas o seu nome no campo abaixo",
         "type": "SHORTANSWER",
         "level": 5,
         "short_answer": "{relative_answer}",
@@ -711,7 +711,7 @@
       },
       {
         "_id": "5ea72652127b53001e91930a",
-        "statement": "Opaaa! O Tom receber a sua mensagem e já te respondeu... Traduza para saber o que ele falou: 01111 01001, 10000 10010 00001 11010 00101 10010   00101 01101   10100 00101   00011 01111 01110 01000 00101 00011 00101 10010",
+        "statement": "Opaaa! O Tom recebeu a sua mensagem e já te respondeu... Traduza para saber o que ele falou: 01111 01001, 10000 10010 00001 11010 00101 10010   00101 01101   10100 00101   00011 01111 01110 01000 00101 00011 00101 10010",
         "type": "SHORTANSWER",
         "level": 5,
         "short_answer": "oi, prazer em te conhecer",
@@ -737,7 +737,7 @@
         }
       },
       {
-        "text": "Um bip agudo é utilizado para o um e um bip grave é utilizado para o zero. Estes sinais são transmitidos rapidamente. Tão rápido, na verdade, que apenas ouvimos um horrível zumbido contínuo. Se você nunca o ouviu, ouça um modem conectar-se à Internet.",
+        "text": "Um bip agudo é utilizado para o um e um bip grave é utilizado para o zero. Estes sinais são transmitidos rapidamente. Tão rápido, na verdade, que apenas ouvimos um horrível zumbido contínuo. Se você nunca o ouviu, pergunte a alguém que se conectava à internet antigamente.",
         "image": {
           "name": null,
           "url": "l5q1_b"
@@ -793,7 +793,7 @@
       },
       {
         "_id": "5ea72652127b53001e919311",
-        "statement": "Agora com às duas mãos converta o número 1010110011 para decimal.",
+        "statement": "Agora com as duas mãos converta o número 1010110011 para decimal.",
         "type": "MULTIPLECHOICE",
         "level": 6,
         "image": {
@@ -829,7 +829,7 @@
       },
       {
         "_id": "5ea72653127b53001e919316",
-        "statement": "Se os dedos dos seus pés forem realmente flexíveis (se você fosse de outro planeta), seria possível obter números ainda maiores. Se uma mão pode contar até 32 e duas mãos podem contar até 32 × 32 = 1024, qual o maior número que se poderia contar?",
+        "statement": "Se os dedos dos seus pés forem realmente flexíveis , seria possível obter números ainda maiores. Se uma mão pode contar até 32 e duas mãos podem contar até 32 × 32 = 1024, qual o maior número que se poderia contar?",
         "type": "MULTIPLECHOICE",
         "level": 6,
         "alternatives": [
@@ -1027,62 +1027,6 @@
     },
     "questions": [
       {
-        "_id": "5ea72654127b53001e91932d",
-        "statement": "Os computadores utilizam o sistema binário para representar informações. Chama-se binário porque utiliza dois dígitos distintos tambem chamados de bit. Um bit é normalmente representado na memória do computador por um transistor, que pode estar ligado ou desligado, ou um capacitor, que pode estar carregado ou descarregado. ",
-        "type": "EXPLANATION",
-        "level": 8,
-        "image": {
-          "_id": "5ea72654127b53001e91932e",
-          "name": "l8q1-1588012628459.png",
-          "url": "l8q2"
-        },
-        "createdAt": "2020-04-27T18:37:08.573Z",
-        "updatedAt": "2020-04-27T18:37:08.573Z",
-        "__v": 0
-      },
-      {
-        "_id": "5ea72654127b53001e91932f",
-        "statement": "Quando os dados devem ser transmitidos por uma linha telefônica ou enlace de rádio, tons de alta e baixa freqüência são utilizados para os zeros e uns. Em discos magnéticos (disquetes e discos rígidos) e fitas, os bits são representados pela direção de um campo magnético sobre uma superfície revestida, podendo ser norte-sul ou sul-norte. ",
-        "type": "EXPLANATION",
-        "level": 8,
-        "image": {
-          "_id": "5ea72654127b53001e919330",
-          "name": "l8q2-1588012628759.png",
-          "url": "l8q3"
-        },
-        "createdAt": "2020-04-27T18:37:08.868Z",
-        "updatedAt": "2020-04-27T18:37:08.868Z",
-        "__v": 0
-      },
-      {
-        "_id": "5ea72655127b53001e919331",
-        "statement": "CDs de áudio, CD-ROMs e DVDs armazenam bits de forma ótica — a parte da superfície correspondente a um bit reflete ou não a luz. ",
-        "type": "EXPLANATION",
-        "level": 8,
-        "image": {
-          "_id": "5ea72655127b53001e919332",
-          "name": "l8q3-1588012629072.png",
-          "url": "l8q4"
-        },
-        "createdAt": "2020-04-27T18:37:09.179Z",
-        "updatedAt": "2020-04-27T18:37:09.179Z",
-        "__v": 0
-      },
-      {
-        "_id": "5ea72655127b53001e919333",
-        "statement": "Um único bit não consegue representar muito. Por isso, os bits são utilizados geralmente em grupos de oito, podendo representar números de 0 a 255. Um grupo de oito bits é chamado de byte. A velocidade de um computador depende do número de bits que este pode processar de uma só vez. Por exemplo, um computador de 32 bits pode processar números de 32 bits em uma única operação, ao passo que um computador de 16 bits divide os números de 32 bits em partes menores, o que o torna mais lento.",
-        "type": "EXPLANATION",
-        "level": 8,
-        "image": {
-          "_id": "5ea72655127b53001e919335",
-          "name": "l8q5-1588012629556.png",
-          "url": "l8q5"
-        },
-        "createdAt": "2020-04-27T18:37:09.371Z",
-        "updatedAt": "2020-04-27T18:37:09.371Z",
-        "__v": 0
-      },
-      {
         "_id": "5ea72655127b53001e919334",
         "statement": "Em suma, bits e bytes são tudo que um computador utiliza para armazenar e transmitir\nnúmeros, texto e todas as outras informações. Em algumas das atividades seguintes\nveremos como outros tipos de informações podem ser representados em um computador. ",
         "type": "EXPLANATION",
@@ -1106,6 +1050,41 @@
         "image": {
           "name": null,
           "url": "l8q1"
+        }
+      },
+      {
+        "text": "Os computadores utilizam o sistema binário para representar informações. Chama-se binário porque utiliza dois dígitos distintos tambem chamados de bit. Um bit é normalmente representado na memória do computador por um transistor, que pode estar ligado ou desligado, ou um capacitor, que pode estar carregado ou descarregado. ",
+        "image": {
+          "name": null,
+          "url": "l8q2"
+        }
+      },
+      {
+        "text": "Quando os dados devem ser transmitidos por uma linha telefônica ou enlace de rádio, tons de alta e baixa freqüência são utilizados para os zeros e uns. Em discos magnéticos (disquetes e discos rígidos) e fitas, os bits são representados pela direção de um campo magnético sobre uma superfície revestida, podendo ser norte-sul ou sul-norte. ",
+        "image": {
+          "name": null,
+          "url": "l8q3"
+        }
+      },
+      {
+        "text": "CDs de áudio, CD-ROMs e DVDs armazenam bits de forma ótica — a parte da superfície correspondente a um bit reflete ou não a luz. ",
+        "image": {
+          "name": null,
+          "url": "l8q4"
+        }
+      },
+      {
+        "text": "Um único bit não consegue representar muito. Por isso, os bits são utilizados geralmente em grupos de oito, podendo representar números de 0 a 255. Um grupo de oito bits é chamado de byte.",
+        "image": {
+          "name": null,
+          "url": "l8q5"
+        }
+      },
+      {
+        "text": "A velocidade de um computador depende do número de bits que este pode processar de uma só vez. Por exemplo, um computador de 32 bits pode processar números de 32 bits em uma única operação, ao passo que um computador de 16 bits divide os números de 32 bits em partes menores, o que o torna mais lento.",
+        "image": {
+          "name": null,
+          "url": "l8q5"
         }
       }
     ],

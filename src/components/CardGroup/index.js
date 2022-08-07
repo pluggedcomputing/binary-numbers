@@ -7,7 +7,7 @@ import styles from './styles';
 export default function CardGroup() {
   return (
     <View>
-      <Text style={styles.contentText}>Pressione o cartão para virá-lo</Text>
+      <Text style={styles.contentText}>Pressione os cartões para mostrar/ocultar seus pontos.</Text>
       <View style={styles.cardGroup}>
         <Card number={16} rotate />
         <Card number={8} />

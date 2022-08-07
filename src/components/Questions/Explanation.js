@@ -14,7 +14,7 @@ const explanation = props => {
       <ChoiceButton
         step={step}
         correct
-        text="Próximo"
+        text="Finalizar"
         onPress={() => setSteps(step + 1)}
       />
     </View>

@@ -11,6 +11,7 @@ const styles = StyleSheet.create({
   },
   cardGroup: {
     flexDirection: 'row',
+    justifyContent:'center'
   },
 });
 

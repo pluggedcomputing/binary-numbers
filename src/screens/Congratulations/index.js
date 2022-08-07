@@ -18,7 +18,6 @@ import Close from '../../assets/images/close_icon/close.png'
 import Next from '../../assets/images/next_icon/next.png';
 import Remake from "../../assets/images/reload_icon/reload.png";
 import ShareImg from '../../assets/images/share_icon/share.png';
-import Star from '../../assets/images/stars/star.png';
 import WinLevel from '../../assets/images/win_level/win.png';
 import files from '../../filesBase64';
 import { colors } from '../../styles';
@@ -33,8 +32,17 @@ const Congratulations = props => {
 
   const navigateScreen = async () => {
     await AsyncStorage.setItem(`level${level + 1}`, 'true');
-    navigation.navigate('LevelSelection');
-  };
+    navigation.dispatch(
+      CommonActions.reset({
+        index: 1,
+        routes: [
+          {
+            name: 'LevelSelection',
+          },
+          
+        ],
+      })
+    )}
 
   const nextLevel = async () =>{
     if(level < 8){
@@ -51,6 +59,18 @@ const Congratulations = props => {
         ],
       })
     )
+    }else{
+      navigation.dispatch(
+        CommonActions.reset({
+          index: 1,
+          routes: [
+            {
+              name: 'LevelSelection',
+            },
+            
+          ],
+        })
+      )
     }
   }
 
@@ -85,25 +105,17 @@ const Congratulations = props => {
           onPress={navigateScreen}
             
             >
-          <Image source={Close} />
+          <Image source={Close} style={styles.closeImage} />
         </TouchableOpacity>
       </View>
       <Image source={WinLevel} style={styles.WinLevel} />
       <View style={styles.textContent}> 
-        <Text style={styles.textCongralulations}>PARABÉNS</Text>
-        <Text style={styles.textCongralulations}>Você concluiu a 
-          FASE {level}
-        </Text>
-      </View>
-      <View style={styles.starsContainer}>
-        <Image source={Star} />
-        <Image source={Star} />
-        <Image source={Star} />
-        <Image source={Star} />
-        <Image source={Star} />
+        <Text style={styles.textCongratulations}>PARABÉNS</Text>
       </View>
       <View>
-        <Text style={styles.feedbackContent}>Você concluiu a fase inteira sem nenhum erro. Seu aprendizado foi muito bom. </Text>
+        <Text style={styles.feedbackContent}>Você concluiu a 
+          FASE {level} do aplicativo Binários!
+        </Text>
       </View>
 
       <View style={styles.buttonsContainer}>

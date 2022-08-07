@@ -33,10 +33,6 @@ function HelpScreen (){
           </Text>
 
           <Text style={styles.textContent}>
-            • Você pode obter dicas sobre a questão atual clicando no ícone de lâmpada que fica localizado no lado superior direito de cada questão.
-
-          </Text>
-          <Text style={styles.textContent}>
             • Mesmo finalizando uma fase, você pode refazê-la a qualquer momento e melhorar assim seu desempenho naquela fase.
           </Text>
           <Text style={styles.textContent}>

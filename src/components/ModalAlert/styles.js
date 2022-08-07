@@ -13,8 +13,8 @@ const styles = StyleSheet.create({
       },
       modalContainer:{
         width: metrics.screenWidth * WIDTH_PERCENTAGE,
+        height: metrics.screenHeight * 0.25,
         backgroundColor:colors.colorBackground,
-        height:215,
         elevation:metrics.baseElevation,
         justifyContent:'center',
         alignItems:'center',
