@@ -131,7 +131,7 @@
     "questions": [
       {
         "_id": "5ea72648127b53001e9192c8",
-        "statement": "A sequência em binário 10011 corresponde a que número decimal? Para descobir você pode virar os cartões e olhar o número binário correspondente mostrado na parte de baixo.",
+        "statement": "A sequência em binário 10011 corresponde a que número decimal? Para descobir você pode virar os cartões e olhar o número binário correspondente ao número de pontos na parte de baixo dos cartőes.",
         "type": "MULTIPLECHOICE",
         "level": 2,
         "alternatives": [
@@ -425,7 +425,7 @@
     "questions": [
       {
         "_id": "5ea7264d127b53001e9192e8",
-        "statement": "Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal e fique atento pois as luzes apagadas representam o bit 0 e as luzes acesas representam o bit 1. ",
+        "statement": "Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal e fique atento pois as luzes apagadas representam o bit 0 e as luzes acesas representam o bit 1. Qual o decimal correspondente a esta configuração de lâmpadas? ",
         "type": "NUMERIC",
         "level": 4,
         "numeric_answer": 1,
@@ -696,7 +696,7 @@
     "questions": [
       {
         "_id": "5ea72651127b53001e919308",
-        "statement": "Vamos agora tentar mandar uma mensagem codificada como fez o Tom? Para isso, digite abaixo a mensagem a enviar. Para facilitar, digite apenas o seu nome no campo abaixo",
+        "statement": "Vamos agora tentar mandar uma mensagem codificada como fez o Tom? Para isso, digite abaixo a mensagem a enviar. Para facilitar, digite apenas o seu primeiro nome no campo abaixo",
         "type": "SHORTANSWER",
         "level": 5,
         "short_answer": "{relative_answer}",
@@ -829,7 +829,7 @@
       },
       {
         "_id": "5ea72653127b53001e919316",
-        "statement": "Se os dedos dos seus pés forem realmente flexíveis , seria possível obter números ainda maiores. Se uma mão pode contar até 32 e duas mãos podem contar até 32 × 32 = 1024, qual o maior número que se poderia contar?",
+        "statement": "Se os dedos dos seus pés forem realmente flexíveis , seria possível obter números ainda maiores. Qual maior número que se poderia contar?",
         "type": "MULTIPLECHOICE",
         "level": 6,
         "alternatives": [
@@ -942,12 +942,12 @@
             "text": "9"
           },
           {
-            "correct": false,
+            "correct": true,
             "_id": "5ea72653127b53001e919323",
             "text": "18"
           },
           {
-            "correct": true,
+            "correct": false,
             "_id": "5ea72653127b53001e919324",
             "text": "20"
           },
@@ -968,7 +968,7 @@
       },
       {
         "_id": "5ea72654127b53001e919327",
-        "statement": "Um computador precisa de 7 bits para armazenar todos os caracteres. Isto permite representar até quantos caracteres? ",
+        "statement": "Um computador precisa de 7 bits para representar todos os caracteres. Isto permite representar até quantos caracteres? ",
         "type": "MULTIPLECHOICE",
         "level": 7,
         "alternatives": [
