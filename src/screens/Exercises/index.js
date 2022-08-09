@@ -5,7 +5,6 @@ import {
   Image,
   KeyboardAvoidingView,
   Platform,
-  ScrollView,
   TouchableOpacity,
   Alert
 } from 'react-native';
@@ -250,12 +249,11 @@ export default function Exercises({navigation}) {
         isVisible={showTips}
         onCancel={handleTips}
       />
-      <ScrollView showsVerticalScrollIndicator={false}>
-        <View style={[styles.container, {backgroundColor}]}>
-          <View style={styles.header}>
-            <Text style={styles.title}>FASE {exercise.level}</Text>
-            <TouchableOpacity
-              onPress={() => Alert.alert('Aviso','O progresso atual será perdido, deseja sair?',
+      <View style={[styles.container, {backgroundColor}]}>
+        <View style={styles.header}>
+          <Text style={styles.title}>FASE {exercise.level}</Text>
+          <TouchableOpacity
+            onPress={() => Alert.alert('Aviso','O progresso atual será perdido, deseja sair?',
              [
               {
                 text: "Sair",
@@ -267,30 +265,29 @@ export default function Exercises({navigation}) {
             }
             ]
             )}
-              style={styles.closeButton}>
-              <Image source={Close} style={styles.closeImage} />
-            </TouchableOpacity>
-          </View>
-          <View style={styles.halfView}>
-            <CustomBackground
-              style={styles.info}
-              content={viewOfContent()}
-              isLastPage={value => setShowAnswerOptions(value)}
+            style={styles.closeButton}>
+            <Image source={Close} style={styles.closeImage} />
+          </TouchableOpacity>
+        </View>
+        <View style={styles.halfView}>
+          <CustomBackground
+            style={styles.info}
+            content={viewOfContent()}
+            isLastPage={value => setShowAnswerOptions(value)}
             />
-          </View>
+        </View>
           
-          <KeyboardAvoidingView
-            style={styles.halfViewKeyBoard}
-            enabled
-            behavior={Platform.select({
+        <KeyboardAvoidingView
+          style={styles.halfViewKeyBoard}
+          enabled
+          behavior={Platform.select({
               ios: 'padding',
               android: null,
               })}
-            keyboardVerticalOffset={-125}>
-            {showAnswerOptions ? chooseQuestionRender(): null}
-          </KeyboardAvoidingView>    
-        </View>
-      </ScrollView>
+          keyboardVerticalOffset={-125}>
+          {showAnswerOptions ? chooseQuestionRender(): null}
+        </KeyboardAvoidingView>    
+      </View>
     </View>
   );
 }
