@@ -730,7 +730,7 @@
     "description": "O usuário envia uma mensagem que é rapidamente respondida em binário. O usuário deve converter corretamente a mensagem de resposta para finalizar o exercício.",
     "introduction": [
       {
-        "text": "Os computadores conectados à Internet através de um equipamento conhecido por modem também utilizam o sistema binário para enviar mensagens. A única diferença é que eles usam um sinal sonoro ou bip.",
+        "text": "Os computadores conectados à Internet através de um equipamento conhecido por modem também utilizam o sistema binário para enviar mensagens. No passado era comum inclusive escutar um barulho vindo desses aparelhos. Eles usavam um sinal sonoro ou bip.",
         "image": {
           "name": null,
           "url": "l5q1_a"
@@ -829,7 +829,7 @@
       },
       {
         "_id": "5ea72653127b53001e919316",
-        "statement": "Se os dedos dos seus pés forem realmente flexíveis , seria possível obter números ainda maiores. Qual maior número que se poderia contar?",
+        "statement": "Se os dedos dos seus pés forem realmente flexíveis , seria possível obter números ainda maiores. Qual o maior número que se poderia contar?",
         "type": "MULTIPLECHOICE",
         "level": 6,
         "alternatives": [
