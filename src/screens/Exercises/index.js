@@ -6,7 +6,8 @@ import {
   KeyboardAvoidingView,
   Platform,
   TouchableOpacity,
-  Alert
+  Alert,
+  StatusBar
 } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
@@ -249,6 +250,7 @@ export default function Exercises({navigation}) {
         isVisible={showTips}
         onCancel={handleTips}
       />
+      <StatusBar barStyle='dark-content' backgroundColor={backgroundColor} />
       <View style={[styles.container, {backgroundColor}]}>
         <View style={styles.header}>
           <Text style={styles.title}>FASE {exercise.level}</Text>
