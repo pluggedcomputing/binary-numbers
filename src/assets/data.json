@@ -711,10 +711,10 @@
       },
       {
         "_id": "5ea72652127b53001e91930a",
-        "statement": "Opaaa! O Tom recebeu a sua mensagem e já te respondeu... Traduza para saber o que ele falou: 01111 01001, 10000 10010 00001 11010 00101 10010   00101 01101   10100 00101   00011 01111 01110 01000 00101 00011 00101 10010",
+        "statement": "Opaaa! O Tom recebeu a sua mensagem e já te respondeu... Traduza para saber o que ele falou: 01101 10101 01001 10100 01111  10000 10010 00001 11010 00101 10010",
         "type": "SHORTANSWER",
         "level": 5,
-        "short_answer": "oi, prazer em te conhecer",
+        "short_answer": "muito prazer",
         "image": {
           "_id": "5ea72652127b53001e91930b",
           "name": "tabela_alfabeto-1588012626117.png",
