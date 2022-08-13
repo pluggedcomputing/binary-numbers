@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
     resizeMode: 'contain',
     justifyContent: 'flex-end',
     width: Math.round((metrics.screenWidth * 14) / 16),
-    height: metrics.screenHeight * 0.35,
+    height: metrics.screenHeight * 0.33,
   },
   icon: {
     color: colors.colorPrimary,
