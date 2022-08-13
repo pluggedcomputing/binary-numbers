@@ -101,6 +101,7 @@ export default function Exercises({navigation}) {
     l8q4: require('../../assets/images/level8/l8q4.png'),
     l8q5: require('../../assets/images/level8/l8q5.png'),
     l8q6: require('../../assets/images/level8/l8q6.png'),
+    l8q7: require('../../assets/images/finishApp/finishApp.png')
   };
 
 
@@ -183,7 +184,7 @@ export default function Exercises({navigation}) {
   };
   
   useEffect(() => {
-    if(showAnswerOptions){
+    if(showAnswerOptions && exercise.level !==8){
       setBackgroundColor(colors.colorPrimary)
     }else{
       setBackgroundColor(colors.colorBackground)

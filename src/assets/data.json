@@ -1028,13 +1028,13 @@
     "questions": [
       {
         "_id": "5ea72655127b53001e919334",
-        "statement": "Em suma, bits e bytes são tudo que um computador utiliza para armazenar e transmitir\nnúmeros, texto e todas as outras informações. Em algumas das atividades seguintes\nveremos como outros tipos de informações podem ser representados em um computador. ",
+        "statement": "Obrigado por finalizar o Computação Plugada Binários. Seu feedback é muito importante. Ajude-nos preenchendo o formulário de avaliação que está disponivel na tela de ajuda e aproveite para conhecer os outros aplicativos da nossa família!",
         "type": "EXPLANATION",
         "level": 8,
         "image": {
           "_id": "5ea72655127b53001e919335",
           "name": "l8q5-1588012629556.png",
-          "url": "l8q6"
+          "url": "l8q7"
         },
         "createdAt": "2020-04-27T18:37:09.672Z",
         "updatedAt": "2020-04-27T18:37:09.672Z",
@@ -1085,6 +1085,13 @@
         "image": {
           "name": null,
           "url": "l8q5"
+        }
+      },
+      {
+        "text": "Em suma, bits e bytes são tudo que um computador utiliza para armazenar e transmitir\nnúmeros, texto e todas as outras informações. Em algumas das atividades seguintes\nveremos como outros tipos de informações podem ser representados em um computador. ",
+        "image": {
+          "name": null,
+          "url": "l8q6"
         }
       }
     ],
