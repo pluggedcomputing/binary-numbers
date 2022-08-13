@@ -398,7 +398,7 @@
     "description": "São exibidas dez imagens com legendas em que o usuário deve traduzir para binário e converter em decimal.",
     "introduction": [
       {
-        "text": "Nos níveis anteriores utilizamos cartões para representar o sistema binário, você recorda? O zero quando o cartão estava virado para baixo e o 1 quando estava virado para cima.",
+        "text": "Nos níveis anteriores utilizamos cartões para representar o sistema binário, você recorda? O zero (0) quando o cartão estava virado para baixo e o um (1) quando estava virado para cima.",
         "image": {
           "name": null,
           "url": "l3q1_a"
@@ -829,7 +829,7 @@
       },
       {
         "_id": "5ea72653127b53001e919316",
-        "statement": "Se os dedos dos seus pés forem realmente flexíveis , seria possível obter números ainda maiores. Qual o maior número que se poderia contar?",
+        "statement": "Se os dedos dos seus pés forem realmente flexíveis , seria possível obter números ainda maiores. Qual o fmaior número que se poderia contar?",
         "type": "MULTIPLECHOICE",
         "level": 6,
         "alternatives": [
