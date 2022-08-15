@@ -7,6 +7,7 @@ import {
   Platform,
   TouchableOpacity,
   Alert,
+  Linking,
   StatusBar
 } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
@@ -288,6 +289,12 @@ export default function Exercises({navigation}) {
               android: null,
               })}
           keyboardVerticalOffset={-125}>
+          {showAnswerOptions && exercise.level === 8 ? (
+            <TouchableOpacity onPress={() => {
+                  Linking.openURL('https://forms.gle/5j7SXrRUnAxtV2rK6');
+                }}><Text>Formulário de avaliação</Text>
+            </TouchableOpacity>
+) : null}
           {showAnswerOptions ? chooseQuestionRender(): null}
         </KeyboardAvoidingView>    
       </View>
