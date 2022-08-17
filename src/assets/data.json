@@ -440,7 +440,7 @@
       },
       {
         "_id": "5ea7264d127b53001e9192ea",
-        "statement": "Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal e fique atento pois as luzes apagadas representam o bit 0 e as luzes acesas representam o bit 1. ",
+        "statement": "Qual o número decimal correspondente a essa configuração de lâmpadas?",
         "type": "NUMERIC",
         "level": 4,
         "numeric_answer": 10,
@@ -455,7 +455,7 @@
       },
       {
         "_id": "5ea7264d127b53001e9192ec",
-        "statement": "Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal e fique atento pois as luzes apagadas representam o bit 0 e as luzes acesas representam o bit 1. ",
+        "statement": "Qual o número decimal correspondente a essa configuração de lâmpadas?",
         "type": "NUMERIC",
         "level": 4,
         "numeric_answer": 21,
@@ -470,7 +470,7 @@
       },
       {
         "_id": "5ea7264d127b53001e9192ee",
-        "statement": "Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal e fique atento pois as luzes apagadas representam o bit 0 e as luzes acesas representam o bit 1. ",
+        "statement": "Qual o número decimal correspondente a essa configuração de lâmpadas?",
         "type": "NUMERIC",
         "level": 4,
         "numeric_answer": 4,
@@ -485,7 +485,7 @@
       },
       {
         "_id": "5ea7264e127b53001e9192f0",
-        "statement": "Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal e fique atento pois as luzes apagadas representam o bit 0 e as luzes acesas representam o bit 1. ",
+        "statement": "Qual o número decimal correspondente a essa configuração de lâmpadas?",
         "type": "NUMERIC",
         "level": 4,
         "numeric_answer": 5,
@@ -500,7 +500,7 @@
       },
       {
         "_id": "5ea7264e127b53001e9192f2",
-        "statement": "Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal e fique atento pois as luzes apagadas representam o bit 0 e as luzes acesas representam o bit 1. ",
+        "statement": "Qual o número decimal correspondente a essa configuração de lâmpadas?",
         "type": "NUMERIC",
         "level": 4,
         "numeric_answer": 5,
@@ -515,7 +515,7 @@
       },
       {
         "_id": "5ea7264e127b53001e9192f4",
-        "statement": "Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal e fique atento pois as luzes apagadas representam o bit 0 e as luzes acesas representam o bit 1. ",
+        "statement": "Qual o número decimal correspondente a essa configuração de lâmpadas?",
         "type": "NUMERIC",
         "level": 4,
         "numeric_answer": 19,
@@ -530,7 +530,7 @@
       },
       {
         "_id": "5ea7264f127b53001e9192f6",
-        "statement": "Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal e fique atento pois as luzes apagadas representam o bit 0 e as luzes acesas representam o bit 1. ",
+        "statement": "Qual o número decimal correspondente a essa configuração de lâmpadas?",
         "type": "NUMERIC",
         "level": 4,
         "numeric_answer": 20,
@@ -545,7 +545,7 @@
       },
       {
         "_id": "5ea7264f127b53001e9192f8",
-        "statement": "Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal e fique atento pois as luzes apagadas representam o bit 0 e as luzes acesas representam o bit 1. ",
+        "statement": "Qual o número decimal correspondente a essa configuração de lâmpadas?",
         "type": "NUMERIC",
         "level": 4,
         "numeric_answer": 15,
@@ -560,7 +560,7 @@
       },
       {
         "_id": "5ea7264f127b53001e9192fa",
-        "statement": "Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal e fique atento pois as luzes apagadas representam o bit 0 e as luzes acesas representam o bit 1. ",
+        "statement": "Qual o número decimal correspondente a essa configuração de lâmpadas?",
         "type": "NUMERIC",
         "level": 4,
         "numeric_answer": 21,
@@ -575,7 +575,7 @@
       },
       {
         "_id": "5ea72650127b53001e9192fc",
-        "statement": "Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal e fique atento pois as luzes apagadas representam o bit 0 e as luzes acesas representam o bit 1. ",
+        "statement": "Qual o número decimal correspondente a essa configuração de lâmpadas?",
         "type": "NUMERIC",
         "level": 4,
         "numeric_answer": 16,
@@ -590,7 +590,7 @@
       },
       {
         "_id": "5ea72650127b53001e9192fe",
-        "statement": "Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal e fique atento pois as luzes apagadas representam o bit 0 e as luzes acesas representam o bit 1. ",
+        "statement": "Qual o número decimal correspondente a essa configuração de lâmpadas?",
         "type": "NUMERIC",
         "level": 4,
         "numeric_answer": 18,
@@ -605,7 +605,7 @@
       },
       {
         "_id": "5ea72650127b53001e919300",
-        "statement": "Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal e fique atento pois as luzes apagadas representam o bit 0 e as luzes acesas representam o bit 1. ",
+        "statement": "Qual o número decimal correspondente a essa configuração de lâmpadas?",
         "type": "NUMERIC",
         "level": 4,
         "numeric_answer": 5,
@@ -620,7 +620,7 @@
       },
       {
         "_id": "5ea72650127b53001e919302",
-        "statement": "Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal e fique atento pois as luzes apagadas representam o bit 0 e as luzes acesas representam o bit 1. ",
+        "statement": "Qual o número decimal correspondente a essa configuração de lâmpadas?",
         "type": "NUMERIC",
         "level": 4,
         "numeric_answer": 19,
@@ -635,7 +635,7 @@
       },
       {
         "_id": "5ea72651127b53001e919304",
-        "statement": "Você pode identificar a mensagem enviada por Tom? Lembre-se de converter a combinação binária para decimal e fique atento pois as luzes apagadas representam o bit 0 e as luzes acesas representam o bit 1. ",
+        "statement": "Qual o número decimal correspondente a essa configuração de lâmpadas?",
         "type": "NUMERIC",
         "level": 4,
         "numeric_answer": 15,
@@ -829,7 +829,7 @@
       },
       {
         "_id": "5ea72653127b53001e919316",
-        "statement": "Se os dedos dos seus pés forem realmente flexíveis , seria possível obter números ainda maiores. Qual o fmaior número que se poderia contar?",
+        "statement": "Se os dedos dos seus pés forem realmente flexíveis , seria possível obter números ainda maiores. Qual o maior número que se poderia contar?",
         "type": "MULTIPLECHOICE",
         "level": 6,
         "alternatives": [
@@ -1088,7 +1088,7 @@
         }
       },
       {
-        "text": "Em suma, bits e bytes são tudo que um computador utiliza para armazenar e transmitir\nnúmeros, texto e todas as outras informações. Em algumas das atividades seguintes\nveremos como outros tipos de informações podem ser representados em um computador. ",
+        "text": "Em suma, bits e bytes são tudo que um computador utiliza para armazenar e transmitir\nnúmeros, texto e todas as outras informações.",
         "image": {
           "name": null,
           "url": "l8q6"
