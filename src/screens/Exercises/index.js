@@ -291,7 +291,7 @@ export default function Exercises({navigation}) {
           keyboardVerticalOffset={-125}>
           {showAnswerOptions && exercise.level === 8 ? (
             <TouchableOpacity onPress={() => {
-                  Linking.openURL('https://forms.gle/5j7SXrRUnAxtV2rK6');
+                  Linking.openURL('https://forms.gle/ysumJuUifLG28WCR7');
                 }}><Text>Formulário de avaliação</Text>
             </TouchableOpacity>
 ) : null}
