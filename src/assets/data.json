@@ -829,7 +829,7 @@
       },
       {
         "_id": "5ea72653127b53001e919316",
-        "statement": "Se os dedos dos seus pés forem realmente flexíveis , seria possível obter números ainda maiores. Qual o maior número que se poderia contar?",
+        "statement": "Se os dedos dos seus pés forem realmente flexíveis , seria possível obter números ainda maiores. Qual o maior número que se poderia contar utilizando seus 20 dedos?",
         "type": "MULTIPLECHOICE",
         "level": 6,
         "alternatives": [
@@ -841,7 +841,7 @@
           {
             "correct": true,
             "_id": "5ea72653127b53001e919318",
-            "text": "1.048.576"
+            "text": "1.048.575"
           },
           {
             "correct": false,
