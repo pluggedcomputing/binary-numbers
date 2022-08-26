@@ -17,11 +17,11 @@ const CardLevel = props => {
   const viewOfContent = [
     'Introdução ao sistema binário',
     'Aprendendo a contar',
-    'Trabalhando com Números Binários',
-    'Mensagem secreta com Binários',
-    'Correio Eletrônico e Modens',
+    'Trabalhando com números binários',
+    'Mensagem secreta com binários',
+    'Correio eletrônico e modens',
     'Contar acima de 31',
-    'Mais Sobre Números Binários',
+    'Mais sobre números binários',
     'De que se trata tudo isso?',
   
   ];

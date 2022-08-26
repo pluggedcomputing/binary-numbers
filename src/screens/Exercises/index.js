@@ -5,9 +5,10 @@ import {
   Image,
   KeyboardAvoidingView,
   Platform,
-  ScrollView,
   TouchableOpacity,
-  Alert
+  Alert,
+  Linking,
+  StatusBar
 } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
@@ -101,6 +102,7 @@ export default function Exercises({navigation}) {
     l8q4: require('../../assets/images/level8/l8q4.png'),
     l8q5: require('../../assets/images/level8/l8q5.png'),
     l8q6: require('../../assets/images/level8/l8q6.png'),
+    l8q7: require('../../assets/images/finishApp/finishApp.png')
   };
 
 
@@ -183,7 +185,7 @@ export default function Exercises({navigation}) {
   };
   
   useEffect(() => {
-    if(showAnswerOptions){
+    if(showAnswerOptions && exercise.level !==8){
       setBackgroundColor(colors.colorPrimary)
     }else{
       setBackgroundColor(colors.colorBackground)
@@ -250,12 +252,12 @@ export default function Exercises({navigation}) {
         isVisible={showTips}
         onCancel={handleTips}
       />
-      <ScrollView showsVerticalScrollIndicator={false}>
-        <View style={[styles.container, {backgroundColor}]}>
-          <View style={styles.header}>
-            <Text style={styles.title}>FASE {exercise.level}</Text>
-            <TouchableOpacity
-              onPress={() => Alert.alert('Aviso','O progresso atual será perdido, deseja sair?',
+      <StatusBar barStyle='dark-content' backgroundColor={backgroundColor} />
+      <View style={[styles.container, {backgroundColor}]}>
+        <View style={styles.header}>
+          <Text style={styles.title}>FASE {exercise.level}</Text>
+          <TouchableOpacity
+            onPress={() => Alert.alert('Aviso','O progresso atual será perdido, deseja sair?',
              [
               {
                 text: "Sair",
@@ -267,30 +269,35 @@ export default function Exercises({navigation}) {
             }
             ]
             )}
-              style={styles.closeButton}>
-              <Image source={Close} style={styles.closeImage} />
-            </TouchableOpacity>
-          </View>
-          <View style={styles.halfView}>
-            <CustomBackground
-              style={styles.info}
-              content={viewOfContent()}
-              isLastPage={value => setShowAnswerOptions(value)}
+            style={styles.closeButton}>
+            <Image source={Close} style={styles.closeImage} />
+          </TouchableOpacity>
+        </View>
+        <View style={styles.halfView}>
+          <CustomBackground
+            style={styles.info}
+            content={viewOfContent()}
+            isLastPage={value => setShowAnswerOptions(value)}
             />
-          </View>
+        </View>
           
-          <KeyboardAvoidingView
-            style={styles.halfViewKeyBoard}
-            enabled
-            behavior={Platform.select({
+        <KeyboardAvoidingView
+          style={styles.halfViewKeyBoard}
+          enabled
+          behavior={Platform.select({
               ios: 'padding',
               android: null,
               })}
-            keyboardVerticalOffset={-125}>
-            {showAnswerOptions ? chooseQuestionRender(): null}
-          </KeyboardAvoidingView>    
-        </View>
-      </ScrollView>
+          keyboardVerticalOffset={-125}>
+          {showAnswerOptions && exercise.level === 8 ? (
+            <TouchableOpacity onPress={() => {
+                  Linking.openURL('https://forms.gle/ysumJuUifLG28WCR7');
+                }}><Text>Formulário de avaliação</Text>
+            </TouchableOpacity>
+) : null}
+          {showAnswerOptions ? chooseQuestionRender(): null}
+        </KeyboardAvoidingView>    
+      </View>
     </View>
   );
 }
