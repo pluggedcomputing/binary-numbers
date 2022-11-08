@@ -1,12 +1,3 @@
----
-name: Pull request
-about: Envie suas alterações para serem revisadas
-title: ''
-labels: ''
-assignees: ''
-
----
-
 # Pull Request
 
 ### Tipo

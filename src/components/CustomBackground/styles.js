@@ -1,30 +1,24 @@
 import {StyleSheet} from 'react-native';
 
-import {colors, metrics, general} from '../../styles';
+import {colors, metrics} from '../../styles';
 
-const WIDHT_PORCENTAGE = 0.9;
-const HEIGHT_PORCENTAGE = 0.4;
+
+const HEIGHT_PORCENTAGE = 0.60;
 
 const styles = StyleSheet.create({
   container: {
-    marginRight: metrics.smallPadding,
-    marginLeft: metrics.smallPadding,
+    height:metrics.screenHeight,
+    width:metrics.screenWidth,
+    position:'relative'
   },
   listContainer: {
     marginRight: metrics.smallPadding,
     marginLeft: metrics.smallPadding,
     height: metrics.screenHeight * HEIGHT_PORCENTAGE,
-    width: metrics.screenWidth * WIDHT_PORCENTAGE,
-    borderWidth: metrics.smallBorder,
-    borderRadius: metrics.baseRadius,
-    borderColor: colors.textColorSecondary,
-    backgroundColor: colors.textColorSecondary,
-    ...general.defaultShadow,
+    width: metrics.screenWidth,
   },
   content: {
     justifyContent: 'center',
-    alignItems: 'center',
-    flex: 3,
     padding: metrics.basePadding,
   },
   footer: {
@@ -41,6 +35,35 @@ const styles = StyleSheet.create({
     color: colors.textColorPrimary,
     padding: metrics.basePadding,
   },
+  dotView:{
+    flexDirection:'row',
+    justifyContent:'center',
+    marginVertical:20,
+  },
+  circle:{
+    width:10,
+    height:10,
+    borderRadius:50,
+    backgroundColor:'gray',
+    marginHorizontal:5
+  },
+  left:{
+    zIndex:1,
+    position:'absolute',
+    top:metrics.screenWidth * 0.60,
+    left:25
+  },
+  right:{
+    zIndex:1,
+    position:'absolute',
+    top:metrics.screenWidth * 0.60,
+    right:25
+  },
+  arrow:{
+    resizeMode:'contain',
+    height: metrics.screenHeight * 0.05,
+    width:metrics.screenWidth * 0.03
+  }
 });
 
 export default styles;

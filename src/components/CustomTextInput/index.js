@@ -9,7 +9,7 @@ import {general} from '../../styles';
 import styles from './styles';
 
 const CustomTextInput = props => {
-  const {style, icon, secureTextEntry} = props;
+  const {style, secureTextEntry} = props;
 
   const [state, setState] = useState({
     showPassword: secureTextEntry,
@@ -39,7 +39,6 @@ const CustomTextInput = props => {
 
   return (
     <View style={styles.container}>
-      <Icon name={icon} size={general.iconSize.regular} />
       <TextInput
         {...props}
         style={[styles.input, style]}
@@ -52,7 +51,6 @@ const CustomTextInput = props => {
 };
 
 CustomTextInput.propTypes = {
-  icon: PropTypes.string.isRequired,
   style: PropTypes.oneOfType([PropTypes.object, PropTypes.array]),
   secureTextEntry: PropTypes.bool,
 };
