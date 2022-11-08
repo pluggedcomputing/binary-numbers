@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Computação Plugada Binários</string>
+    <string moduleConfig="true" name="CodePushDeploymentKey">a4c221b5ba8eafe0568c225350ba9d99ff7f8770</string>
 </resources>

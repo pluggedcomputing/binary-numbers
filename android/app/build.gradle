@@ -82,7 +82,7 @@ project.ext.react = [
 ]
 
 apply from: "../../node_modules/react-native/react.gradle"
-
+apply from: "../../node_modules/react-native-code-push/android/codepush.gradle"
 /**
  * Set this to true to create two separate APKs instead of one:
  *   - An APK that only works on ARM devices
@@ -154,6 +154,8 @@ android {
     buildTypes {
         debug {
             signingConfig signingConfigs.debug
+            resValue "string", "reactNativeCodePush_androidDeploymentKey", '""'
+
         }
         release {
             // Caution! In production, you need to generate your own keystore file.

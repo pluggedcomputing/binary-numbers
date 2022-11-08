@@ -1,6 +1,6 @@
 {
   "name": "plugged-computing-binary-numbers",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "private": true,
   "scripts": {
     "android": "react-native run-android",
@@ -11,11 +11,7 @@
     "release": "standard-version"
   },
   "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "post-checkout": "yarn install"
-    }
+    "hooks": {}
   },
   "lint-staged": {
     "*.js": [
@@ -36,6 +32,7 @@
     "react-dom": "~16.9.0",
     "react-native": "0.62.2",
     "react-native-animated-pagination-dots": "^0.1.72",
+    "react-native-code-push": "^7.0.4",
     "react-native-elements": "^1.2.7",
     "react-native-gesture-handler": "~1.5.0",
     "react-native-global-props": "^1.1.5",
