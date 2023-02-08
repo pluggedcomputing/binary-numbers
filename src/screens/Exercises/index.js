@@ -8,11 +8,16 @@ import {
   TouchableOpacity,
   Alert,
   Linking,
-  StatusBar
+  StatusBar,
+  Vibration
 } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
+
+
 import {useRoute, CommonActions} from '@react-navigation/native';
+
+import Sound from 'react-native-sound';
 
 
 import Close from '../../assets/images/close_icon/close.png';
@@ -28,6 +33,7 @@ import {
 import Tooltip from '../../components/Tooltip';
 import {general, colors} from '../../styles';
 import styles from './styles';
+
 
 
 export default function Exercises({navigation}) {
@@ -104,7 +110,17 @@ export default function Exercises({navigation}) {
     l8q6: require('../../assets/images/level8/l8q6.png'),
     l8q7: require('../../assets/images/finishApp/finishApp.png')
   };
+  Sound.setCategory('Playback');
 
+  const levelPlaySound = (filename) =>{
+    let sound = new Sound(filename, Sound.MAIN_BUNDLE, (error) => {
+      if (error) {
+          //
+      } else {
+        sound.play()
+      }
+  });
+  }
 
   const handleTips = () => setShowTips(!showTips);
 
@@ -141,6 +157,7 @@ export default function Exercises({navigation}) {
   useEffect(() => {
     if (finishLevel) {
       navigation.navigate('Congratulations', {level: exercise.level});
+      levelPlaySound('finish_level_sound.mp3');
     } else {
       setQuestion(response.questions[step]);
     }
@@ -242,6 +259,7 @@ export default function Exercises({navigation}) {
     }
   }
 
+  
 
 
   return (

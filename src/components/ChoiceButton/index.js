@@ -6,6 +6,20 @@ import PropTypes from 'prop-types';
 import {colors} from '../../styles';
 import styles from './styles';
 
+import Sound from 'react-native-sound';
+
+Sound.setCategory('Playback');
+
+const levelPlaySound = (filename) =>{
+  let sound = new Sound(filename, Sound.MAIN_BUNDLE, (error) => {
+    if (error) {
+        //
+    } else {
+      sound.play()
+    }
+});
+}
+
 const ChoiceButton = props => {
   const {correct, onPress, text, step} = props;
   const [backgroundColor, setbackgroundColor] = useState(colors.colorAcent);
@@ -16,6 +30,7 @@ const ChoiceButton = props => {
 
   function onPressButton() {
     if (correct) {
+      levelPlaySound('correct_answer_sound.mp3')
       setbackgroundColor(colors.colorSucess);
     } else {
       ToastAndroid.showWithGravityAndOffset(
