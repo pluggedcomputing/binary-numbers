@@ -30,7 +30,7 @@ const ChoiceButton = props => {
 
   function onPressButton() {
     if (correct) {
-      levelPlaySound('correct_answer_sound.mp3')
+      levelPlaySound('correct_sound.mp3')
       setbackgroundColor(colors.colorSucess);
     } else {
       ToastAndroid.showWithGravityAndOffset(
@@ -40,6 +40,7 @@ const ChoiceButton = props => {
         25,
         50
       );
+      Vibration.vibrate(400)
       setbackgroundColor(colors.colorError);
     }
     setTimeout(() => onPress(), 350);

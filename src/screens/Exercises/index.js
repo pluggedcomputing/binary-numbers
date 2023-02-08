@@ -158,6 +158,7 @@ export default function Exercises({navigation}) {
     if (finishLevel) {
       navigation.navigate('Congratulations', {level: exercise.level});
       levelPlaySound('finish_level_sound.mp3');
+      Vibration.vibrate(800)
     } else {
       setQuestion(response.questions[step]);
     }
