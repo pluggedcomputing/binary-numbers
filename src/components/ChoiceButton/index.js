@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import {View, Text, TouchableOpacity, ToastAndroid} from 'react-native';
+import {View, Text, TouchableOpacity, ToastAndroid, Vibration} from 'react-native';
 
 import PropTypes from 'prop-types';
 
